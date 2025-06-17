@@ -1,16 +1,67 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
-    "sections": {
-        "product_hero": {
-            "type": "product_hero"
-        },
-        "product_recommended": {
-            "type": "product_recommended"
-        }
+  "sections": {
+    "product_hero": {
+      "type": "product_hero",
+      "settings": {}
     },
-    "layout": "product",
-    "wrapper": "main.main-wrapper",
-    "order": [
-        "product_hero",
-        "product_recommended"
-    ]
+    "vergleichstabelle_6U6Nqm": {
+      "type": "vergleichstabelle",
+      "name": "Vergleichstabelle",
+      "settings": {
+        "text_lautsprecher_advanced_text": "This is some text inside of a div block.",
+        "text_lautsprecher_premium_text": "This is some text inside of a div block.",
+        "text_lautsprecher_high_end_text": "This is some text inside of a div block.",
+        "text_tweeter_advanced_text": "This is some text inside of a div block.",
+        "text_tweeter_premium_text": "This is some text inside of a div block.",
+        "text_tweeter_high_end_text": "This is some text inside of a div block.",
+        "text_sub_advanced_text": "This is some text inside of a div block.",
+        "text_sub_premium_text": "This is some text inside of a div block.",
+        "text_sub_high_end_text": "This is some text inside of a div block.",
+        "text_dsp_advanced_text": "This is some text inside of a div block.",
+        "text_dsp_premium_text": "This is some text inside of a div block.",
+        "text_dsp_high_end_text": "This is some text inside of a div block."
+      }
+    },
+    "produktinfo_bzrbtD": {
+      "type": "produktinfo",
+      "name": "Produktinfo",
+      "settings": {
+        "image_produktfoto_advanced": "shopify://shop_images/Group_264.png",
+        "text_soundupgrade": "Soundupgrade",
+        "text_soundupgrade_level": ""
+      }
+    },
+    "value_proposition_XT9Nzy": {
+      "type": "value_proposition",
+      "name": "Value Proposition",
+      "settings": {
+        "image_feature_image_1": "shopify://shop_images/image_15.png",
+        "text_subheading_1": "FÜR DEN PERFEKTEN SOUND",
+        "text_parapgraph_text_1": "Unser Team wählt sorgfältig Komponenten, die auf Ihr Auto und Upgrade zugeschnitten sind. So kann bei jedem Umbau das maximale rausgeholt werden. Dabei nutzen wir Komponenten von Premium-Herstellern wie Helix, Match, Brax, Steg oder Fortissimo. Mehr über unsere Partner erfahren. Welche Produkte genau verbaut werden erfahren Sie rechtzeitig von uns.",
+        "image_feature_image_2": "shopify://shop_images/image_16.png",
+        "text_subheading_2": "FÜR DEN PERFEKTEN SOUND",
+        "text_parapgraph_text_2": "Unser Team wählt sorgfältig Komponenten, die auf Ihr Auto und Upgrade zugeschnitten sind. So kann bei jedem Umbau das maximale rausgeholt werden. Dabei nutzen wir Komponenten von Premium-Herstellern wie Helix, Match, Brax, Steg oder Fortissimo. Mehr über unsere Partner erfahren. Welche Produkte genau verbaut werden erfahren Sie rechtzeitig von uns.",
+        "image_feature_image_3": "shopify://shop_images/image_17.png",
+        "text_subheading_3": "FÜR DEN PERFEKTEN SOUND",
+        "text_parapgraph_text_3": "Unser Team wählt sorgfältig Komponenten, die auf Ihr Auto und Upgrade zugeschnitten sind. So kann bei jedem Umbau das maximale rausgeholt werden. Dabei nutzen wir Komponenten von Premium-Herstellern wie Helix, Match, Brax, Steg oder Fortissimo. Mehr über unsere Partner erfahren. Welche Produkte genau verbaut werden erfahren Sie rechtzeitig von uns."
+      }
+    }
+  },
+  "layout": "product",
+  "wrapper": "main.main-wrapper",
+  "order": [
+    "product_hero",
+    "vergleichstabelle_6U6Nqm",
+    "produktinfo_bzrbtD",
+    "value_proposition_XT9Nzy"
+  ]
 }
