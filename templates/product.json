@@ -48,8 +48,11 @@
       "name": "Produktinfo",
       "settings": {
         "image_produktfoto_advanced": "shopify://shop_images/Group_249.png",
+        "text_soundupgrade_level_1": "Advanced",
         "image_produktfoto_premium": "shopify://shop_images/Group_263.png",
-        "image_produktfoto_high_end": "shopify://shop_images/Group_264.png"
+        "text_soundupgrade_level_2": "Premium",
+        "image_produktfoto_high_end": "shopify://shop_images/Group_264.png",
+        "text_soundupgrade_level_3": "High-End"
       }
     },
     "value_proposition_XT9Nzy": {
@@ -66,11 +69,19 @@
         "text_subheading_3": "FÜR DEN PERFEKTEN SOUND",
         "text_parapgraph_text_3": "Unser Team wählt sorgfältig Komponenten, die auf Ihr Auto und Upgrade zugeschnitten sind. So kann bei jedem Umbau das maximale rausgeholt werden. Dabei nutzen wir Komponenten von Premium-Herstellern wie Helix, Match, Brax, Steg oder Fortissimo. Mehr über unsere Partner erfahren. Welche Produkte genau verbaut werden erfahren Sie rechtzeitig von uns."
       }
+    },
+    "r_product_hero_XRQpkA": {
+      "type": "r_product_hero",
+      "name": "R-Product-Hero",
+      "settings": {
+        "text_headline": "Description"
+      }
     }
   },
   "layout": "product",
   "wrapper": "main.main-wrapper",
   "order": [
+    "r_product_hero_XRQpkA",
     "product_hero",
     "vergleichstabelle_6U6Nqm",
     "produktinfo_bzrbtD",
