@@ -36,8 +36,9 @@
       "name": "Produktinfo",
       "settings": {
         "image_produktfoto_advanced": "shopify://shop_images/Group_264.png",
-        "text_soundupgrade": "Soundupgrade",
-        "text_soundupgrade_level": ""
+        "text_soundupgrade_level": "",
+        "image_produktfoto_premium": "shopify://shop_images/Group_263.png",
+        "image_produktfoto_high_end": "shopify://shop_images/Group_264.png"
       }
     },
     "value_proposition_XT9Nzy": {
