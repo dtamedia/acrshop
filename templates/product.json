@@ -70,9 +70,9 @@
         "text_parapgraph_text_3": "Unser Team wählt sorgfältig Komponenten, die auf Ihr Auto und Upgrade zugeschnitten sind. So kann bei jedem Umbau das maximale rausgeholt werden. Dabei nutzen wir Komponenten von Premium-Herstellern wie Helix, Match, Brax, Steg oder Fortissimo. Mehr über unsere Partner erfahren. Welche Produkte genau verbaut werden erfahren Sie rechtzeitig von uns."
       }
     },
-    "r_product_hero_49BeCy": {
-      "type": "r_product_hero",
-      "name": "R-Product-Hero",
+    "product_hero_v2_WXbxgM": {
+      "type": "product_hero_v2",
+      "name": "Product-Hero v2",
       "settings": {
         "text_headline": "Description"
       }
@@ -85,6 +85,6 @@
     "vergleichstabelle_6U6Nqm",
     "produktinfo_bzrbtD",
     "value_proposition_XT9Nzy",
-    "r_product_hero_49BeCy"
+    "product_hero_v2_WXbxgM"
   ]
 }
