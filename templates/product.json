@@ -9,8 +9,9 @@
  */
 {
   "sections": {
-    "product_hero": {
-      "type": "product_hero",
+    "product_hero_v3_kpzC7j": {
+      "type": "product_hero_v3",
+      "name": "Product-Hero-V3",
       "settings": {}
     },
     "product_recommended": {
@@ -18,20 +19,12 @@
       "settings": {
         "text_headline": "Recommended"
       }
-    },
-    "product_hero_v3_kpzC7j": {
-      "type": "product_hero_v3",
-      "name": "Product-Hero-V3",
-      "settings": {
-        "text_headline": "Description"
-      }
     }
   },
   "layout": "product",
   "wrapper": "main.main-wrapper",
   "order": [
-    "product_hero",
-    "product_recommended",
-    "product_hero_v3_kpzC7j"
+    "product_hero_v3_kpzC7j",
+    "product_recommended"
   ]
 }
