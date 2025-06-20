@@ -492,6 +492,11 @@ figcaption {
   padding-right: 2.5rem;
 }
 
+.padding-global.is-hero {
+  position: absolute;
+  inset: 30% auto auto 0%;
+}
+
 .text-weight-normal {
   font-weight: 400;
 }
@@ -795,6 +800,18 @@ figcaption {
   color: #000;
   background-color: #0000;
   border: 2px solid #0000;
+}
+
+.button.is-hero {
+  background-color: var(--rot);
+}
+
+.button.is-primary {
+  border-style: solid;
+  border-color: var(--rot);
+  background-color: var(--rot);
+  border-radius: .5rem;
+  box-shadow: 0 10px 20px #0003;
 }
 
 .li-styleguide_classes {
@@ -4202,7 +4219,7 @@ figcaption {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1.5rem 1rem 0;
   display: flex;
 }
 
@@ -4232,7 +4249,7 @@ figcaption {
 
 .fs_accordion-1_body {
   background-color: #fff;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1.5rem 1rem 0;
 }
 
 .fs_accordion-1_label {
@@ -4668,7 +4685,7 @@ figcaption {
 .product-header_radio-4 {
   background-color: #eee;
   border-radius: .5rem;
-  padding: .5rem 1.2rem;
+  padding: .5rem 1rem;
   font-weight: 600;
   position: relative;
 }
@@ -5157,6 +5174,33 @@ figcaption {
 .payment-options-wrapper {
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
+  display: flex;
+}
+
+.section_hero {
+  background-image: linear-gradient(#28272c80, #28272c80), url({{ 'Hero-bg.png' | asset_url }});
+  background-position: 0 0, 50%;
+  background-size: auto, cover;
+  justify-content: flex-start;
+  align-items: center;
+  height: 80svh;
+  display: block;
+  position: relative;
+}
+
+.hero-content-wrapper {
+  position: static;
+}
+
+.hero-h1-text {
+  font-family: var(--poppins);
+  color: var(--weiß-dark);
+  font-weight: 700;
+}
+
+.hero-button-wrapper {
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
   display: flex;
 }
 
@@ -7549,14 +7593,6 @@ figcaption {
 
 #w-node-b90266f4-7b7e-d3a3-be54-12662ea896eb-dff38d70 {
   justify-self: start;
-}
-
-#w-node-e39eb41c-f9bb-47a8-9510-71babc77ac88-0a970593 {
-  align-self: start;
-}
-
-#w-node-e39eb41c-f9bb-47a8-9510-71babc77ac99-0a970593 {
-  align-self: center;
 }
 
 @media screen and (max-width: 991px) {
