@@ -36,32 +36,88 @@
           "type": "soundupgrade-item",
           "settings": {
             "url_link": "shopify://products/bmw",
-            "image_feature_image": "shopify://shop_images/BMW_collection.png",
-            "text_marke": "BMW"
+            "image_feature_image": "shopify://shop_images/Rectangle_221-3.png",
+            "text_marke": "Camper"
           }
         },
         "soundupgrade_item_gmVnJi": {
           "type": "soundupgrade-item",
           "settings": {
             "url_link": "shopify://products/bmw",
-            "image_feature_image": "shopify://shop_images/BMW_collection.png",
-            "text_marke": "BMW"
+            "image_feature_image": "shopify://shop_images/Rectangle_221-6.png",
+            "text_marke": "Cupra"
           }
         },
         "soundupgrade_item_bRazCa": {
           "type": "soundupgrade-item",
           "settings": {
             "url_link": "shopify://products/bmw",
-            "image_feature_image": "shopify://shop_images/BMW_collection.png",
-            "text_marke": "BMW"
+            "image_feature_image": "shopify://shop_images/Rectangle_221-9.png",
+            "text_marke": "Fiat"
           }
         },
         "soundupgrade_item_cYNXky": {
           "type": "soundupgrade-item",
           "settings": {
             "url_link": "shopify://products/bmw",
-            "image_feature_image": "shopify://shop_images/BMW_collection.png",
-            "text_marke": "BMW"
+            "image_feature_image": "shopify://shop_images/Rectangle_221-1.png",
+            "text_marke": "Grenadier"
+          }
+        },
+        "soundupgrade_item_jYnF7M": {
+          "type": "soundupgrade-item",
+          "settings": {
+            "url_link": "shopify://products/bmw",
+            "image_feature_image": "shopify://shop_images/Rectangle_221-4.png",
+            "text_marke": "Mercedes"
+          }
+        },
+        "soundupgrade_item_LEfnMX": {
+          "type": "soundupgrade-item",
+          "settings": {
+            "url_link": "shopify://products/bmw",
+            "image_feature_image": "shopify://shop_images/Rectangle_221-7.png",
+            "text_marke": "Seat"
+          }
+        },
+        "soundupgrade_item_BFqCxU": {
+          "type": "soundupgrade-item",
+          "settings": {
+            "url_link": "shopify://products/bmw",
+            "image_feature_image": "shopify://shop_images/Rectangle_221-10.png",
+            "text_marke": "Porsche"
+          }
+        },
+        "soundupgrade_item_HgqnwY": {
+          "type": "soundupgrade-item",
+          "settings": {
+            "url_link": "shopify://products/bmw",
+            "image_feature_image": "shopify://shop_images/Rectangle_221-2.png",
+            "text_marke": "Skoda"
+          }
+        },
+        "soundupgrade_item_n6Aizy": {
+          "type": "soundupgrade-item",
+          "settings": {
+            "url_link": "shopify://products/bmw",
+            "image_feature_image": "shopify://shop_images/Rectangle_221-3.png",
+            "text_marke": "Sprinter"
+          }
+        },
+        "soundupgrade_item_a7hNAQ": {
+          "type": "soundupgrade-item",
+          "settings": {
+            "url_link": "shopify://products/bmw",
+            "image_feature_image": "shopify://shop_images/Rectangle_221-8.png",
+            "text_marke": "VW"
+          }
+        },
+        "soundupgrade_item_pUF4yx": {
+          "type": "soundupgrade-item",
+          "settings": {
+            "url_link": "shopify://products/bmw",
+            "image_feature_image": "shopify://shop_images/Rectangle_221-11.png",
+            "text_marke": "VW Bulli"
           }
         }
       },
@@ -70,7 +126,14 @@
         "soundupgrade_item_4jbTMF",
         "soundupgrade_item_gmVnJi",
         "soundupgrade_item_bRazCa",
-        "soundupgrade_item_cYNXky"
+        "soundupgrade_item_cYNXky",
+        "soundupgrade_item_jYnF7M",
+        "soundupgrade_item_LEfnMX",
+        "soundupgrade_item_BFqCxU",
+        "soundupgrade_item_HgqnwY",
+        "soundupgrade_item_n6Aizy",
+        "soundupgrade_item_a7hNAQ",
+        "soundupgrade_item_pUF4yx"
       ],
       "name": "collection-display",
       "settings": {
