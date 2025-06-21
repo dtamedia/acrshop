@@ -31,10 +31,46 @@
             "image_feature_image": "shopify://shop_images/BMW_collection.png",
             "text_marke": "BMW"
           }
+        },
+        "soundupgrade_item_4jbTMF": {
+          "type": "soundupgrade-item",
+          "settings": {
+            "url_link": "shopify://products/bmw",
+            "image_feature_image": "shopify://shop_images/BMW_collection.png",
+            "text_marke": "BMW"
+          }
+        },
+        "soundupgrade_item_gmVnJi": {
+          "type": "soundupgrade-item",
+          "settings": {
+            "url_link": "shopify://products/bmw",
+            "image_feature_image": "shopify://shop_images/BMW_collection.png",
+            "text_marke": "BMW"
+          }
+        },
+        "soundupgrade_item_bRazCa": {
+          "type": "soundupgrade-item",
+          "settings": {
+            "url_link": "shopify://products/bmw",
+            "image_feature_image": "shopify://shop_images/BMW_collection.png",
+            "text_marke": "BMW"
+          }
+        },
+        "soundupgrade_item_cYNXky": {
+          "type": "soundupgrade-item",
+          "settings": {
+            "url_link": "shopify://products/bmw",
+            "image_feature_image": "shopify://shop_images/BMW_collection.png",
+            "text_marke": "BMW"
+          }
         }
       },
       "block_order": [
-        "soundupgrade_item_JYTTTV"
+        "soundupgrade_item_JYTTTV",
+        "soundupgrade_item_4jbTMF",
+        "soundupgrade_item_gmVnJi",
+        "soundupgrade_item_bRazCa",
+        "soundupgrade_item_cYNXky"
       ],
       "name": "collection-display",
       "settings": {
