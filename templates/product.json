@@ -70,13 +70,6 @@
         "text_subheading_3": "FÜR DEN PERFEKTEN SOUND",
         "text_parapgraph_text_3": "Unser Team wählt sorgfältig Komponenten, die auf Ihr Auto und Upgrade zugeschnitten sind. So kann bei jedem Umbau das maximale rausgeholt werden. Dabei nutzen wir Komponenten von Premium-Herstellern wie Helix, Match, Brax, Steg oder Fortissimo. Mehr über unsere Partner erfahren. Welche Produkte genau verbaut werden erfahren Sie rechtzeitig von uns."
       }
-    },
-    "r_product_recommende_f9fNfh": {
-      "type": "r_product_recommende",
-      "name": "R-Product-Recommende",
-      "settings": {
-        "text_headline": "Vorgeschlagene Produkte"
-      }
     }
   },
   "layout": "product",
@@ -85,7 +78,6 @@
     "product_hero_qE393R",
     "vergleichstabelle_nVAdP9",
     "produktinfo_kUJfje",
-    "r_product_recommende_f9fNfh",
     "value_proposition_Y6A9YF"
   ]
 }
