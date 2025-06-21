@@ -9,9 +9,9 @@
  */
 {
   "sections": {
-    "product_hero_v3_kpzC7j": {
-      "type": "product_hero_v3",
-      "name": "Product-Hero-V3",
+    "product_hero_qE393R": {
+      "type": "product_hero",
+      "name": "Product-Hero",
       "settings": {}
     },
     "vergleichstabelle_nVAdP9": {
@@ -75,7 +75,7 @@
   "layout": "product",
   "wrapper": "main.main-wrapper",
   "order": [
-    "product_hero_v3_kpzC7j",
+    "product_hero_qE393R",
     "vergleichstabelle_nVAdP9",
     "produktinfo_kUJfje",
     "value_proposition_Y6A9YF"
