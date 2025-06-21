@@ -9,24 +9,24 @@
  */
 {
   "sections": {
-    "collection_products_eQJ8q4": {
-      "type": "collection_products",
-      "name": "Collection Products",
-      "settings": {
-        "text_heading_2": "Heading",
-        "text_copy_text": "This is some text inside of a div block."
-      }
-    },
     "hero_collection_8hKeTG": {
       "type": "hero_collection",
       "name": "Hero-Collection",
       "settings": {
         "text_sound_upgrade": "Sound Upgrade",
-        "text_h1": "Individuelle Komponenten",
+        "text_h1": "Einzelkomponenten",
         "url_button_1_link": "",
         "text_button_1": "Button Text",
         "url_button_2_link": "",
         "text_button_2": "Button Text"
+      }
+    },
+    "collection_products_eQJ8q4": {
+      "type": "collection_products",
+      "name": "Collection Products",
+      "settings": {
+        "text_heading_2": "Alle Einzelkomponenten",
+        "text_copy_text": "This is some text inside of a div block."
       }
     }
   },
