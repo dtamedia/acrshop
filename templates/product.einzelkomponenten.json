@@ -1,0 +1,83 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "product_hero_v3_kpzC7j": {
+      "type": "product_hero_v3",
+      "name": "Product-Hero-V3",
+      "settings": {}
+    },
+    "vergleichstabelle_nVAdP9": {
+      "type": "vergleichstabelle",
+      "name": "Vergleichstabelle",
+      "settings": {
+        "text_lautsprecher_advanced_text": "Mittelklasse",
+        "image_lautsprecher_advanced_image": "shopify://shop_images/Null_6461f093-3998-4ef0-8d4b-6a275f463c28.png",
+        "text_lautsprecher_premium_text": "Premium",
+        "image_lautsprecher_premium_image": "shopify://shop_images/Null_6461f093-3998-4ef0-8d4b-6a275f463c28.png",
+        "text_lautsprecher_high_end_text": "High End",
+        "image_lautsprecher_high_end_image": "shopify://shop_images/Null_6461f093-3998-4ef0-8d4b-6a275f463c28.png",
+        "text_tweeter_advanced_text": "",
+        "image_tweeter_advanced_image": "shopify://shop_images/Union.png",
+        "text_tweeter_premium_text": "",
+        "image_tweeter_premium_image": "shopify://shop_images/Vector.png",
+        "text_tweeter_high_end_text": "",
+        "image_tweeter_high_end_image": "shopify://shop_images/Vector.png",
+        "text_sub_advanced_text": "",
+        "image_sub_advanced_image": "shopify://shop_images/Union.png",
+        "text_sub_premium_text": "Untersitz",
+        "image_sub_premium_image": "shopify://shop_images/Null_6461f093-3998-4ef0-8d4b-6a275f463c28.png",
+        "text_sub_high_end_text": "Kofferraum",
+        "image_sub_high_end_image": "shopify://shop_images/Null_6461f093-3998-4ef0-8d4b-6a275f463c28.png",
+        "text_dsp_advanced_text": "Basic",
+        "image_dsp_advanced_image": "shopify://shop_images/Null_6461f093-3998-4ef0-8d4b-6a275f463c28.png",
+        "text_dsp_premium_text": "Mittelklasse",
+        "image_dsp_premium_image": "shopify://shop_images/Null_6461f093-3998-4ef0-8d4b-6a275f463c28.png",
+        "text_dsp_high_end_text": "Premium",
+        "image_dsp_high_end_image": "shopify://shop_images/Null_6461f093-3998-4ef0-8d4b-6a275f463c28.png"
+      }
+    },
+    "produktinfo_kUJfje": {
+      "type": "produktinfo",
+      "name": "Produktinfo",
+      "settings": {
+        "image_produktfoto_advanced": "shopify://shop_images/Group_249_94a276ba-4bb9-4ddc-a91e-aa1dadaeb975.png",
+        "text_soundupgrade_level_1": "Advanced",
+        "image_produktfoto_premium": "shopify://shop_images/Group_263_7ee2f9ee-a76a-4e35-947d-f29b16b39957.png",
+        "text_soundupgrade_level_2": "Premium",
+        "image_produktfoto_high_end": "shopify://shop_images/Group_264_42b724e9-90b8-445f-ba80-08f794c162d7.png",
+        "text_soundupgrade_level_3": "High-End"
+      }
+    },
+    "value_proposition_Y6A9YF": {
+      "type": "value_proposition",
+      "name": "Value Proposition",
+      "settings": {
+        "image_feature_image_1": "shopify://shop_images/image_15.png",
+        "text_subheading_1": "FÜR DEN PERFEKTEN SOUND",
+        "text_parapgraph_text_1": "Unser Team wählt sorgfältig Komponenten, die auf Ihr Auto und Upgrade zugeschnitten sind. So kann bei jedem Umbau das maximale rausgeholt werden. Dabei nutzen wir Komponenten von Premium-Herstellern wie Helix, Match, Brax, Steg oder Fortissimo. Mehr über unsere Partner erfahren. Welche Produkte genau verbaut werden erfahren Sie rechtzeitig von uns.",
+        "image_feature_image_2": "shopify://shop_images/image_16.png",
+        "text_subheading_2": "FÜR DEN PERFEKTEN SOUND",
+        "text_parapgraph_text_2": "Unser Team wählt sorgfältig Komponenten, die auf Ihr Auto und Upgrade zugeschnitten sind. So kann bei jedem Umbau das maximale rausgeholt werden. Dabei nutzen wir Komponenten von Premium-Herstellern wie Helix, Match, Brax, Steg oder Fortissimo. Mehr über unsere Partner erfahren. Welche Produkte genau verbaut werden erfahren Sie rechtzeitig von uns.",
+        "image_feature_image_3": "shopify://shop_images/image_17.png",
+        "text_subheading_3": "FÜR DEN PERFEKTEN SOUND",
+        "text_parapgraph_text_3": "Unser Team wählt sorgfältig Komponenten, die auf Ihr Auto und Upgrade zugeschnitten sind. So kann bei jedem Umbau das maximale rausgeholt werden. Dabei nutzen wir Komponenten von Premium-Herstellern wie Helix, Match, Brax, Steg oder Fortissimo. Mehr über unsere Partner erfahren. Welche Produkte genau verbaut werden erfahren Sie rechtzeitig von uns."
+      }
+    }
+  },
+  "layout": "product",
+  "wrapper": "main.main-wrapper",
+  "order": [
+    "product_hero_v3_kpzC7j",
+    "vergleichstabelle_nVAdP9",
+    "produktinfo_kUJfje",
+    "value_proposition_Y6A9YF"
+  ]
+}
