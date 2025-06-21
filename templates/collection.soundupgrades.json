@@ -23,9 +23,21 @@
     },
     "collection_display_49yAxh": {
       "type": "collection_display",
+      "blocks": {
+        "soundupgrade_item_JYTTTV": {
+          "type": "soundupgrade-item",
+          "settings": {
+            "url_link": "",
+            "text_marke": "Auto Marke"
+          }
+        }
+      },
+      "block_order": [
+        "soundupgrade_item_JYTTTV"
+      ],
       "name": "collection-display",
       "settings": {
-        "text_heading_2": "ß´ü",
+        "text_heading_2": "Alle Soundupgrades",
         "text_copy_text": "This is some text inside of a div block."
       }
     }
