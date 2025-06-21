@@ -27,8 +27,8 @@
         "soundupgrade_item_JYTTTV": {
           "type": "soundupgrade-item",
           "settings": {
-            "url_link": "",
-            "text_marke": "Auto Marke"
+            "url_link": "shopify://products/bmw",
+            "text_marke": "BMW"
           }
         }
       },
