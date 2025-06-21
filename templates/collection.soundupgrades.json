@@ -9,14 +9,6 @@
  */
 {
   "sections": {
-    "collection_products_eQJ8q4": {
-      "type": "collection_products",
-      "name": "Collection Products",
-      "settings": {
-        "text_heading_2": "Heading",
-        "text_copy_text": "This is some text inside of a div block."
-      }
-    },
     "hero_collection_8hKeTG": {
       "type": "hero_collection",
       "name": "Hero-Collection",
@@ -28,12 +20,22 @@
         "url_button_2_link": "",
         "text_button_2": "Button Text"
       }
+    },
+    "collection_display_49yAxh": {
+      "type": "collection_display",
+      "name": "collection-display",
+      "settings": {
+        "text_heading_2": "Heading",
+        "text_copy_text": "This is some text inside of a div block.",
+        "url_link": "",
+        "text_marke": "Auto Marke"
+      }
     }
   },
   "layout": "collection",
   "wrapper": "main.main-wrapper",
   "order": [
     "hero_collection_8hKeTG",
-    "collection_products_eQJ8q4"
+    "collection_display_49yAxh"
   ]
 }
