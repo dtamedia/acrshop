@@ -36,11 +36,17 @@
         "url_button_2_link": "shopify://collections/individuelle-komponenten",
         "text_button_2": "Mehr erfahren"
       }
+    },
+    "header_D4UDQD": {
+      "type": "header",
+      "name": "header",
+      "settings": {}
     }
   },
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
+    "header_D4UDQD",
     "home_hero_jEF9hh",
     "collection_select_Nqi8gz"
   ]
