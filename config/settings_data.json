@@ -17,13 +17,64 @@
       "footer": {
         "type": "footer",
         "blocks": {
+          "bezahlmoglichkeit_logo_3QHrFE": {
+            "type": "bezahlmoglichkeit-logo",
+            "settings": {
+              "image_payment_icon": "shopify://shop_images/Rectangle_152.png"
+            }
+          },
+          "bezahlmoglichkeit_logo_hNUFVm": {
+            "type": "bezahlmoglichkeit-logo",
+            "settings": {
+              "image_payment_icon": "shopify://shop_images/icons8-apple-pay-30.png"
+            }
+          },
+          "bezahlmoglichkeit_logo_MF8fia": {
+            "type": "bezahlmoglichkeit-logo",
+            "settings": {
+              "image_payment_icon": "shopify://shop_images/Rectangle_156.png"
+            }
+          },
+          "bezahlmoglichkeit_logo_W6qcWA": {
+            "type": "bezahlmoglichkeit-logo",
+            "settings": {
+              "image_payment_icon": "shopify://shop_images/Rectangle_153.png"
+            }
+          },
+          "bezahlmoglichkeit_logo_HMepfi": {
+            "type": "bezahlmoglichkeit-logo",
+            "settings": {
+              "image_payment_icon": "shopify://shop_images/Rectangle_158.png"
+            }
+          },
           "bezahlmoglichkeit_logo_VC7zJC": {
             "type": "bezahlmoglichkeit-logo",
-            "settings": {}
+            "settings": {
+              "image_payment_icon": "shopify://shop_images/Rectangle_155.png"
+            }
+          },
+          "bezahlmoglichkeit_logo_XhcK6p": {
+            "type": "bezahlmoglichkeit-logo",
+            "settings": {
+              "image_payment_icon": "shopify://shop_images/Rectangle_159.png"
+            }
+          },
+          "bezahlmoglichkeit_logo_eAkqTd": {
+            "type": "bezahlmoglichkeit-logo",
+            "settings": {
+              "image_payment_icon": "shopify://shop_images/Rectangle_157.png"
+            }
           }
         },
         "block_order": [
-          "bezahlmoglichkeit_logo_VC7zJC"
+          "bezahlmoglichkeit_logo_3QHrFE",
+          "bezahlmoglichkeit_logo_hNUFVm",
+          "bezahlmoglichkeit_logo_MF8fia",
+          "bezahlmoglichkeit_logo_W6qcWA",
+          "bezahlmoglichkeit_logo_HMepfi",
+          "bezahlmoglichkeit_logo_VC7zJC",
+          "bezahlmoglichkeit_logo_XhcK6p",
+          "bezahlmoglichkeit_logo_eAkqTd"
         ],
         "settings": {
           "image_logo_image": "shopify://shop_images/Logo_white.png",
@@ -32,19 +83,18 @@
           "text_telefon": "Tel: +49 (0)861 90991199",
           "text_e_mail": "E-Mail: info@soundupgrade-bayern.de",
           "text_schnellmenu_text": "Schnellmenü",
-          "url_link_start": "",
+          "url_link_start": "https://shop.soundupgrade-bayern.de/",
           "text_start": "Start",
           "url_link_soundupgrades": "shopify://collections/soundupgrades",
           "text_soundupgrades": "Soundupgrades",
           "url_einzelkomponenten_link": "shopify://collections/individuelle-komponenten",
           "text_einzelkompontenten": "Einzelkomponenten",
-          "url_link_soundupgrade_bayern": "",
+          "url_link_soundupgrade_bayern": "https://soundupgrade-bayern.de/",
           "text_soundupgrade_bayern": "Soundupgrade Bayern",
           "text_social_media_heading": "Social Media",
           "url_link_instagram": "https://www.instagram.com/acr_soundupgrade_bayern/",
           "url_link_facebook": "https://www.facebook.com/acrsoundupgrade/?locale=de_DE",
           "url_link_youtube": "https://www.youtube.com/@SoundupgradeBayern",
-          "url_link": "",
           "text_bezahlmoglichkeiten_heading": "Bezahlmöglichkeiten",
           "url_impressum_link": "shopify://policies/legal-notice",
           "text_impressum": "Impressum",
