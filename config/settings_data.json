@@ -16,6 +16,15 @@
       },
       "footer": {
         "type": "footer",
+        "blocks": {
+          "bezahlmoglichkeit_logo_8gAyAH": {
+            "type": "bezahlmoglichkeit-logo",
+            "settings": {}
+          }
+        },
+        "block_order": [
+          "bezahlmoglichkeit_logo_8gAyAH"
+        ],
         "settings": {}
       }
     },
