@@ -17,15 +17,13 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "bezahlmoglichkeit_logo_8gAyAH": {
+          "bezahlmoglichkeit_logo_VC7zJC": {
             "type": "bezahlmoglichkeit-logo",
-            "settings": {
-              "image_payment_icon": "shopify://shop_images/Rectangle_159.png"
-            }
+            "settings": {}
           }
         },
         "block_order": [
-          "bezahlmoglichkeit_logo_8gAyAH"
+          "bezahlmoglichkeit_logo_VC7zJC"
         ],
         "settings": {
           "image_logo_image": "shopify://shop_images/Logo_white.png",
