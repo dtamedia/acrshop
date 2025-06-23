@@ -6001,7 +6001,7 @@ figcaption {
   flex-direction: column;
   align-items: stretch;
   width: 28rem;
-  height: 100vh;
+  height: 100svh;
   max-height: 100vh;
   display: flex;
 }
@@ -7916,6 +7916,7 @@ figcaption {
     background-image: linear-gradient(#28272cb3, #28272cb3), url({{ 'Hero-bg_1.webp' | asset_url }});
     background-position: 0 0, 50%;
     background-size: auto, cover;
+    min-height: 30rem;
   }
 
   .collections-grid {
@@ -8022,6 +8023,10 @@ figcaption {
 
   .heading-style-h3-7 {
     font-size: 1.5rem;
+  }
+
+  .section-hero {
+    min-height: 30rem;
   }
 
   .collection-grid {
