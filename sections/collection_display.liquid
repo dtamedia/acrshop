@@ -10,7 +10,7 @@
 {% when '@app' %}
 {% render block %}
 {% when 'soundupgrade-item' %}
-            <div li-block="Soundupgrade Item">
+            <div li-block="Soundupgrade Item" class="block-item">
                     
                     <a href="{{ block.settings.url_link }}" class="collections-block-link w-inline-block"> <div class="collections-block"><img loading="lazy" alt="{{ block.settings.image_feature_image.alt }}" src="{{ block.settings.image_feature_image | img_url: 'master' }}" class="collection-block-image"><div class="spacer-small"></div><div class="heading-style-h2 is-collection">{{ block.settings.text_marke }}</div></div> </a>
 
