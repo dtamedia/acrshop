@@ -19,7 +19,9 @@
         "blocks": {
           "bezahlmoglichkeit_logo_8gAyAH": {
             "type": "bezahlmoglichkeit-logo",
-            "settings": {}
+            "settings": {
+              "image_payment_icon": "shopify://shop_images/Rectangle_159.png"
+            }
           }
         },
         "block_order": [
