@@ -100,9 +100,9 @@
           "text_impressum": "Impressum",
           "url_datenschutz_link": "shopify://policies/privacy-policy",
           "text_datenschutz": "Datenschutz",
-          "url_agb_link": "",
+          "url_agb_link": "shopify://policies/terms-of-service",
           "text_agb": "ABG",
-          "url_ruckgabe_link": "",
+          "url_ruckgabe_link": "shopify://policies/refund-policy",
           "text_ruckgabe": "Rückgabe"
         }
       }
