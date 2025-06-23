@@ -44,18 +44,6 @@
         "image_dsp_high_end_image": "shopify://shop_images/Null_6461f093-3998-4ef0-8d4b-6a275f463c28.png"
       }
     },
-    "produktinfo_kUJfje": {
-      "type": "produktinfo",
-      "name": "Produktinfo",
-      "settings": {
-        "image_produktfoto_advanced": "shopify://shop_images/Group_249_94a276ba-4bb9-4ddc-a91e-aa1dadaeb975.png",
-        "text_soundupgrade_level_1": "Advanced",
-        "image_produktfoto_premium": "shopify://shop_images/Group_263_7ee2f9ee-a76a-4e35-947d-f29b16b39957.png",
-        "text_soundupgrade_level_2": "Premium",
-        "image_produktfoto_high_end": "shopify://shop_images/Group_264_42b724e9-90b8-445f-ba80-08f794c162d7.png",
-        "text_soundupgrade_level_3": "High-End"
-      }
-    },
     "value_proposition_Y6A9YF": {
       "type": "value_proposition",
       "name": "Value Proposition",
@@ -77,7 +65,6 @@
   "order": [
     "product_hero_qE393R",
     "vergleichstabelle_nVAdP9",
-    "produktinfo_kUJfje",
     "value_proposition_Y6A9YF"
   ]
 }
