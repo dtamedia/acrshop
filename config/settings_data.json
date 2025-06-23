@@ -25,7 +25,36 @@
         "block_order": [
           "bezahlmoglichkeit_logo_8gAyAH"
         ],
-        "settings": {}
+        "settings": {
+          "image_logo_image": "shopify://shop_images/Logo_white.png",
+          "text_acr_text": "ACR Traunstein",
+          "text_anfahrt": "Anfahrt: Chiemseestr. 38, 83278 Traunstein",
+          "text_telefon": "Tel: +49 (0)861 90991199",
+          "text_e_mail": "E-Mail: info@soundupgrade-bayern.de",
+          "text_schnellmenu_text": "Schnellmenü",
+          "url_link_start": "",
+          "text_start": "Start",
+          "url_link_soundupgrades": "shopify://collections/soundupgrades",
+          "text_soundupgrades": "Soundupgrades",
+          "url_einzelkomponenten_link": "shopify://collections/individuelle-komponenten",
+          "text_einzelkompontenten": "Einzelkomponenten",
+          "url_link_soundupgrade_bayern": "",
+          "text_soundupgrade_bayern": "Soundupgrade Bayern",
+          "text_social_media_heading": "Social Media",
+          "url_link_instagram": "",
+          "url_link_facebook": "",
+          "url_link_youtube": "",
+          "url_link": "",
+          "text_bezahlmoglichkeiten_heading": "Bezahlmöglichkeiten",
+          "url_impressum_link": "",
+          "text_impressum": "Impressum",
+          "url_datenschutz_link": "",
+          "text_datenschutz": "Datenschutz",
+          "url_agb_link": "",
+          "text_agb": "ABG",
+          "url_ruckgabe_link": "",
+          "text_ruckgabe": "Rückgabe"
+        }
       }
     },
     "content_for_index": []
