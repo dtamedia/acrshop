@@ -15,10 +15,10 @@
       "settings": {
         "text_sound_upgrade": "Sound Upgrade",
         "text_h1": "Individuelle Komponenten",
-        "url_button_1_link": "https://soundupgrade-bayern.de/soundpakete/",
-        "text_button_1": "Mehr Infos",
-        "url_button_2_link": "shopify://collections/individuelle-komponenten",
-        "text_button_2": "Einzelkomponenten"
+        "url_button_1_link": "https://shop.soundupgrade-bayern.de",
+        "text_button_1": "Home",
+        "url_button_2_link": "shopify://collections/soundupgrades",
+        "text_button_2": "Soundupgrades"
       }
     },
     "collection_products_eQJ8q4": {
