@@ -15,10 +15,10 @@
       "settings": {
         "text_sound_upgrade": "Sound Upgrade",
         "text_h1": "Für dein Auto",
-        "url_button_1_link": "",
-        "text_button_1": "Button Text",
-        "url_button_2_link": "",
-        "text_button_2": "Button Text"
+        "url_button_1_link": "https://soundupgrade-bayern.de/soundpakete/",
+        "text_button_1": "Mehr Infos",
+        "url_button_2_link": "shopify://collections/individuelle-komponenten",
+        "text_button_2": "Einzelkomponenten"
       }
     },
     "collection_display_49yAxh": {
