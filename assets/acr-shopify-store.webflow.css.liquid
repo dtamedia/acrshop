@@ -4385,6 +4385,10 @@ figcaption {
   top: 1rem;
 }
 
+.produktinfo-image.is-vp {
+  position: static;
+}
+
 .h3-blau {
   color: var(--blau);
 }
@@ -7823,7 +7827,15 @@ figcaption {
     padding-right: 1.25rem;
   }
 
-  .produktinfo-wrapper-outer, .vp-grid {
+  .produktinfo-wrapper-outer {
+    grid-template-columns: 1fr;
+  }
+
+  .produktinfo-image {
+    position: static;
+  }
+
+  .vp-grid {
     grid-template-columns: 1fr;
   }
 
