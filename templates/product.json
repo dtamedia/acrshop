@@ -14,36 +14,6 @@
       "name": "Product-Hero",
       "settings": {}
     },
-    "vergleichstabelle_nVAdP9": {
-      "type": "vergleichstabelle",
-      "name": "Vergleichstabelle",
-      "settings": {
-        "text_lautsprecher_advanced_text": "Mittelklasse",
-        "image_lautsprecher_advanced_image": "shopify://shop_images/Null_6461f093-3998-4ef0-8d4b-6a275f463c28.png",
-        "text_lautsprecher_premium_text": "Premium",
-        "image_lautsprecher_premium_image": "shopify://shop_images/Null_6461f093-3998-4ef0-8d4b-6a275f463c28.png",
-        "text_lautsprecher_high_end_text": "High End",
-        "image_lautsprecher_high_end_image": "shopify://shop_images/Null_6461f093-3998-4ef0-8d4b-6a275f463c28.png",
-        "text_tweeter_advanced_text": "",
-        "image_tweeter_advanced_image": "shopify://shop_images/Union.png",
-        "text_tweeter_premium_text": "",
-        "image_tweeter_premium_image": "shopify://shop_images/Vector.png",
-        "text_tweeter_high_end_text": "",
-        "image_tweeter_high_end_image": "shopify://shop_images/Vector.png",
-        "text_sub_advanced_text": "",
-        "image_sub_advanced_image": "shopify://shop_images/Union.png",
-        "text_sub_premium_text": "Untersitz",
-        "image_sub_premium_image": "shopify://shop_images/Null_6461f093-3998-4ef0-8d4b-6a275f463c28.png",
-        "text_sub_high_end_text": "Kofferraum",
-        "image_sub_high_end_image": "shopify://shop_images/Null_6461f093-3998-4ef0-8d4b-6a275f463c28.png",
-        "text_dsp_advanced_text": "Basic",
-        "image_dsp_advanced_image": "shopify://shop_images/Null_6461f093-3998-4ef0-8d4b-6a275f463c28.png",
-        "text_dsp_premium_text": "Mittelklasse",
-        "image_dsp_premium_image": "shopify://shop_images/Null_6461f093-3998-4ef0-8d4b-6a275f463c28.png",
-        "text_dsp_high_end_text": "Premium",
-        "image_dsp_high_end_image": "shopify://shop_images/Null_6461f093-3998-4ef0-8d4b-6a275f463c28.png"
-      }
-    },
     "produktinfo_kUJfje": {
       "type": "produktinfo",
       "name": "Produktinfo",
@@ -76,7 +46,6 @@
   "wrapper": "main.main-wrapper",
   "order": [
     "product_hero_qE393R",
-    "vergleichstabelle_nVAdP9",
     "produktinfo_kUJfje",
     "value_proposition_Y6A9YF"
   ]
