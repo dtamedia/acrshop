@@ -6,7 +6,7 @@
 </div>
 </div><div class="spacer-huge"></div>{% paginate collection.products by 50 %}
     <div li-paginate:by="50" li-paginate="collection.products" class="filter_layout-2" by="50"><div id="w-node-_1091923a-3c43-f69e-a326-389f4dfabe62-dff38d3d" data-w-id="1091923a-3c43-f69e-a326-389f4dfabe62" class="filter_filters-wrapper"><form action="{{ routes.search_url }}" method="get" role="search" class="filter_form_component"><div id="w-node-_1091923a-3c43-f69e-a326-389f4dfabe64-dff38d3d" class="filter_form"><div class="filter_form-header"><div class="filter_heading">Filter</div><a li-render-filter="clear-all" href="#" class="button-8 is-link hide-tablet w-inline-block"><div>Alle löschen</div></a></div><div class="filter_form-field-wrapper"><input name="type" type="hidden" class="form_input-12" value="product">
-<label for="filter-search" class="form_hidden-label">Search for Products</label><input name="q" placeholder="Search" type="search" id="filter-search" li-render-filter="search" class="form_input-12" value="{{ search.terms | escape }}">
+<label for="filter-search" class="form_hidden-label">Nach Produkten suchen</label><input name="q" placeholder="Suche" type="search" id="filter-search" li-render-filter="search" class="form_input-12" value="{{ search.terms | escape }}">
 </div><div class="filter_scroll-wrapper"><div class="filter_filter-group-list">{% for filter in collection.filters %}    <div li-for="filter in collection.filters" class="filter_filter-group">
                                     
                             {% if filter.values.size > 1 and filter.type != 'price_range' %}    <div li-if="filter.values.size > 1 and filter.type != 'price_range'" class="filter_group-item">
