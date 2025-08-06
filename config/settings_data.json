@@ -1,1 +1,66 @@
-{}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "current": {
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "text_nav_menu_text_1": "Automarke",
+          "text_heading_left": "Unsere Bestseller",
+          "text_heading_right": "Alle Hersteller",
+          "text_nav_menu_text_2": "Automarke",
+          "text_heading_left_2": "Unsere Bestseller",
+          "text_heading_right_2": "Alle Hersteller",
+          "text_nav_menu_text_3": "Automarke",
+          "text_heading_left_3": "Unsere Bestseller",
+          "text_heading_right_3": "Alle Hersteller",
+          "text_nav_menu_text_4": "Automarke",
+          "text_heading_left_4": "Unsere Bestseller",
+          "text_heading_right_4": "Alle Hersteller",
+          "url_navbar_link": "",
+          "text_navbar_menu_text_5": "Soundupgrade Bayern"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "text_acr_text": "ACR Traunstein",
+          "text_anfahrt": "Anfahrt: Chiemseestr. 38, 83278 Traunstein",
+          "text_telefon": "Tel: +49 (0)861 90991199",
+          "text_e_mail": "E-Mail: info@soundupgrade-bayern.de",
+          "text_schnellmenu_text": "Schnellmenü",
+          "url_link_start": "",
+          "text_start": "Start",
+          "url_link_soundupgrades": "",
+          "text_soundupgrades": "Soundupgrades",
+          "url_einzelkomponenten_link": "",
+          "text_einzelkompontenten": "Einzelkomponenten",
+          "url_link_soundupgrade_bayern": "",
+          "text_soundupgrade_bayern": "Soundupgrade Bayern",
+          "text_social_media_heading": "Social Media",
+          "url_link_instagram": "",
+          "url_link_facebook": "",
+          "url_link_youtube": "",
+          "text_bezahlmoglichkeiten_heading": "Bezahlmöglichkeiten",
+          "url_impressum_link": "",
+          "text_impressum": "Impressum",
+          "url_datenschutz_link": "",
+          "text_datenschutz": "Datenschutz",
+          "url_agb_link": "",
+          "text_agb": "ABG",
+          "url_ruckgabe_link": "",
+          "text_ruckgabe": "Rückgabe"
+        }
+      }
+    },
+    "content_for_index": []
+  }
+}
