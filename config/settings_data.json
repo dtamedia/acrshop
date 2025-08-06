@@ -19,10 +19,34 @@
               "url_category_link": "",
               "text_category_name": "Helix"
             }
+          },
+          "bestseller_product_TkjKP8": {
+            "type": "bestseller-product",
+            "settings": {
+              "url_product_link": "",
+              "text_product_name": "Helix Next V Two"
+            }
+          },
+          "bestseller_product_8Bxhm7": {
+            "type": "bestseller-product",
+            "settings": {
+              "url_product_link": "",
+              "text_product_name": "Helix Next V Two"
+            }
+          },
+          "bestseller_product_Bnt4qt": {
+            "type": "bestseller-product",
+            "settings": {
+              "url_product_link": "",
+              "text_product_name": "Helix Next V Two"
+            }
           }
         },
         "block_order": [
-          "category_link_NEg6Bx"
+          "category_link_NEg6Bx",
+          "bestseller_product_TkjKP8",
+          "bestseller_product_8Bxhm7",
+          "bestseller_product_Bnt4qt"
         ],
         "settings": {
           "text_nav_menu_text_1": "Automarke",
