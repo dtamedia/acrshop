@@ -13,16 +13,16 @@
       "header": {
         "type": "header",
         "blocks": {
-          "bestseller_product_NQLDEe": {
-            "type": "bestseller-product",
+          "category_link_NEg6Bx": {
+            "type": "category-link",
             "settings": {
-              "url_product_link": "",
-              "text_product_name": "Helix Next V Two"
+              "url_category_link": "",
+              "text_category_name": "Helix"
             }
           }
         },
         "block_order": [
-          "bestseller_product_NQLDEe"
+          "category_link_NEg6Bx"
         ],
         "settings": {
           "text_nav_menu_text_1": "Automarke",
