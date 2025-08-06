@@ -8,5 +8,76 @@
  * ------------------------------------------------------------
  */
 {
-  "current": {}
+  "current": {
+    "sections": {
+      "header": {
+        "type": "header",
+        "blocks": {
+          "bestseller_product_HyjUA9": {
+            "type": "bestseller-product",
+            "settings": {
+              "url_product_link": "",
+              "image_product_image": "shopify://shop_images/image_58.png",
+              "text_product_name": "Helix Next V Two"
+            }
+          }
+        },
+        "block_order": [
+          "bestseller_product_HyjUA9"
+        ],
+        "settings": {
+          "text_nav_menu_text_1": "Automarke",
+          "text_heading_left": "Unsere Bestseller",
+          "text_heading_right": "Alle Marken",
+          "image_cta_image": "shopify://shop_images/Group_264_ad9cc822-d7d2-420e-8e5c-b44eae8a88b0.png",
+          "text_nav_menu_text_2": "Hersteller",
+          "text_heading_left_2": "Unsere Bestseller",
+          "text_heading_right_2": "Alle Hersteller",
+          "image_cta_image_2": "shopify://shop_images/Group_264_ad9cc822-d7d2-420e-8e5c-b44eae8a88b0.png",
+          "text_nav_menu_text_3": "Produkttyp",
+          "text_heading_left_3": "Unsere Bestseller",
+          "text_heading_right_3": "Alle Produkte",
+          "image_cta_image_3": "shopify://shop_images/Group_264_ad9cc822-d7d2-420e-8e5c-b44eae8a88b0.png",
+          "text_nav_menu_text_4": "Soundupgrades",
+          "text_heading_left_4": "Unsere Bestseller",
+          "text_heading_right_4": "Alle Soundupgrades",
+          "image_cta_image_4": "shopify://shop_images/Group_264_ad9cc822-d7d2-420e-8e5c-b44eae8a88b0.png",
+          "url_navbar_link": "",
+          "text_navbar_menu_text_5": "Soundupgrade Bayern"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "text_acr_text": "ACR Traunstein",
+          "text_anfahrt": "Anfahrt: Chiemseestr. 38, 83278 Traunstein",
+          "text_telefon": "Tel: +49 (0)861 90991199",
+          "text_e_mail": "E-Mail: info@soundupgrade-bayern.de",
+          "text_schnellmenu_text": "Schnellmenü",
+          "url_link_start": "",
+          "text_start": "Start",
+          "url_link_soundupgrades": "",
+          "text_soundupgrades": "Soundupgrades",
+          "url_einzelkomponenten_link": "",
+          "text_einzelkompontenten": "Einzelkomponenten",
+          "url_link_soundupgrade_bayern": "",
+          "text_soundupgrade_bayern": "Soundupgrade Bayern",
+          "text_social_media_heading": "Social Media",
+          "url_link_instagram": "",
+          "url_link_facebook": "",
+          "url_link_youtube": "",
+          "text_bezahlmoglichkeiten_heading": "Bezahlmöglichkeiten",
+          "url_impressum_link": "",
+          "text_impressum": "Impressum",
+          "url_datenschutz_link": "",
+          "text_datenschutz": "Datenschutz",
+          "url_agb_link": "",
+          "text_agb": "ABG",
+          "url_ruckgabe_link": "",
+          "text_ruckgabe": "Rückgabe"
+        }
+      }
+    },
+    "content_for_index": []
+  }
 }
