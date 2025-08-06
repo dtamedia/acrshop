@@ -31,7 +31,10 @@
     "class": "section_navbar-2",
     "blocks": [
         {
-            "type": "menu-item"
+            "type": "bestseller-item"
+        },
+        {
+            "type": "dropdown-item"
         },
         {
             "type": "outbound-link"
@@ -40,13 +43,41 @@
             "type": "@app"
         }
     ],
+    "settings": [
+        {
+            "id": "text_text",
+            "type": "text",
+            "label": "Text",
+            "default": "Link"
+        },
+        {
+            "id": "text_heading_left",
+            "type": "text",
+            "label": "Heading Left",
+            "default": "Unsere Bestseller"
+        },
+        {
+            "id": "text_heading_right",
+            "type": "text",
+            "label": "Heading Right",
+            "default": "Alle Hersteller"
+        },
+        {
+            "id": "image_cta_image",
+            "type": "image_picker",
+            "label": "CTA Image"
+        }
+    ],
     "presets": [
         {
             "name": "header",
             "category": "Liquify",
             "blocks": [
                 {
-                    "type": "menu-item"
+                    "type": "bestseller-item"
+                },
+                {
+                    "type": "dropdown-item"
                 },
                 {
                     "type": "outbound-link"
