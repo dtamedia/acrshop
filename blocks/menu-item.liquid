@@ -1,47 +1,47 @@
-<div data-hover="true" data-delay="300" li-block="Menu Item" data-w-id="020a6d1b-a826-1799-e7ac-512f5710c5d2" class="uui-navbar02_menu-dropdown w-dropdown">
+<div li-block="Menu Item">
                     
                 
-                    <div class="uui-navbar02_dropdown-toggle w-dropdown-toggle">
-                  <div class="uui-dropdown-icon w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg></div>
-                  <div class="navbar-text">
+                    <div data-hover="true" data-delay="300" data-w-id="020a6d1b-a826-1799-e7ac-512f5710c5d2" class="uui-navbar02_menu-dropdown w-dropdown">
+                  <div class="uui-navbar02_dropdown-toggle w-dropdown-toggle">
+                    <div class="uui-dropdown-icon w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg></div>
+                    <div class="navbar-text">
 {{ block.settings.text_nav_menu_text_1 }}
 </div>
-                </div>
-                    
-                
-                    <nav class="uui-navbar02_dropdown-list w-dropdown-list">
-                  <div class="uui-navbar02_container">
-                    <div class="uui-navbar02_dropdown-content">
-                      <div class="uui-navbar02_dropdown-content-left">
-                        <div id="w-node-_020a6d1b-a826-1799-e7ac-512f5710c5db-5710c5cb" class="navbar-dropdown-content-wrapper is-left">
-                          <div class="navbar-dropdown-header">
+                  </div>
+                  <nav class="uui-navbar02_dropdown-list w-dropdown-list">
+                    <div class="uui-navbar02_container">
+                      <div class="uui-navbar02_dropdown-content">
+                        <div class="uui-navbar02_dropdown-content-left">
+                          <div id="w-node-_020a6d1b-a826-1799-e7ac-512f5710c5db-5710c5cb" class="navbar-dropdown-content-wrapper is-left">
+                            <div class="navbar-dropdown-header">
 {{ block.settings.text_heading_left }}
 </div>
-                          <div class="spacer-small"></div>
-                          <div li-content-for-theme-blocks="" class="navbar-dropdown-bestseller-wrapper">
+                            <div class="spacer-small"></div>
+                            <div li-content-for-theme-blocks="" class="navbar-dropdown-bestseller-wrapper">
 {% content_for 'blocks' %}
 </div>
-                        </div>
-                        <div class="navbar-dropdown-content-wrapper">
-                          <div class="navbar-dropdown-header">
+                          </div>
+                          <div class="navbar-dropdown-content-wrapper">
+                            <div class="navbar-dropdown-header">
 {{ block.settings.text_heading_right }}
 </div>
-                          <div class="spacer-small"></div>
-                          <div li-content-for-theme-blocks="" class="navbar-dropdown-link-wrapper">
+                            <div class="spacer-small"></div>
+                            <div li-content-for-theme-blocks="" class="navbar-dropdown-link-wrapper">
 {% content_for 'blocks' %}
 </div>
+                          </div>
                         </div>
-                      </div>
-                      <div class="uui-navbar02_dropdown-content-right">{% if block.settings.image_cta_image %}
+                        <div class="uui-navbar02_dropdown-content-right">{% if block.settings.image_cta_image %}
 {{ block.settings.image_cta_image | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'navbar-dropdown-image' }}
 {% else %}
 <img src="{{ 'Group-264.png' | asset_url }}" loading="lazy" alt="" class="navbar-dropdown-image">
 {% endif %}</div>
+                      </div>
                     </div>
-                  </div>
-                </nav>
+                  </nav>
+                </div>
                     
               
                 </div> {% schema %} {
