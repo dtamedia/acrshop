@@ -1,68 +1,70 @@
 <div li-block="Menu Item">
                     
-                
-                    <div data-hover="true" data-delay="300" data-w-id="020a6d1b-a826-1799-e7ac-512f5710c5d2" class="uui-navbar02_menu-dropdown w-dropdown">
-                  <div class="uui-navbar02_dropdown-toggle w-dropdown-toggle">
-                    <div class="uui-dropdown-icon w-embed"><svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"></path>
-                      </svg></div>
-                    <div class="navbar-text">
-{{ block.settings.text_nav_menu_text_1 }}
+              
+                    <div data-delay="200" data-hover="true" class="nav_menu-dropdown w-dropdown">
+                <div class="nav_dropdown-toggle-4 w-dropdown-toggle">
+                  {% if link.links.size > 0 %}    <div li-if="link.links.size > 0" class="dropdown-icon-4 w-embed">
+    <svg width=" 100%" height=" 100%" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M2.55806 6.29544C2.46043 6.19781 2.46043 6.03952 2.55806 5.94189L3.44195 5.058C3.53958 4.96037 3.69787 4.96037 3.7955 5.058L8.00001 9.26251L12.2045 5.058C12.3021 4.96037 12.4604 4.96037 12.5581 5.058L13.4419 5.94189C13.5396 6.03952 13.5396 6.19781 13.4419 6.29544L8.17678 11.5606C8.07915 11.6582 7.92086 11.6582 7.82323 11.5606L2.55806 6.29544Z" fill="currentColor"></path>
+                    </svg>    </div>
+{% endif %}
+                  <a li-object:href="link.url" href="{{ link.url }}" class="navbar-text w-inline-block">
+                    <div>
+                      <div class="navbar-text">
+{{ block.settings.text_text }}
 </div>
-                  </div>
-                  <nav class="uui-navbar02_dropdown-list w-dropdown-list">
-                    <div class="uui-navbar02_container">
-                      <div class="uui-navbar02_dropdown-content">
-                        <div class="uui-navbar02_dropdown-content-left">
-                          <div id="w-node-_020a6d1b-a826-1799-e7ac-512f5710c5db-5710c5cb" class="navbar-dropdown-content-wrapper is-left">
-                            <div class="navbar-dropdown-header">
+                    </div>
+                  </a>
+                </div>
+                <nav class="nav_dropdown-list-2 w-dropdown-list">
+                  <div class="padding-global max-width-full">
+                    <div class="uui-navbar02_dropdown-content">
+                      <div class="uui-navbar02_dropdown-content-left">
+                        <div id="w-node-_5a3d68ce-093a-68c8-fab8-972baa206dff-aa206ded" class="navbar-dropdown-content-wrapper is-left">
+                          <div class="navbar-dropdown-header">
 {{ block.settings.text_heading_left }}
 </div>
-                            <div class="spacer-small"></div>
-                            <div class="navbar-dropdown-bestseller-wrapper">
-                              <div>
-                                <div class="navbar-dropdown-bestseller-item" href="{{ block.settings.url_product_link }}"> <div class="navbar-dropdown-bestseller-item" href="{{ block.settings.url_product_link }}">{% if block.settings.image_product_image %} {{ block.settings.image_product_image | image_url: width: 1000 | image_tag: loading: 'lazy', width: 'Auto', class: 'bestseller-image' }} {% else %} <img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" width="Auto" alt="" class="bestseller-image"> {% endif %} <a href="#" class="navbar-dropdown-link is-bestseller" href="#">{{ block.settings.text_product_name }}</a> </div> </div>
-                              </div>
-                              <div li-block="Line">
-                    
-                                
-                    <div class="line"></div>
-                    
-                              
-                </div>
+                          <div class="spacer-small"></div>
+                          <div class="navbar-dropdown-bestseller-wrapper">
+                            <div>
+                              <div class="navbar-dropdown-bestseller-item" href="{{ block.settings.url_product_link }}"> <div class="navbar-dropdown-bestseller-item" href="{{ block.settings.url_product_link }}">{% if block.settings.image_product_image %} {{ block.settings.image_product_image | image_url: width: 1000 | image_tag: loading: 'lazy', width: 'Auto', class: 'bestseller-image' }} {% else %} <img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" width="Auto" alt="" class="bestseller-image"> {% endif %} <a href="#" class="navbar-dropdown-link is-bestseller" href="#">{{ block.settings.text_product_name }}</a> </div> </div>
                             </div>
-                          </div>
-                          <div class="navbar-dropdown-content-wrapper">
-                            <div class="navbar-dropdown-header">
-{{ block.settings.text_heading_right }}
-</div>
-                            <div class="spacer-small"></div>
-                            <div class="navbar-dropdown-link-wrapper">
-                              <div>
-                                <a href="{{ block.settings.url_category_link }}" class="navbar-dropdown-link"> {{ block.settings.text_category_name }} </a>
-                              </div>
+                            <div>
+                              <div class="line"></div>
                             </div>
                           </div>
                         </div>
-                        <div class="uui-navbar02_dropdown-content-right">{% if block.settings.image_cta_image %}
+                        <div class="navbar-dropdown-content-wrapper">
+                          <div class="navbar-dropdown-header">
+{{ block.settings.text_heading_right }}
+</div>
+                          <div class="spacer-small"></div>
+                          <div class="navbar-dropdown-link-wrapper">
+                            <div>
+                              <a href="{{ block.settings.url_category_link }}" class="navbar-dropdown-link"> {{ block.settings.text_category_name }} </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="uui-navbar02_dropdown-content-right">{% if block.settings.image_cta_image %}
 {{ block.settings.image_cta_image | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'navbar-dropdown-image' }}
 {% else %}
 <img src="{{ 'Group-264.png' | asset_url }}" loading="lazy" alt="" class="navbar-dropdown-image">
 {% endif %}</div>
-                      </div>
                     </div>
-                  </nav>
-                </div>
+                  </div>
+                </nav>
+              </div>
                     
-              
+            
                 </div> {% schema %} {
     "name": "Menu Item",
     "settings": [
         {
-            "id": "text_nav_menu_text_1",
+            "id": "text_text",
             "type": "text",
-            "label": "Nav Menu Text 1",
-            "default": "Automarke"
+            "label": "Text",
+            "default": "Link"
         },
         {
             "id": "text_heading_left",
