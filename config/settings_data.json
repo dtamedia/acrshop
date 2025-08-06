@@ -12,19 +12,6 @@
     "sections": {
       "header": {
         "type": "header",
-        "blocks": {
-          "bestseller_product_HyjUA9": {
-            "type": "bestseller-product",
-            "settings": {
-              "url_product_link": "",
-              "image_product_image": "shopify://shop_images/image_58.png",
-              "text_product_name": "Helix Next V Two"
-            }
-          }
-        },
-        "block_order": [
-          "bestseller_product_HyjUA9"
-        ],
         "settings": {
           "text_nav_menu_text_1": "Automarke",
           "text_heading_left": "Unsere Bestseller",
