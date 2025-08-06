@@ -13,7 +13,7 @@
       "header": {
         "type": "header",
         "blocks": {
-          "menu_item_PLMttw": {
+          "menu_item_bRkeDd": {
             "type": "menu-item",
             "name": "Menu Item",
             "settings": {
@@ -38,7 +38,7 @@
           }
         },
         "block_order": [
-          "menu_item_PLMttw",
+          "menu_item_bRkeDd",
           "outbound_link_d9C4hN"
         ],
         "settings": {}
