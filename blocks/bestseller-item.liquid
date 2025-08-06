@@ -1,0 +1,32 @@
+<div li-block="Bestseller Item">
+                    
+                              
+                    <div class="navbar-dropdown-bestseller-item" href="{{ block.settings.url_product_link }}"> <div class="navbar-dropdown-bestseller-item" href="{{ block.settings.url_product_link }}">{% if block.settings.image_product_image %} {{ block.settings.image_product_image | image_url: width: 1000 | image_tag: loading: 'lazy', width: 'Auto', class: 'bestseller-image' }} {% else %} <img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" width="Auto" alt="" class="bestseller-image"> {% endif %} <a href="#" class="navbar-dropdown-link is-bestseller" href="#">{{ block.settings.text_product_name }}</a> </div> </div>
+                    
+                            
+                </div> {% schema %} {
+    "name": "Bestseller Item",
+    "settings": [
+        {
+            "id": "url_product_link",
+            "type": "url",
+            "label": "Product Link"
+        },
+        {
+            "id": "image_product_image",
+            "type": "image_picker",
+            "label": "Product Image"
+        },
+        {
+            "id": "text_product_name",
+            "type": "text",
+            "label": "Product Name",
+            "default": "Helix Next V Two"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Bestseller Item"
+        }
+    ]
+} {% endschema %}
