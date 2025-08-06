@@ -13,6 +13,20 @@
       "header": {
         "type": "header",
         "blocks": {
+          "menu_item_FzXDAf": {
+            "type": "menu-item",
+            "name": "Menu Item",
+            "settings": {
+              "text_text": "Link",
+              "text_heading_left": "Unsere Bestseller",
+              "url_product_link": "",
+              "text_product_name": "Helix Next V Two",
+              "text_heading_right": "Alle Hersteller",
+              "url_category_link": "",
+              "text_category_name": "Helix"
+            },
+            "blocks": {}
+          },
           "menu_item_bRkeDd": {
             "type": "menu-item",
             "name": "Menu Item",
@@ -38,6 +52,7 @@
           }
         },
         "block_order": [
+          "menu_item_FzXDAf",
           "menu_item_bRkeDd",
           "outbound_link_d9C4hN"
         ],
