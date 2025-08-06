@@ -1,0 +1,27 @@
+<div li-block="Outbound Link">
+                    
+                
+                    <a href="{{ block.settings.url_navbar_link }}" class="navbar-text w-nav-link"> {{ block.settings.text_navbar_menu_text_5 }} </a>
+                    
+              
+                </div> {% schema %} {
+    "name": "Outbound Link",
+    "settings": [
+        {
+            "id": "url_navbar_link",
+            "type": "url",
+            "label": "Navbar Link"
+        },
+        {
+            "id": "text_navbar_menu_text_5",
+            "type": "text",
+            "label": "Navbar Menu Text 5",
+            "default": "Soundupgrade Bayern"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Outbound Link"
+        }
+    ]
+} {% endschema %}
