@@ -13,6 +13,20 @@
       "header": {
         "type": "header",
         "blocks": {
+          "bestseller_product_HJBAWG": {
+            "type": "bestseller-product",
+            "settings": {
+              "url_product_link": "",
+              "text_product_name": "Helix Next V Two"
+            }
+          },
+          "bestseller_product_KED4V3": {
+            "type": "bestseller-product",
+            "settings": {
+              "url_product_link": "",
+              "text_product_name": "Helix Next V Two"
+            }
+          },
           "bestseller_product_nKft9P": {
             "type": "bestseller-product",
             "settings": {
@@ -22,6 +36,8 @@
           }
         },
         "block_order": [
+          "bestseller_product_HJBAWG",
+          "bestseller_product_KED4V3",
           "bestseller_product_nKft9P"
         ],
         "settings": {
