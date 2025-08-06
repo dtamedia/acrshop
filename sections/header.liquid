@@ -1,11 +1,9 @@
-<div class="padding-global is-navbar">
-        <div class="navbar-container">
+<div data-animation="default" class="nav_component-2 w-nav" data-easing2="ease" fs-scrolldisable-element="smart-nav" data-easing="ease" data-collapse="medium" data-w-id="5a3d68ce-093a-68c8-fab8-972baa206dee" role="banner" data-duration="400" x-data="">
+        <div class="nav_container-4">
           <a href="{{ routes.root_url }}" li-object:href="routes.root_url" class="nav_logo-link w-nav-brand"><img src="{{ 'image-19.webp' | asset_url }}" loading="lazy" alt="" class="image"></a>
-          <nav role="navigation" class="uui-navbar02_menu w-nav-menu">
-            <div li-content-for-theme-blocks="" class="uui-navbar02_menu-left">
+          <nav role="navigation" li-content-for-theme-blocks="" id="w-node-_5a3d68ce-093a-68c8-fab8-972baa206df2-aa206ded" class="nav_menu-5 is-page-height-tablet w-nav-menu">
 {% content_for 'blocks' %}
-</div>
-          </nav>
+</nav>
           <div class="nav_shop-icons">
             {% if shop.customer_accounts_optional %}    <div li-if="shop.customer_accounts_optional" class="nav_account">
     
@@ -23,17 +21,20 @@
 {% endif %}
             {% render 'mini_cart' %}
           </div>
-          <div class="uui-navbar02_menu-button w-nav-button">
-            <div data-w-id="020a6d1b-a826-1799-e7ac-512f5710c690" data-is-ix2-target="1" class="nav-lottie" data-animation-type="lottie" data-src="{{ 'lottieflow-menu-nav-06-000000-easey.json' | asset_url }}" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="2.36"></div>
+          <div class="nav_menu-button w-nav-button">
+            <div data-w-id="5a3d68ce-093a-68c8-fab8-972baa206e5c" data-is-ix2-target="1" class="nav-lottie" data-animation-type="lottie" data-src="{{ 'lottieflow-menu-nav-06-000000-easey.json' | asset_url }}" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="2.36"></div>
           </div>
         </div>
       </div> {% schema %} {
     "tag": "div",
-    "name": "Header",
-    "class": "uui-navbar02_component w-nav",
+    "name": "header",
+    "class": "section_navbar-2",
     "blocks": [
         {
-            "type": "menu-item"
+            "type": "bestseller-item"
+        },
+        {
+            "type": "dropdown-item"
         },
         {
             "type": "outbound-link"
@@ -42,13 +43,41 @@
             "type": "@app"
         }
     ],
+    "settings": [
+        {
+            "id": "text_text",
+            "type": "text",
+            "label": "Text",
+            "default": "Link"
+        },
+        {
+            "id": "text_heading_left",
+            "type": "text",
+            "label": "Heading Left",
+            "default": "Unsere Bestseller"
+        },
+        {
+            "id": "text_heading_right",
+            "type": "text",
+            "label": "Heading Right",
+            "default": "Alle Hersteller"
+        },
+        {
+            "id": "image_cta_image",
+            "type": "image_picker",
+            "label": "CTA Image"
+        }
+    ],
     "presets": [
         {
-            "name": "Header",
+            "name": "header",
             "category": "Liquify",
             "blocks": [
                 {
-                    "type": "menu-item"
+                    "type": "bestseller-item"
+                },
+                {
+                    "type": "dropdown-item"
                 },
                 {
                     "type": "outbound-link"
