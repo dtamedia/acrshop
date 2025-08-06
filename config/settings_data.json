@@ -13,50 +13,35 @@
       "header": {
         "type": "header",
         "blocks": {
-          "bestseller_product_HJBAWG": {
-            "type": "bestseller-product",
-            "disabled": true,
+          "menu_item_PLMttw": {
+            "type": "menu-item",
+            "name": "Menu Item",
             "settings": {
+              "text_text": "Link",
+              "text_heading_left": "Unsere Bestseller",
               "url_product_link": "",
-              "text_product_name": "Helix Next V Two"
-            }
+              "text_product_name": "Helix Next V Two",
+              "text_heading_right": "Alle Hersteller",
+              "url_category_link": "",
+              "text_category_name": "Helix"
+            },
+            "blocks": {}
           },
-          "bestseller_product_KED4V3": {
-            "type": "bestseller-product",
+          "outbound_link_d9C4hN": {
+            "type": "outbound-link",
+            "name": "Outbound Link",
             "settings": {
-              "url_product_link": "",
-              "text_product_name": "Helix Next V Two"
-            }
-          },
-          "bestseller_product_nKft9P": {
-            "type": "bestseller-product",
-            "settings": {
-              "url_product_link": "",
-              "text_product_name": "Helix Next V Two"
-            }
+              "url_link": "",
+              "text_outbound_link": "Text Link"
+            },
+            "blocks": {}
           }
         },
         "block_order": [
-          "bestseller_product_HJBAWG",
-          "bestseller_product_KED4V3",
-          "bestseller_product_nKft9P"
+          "menu_item_PLMttw",
+          "outbound_link_d9C4hN"
         ],
-        "settings": {
-          "text_nav_menu_text_1": "Automarke",
-          "text_heading_left": "Unsere Bestseller",
-          "text_heading_right": "Alle Marken",
-          "text_nav_menu_text_2": "Hersteller",
-          "text_heading_left_2": "Unsere Bestseller",
-          "text_heading_right_2": "Alle Hersteller",
-          "text_nav_menu_text_3": "Produkttyp",
-          "text_heading_left_3": "Unsere Bestseller",
-          "text_heading_right_3": "Alle Produkte",
-          "text_nav_menu_text_4": "Soundupgrades",
-          "text_heading_left_4": "Unsere Bestseller",
-          "text_heading_right_4": "Alle Soundupgrades",
-          "url_navbar_link": "",
-          "text_navbar_menu_text_5": "Soundupgrade Bayern"
-        }
+        "settings": {}
       },
       "footer": {
         "type": "footer",
