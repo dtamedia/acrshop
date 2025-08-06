@@ -1,22 +1,121 @@
-<div class="spacer-huge"></div><div class="padding-global"><div class="vp-grid"><img src="{{ section.settings.image_feature_image_1 | img_url: 'master' }}" loading="lazy" alt="{{ section.settings.image_feature_image_1.alt }}" class="produktinfo-image">
-<div class="vp-content-wrapper"><div li-setting:text="Top Heading 1" class="text-size-large">DIE PERFEKTEN KOMPONENTEN</div><div class="spacer-medium"></div><div class="heading-style-h2">
+<div class="spacer-huge"></div>
+        <div class="padding-global">
+          <div class="vp-grid">{% if section.settings.image_feature_image_1 %}
+{{ section.settings.image_feature_image_1 | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'produktinfo-image is-vp' }}
+{% else %}
+<img loading="lazy" alt="" src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" class="produktinfo-image is-vp">
+{% endif %}
+            <div class="vp-content-wrapper">
+              <div li-setting:text="Top Heading 1" class="text-size-large-5">DIE PERFEKTEN KOMPONENTEN</div>
+              <div class="spacer-medium"></div>
+              <div class="heading-style-h2-5">
 {{ section.settings.text_subheading_1 }}
 </div>
-<div class="spacer-large"></div><div class="text-size-medium">
+              <div class="spacer-large"></div>
+              <div class="text-size-medium-5">
 {{ section.settings.text_parapgraph_text_1 }}
 </div>
-</div></div><div class="spacer-huge"></div><div class="vp-grid"><img src="{{ section.settings.image_feature_image_2 | img_url: 'master' }}" loading="lazy" id="w-node-_0d73a446-2ba2-a7fe-ba1a-2f31a8f90d32-dff38d5b" alt="{{ section.settings.image_feature_image_2.alt }}" class="produktinfo-image is-right">
-<div class="vp-content-wrapper"><div li-setting:text="Top Heading 2" class="text-size-large">DIE PERFEKTEN KOMPONENTEN</div><div class="spacer-medium"></div><div class="heading-style-h2">
+            </div>
+          </div>
+          <div class="spacer-huge"></div>
+          <div class="vp-grid">{% if section.settings.image_feature_image_2 %}
+{{ section.settings.image_feature_image_2 | image_url: width: 1000 | image_tag: id: 'w-node-_110984bf-7be1-f966-69d8-eefdb0fc8b59-dff38d5b', loading: 'lazy', class: 'produktinfo-image is-right' }}
+{% else %}
+<img id="w-node-_110984bf-7be1-f966-69d8-eefdb0fc8b59-dff38d5b" alt="" src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" class="produktinfo-image is-right">
+{% endif %}
+            <div class="vp-content-wrapper">
+              <div li-setting:text="Top Heading 2" class="text-size-large-5">DIE PERFEKTEN KOMPONENTEN</div>
+              <div class="spacer-medium"></div>
+              <div class="heading-style-h2-5">
 {{ section.settings.text_subheading_2 }}
 </div>
-<div class="spacer-large"></div><div class="text-size-medium">
+              <div class="spacer-large"></div>
+              <div class="text-size-medium-5">
 {{ section.settings.text_parapgraph_text_2 }}
 </div>
-</div></div><div class="spacer-huge"></div><div class="vp-grid"><img src="{{ section.settings.image_feature_image_3 | img_url: 'master' }}" loading="lazy" alt="{{ section.settings.image_feature_image_3.alt }}" class="produktinfo-image">
-<div class="vp-content-wrapper"><div li-setting:text="Top Heading 3" class="text-size-large">DIE PERFEKTEN KOMPONENTEN</div><div class="spacer-medium"></div><div class="heading-style-h2">
+            </div>
+          </div>
+          <div class="spacer-huge"></div>
+          <div class="vp-grid">{% if section.settings.image_feature_image_3 %}
+{{ section.settings.image_feature_image_3 | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'produktinfo-image' }}
+{% else %}
+<img loading="lazy" alt="" src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" class="produktinfo-image">
+{% endif %}
+            <div class="vp-content-wrapper">
+              <div li-setting:text="Top Heading 3" class="text-size-large-5">DIE PERFEKTEN KOMPONENTEN</div>
+              <div class="spacer-medium"></div>
+              <div class="heading-style-h2-5">
 {{ section.settings.text_subheading_3 }}
 </div>
-<div class="spacer-large"></div><div class="text-size-medium">
+              <div class="spacer-large"></div>
+              <div class="text-size-medium-5">
 {{ section.settings.text_parapgraph_text_3 }}
 </div>
-</div></div></div><div class="spacer-huge"></div> {% schema %} {"tag":"div","name":"Value Proposition","class":"section_vp","settings":[{"id":"image_feature_image_1","type":"image_picker","label":"Feature Image 1"},{"id":"text_subheading_1","type":"text","label":"Subheading 1","default":"F\u00dcR DEN PERFEKTEN SOUND"},{"id":"text_parapgraph_text_1","type":"text","label":"Parapgraph Text 1","default":"Unser Team w\u00e4hlt sorgf\u00e4ltig Komponenten, die auf Ihr Auto und Upgrade zugeschnitten sind. So kann bei jedem Umbau das maximale rausgeholt werden. Dabei nutzen wir Komponenten von Premium-Herstellern wie Helix, Match, Brax, Steg oder Fortissimo. Mehr \u00fcber unsere Partner erfahren.\u2028Welche Produkte genau verbaut werden erfahren Sie rechtzeitig von uns."},{"id":"image_feature_image_2","type":"image_picker","label":"Feature Image 2"},{"id":"text_subheading_2","type":"text","label":"Subheading 2","default":"F\u00dcR DEN PERFEKTEN SOUND"},{"id":"text_parapgraph_text_2","type":"text","label":"Parapgraph Text 2","default":"Unser Team w\u00e4hlt sorgf\u00e4ltig Komponenten, die auf Ihr Auto und Upgrade zugeschnitten sind. So kann bei jedem Umbau das maximale rausgeholt werden. Dabei nutzen wir Komponenten von Premium-Herstellern wie Helix, Match, Brax, Steg oder Fortissimo. Mehr \u00fcber unsere Partner erfahren.\u2028Welche Produkte genau verbaut werden erfahren Sie rechtzeitig von uns."},{"id":"image_feature_image_3","type":"image_picker","label":"Feature Image 3"},{"id":"text_subheading_3","type":"text","label":"Subheading 3","default":"F\u00dcR DEN PERFEKTEN SOUND"},{"id":"text_parapgraph_text_3","type":"text","label":"Parapgraph Text 3","default":"Unser Team w\u00e4hlt sorgf\u00e4ltig Komponenten, die auf Ihr Auto und Upgrade zugeschnitten sind. So kann bei jedem Umbau das maximale rausgeholt werden. Dabei nutzen wir Komponenten von Premium-Herstellern wie Helix, Match, Brax, Steg oder Fortissimo. Mehr \u00fcber unsere Partner erfahren.\u2028Welche Produkte genau verbaut werden erfahren Sie rechtzeitig von uns."}],"presets":[{"name":"Value Proposition","category":"Liquify","blocks":[]}]} {% endschema %}
+            </div>
+          </div>
+        </div>
+        <div class="spacer-huge"></div> {% schema %} {
+    "tag": "div",
+    "name": "Value Proposition",
+    "class": "section_vp",
+    "settings": [
+        {
+            "id": "image_feature_image_1",
+            "type": "image_picker",
+            "label": "Feature Image 1"
+        },
+        {
+            "id": "text_subheading_1",
+            "type": "text",
+            "label": "Subheading 1",
+            "default": "F\u00dcR DEN PERFEKTEN SOUND"
+        },
+        {
+            "id": "text_parapgraph_text_1",
+            "type": "text",
+            "label": "Parapgraph Text 1",
+            "default": "Unser Team w\u00e4hlt sorgf\u00e4ltig Komponenten, die auf Ihr Auto und Upgrade zugeschnitten sind. So kann bei jedem Umbau das maximale rausgeholt werden. Dabei nutzen wir Komponenten von Premium-Herstellern wie Helix, Match, Brax, Steg oder Fortissimo. Mehr \u00fcber unsere Partner erfahren.\u2028Welche Produkte genau verbaut werden erfahren Sie rechtzeitig von uns."
+        },
+        {
+            "id": "image_feature_image_2",
+            "type": "image_picker",
+            "label": "Feature Image 2"
+        },
+        {
+            "id": "text_subheading_2",
+            "type": "text",
+            "label": "Subheading 2",
+            "default": "F\u00dcR DEN PERFEKTEN SOUND"
+        },
+        {
+            "id": "text_parapgraph_text_2",
+            "type": "text",
+            "label": "Parapgraph Text 2",
+            "default": "Unser Team w\u00e4hlt sorgf\u00e4ltig Komponenten, die auf Ihr Auto und Upgrade zugeschnitten sind. So kann bei jedem Umbau das maximale rausgeholt werden. Dabei nutzen wir Komponenten von Premium-Herstellern wie Helix, Match, Brax, Steg oder Fortissimo. Mehr \u00fcber unsere Partner erfahren.\u2028Welche Produkte genau verbaut werden erfahren Sie rechtzeitig von uns."
+        },
+        {
+            "id": "image_feature_image_3",
+            "type": "image_picker",
+            "label": "Feature Image 3"
+        },
+        {
+            "id": "text_subheading_3",
+            "type": "text",
+            "label": "Subheading 3",
+            "default": "F\u00dcR DEN PERFEKTEN SOUND"
+        },
+        {
+            "id": "text_parapgraph_text_3",
+            "type": "text",
+            "label": "Parapgraph Text 3",
+            "default": "Unser Team w\u00e4hlt sorgf\u00e4ltig Komponenten, die auf Ihr Auto und Upgrade zugeschnitten sind. So kann bei jedem Umbau das maximale rausgeholt werden. Dabei nutzen wir Komponenten von Premium-Herstellern wie Helix, Match, Brax, Steg oder Fortissimo. Mehr \u00fcber unsere Partner erfahren.\u2028Welche Produkte genau verbaut werden erfahren Sie rechtzeitig von uns."
+        }
+    ],
+    "presets": [
+        {
+            "name": "Value Proposition",
+            "category": "Liquify",
+            "blocks": []
+        }
+    ]
+} {% endschema %}
