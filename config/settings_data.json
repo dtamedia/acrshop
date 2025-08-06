@@ -15,6 +15,7 @@
         "blocks": {
           "bestseller_product_HJBAWG": {
             "type": "bestseller-product",
+            "disabled": true,
             "settings": {
               "url_product_link": "",
               "text_product_name": "Helix Next V Two"
@@ -22,6 +23,7 @@
           },
           "bestseller_product_KED4V3": {
             "type": "bestseller-product",
+            "disabled": true,
             "settings": {
               "url_product_link": "",
               "text_product_name": "Helix Next V Two"
@@ -29,6 +31,7 @@
           },
           "bestseller_product_nKft9P": {
             "type": "bestseller-product",
+            "disabled": true,
             "settings": {
               "url_product_link": "",
               "text_product_name": "Helix Next V Two"
