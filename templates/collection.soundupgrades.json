@@ -26,99 +26,51 @@
       "blocks": {
         "soundupgrade_item_JYTTTV": {
           "type": "soundupgrade-item",
-          "settings": {
-            "url_link": "shopify://products/bmw",
-            "image_feature_image": "shopify://shop_images/BMW_collection.png",
-            "text_marke": "BMW"
-          }
+          "settings": {}
         },
         "soundupgrade_item_4jbTMF": {
           "type": "soundupgrade-item",
-          "settings": {
-            "url_link": "shopify://products/camper",
-            "image_feature_image": "shopify://shop_images/Rectangle_221-3.png",
-            "text_marke": "Camper"
-          }
+          "settings": {}
         },
         "soundupgrade_item_gmVnJi": {
           "type": "soundupgrade-item",
-          "settings": {
-            "url_link": "shopify://products/cupra",
-            "image_feature_image": "shopify://shop_images/Rectangle_221-6.png",
-            "text_marke": "Cupra"
-          }
+          "settings": {}
         },
         "soundupgrade_item_bRazCa": {
           "type": "soundupgrade-item",
-          "settings": {
-            "url_link": "shopify://products/fiat",
-            "image_feature_image": "shopify://shop_images/Rectangle_221-9.png",
-            "text_marke": "Fiat"
-          }
+          "settings": {}
         },
         "soundupgrade_item_cYNXky": {
           "type": "soundupgrade-item",
-          "settings": {
-            "url_link": "shopify://products/grenadier",
-            "image_feature_image": "shopify://shop_images/Rectangle_221-1.png",
-            "text_marke": "Grenadier"
-          }
+          "settings": {}
         },
         "soundupgrade_item_jYnF7M": {
           "type": "soundupgrade-item",
-          "settings": {
-            "url_link": "shopify://products/mercedes-benz",
-            "image_feature_image": "shopify://shop_images/Rectangle_221-4.png",
-            "text_marke": "Mercedes"
-          }
+          "settings": {}
         },
         "soundupgrade_item_LEfnMX": {
           "type": "soundupgrade-item",
-          "settings": {
-            "url_link": "shopify://products/seat",
-            "image_feature_image": "shopify://shop_images/Rectangle_221-7.png",
-            "text_marke": "Seat"
-          }
+          "settings": {}
         },
         "soundupgrade_item_BFqCxU": {
           "type": "soundupgrade-item",
-          "settings": {
-            "url_link": "shopify://products/porsche",
-            "image_feature_image": "shopify://shop_images/Rectangle_221-10.png",
-            "text_marke": "Porsche"
-          }
+          "settings": {}
         },
         "soundupgrade_item_HgqnwY": {
           "type": "soundupgrade-item",
-          "settings": {
-            "url_link": "shopify://products/skoda",
-            "image_feature_image": "shopify://shop_images/Rectangle_221-2.png",
-            "text_marke": "Skoda"
-          }
+          "settings": {}
         },
         "soundupgrade_item_n6Aizy": {
           "type": "soundupgrade-item",
-          "settings": {
-            "url_link": "shopify://products/sprinter",
-            "image_feature_image": "shopify://shop_images/Rectangle_221-3.png",
-            "text_marke": "Sprinter"
-          }
+          "settings": {}
         },
         "soundupgrade_item_a7hNAQ": {
           "type": "soundupgrade-item",
-          "settings": {
-            "url_link": "shopify://products/volkswagen",
-            "image_feature_image": "shopify://shop_images/Rectangle_221-8.png",
-            "text_marke": "VW"
-          }
+          "settings": {}
         },
         "soundupgrade_item_pUF4yx": {
           "type": "soundupgrade-item",
-          "settings": {
-            "url_link": "shopify://products/vw-bulli",
-            "image_feature_image": "shopify://shop_images/Rectangle_221-11.png",
-            "text_marke": "VW Bulli"
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -138,7 +90,7 @@
       "name": "collection-display",
       "settings": {
         "text_heading_2": "Alle Soundupgrades",
-        "text_copy_text": "This is some text inside of a div block."
+        "text_copy_text": "Erlebe Musik im Auto neu – mit einem professionellen Soundupgrade. Unsere fahrzeugspezifischen Systeme liefern deutlich besseren Klang, kräftigeren Bass und mehr Dynamik als serienmäßige Anlagen. Ob für den Alltag, lange Fahrten oder echte Klangliebhaber: Ein Soundupgrade bringt spürbar mehr Hörgenuss – ohne sichtbare Umbauten, perfekt integriert in dein Fahrzeug."
       }
     }
   },
