@@ -28,7 +28,8 @@
           "type": "soundupgrade-item",
           "settings": {
             "text_marke": "BMW",
-            "url_link": "shopify://products/bmw"
+            "url_link": "shopify://products/bmw",
+            "image_feature_image": "shopify://shop_images/BMW_collection.png"
           }
         },
         "soundupgrade_item_4jbTMF": {
