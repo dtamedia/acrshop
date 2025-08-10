@@ -1,9 +1,63 @@
-<div class="padding-global is-hero"><div class="hero-content-wrapper"><div class="heading-style-h1-2">
+<div class="padding-global is-hero">
+          <div class="hero-content-wrapper">
+            <div class="heading-style-h1-2">
 {{ section.settings.text_sound_upgrade }}
 </div>
-<div class="spacer-small"></div><h1 class="hero-h1-text-2">
+            <div class="spacer-small"></div>
+            <h1 class="hero-h1-text-2">
 {{ section.settings.text_h1 }}
 </h1>
-<div class="spacer-huge"></div><div class="hero-button-wrapper"><a href="{{ section.settings.url_button_1_link }}" class="button-5 is-primary w-button"> {{ section.settings.text_button_1 }} </a>
-<a href="{{ section.settings.url_button_2_link }}" class="button-5 is-secondary w-button"> {{ section.settings.text_button_2 }} </a>
-</div></div></div> {% schema %} {"tag":"div","name":"Hero-Collection","class":"section_hero","settings":[{"id":"text_sound_upgrade","type":"text","label":"Sound Upgrade","default":"Sound Upgrade"},{"id":"text_h1","type":"text","label":"H1","default":"Individuelle Komponenten"},{"id":"url_button_1_link","type":"url","label":"Button 1 Link"},{"id":"text_button_1","type":"text","label":"Button 1","default":"Button Text"},{"id":"url_button_2_link","type":"url","label":"Button 2 LInk"},{"id":"text_button_2","type":"text","label":"Button 2","default":"Button Text"}],"presets":[{"name":"Hero-Collection","category":"Liquify","blocks":[]}]} {% endschema %}
+            <div class="spacer-huge"></div>
+            <div class="hero-button-wrapper">
+              <a href="{{ section.settings.url_button_1_link }}" class="button-5 is-primary w-button"> {{ section.settings.text_button_1 }} </a>
+              <a href="{{ section.settings.url_button_2_link }}" class="button-5 is-secondary w-button"> {{ section.settings.text_button_2 }} </a>
+            </div>
+          </div>
+        </div> {% schema %} {
+    "tag": "div",
+    "name": "Hero-Collection",
+    "class": "section_hero",
+    "settings": [
+        {
+            "id": "text_sound_upgrade",
+            "type": "text",
+            "label": "Sound Upgrade",
+            "default": "Sound Upgrade"
+        },
+        {
+            "id": "text_h1",
+            "type": "text",
+            "label": "H1",
+            "default": "Individuelle Komponenten"
+        },
+        {
+            "id": "url_button_1_link",
+            "type": "url",
+            "label": "Button 1 Link"
+        },
+        {
+            "id": "text_button_1",
+            "type": "text",
+            "label": "Button 1",
+            "default": "Button Text"
+        },
+        {
+            "id": "url_button_2_link",
+            "type": "url",
+            "label": "Button 2 LInk"
+        },
+        {
+            "id": "text_button_2",
+            "type": "text",
+            "label": "Button 2",
+            "default": "ButtoLanger Text Langer Text n Text"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Hero-Collection",
+            "category": "Liquify",
+            "blocks": []
+        }
+    ]
+} {% endschema %}
