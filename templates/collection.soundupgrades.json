@@ -26,51 +26,89 @@
       "blocks": {
         "soundupgrade_item_JYTTTV": {
           "type": "soundupgrade-item",
-          "settings": {}
+          "settings": {
+            "text_marke": "BMW",
+            "url_link": "shopify://products/bmw"
+          }
         },
         "soundupgrade_item_4jbTMF": {
           "type": "soundupgrade-item",
-          "settings": {}
+          "settings": {
+            "text_marke": "Camper",
+            "url_link": "shopify://products/camper",
+            "image_feature_image": "shopify://shop_images/Rectangle_221-3.png"
+          }
         },
         "soundupgrade_item_gmVnJi": {
           "type": "soundupgrade-item",
-          "settings": {}
+          "settings": {
+            "text_marke": "Cupra",
+            "url_link": "shopify://products/cupra",
+            "image_feature_image": "shopify://shop_images/Rectangle_221-6.png"
+          }
         },
         "soundupgrade_item_bRazCa": {
           "type": "soundupgrade-item",
-          "settings": {}
+          "settings": {
+            "text_marke": "BMW",
+            "url_link": ""
+          }
         },
         "soundupgrade_item_cYNXky": {
           "type": "soundupgrade-item",
-          "settings": {}
+          "settings": {
+            "text_marke": "BMW",
+            "url_link": ""
+          }
         },
         "soundupgrade_item_jYnF7M": {
           "type": "soundupgrade-item",
-          "settings": {}
+          "settings": {
+            "text_marke": "BMW",
+            "url_link": ""
+          }
         },
         "soundupgrade_item_LEfnMX": {
           "type": "soundupgrade-item",
-          "settings": {}
+          "settings": {
+            "text_marke": "BMW",
+            "url_link": ""
+          }
         },
         "soundupgrade_item_BFqCxU": {
           "type": "soundupgrade-item",
-          "settings": {}
+          "settings": {
+            "text_marke": "BMW",
+            "url_link": ""
+          }
         },
         "soundupgrade_item_HgqnwY": {
           "type": "soundupgrade-item",
-          "settings": {}
+          "settings": {
+            "text_marke": "BMW",
+            "url_link": ""
+          }
         },
         "soundupgrade_item_n6Aizy": {
           "type": "soundupgrade-item",
-          "settings": {}
+          "settings": {
+            "text_marke": "BMW",
+            "url_link": ""
+          }
         },
         "soundupgrade_item_a7hNAQ": {
           "type": "soundupgrade-item",
-          "settings": {}
+          "settings": {
+            "text_marke": "BMW",
+            "url_link": ""
+          }
         },
         "soundupgrade_item_pUF4yx": {
           "type": "soundupgrade-item",
-          "settings": {}
+          "settings": {
+            "text_marke": "BMW",
+            "url_link": ""
+          }
         }
       },
       "block_order": [
