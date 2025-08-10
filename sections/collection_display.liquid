@@ -1,84 +1,70 @@
 <div class="spacer-huge"></div>
-<div class="padding-global">
-  <div class="collection-heading-wrapper" li-object="collection-heading">
-    <h2 class="heading-style-h2-5">
-      {{ section.settings.text_heading_2 }}
-    </h2>
-    <div class="spacer-medium"></div>
-    <div class="text-size-medium-2">
-      {{ section.settings.text_copy_text }}
-    </div>
-    <div class="spacer-huge"></div>
-  </div>
-
-  <div li-content-for-blocks class="collections-grid" li-object="collections-grid">
-    {% for block in section.blocks %}
-      {% case block.type %}
-        {% when '@app' %}
-          {% render block %}
-
-        {% when 'soundupgrade-item' %}
-<div li-block="Soundupgrade Item" class="block-item" {{ block.shopify_attributes }}>
-  <a href="{{ block.settings.url_link }}" class="collections-block-link w-inline-block">
-    <div class="collections-block" li-object="collections-block">
-      
-      {% if block.settings.image_feature_image %}
-        {{ block.settings.image_feature_image
-          | image_url: width: 1600
-          | image_tag:
-              loading: 'lazy',
-              class: 'collection-block-image',
-              alt: block.settings.text_marke,
-              widths: '400,600,800,1200,1600'
-        }}
-      {% else %}
-        <img loading="lazy"
-             alt=""
-             src="{{ 'BMW-collection.webp' | asset_url }}"
-             class="collection-block-image">
-      {% endif %}
-      
-      <div class="spacer-small"></div>
-      <div class="heading-style-h2 is-collection">
-        {{ block.settings.text_marke }}
-      </div>
-    </div>
-  </a>
+        <div class="padding-global">
+          <div class="collection-heading-wrapper">
+            <h2 class="heading-style-h2-5">
+{{ section.settings.text_heading_2 }}
+</h2>
+            <div class="spacer-medium"></div>
+            <div class="text-size-medium-2">
+{{ section.settings.text_copy_text }}
 </div>
+            <div class="spacer-huge"></div>
+          </div>
+          <div li-content-for-blocks="" class="collections-grid">
+{% for block in section.blocks %}
+{% case block.type %}
+{% when '@app' %}
+{% render block %}
 
-      {% endcase %}
-    {% endfor %}
-  </div>
-</div>
-<div class="spacer-huge"></div>
+            {% when 'soundupgrade-item' %}
+            <div li-block="Soundupgrade Item" class="block-item">
+                    
+              
+                    <a href="{{ block.settings.url_link }}" class="collections-block-link w-inline-block"> <div class="collections-block">{% if block.settings.image_feature_image %} {{ block.settings.image_feature_image | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'collection-block-image' }} {% else %} <img loading="lazy" alt="" src="{{ 'BMW-collection.webp' | asset_url }}" class="collection-block-image"> {% endif %} <div class="spacer-small"></div> <div class="heading-style-h2 is-collection">{{ block.settings.text_marke }}</div> </div> </a>
+                    
+            
+                </div>
+          {% endcase %}
+{% endfor %}
 
-{% schema %}
-{
-  "tag": "div",
-  "name": "collection-display",
-  "class": "section_collection-display",
-  "blocks": [
-    {
-      "name": "Soundupgrade Item",
-      "type": "soundupgrade-item",
-      "settings": [
-        { "id": "text_marke", "type": "text", "label": "Marke / Titel", "default": "BMW" },
-        { "id": "url_link", "type": "url", "label": "Ziel-Link" },
-        { "id": "image_feature_image", "type": "image_picker", "label": "Feature Bild" }
-      ]
-    },
-    { "type": "@app" }
-  ],
-  "settings": [
-    { "id": "text_heading_2", "type": "text", "label": "Heading 2", "default": "Heading" },
-    { "id": "text_copy_text", "type": "text", "label": "Copy Text", "default": "This is some text inside of a div block." }
-  ],
-  "presets": [
-    {
-      "name": "collection-display",
-      "category": "Liquify",
-      "blocks": [ { "type": "soundupgrade-item" } ]
-    }
-  ]
-}
-{% endschema %}
+    </div>
+        </div>
+        <div class="spacer-huge"></div> {% schema %} {
+    "tag": "div",
+    "name": "collection-display",
+    "class": "section_collection-display",
+    "blocks": [
+        {
+            "name": "Soundupgrade Item",
+            "type": "soundupgrade-item"
+        },
+        {
+            "type": "@app"
+        }
+    ],
+    "settings": [
+        {
+            "id": "text_heading_2",
+            "type": "text",
+            "label": "Heading 2",
+            "default": "Heading"
+        },
+        {
+            "id": "text_copy_text",
+            "type": "text",
+            "label": "Copy Text",
+            "default": "This is some text inside of a div block."
+        }
+    ],
+    "presets": [
+        {
+            "name": "collection-display",
+            "category": "Liquify",
+            "blocks": [
+                {
+                    "type": "soundupgrade-item"
+                }
+            ]
+        }
+    ]
+} {% endschema %}
