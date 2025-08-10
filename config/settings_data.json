@@ -100,7 +100,7 @@
           "bezahlmoglichkeit_logo_MF8fia": {
             "type": "bezahlmoglichkeit-logo",
             "settings": {
-              "image_payment_icon": "shopify://shop_images/Rectangle_154.png",
+              "image_payment_icon": "shopify://shop_images/Apple_Pay_Logo.png",
               "alt_text": "Zahlungsart"
             }
           },
