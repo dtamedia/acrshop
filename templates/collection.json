@@ -26,7 +26,7 @@
       "name": "Collection Products",
       "settings": {
         "text_heading_2": "{{ collection.metafields.custom.kollektion_grid_heading.value }}",
-        "text_copy_text": "Du willst gezielt aufrüsten oder dein bestehendes System erweitern? In unserer Auswahl an Einzelkomponenten findest du hochwertige Lautsprecher, Subwoofer, Verstärker und mehr – einzeln erhältlich und kompatibel mit vielen Fahrzeugen. Ideal für individuelle Anpassungen oder gezielte Klangverbesserungen nach deinen Vorstellungen."
+        "text_copy_text": "{{ collection.metafields.custom.kollektion_grid_copy.value }}"
       }
     }
   },
