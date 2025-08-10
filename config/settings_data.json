@@ -85,35 +85,38 @@
         "blocks": {
           "bezahlmoglichkeit_logo_3QHrFE": {
             "type": "bezahlmoglichkeit-logo",
-            "settings": {}
+            "settings": {
+              "image_payment_icon": "shopify://shop_images/Rectangle_156.png",
+              "alt_text": "Zahlungsart"
+            }
           },
           "bezahlmoglichkeit_logo_hNUFVm": {
             "type": "bezahlmoglichkeit-logo",
-            "settings": {}
+            "settings": {
+              "image_payment_icon": "shopify://shop_images/Rectangle_155.png",
+              "alt_text": "Zahlungsart"
+            }
           },
           "bezahlmoglichkeit_logo_MF8fia": {
             "type": "bezahlmoglichkeit-logo",
-            "settings": {}
+            "settings": {
+              "image_payment_icon": "shopify://shop_images/Rectangle_154.png",
+              "alt_text": "Zahlungsart"
+            }
           },
           "bezahlmoglichkeit_logo_W6qcWA": {
             "type": "bezahlmoglichkeit-logo",
-            "settings": {}
+            "settings": {
+              "image_payment_icon": "shopify://shop_images/Rectangle_153.png",
+              "alt_text": "Zahlungsart"
+            }
           },
           "bezahlmoglichkeit_logo_HMepfi": {
             "type": "bezahlmoglichkeit-logo",
-            "settings": {}
-          },
-          "bezahlmoglichkeit_logo_VC7zJC": {
-            "type": "bezahlmoglichkeit-logo",
-            "settings": {}
-          },
-          "bezahlmoglichkeit_logo_XhcK6p": {
-            "type": "bezahlmoglichkeit-logo",
-            "settings": {}
-          },
-          "bezahlmoglichkeit_logo_eAkqTd": {
-            "type": "bezahlmoglichkeit-logo",
-            "settings": {}
+            "settings": {
+              "image_payment_icon": "shopify://shop_images/Rectangle_158.png",
+              "alt_text": "Zahlungsart"
+            }
           }
         },
         "block_order": [
@@ -121,10 +124,7 @@
           "bezahlmoglichkeit_logo_hNUFVm",
           "bezahlmoglichkeit_logo_MF8fia",
           "bezahlmoglichkeit_logo_W6qcWA",
-          "bezahlmoglichkeit_logo_HMepfi",
-          "bezahlmoglichkeit_logo_VC7zJC",
-          "bezahlmoglichkeit_logo_XhcK6p",
-          "bezahlmoglichkeit_logo_eAkqTd"
+          "bezahlmoglichkeit_logo_HMepfi"
         ],
         "settings": {
           "image_logo_image": "shopify://shop_images/Logo_white.png",
