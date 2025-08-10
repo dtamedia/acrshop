@@ -2,6 +2,9 @@
         <div class="nav_container-4">
           <a href="{{ routes.root_url }}" li-object:href="routes.root_url" class="nav_logo-link w-nav-brand"><img src="{{ 'image-19.webp' | asset_url }}" loading="lazy" alt="" class="image"></a>
           <nav role="navigation" id="w-node-_5a3d68ce-093a-68c8-fab8-972baa206df2-aa206ded" class="nav_menu-5 is-page-height-tablet w-nav-menu">
+            <div class="navbar-outbound-link-wrapper">
+              <a href="{{ section.settings.url_link_inbound }}" class="navbar-text"> {{ section.settings.text_inbound_text }} </a>
+            </div>
             <div>
               <div data-delay="200" data-hover="true" class="nav_menu-dropdown w-dropdown">
                 <div class="nav_dropdown-toggle-4 w-dropdown-toggle">
@@ -251,6 +254,17 @@
     "name": "header",
     "class": "section_navbar-2",
     "settings": [
+        {
+            "id": "url_link_inbound",
+            "type": "url",
+            "label": "Link Inbound"
+        },
+        {
+            "id": "text_inbound_text",
+            "type": "text",
+            "label": "Inbound Text",
+            "default": "Soundupgrades"
+        },
         {
             "id": "text_text_automarke",
             "type": "text",
