@@ -12,58 +12,117 @@
     "sections": {
       "header": {
         "type": "header",
-        "settings": {}
+        "settings": {
+          "url_link_inbound": "shopify://collections/soundupgrades",
+          "text_inbound_text": "Soundupgrades",
+          "text_text_automarke": "Automarke",
+          "text_heading_left_marke": "Unsere Bestseller",
+          "url_product_link_marke_1": "shopify://products/helix-next-v-two",
+          "image_product_image_marke_1": "shopify://shop_images/image_58.png",
+          "text_product_name_marke_1": "Helix Next V Two",
+          "url_product_link_marke_2": "shopify://products/helix-ik-w12",
+          "image_product_image_marke_2": "shopify://shop_images/image_58-1.png",
+          "text_product_name_marke_2": "Helix IK W12",
+          "url_product_link_marke_3": "shopify://products/helix-iq-w12-dvc2",
+          "image_product_image_marke_3": "shopify://shop_images/image_58_c824f6c3-9257-4e3c-af7c-144f63baa76b.png",
+          "text_product_name_marke_3": "Helix IQ W12",
+          "text_heading_right_marke": "Alle Automarken",
+          "url_category_marke_1": "shopify://collections/audi",
+          "text_category_marke_1": "Audi",
+          "url_category_marke_2": "shopify://collections/bmw",
+          "text_category_marke_2": "BMW",
+          "url_category_marke_3": "shopify://collections/mercedes-benz",
+          "text_category_marke_3": "Mercedes",
+          "url_category_marke_4": "shopify://collections/volkswagen",
+          "text_category_marke_4": "VW",
+          "url_category_marke_5": "shopify://collections/fiat",
+          "text_category_marke_5": "Fiat",
+          "url_category_marke_6": "shopify://collections/ineos",
+          "text_category_marke_6": "Ineos",
+          "text_text_hersteller": "Hersteller",
+          "text_heading_left_hersteller": "Unsere Bestseller",
+          "url_product_link_hersteller_1": "shopify://products/helix-next-v-two",
+          "image_product_image_hersteller_1": "shopify://shop_images/image_58.png",
+          "text_product_name_hersteller_1": "Helix Next V Two",
+          "url_product_link_hersteller_2": "shopify://products/helix-ik-w12",
+          "image_product_image_hersteller_2": "shopify://shop_images/image_58-1.png",
+          "text_product_name_hersteller_2": "Helix IK W12",
+          "url_product_link_hersteller_3": "shopify://products/helix-iq-w12-dvc2",
+          "image_product_image_hersteller_3": "shopify://shop_images/image_58_c824f6c3-9257-4e3c-af7c-144f63baa76b.png",
+          "text_product_name_hersteller_3": "Helix IQ W12",
+          "text_heading_right_hersteller": "Alle Hersteller",
+          "url_category_hersteller_1": "shopify://collections/helix",
+          "text_category_hersteller_1": "Helix",
+          "url_category_hersteller_2": "shopify://collections/steg",
+          "text_category_hersteller_2": "Steg",
+          "url_category_hersteller_3": "shopify://collections/match",
+          "text_category_hersteller_3": "Match",
+          "url_category_hersteller_4": "shopify://collections/eton",
+          "text_category_hersteller_4": "Eton",
+          "url_category_hersteller_5": "shopify://collections/fortissimo",
+          "text_category_hersteller_5": "Fortissimo",
+          "url_category_hersteller_6": "shopify://collections/zenec",
+          "text_category_hersteller_6": "Zenec",
+          "url_category_hersteller_7": "shopify://collections/soundupgrade-bayern",
+          "text_category_hersteller_7": "Soundupgrade Bayern",
+          "text_produkt": "Produkt",
+          "text_heading_left_produkt": "Unsere Bestseller",
+          "url_product_link_produkt_1": "shopify://products/helix-next-v-two",
+          "image_product_image_produkt_1": "shopify://shop_images/image_58.png",
+          "text_product_name_produkt_1": "Helix Next V Two",
+          "url_product_link_produkt_2": "shopify://products/helix-ik-w12",
+          "image_product_image_produkt_2": "shopify://shop_images/image_58-1.png",
+          "text_product_name_produkt_2": "Helix IK W12",
+          "url_product_link_produkt_3": "shopify://products/helix-iq-w12-dvc2",
+          "image_product_image_produkt_3": "shopify://shop_images/image_58_c824f6c3-9257-4e3c-af7c-144f63baa76b.png",
+          "text_product_name_produkt_3": "Helix IQ W12",
+          "text_heading_right_produkt": "Alle Produkte",
+          "url_category_produkt_1": "shopify://collections/lautsprecher",
+          "text_category_produkt_1": "Lautsprecher",
+          "url_category_produkt_2": "shopify://collections/subwoofer",
+          "text_category_produkt_2": "Subwoofer",
+          "url_category_produkt_3": "shopify://collections/verstarker",
+          "text_category_produkt_3": "Verstärker",
+          "url_category_produkt_4": "shopify://collections/radio",
+          "text_category_produkt_4": "Radios",
+          "url_link": "https://soundupgrade-bayern.de/",
+          "text_outbound_link": "Soundupgrade Bayern"
+        }
       },
       "footer": {
         "type": "footer",
         "blocks": {
           "bezahlmoglichkeit_logo_3QHrFE": {
             "type": "bezahlmoglichkeit-logo",
-            "settings": {
-              "image_payment_icon": "shopify://shop_images/Rectangle_152.png"
-            }
+            "settings": {}
           },
           "bezahlmoglichkeit_logo_hNUFVm": {
             "type": "bezahlmoglichkeit-logo",
-            "settings": {
-              "image_payment_icon": "shopify://shop_images/Apple_Pay_Logo.png"
-            }
+            "settings": {}
           },
           "bezahlmoglichkeit_logo_MF8fia": {
             "type": "bezahlmoglichkeit-logo",
-            "settings": {
-              "image_payment_icon": "shopify://shop_images/Rectangle_156.png"
-            }
+            "settings": {}
           },
           "bezahlmoglichkeit_logo_W6qcWA": {
             "type": "bezahlmoglichkeit-logo",
-            "settings": {
-              "image_payment_icon": "shopify://shop_images/Rectangle_153.png"
-            }
+            "settings": {}
           },
           "bezahlmoglichkeit_logo_HMepfi": {
             "type": "bezahlmoglichkeit-logo",
-            "settings": {
-              "image_payment_icon": "shopify://shop_images/Rectangle_158.png"
-            }
+            "settings": {}
           },
           "bezahlmoglichkeit_logo_VC7zJC": {
             "type": "bezahlmoglichkeit-logo",
-            "settings": {
-              "image_payment_icon": "shopify://shop_images/Rectangle_155.png"
-            }
+            "settings": {}
           },
           "bezahlmoglichkeit_logo_XhcK6p": {
             "type": "bezahlmoglichkeit-logo",
-            "settings": {
-              "image_payment_icon": "shopify://shop_images/Rectangle_159.png"
-            }
+            "settings": {}
           },
           "bezahlmoglichkeit_logo_eAkqTd": {
             "type": "bezahlmoglichkeit-logo",
-            "settings": {
-              "image_payment_icon": "shopify://shop_images/Rectangle_157.png"
-            }
+            "settings": {}
           }
         },
         "block_order": [
