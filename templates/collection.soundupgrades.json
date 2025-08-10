@@ -50,64 +50,73 @@
         "soundupgrade_item_bRazCa": {
           "type": "soundupgrade-item",
           "settings": {
-            "text_marke": "BMW",
-            "url_link": ""
+            "text_marke": "Fiat",
+            "url_link": "shopify://products/fiat",
+            "image_feature_image": "shopify://shop_images/Rectangle_221-9.png"
           }
         },
         "soundupgrade_item_cYNXky": {
           "type": "soundupgrade-item",
           "settings": {
-            "text_marke": "BMW",
-            "url_link": ""
+            "text_marke": "Grenadier",
+            "url_link": "shopify://products/grenadier",
+            "image_feature_image": "shopify://shop_images/Rectangle_221-1.png"
           }
         },
         "soundupgrade_item_jYnF7M": {
           "type": "soundupgrade-item",
           "settings": {
-            "text_marke": "BMW",
-            "url_link": ""
+            "text_marke": "Mercedes",
+            "url_link": "shopify://products/mercedes-benz",
+            "image_feature_image": "shopify://shop_images/Rectangle_221-4.png"
           }
         },
         "soundupgrade_item_LEfnMX": {
           "type": "soundupgrade-item",
           "settings": {
-            "text_marke": "BMW",
-            "url_link": ""
+            "text_marke": "Seat",
+            "url_link": "shopify://products/seat",
+            "image_feature_image": "shopify://shop_images/Rectangle_221-7.png"
           }
         },
         "soundupgrade_item_BFqCxU": {
           "type": "soundupgrade-item",
           "settings": {
-            "text_marke": "BMW",
-            "url_link": ""
+            "text_marke": "Porsche",
+            "url_link": "shopify://products/porsche",
+            "image_feature_image": "shopify://shop_images/Rectangle_221-10.png"
           }
         },
         "soundupgrade_item_HgqnwY": {
           "type": "soundupgrade-item",
           "settings": {
-            "text_marke": "BMW",
-            "url_link": ""
+            "text_marke": "Skoda",
+            "url_link": "shopify://products/skoda",
+            "image_feature_image": "shopify://shop_images/Rectangle_221-2.png"
           }
         },
         "soundupgrade_item_n6Aizy": {
           "type": "soundupgrade-item",
           "settings": {
-            "text_marke": "BMW",
-            "url_link": ""
+            "text_marke": "Sprinter",
+            "url_link": "shopify://products/sprinter",
+            "image_feature_image": "shopify://shop_images/Rectangle_221-5.png"
           }
         },
         "soundupgrade_item_a7hNAQ": {
           "type": "soundupgrade-item",
           "settings": {
-            "text_marke": "BMW",
-            "url_link": ""
+            "text_marke": "Volkswagen",
+            "url_link": "shopify://products/volkswagen",
+            "image_feature_image": "shopify://shop_images/Rectangle_221-8.png"
           }
         },
         "soundupgrade_item_pUF4yx": {
           "type": "soundupgrade-item",
           "settings": {
-            "text_marke": "BMW",
-            "url_link": ""
+            "text_marke": "VW Bulli",
+            "url_link": "shopify://products/vw-bulli",
+            "image_feature_image": "shopify://shop_images/Rectangle_221-11.png"
           }
         }
       },
