@@ -83,48 +83,43 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "bezahlmoglichkeit_logo_3QHrFE": {
-            "type": "bezahlmoglichkeit-logo",
+          "payment_logo_twiTeV": {
+            "type": "payment-logo",
             "settings": {
-              "image_payment_icon": "shopify://shop_images/Rectangle_156.png",
-              "alt_text": "Zahlungsart"
+              "image_image": "shopify://shop_images/Rectangle_156.png"
             }
           },
-          "bezahlmoglichkeit_logo_hNUFVm": {
-            "type": "bezahlmoglichkeit-logo",
+          "payment_logo_fngnKR": {
+            "type": "payment-logo",
             "settings": {
-              "image_payment_icon": "shopify://shop_images/Rectangle_155.png",
-              "alt_text": "Zahlungsart"
+              "image_image": "shopify://shop_images/Rectangle_155.png"
             }
           },
-          "bezahlmoglichkeit_logo_MF8fia": {
-            "type": "bezahlmoglichkeit-logo",
+          "payment_logo_bgYwQ3": {
+            "type": "payment-logo",
             "settings": {
-              "image_payment_icon": "shopify://shop_images/Apple_Pay_Logo.png",
-              "alt_text": "Zahlungsart"
+              "image_image": "shopify://shop_images/Rectangle_158.png"
             }
           },
-          "bezahlmoglichkeit_logo_W6qcWA": {
-            "type": "bezahlmoglichkeit-logo",
+          "payment_logo_MAmTVr": {
+            "type": "payment-logo",
             "settings": {
-              "image_payment_icon": "shopify://shop_images/Rectangle_153.png",
-              "alt_text": "Zahlungsart"
+              "image_image": "shopify://shop_images/Rectangle_153.png"
             }
           },
-          "bezahlmoglichkeit_logo_HMepfi": {
-            "type": "bezahlmoglichkeit-logo",
+          "payment_logo_iN4DEj": {
+            "type": "payment-logo",
             "settings": {
-              "image_payment_icon": "shopify://shop_images/Rectangle_158.png",
-              "alt_text": "Zahlungsart"
+              "image_image": "shopify://shop_images/Apple_Pay_Logo.png"
             }
           }
         },
         "block_order": [
-          "bezahlmoglichkeit_logo_3QHrFE",
-          "bezahlmoglichkeit_logo_hNUFVm",
-          "bezahlmoglichkeit_logo_MF8fia",
-          "bezahlmoglichkeit_logo_W6qcWA",
-          "bezahlmoglichkeit_logo_HMepfi"
+          "payment_logo_twiTeV",
+          "payment_logo_fngnKR",
+          "payment_logo_bgYwQ3",
+          "payment_logo_MAmTVr",
+          "payment_logo_iN4DEj"
         ],
         "settings": {
           "image_logo_image": "shopify://shop_images/Logo_white.png",
