@@ -1,224 +1,279 @@
-<div class="padding-global padding-section-small" li-object="footer-top">
-  <div class="spacer-huge"></div>
-
-  <div class="footer-content-wrapper" li-object="footer-content">
-    {%- if section.settings.image_logo_image -%}
-      {{ section.settings.image_logo_image
-        | image_url: width: 600
-        | image_tag:
-            loading: 'lazy',
-            class: 'footer-logo',
-            alt: 'Logo',
-            sizes: '(max-width: 767px) 60vw, 300px',
-            widths: '200,300,400,600' }}
-    {%- else -%}
-      <img src="{{ 'logo-white.svg' | asset_url }}" loading="lazy" alt="Logo" class="footer-logo">
-    {%- endif -%}
-
-    <div class="footer-content-inner" li-object="footer-col">
-      <h2 class="heading-style-h2 is-white is-footer">
-        {{ section.settings.text_acr_text }}
-      </h2>
-
-      <div class="spacer-small"></div>
-
-      <div class="text-size-medium is-white">
-        {{ section.settings.text_anfahrt }}
-      </div>
-      <div class="spacer-xxsmall"></div>
-
-      <div class="text-size-medium is-white">
-        {{ section.settings.text_telefon }}
-      </div>
-      <div class="spacer-xxsmall"></div>
-
-      <div class="text-size-medium is-white">
-        {{ section.settings.text_e_mail }}
-      </div>
-    </div>
-
-    <div class="footer-content-inner" li-object="footer-col">
-      <h2 class="heading-style-h2 is-white is-footer">
-        {{ section.settings.text_schnellmenu_text }}
-      </h2>
-
-      <div class="spacer-small"></div>
-
-      <a href="{{ section.settings.url_link_start }}" class="w-inline-block">
-        <div class="text-size-medium is-white">{{ section.settings.text_start }}</div>
-      </a>
-      <div class="spacer-xxsmall"></div>
-
-      <a href="{{ section.settings.url_link_soundupgrades }}" class="w-inline-block">
-        <div class="text-size-medium is-white">{{ section.settings.text_soundupgrades }}</div>
-      </a>
-      <div class="spacer-xxsmall"></div>
-
-      <a href="{{ section.settings.url_einzelkomponenten_link }}" class="w-inline-block">
-        <div class="text-size-medium is-white">{{ section.settings.text_einzelkompontenten }}</div>
-      </a>
-      <div class="spacer-xxsmall"></div>
-
-      <a href="{{ section.settings.url_link_soundupgrade_bayern }}" class="w-inline-block">
-        <div class="text-size-medium is-white">{{ section.settings.text_soundupgrade_bayern }}</div>
-      </a>
-    </div>
-  </div>
-
-  <div class="spacer-huge"></div>
+<div class="padding-global padding-section-small">
+        <div class="spacer-huge"></div>
+        <div class="footer-content-wrapper">{% if section.settings.image_logo_image %}
+{{ section.settings.image_logo_image | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'footer-logo' }}
+{% else %}
+<img src="{{ 'logo-white.svg' | asset_url }}" loading="lazy" alt="" class="footer-logo">
+{% endif %}
+          <div class="footer-content-inner">
+            <h2 class="heading-style-h2 is-white is-footer">
+{{ section.settings.text_acr_text }}
+</h2>
+            <div class="spacer-small"></div>
+            <div class="text-size-medium is-white">
+{{ section.settings.text_anfahrt }}
 </div>
-
-<div class="footer_divider"></div>
-
-<div class="padding-global padding-section-small" li-object="footer-middle">
-  <div class="footer-icon-wrapper" li-object="footer-rows">
-
-    <div class="footer-icon-content" li-object="footer-row">
-      <h2 class="heading-style-h2 is-white is-footer">
-        {{ section.settings.text_social_media_heading }}
-      </h2>
-
-      <div class="spacer-small"></div>
-
-      <div class="social-icon-wrapper" li-object="social-icons">
-        <a href="{{ section.settings.url_link_instagram }}" class="w-inline-block" aria-label="Instagram">
-          <img src="{{ 'icons8-instagram.svg' | asset_url }}" loading="lazy" alt="Instagram" class="socoial-icon">
-        </a>
-        <a href="{{ section.settings.url_link_facebook }}" class="w-inline-block" aria-label="Facebook">
-          <img src="{{ 'icons8-facebook-1.svg' | asset_url }}" loading="lazy" alt="Facebook" class="socoial-icon">
-        </a>
-        <a href="{{ section.settings.url_link_youtube }}" class="w-inline-block" aria-label="YouTube">
-          <img src="{{ 'icons8-youtube.svg' | asset_url }}" loading="lazy" alt="YouTube" class="socoial-icon">
-        </a>
-      </div>
-    </div>
-
-    <div class="footer-icon-content" li-object="footer-row">
-      <h2 class="heading-style-h2 is-white is-footer">
-        {{ section.settings.text_bezahlmoglichkeiten_heading }}
-      </h2>
-
-      <div class="spacer-small"></div>
-
-      <div class="social-icon-wrapper" li-content-for-blocks li-object="payment-icons">
-        {% for block in section.blocks %}
-          {% case block.type %}
-            {% when '@app' %}
-              {% render block %}
-
-            {% when 'bezahlmoglichkeit-logo' %}
-              <div li-block="Bezahlmöglichkeit Logo" {{ block.shopify_attributes }}>
-                {% if block.settings.image_payment_icon %}
-                  {{ block.settings.image_payment_icon
-                    | image_url: width: 240
-                    | image_tag:
-                        loading: 'lazy',
-                        class: 'footer_payment-icon',
-                        alt: block.settings.alt_text | default: 'Zahlungsart',
-                        sizes: '120px',
-                        widths: '120,160,240' }}
-                {% else %}
-                  <img
-                    src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg"
-                    loading="lazy"
-                    alt="{{ block.settings.alt_text | default: 'Zahlungsart' }}"
-                    class="footer_payment-icon">
-                {% endif %}
-              </div>
-          {% endcase %}
-        {% endfor %}
-      </div>
-    </div>
-
-  </div>
+            <div class="spacer-xxsmall"></div>
+            <div class="text-size-medium is-white">
+{{ section.settings.text_telefon }}
 </div>
-
-<div class="footer_divider"></div>
-
-<div class="padding-global padding-section-small" li-object="footer-bottom">
-  <div class="legal-wrapper" li-object="legal">
-    <div class="legal-text-wrapper" li-object="legal-links">
-      <a href="{{ section.settings.url_impressum_link }}" class="w-inline-block">
-        <div class="text-size-medium is-white">{{ section.settings.text_impressum }}</div>
-      </a>
-      <a href="{{ section.settings.url_datenschutz_link }}" class="w-inline-block">
-        <div class="text-size-medium is-white">{{ section.settings.text_datenschutz }}</div>
-      </a>
-      <a href="{{ section.settings.url_agb_link }}" class="w-inline-block">
-        <div class="text-size-medium is-white">{{ section.settings.text_agb }}</div>
-      </a>
-      <a href="{{ section.settings.url_ruckgabe_link }}" class="w-inline-block">
-        <div class="text-size-medium is-white">{{ section.settings.text_ruckgabe }}</div>
-      </a>
-    </div>
-
-    <div class="copyright-wrapper" li-object="copyright">
-      <a href="https://dta-media.de/" target="_blank" class="w-inline-block" rel="noopener">
-        <div class="text-size-medium is-white">
-          Copyright © <span id="current-year">{{ 'now' | date: '%Y' }}</span> | Alle Rechte vorbehalten | Designed by DTA-Media
+            <div class="spacer-xxsmall"></div>
+            <div class="text-size-medium is-white">
+{{ section.settings.text_e_mail }}
+</div>
+          </div>
+          <div class="footer-content-inner">
+            <h2 class="heading-style-h2 is-white is-footer">
+{{ section.settings.text_schnellmenu_text }}
+</h2>
+            <div class="spacer-small"></div>
+            <a href="{{ section.settings.url_link_start }}" class="w-inline-block"> <div class="text-size-medium is-white">{{ section.settings.text_start }}</div> </a>
+            <div class="spacer-xxsmall"></div>
+            <a href="{{ section.settings.url_link_soundupgrades }}" class="w-inline-block"> <div class="text-size-medium is-white">{{ section.settings.text_soundupgrades }}</div> </a>
+            <div class="spacer-xxsmall"></div>
+            <a href="{{ section.settings.url_einzelkomponenten_link }}" class="w-inline-block"> <div class="text-size-medium is-white">{{ section.settings.text_einzelkompontenten }}</div> </a>
+            <div class="spacer-xxsmall"></div>
+            <a href="{{ section.settings.url_link_soundupgrade_bayern }}" class="w-inline-block"> <div class="text-size-medium is-white">{{ section.settings.text_soundupgrade_bayern }}</div> </a>
+          </div>
         </div>
-      </a>
+        <div class="spacer-huge"></div>
+      </div>
+      <div class="footer_divider"></div>
+      <div class="padding-global padding-section-small">
+        <div class="footer-icon-wrapper">
+          <div class="footer-icon-content">
+            <h2 class="heading-style-h2 is-white is-footer">
+{{ section.settings.text_social_media_heading }}
+</h2>
+            <div class="spacer-small"></div>
+            <div class="social-icon-wrapper">
+              <a href="{{ section.settings.url_link_instagram }}" class="w-inline-block"> <img src="{{ 'icons8-instagram.svg' | asset_url }}" loading="lazy" alt="" class="socoial-icon"> </a>
+              <a href="{{ section.settings.url_link_facebook }}" class="w-inline-block"> <img src="{{ 'icons8-facebook-1.svg' | asset_url }}" loading="lazy" alt="" class="socoial-icon"> </a>
+              <a href="{{ section.settings.url_link_youtube }}" class="w-inline-block"> <img src="{{ 'icons8-youtube.svg' | asset_url }}" loading="lazy" alt="" class="socoial-icon"> </a>
+            </div>
+          </div>
+          <div class="footer-icon-content">
+            <h2 class="heading-style-h2 is-white is-footer">
+{{ section.settings.text_bezahlmoglichkeiten_heading }}
+</h2>
+            <div class="spacer-small"></div>
+            <div li-content-for-blocks="" class="social-icon-wrapper">
+{% for block in section.blocks %}
+{% case block.type %}
+{% when '@app' %}
+{% render block %}
+
+              {% when 'payment-logo' %}
+            <div li-block="Payment Logo">
+                    {% if block.settings.image_image %}
+{{ block.settings.image_image | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'footer_payment-icon' }}
+{% else %}
+<img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" alt="" class="footer_payment-icon">
+{% endif %}
+                </div>
+            {% endcase %}
+{% endfor %}
+
     </div>
-  </div>
-</div>
-
-{% schema %}
-{
-  "tag": "footer",
-  "name": "footer",
-  "class": "section_footer",
-  "blocks": [
-    {
-      "name": "Bezahlmöglichkeit Logo",
-      "type": "bezahlmoglichkeit-logo",
-      "settings": [
-        { "id": "image_payment_icon", "type": "image_picker", "label": "Payment Icon" },
-        { "id": "alt_text", "type": "text", "label": "Alt-Text", "default": "Zahlungsart" }
-      ]
-    },
-    { "type": "@app" }
-  ],
-  "settings": [
-    { "id": "image_logo_image", "type": "image_picker", "label": "Logo Image" },
-    { "id": "text_acr_text", "type": "text", "label": "ACR Text", "default": "ACR Traunstein" },
-    { "id": "text_anfahrt", "type": "text", "label": "Anfahrt", "default": "Anfahrt: Chiemseestr. 38, 83278 Traunstein" },
-    { "id": "text_telefon", "type": "text", "label": "Telefon", "default": "Tel: +49 (0)861 90991199" },
-    { "id": "text_e_mail", "type": "text", "label": "E-Mail", "default": "E-Mail: info@soundupgrade-bayern.de" },
-
-    { "id": "text_schnellmenu_text", "type": "text", "label": "Schnellmenü Text", "default": "Schnellmenü" },
-    { "id": "url_link_start", "type": "url", "label": "Link Start" },
-    { "id": "text_start", "type": "text", "label": "Start", "default": "Start" },
-    { "id": "url_link_soundupgrades", "type": "url", "label": "Link Soundupgrades" },
-    { "id": "text_soundupgrades", "type": "text", "label": "Soundupgrades", "default": "Soundupgrades" },
-    { "id": "url_einzelkomponenten_link", "type": "url", "label": "Einzelkomponenten Link" },
-    { "id": "text_einzelkompontenten", "type": "text", "label": "Einzelkompontenten", "default": "Einzelkomponenten" },
-    { "id": "url_link_soundupgrade_bayern", "type": "url", "label": "Link Soundupgrade Bayern" },
-    { "id": "text_soundupgrade_bayern", "type": "text", "label": "Soundupgrade Bayern", "default": "Soundupgrade Bayern" },
-
-    { "id": "text_social_media_heading", "type": "text", "label": "Social Media Heading", "default": "Social Media" },
-    { "id": "url_link_instagram", "type": "url", "label": "Link Instagram" },
-    { "id": "url_link_facebook", "type": "url", "label": "Link Facebook" },
-    { "id": "url_link_youtube", "type": "url", "label": "Link Youtube" },
-
-    { "id": "text_bezahlmoglichkeiten_heading", "type": "text", "label": "Bezahlmöglichkeiten Heading", "default": "Bezahlmöglichkeiten" },
-
-    { "id": "url_impressum_link", "type": "url", "label": "Impressum Link" },
-    { "id": "text_impressum", "type": "text", "label": "Impressum", "default": "Impressum" },
-    { "id": "url_datenschutz_link", "type": "url", "label": "Datenschutz Link" },
-    { "id": "text_datenschutz", "type": "text", "label": "Datenschutz", "default": "Datenschutz" },
-    { "id": "url_agb_link", "type": "url", "label": "AGB Link" },
-    { "id": "text_agb", "type": "text", "label": "AGB", "default": "AGB" },
-    { "id": "url_ruckgabe_link", "type": "url", "label": "Rückgabe Link" },
-    { "id": "text_ruckgabe", "type": "text", "label": "Rückgabe", "default": "Rückgabe" }
-  ],
-  "presets": [
-    {
-      "name": "footer",
-      "category": "Liquify",
-      "blocks": [
-        { "type": "bezahlmoglichkeit-logo" }
-      ]
-    }
-  ]
-}
-{% endschema %}
+          </div>
+        </div>
+      </div>
+      <div class="footer_divider"></div>
+      <div class="padding-global padding-section-small">
+        <div class="legal-wrapper">
+          <div class="legal-text-wrapper">
+            <a href="{{ section.settings.url_impressum_link }}" class="w-inline-block"> <div class="text-size-medium is-white">{{ section.settings.text_impressum }}</div> </a>
+            <a href="{{ section.settings.url_datenschutz_link }}" class="w-inline-block"> <div class="text-size-medium is-white">{{ section.settings.text_datenschutz }}</div> </a>
+            <a href="{{ section.settings.url_agb_link }}" class="w-inline-block"> <div class="text-size-medium is-white">{{ section.settings.text_agb }}</div> </a>
+            <a href="{{ section.settings.url_ruckgabe_link }}" class="w-inline-block"> <div class="text-size-medium is-white">{{ section.settings.text_ruckgabe }}</div> </a>
+          </div>
+          <div class="copyright-wrapper">
+            <a href="https://dta-media.de/" target="_blank" class="w-inline-block">
+              <div class="text-size-medium is-white">Copyright © <span id="current-year">2025</span> | Alle Rechte vorbehalten | Designed by DTA-Media</div>
+            </a>
+          </div>
+        </div>
+      </div> {% schema %} {
+    "tag": "footer",
+    "name": "footer",
+    "class": "section_footer",
+    "blocks": [
+        {
+            "name": "Payment Logo",
+            "type": "payment-logo",
+            "settings": [
+                {
+                    "id": "image_image",
+                    "type": "image_picker",
+                    "label": "Image"
+                }
+            ]
+        },
+        {
+            "type": "@app"
+        }
+    ],
+    "settings": [
+        {
+            "id": "image_logo_image",
+            "type": "image_picker",
+            "label": "Logo Image"
+        },
+        {
+            "id": "text_acr_text",
+            "type": "text",
+            "label": "ACR Text",
+            "default": "ACR Traunstein"
+        },
+        {
+            "id": "text_anfahrt",
+            "type": "text",
+            "label": "Anfahrt",
+            "default": "Anfahrt: Chiemseestr. 38, 83278 Traunstein"
+        },
+        {
+            "id": "text_telefon",
+            "type": "text",
+            "label": "Telefon",
+            "default": "Tel: +49 (0)861 90991199"
+        },
+        {
+            "id": "text_e_mail",
+            "type": "text",
+            "label": "E-Mail",
+            "default": "E-Mail: info@soundupgrade-bayern.de"
+        },
+        {
+            "id": "text_schnellmenu_text",
+            "type": "text",
+            "label": "Schnellmen\u00fc Text",
+            "default": "Schnellmen\u00fc"
+        },
+        {
+            "id": "url_link_start",
+            "type": "url",
+            "label": "Link Start"
+        },
+        {
+            "id": "text_start",
+            "type": "text",
+            "label": "Start",
+            "default": "Start"
+        },
+        {
+            "id": "url_link_soundupgrades",
+            "type": "url",
+            "label": "Link Soundupgrades"
+        },
+        {
+            "id": "text_soundupgrades",
+            "type": "text",
+            "label": "Soundupgrades",
+            "default": "Soundupgrades"
+        },
+        {
+            "id": "url_einzelkomponenten_link",
+            "type": "url",
+            "label": "Einzelkomponenten Link"
+        },
+        {
+            "id": "text_einzelkompontenten",
+            "type": "text",
+            "label": "Einzelkompontenten",
+            "default": "Einzelkomponenten"
+        },
+        {
+            "id": "url_link_soundupgrade_bayern",
+            "type": "url",
+            "label": "Link Soundupgrade Bayern"
+        },
+        {
+            "id": "text_soundupgrade_bayern",
+            "type": "text",
+            "label": "Soundupgrade Bayern",
+            "default": "Soundupgrade Bayern"
+        },
+        {
+            "id": "text_social_media_heading",
+            "type": "text",
+            "label": "Social Media Heading",
+            "default": "Social Media"
+        },
+        {
+            "id": "url_link_instagram",
+            "type": "url",
+            "label": "Link Instagram"
+        },
+        {
+            "id": "url_link_facebook",
+            "type": "url",
+            "label": "Link Facebook"
+        },
+        {
+            "id": "url_link_youtube",
+            "type": "url",
+            "label": "Link Youtube"
+        },
+        {
+            "id": "text_bezahlmoglichkeiten_heading",
+            "type": "text",
+            "label": "Bezahlm\u00f6glichkeiten Heading",
+            "default": "Bezahlm\u00f6glichkeiten"
+        },
+        {
+            "id": "url_impressum_link",
+            "type": "url",
+            "label": "Impressum Link"
+        },
+        {
+            "id": "text_impressum",
+            "type": "text",
+            "label": "Impressum",
+            "default": "Impressum"
+        },
+        {
+            "id": "url_datenschutz_link",
+            "type": "url",
+            "label": "Datenschutz Link"
+        },
+        {
+            "id": "text_datenschutz",
+            "type": "text",
+            "label": "Datenschutz",
+            "default": "Datenschutz"
+        },
+        {
+            "id": "url_agb_link",
+            "type": "url",
+            "label": "AGB Link"
+        },
+        {
+            "id": "text_agb",
+            "type": "text",
+            "label": "AGB",
+            "default": "ABG"
+        },
+        {
+            "id": "url_ruckgabe_link",
+            "type": "url",
+            "label": "R\u00fcckgabe Link"
+        },
+        {
+            "id": "text_ruckgabe",
+            "type": "text",
+            "label": "R\u00fcckgabe",
+            "default": "R\u00fcckgabe"
+        }
+    ],
+    "presets": [
+        {
+            "name": "footer",
+            "category": "Liquify",
+            "blocks": [
+                {
+                    "type": "payment-logo"
+                }
+            ]
+        }
+    ]
+} {% endschema %}
