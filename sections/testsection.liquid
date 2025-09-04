@@ -1,12 +1,46 @@
-<h1>Heading</h1> {% schema %} {
+<div li-section-for-blocks="" class="block-wrapper">
+          {% for block in section.blocks %}
+    {% if block.type == "h1" %}
+                    <h1 li-block="H1">
+                                    Heading
+                            </h1>
+            {% endif %}
+{% endfor %}
+          {% for block in section.blocks %}
+    {% if block.type == "copy" %}
+                    <div li-block="Copy">
+                                    This is some text inside of a div block.
+                            </div>
+            {% endif %}
+{% endfor %}
+        </div> {% schema %} {
     "tag": "div",
     "name": "Testsection",
     "class": "section-block-test",
+    "blocks": [
+        {
+            "name": "H1",
+            "type": "h1",
+            "settings": null
+        },
+        {
+            "name": "Copy",
+            "type": "copy",
+            "settings": null
+        }
+    ],
     "presets": [
         {
             "name": "Testsection",
             "category": "Liquify",
-            "blocks": []
+            "blocks": [
+                {
+                    "type": "h1"
+                },
+                {
+                    "type": "copy"
+                }
+            ]
         }
     ]
 } {% endschema %}
