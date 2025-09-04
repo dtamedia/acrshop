@@ -1,0 +1,53 @@
+<div li-content-for-blocks="" class="block-wrapper">
+{% for block in section.blocks %}
+{% case block.type %}
+{% when '@app' %}
+{% render block %}
+
+          {% when 'dropdown' %}
+            <div li-block="Dropdown">
+                    
+            
+                    <div data-hover="false" data-delay="0" class="w-dropdown">
+              <div class="w-dropdown-toggle">
+                <div class="w-icon-dropdown-toggle"></div>
+                <div>Dropdown</div>
+              </div>
+              <nav class="w-dropdown-list">
+                <a href="#" class="w-dropdown-link">Link 1</a>
+                <a href="#" class="w-dropdown-link">Link 2</a>
+                <a href="#" class="w-dropdown-link">Link 3</a>
+              </nav>
+            </div>
+                    
+          
+                </div>
+        {% endcase %}
+{% endfor %}
+
+    </div> {% schema %} {
+    "tag": "div",
+    "name": "Blocktest",
+    "class": "section-block-test",
+    "blocks": [
+        {
+            "name": "Dropdown",
+            "type": "dropdown",
+            "settings": null
+        },
+        {
+            "type": "@app"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Blocktest",
+            "category": "Liquify",
+            "blocks": [
+                {
+                    "type": "dropdown"
+                }
+            ]
+        }
+    ]
+} {% endschema %}
