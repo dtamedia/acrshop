@@ -1,0 +1,43 @@
+{% for block in section.blocks %}
+    {% if block.type == "dropdown" %}
+                    <div li-block="Dropdown">
+                                    
+          
+                                    <div data-hover="false" data-delay="0" class="w-dropdown">
+            <div class="w-dropdown-toggle">
+              <div class="w-icon-dropdown-toggle"></div>
+              <div>Dropdown</div>
+            </div>
+            <nav class="w-dropdown-list">
+              <a href="#" class="w-dropdown-link">Link 1</a>
+              <a href="#" class="w-dropdown-link">Link 2</a>
+              <a href="#" class="w-dropdown-link">Link 3</a>
+            </nav>
+          </div>
+                                    
+        
+                            </div>
+            {% endif %}
+{% endfor %} {% schema %} {
+    "tag": "div",
+    "name": "Block Test",
+    "class": "section-block-test",
+    "blocks": [
+        {
+            "name": "Dropdown",
+            "type": "dropdown",
+            "settings": null
+        }
+    ],
+    "presets": [
+        {
+            "name": "Block Test",
+            "category": "Liquify",
+            "blocks": [
+                {
+                    "type": "dropdown"
+                }
+            ]
+        }
+    ]
+} {% endschema %}
