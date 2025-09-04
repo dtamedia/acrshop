@@ -63,10 +63,10 @@
 {% when '@app' %}
 {% render block %}
 
-              {% when 'bezahlmoglichkeit-logo' %}
-            <div li-block="Bezahlmöglichkeit Logo">
-                    {% if block.settings.image_payment_icon %}
-{{ block.settings.image_payment_icon | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'footer_payment-icon' }}
+              {% when 'payment-logo' %}
+            <div li-block="Payment Logo">
+                    {% if block.settings.image_image %}
+{{ block.settings.image_image | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'footer_payment-icon' }}
 {% else %}
 <img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" alt="" class="footer_payment-icon">
 {% endif %}
@@ -99,8 +99,15 @@
     "class": "section_footer",
     "blocks": [
         {
-            "name": "Bezahlm\u00f6glichkeit Logo",
-            "type": "bezahlmoglichkeit-logo"
+            "name": "Payment Logo",
+            "type": "payment-logo",
+            "settings": [
+                {
+                    "id": "image_image",
+                    "type": "image_picker",
+                    "label": "Image"
+                }
+            ]
         },
         {
             "type": "@app"
@@ -264,7 +271,7 @@
             "category": "Liquify",
             "blocks": [
                 {
-                    "type": "bezahlmoglichkeit-logo"
+                    "type": "payment-logo"
                 }
             ]
         }
