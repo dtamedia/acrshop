@@ -1,0 +1,16 @@
+{
+    "sections": {
+        "product_hero": {
+            "type": "product_hero"
+        },
+        "r_product_hero": {
+            "type": "r_product_hero"
+        }
+    },
+    "layout": "page.section-builder",
+    "wrapper": "main.main-wrapper",
+    "order": [
+        "product_hero",
+        "r_product_hero"
+    ]
+}
