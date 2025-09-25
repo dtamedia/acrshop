@@ -9,9 +9,15 @@
  */
 {
   "sections": {
-    "product_hero": {
-      "type": "product_hero",
-      "settings": {}
+    "r_product_hero_tTHiTe": {
+      "type": "r_product_hero",
+      "name": "R-Product-Hero",
+      "settings": {
+        "text_social_proof_text": "Davie und 1500+ andere lieben unsere Produkte und haben bereits mehrfach bei uns bestellt.",
+        "text_social_proof_text_name": "Davie",
+        "text_social_proof_text_number": "1500+",
+        "text_pretitel": "Soundupgrade"
+      }
     },
     "vergleichstabelle_6U6Nqm": {
       "type": "vergleichstabelle",
@@ -81,7 +87,7 @@
   "layout": "product",
   "wrapper": "main.main-wrapper",
   "order": [
-    "product_hero",
+    "r_product_hero_tTHiTe",
     "vergleichstabelle_6U6Nqm",
     "produktinfo_bzrbtD",
     "value_proposition_XT9Nzy",
