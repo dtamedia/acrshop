@@ -20,11 +20,11 @@
       "type": "produktinfo",
       "name": "Produktinfo",
       "settings": {
-        "image_produktfoto_advanced": "shopify://shop_images/BMW_Advanced_Fertig.jpg",
+        "image_produktfoto_advanced": "shopify://shop_images/BMW_Advanced_Fertig_c72390a8-6b81-4705-9e31-598c30097cf7.jpg",
         "text_soundupgrade_level_1": "Advanced",
-        "image_produktfoto_premium": "shopify://shop_images/BMW_Premium_Fertig.jpg",
+        "image_produktfoto_premium": "shopify://shop_images/BMW_Premium_Fertig_9405ca37-87b1-47e5-b5e7-552cca3346e0.jpg",
         "text_soundupgrade_level_2": "Premium",
-        "image_produktfoto_high_end": "shopify://shop_images/BMW_HighEnd_Fertig.jpg",
+        "image_produktfoto_high_end": "shopify://shop_images/BMW_HighEnd_Fertig_9a0b05af-7261-4730-93fd-e279c0daa662.jpg",
         "text_soundupgrade_level_3": "High-End"
       }
     },
