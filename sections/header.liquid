@@ -1,87 +1,897 @@
-<div data-animation="default" class="nav_component-2 w-nav" data-easing2="ease" fs-scrolldisable-element="smart-nav" data-easing="ease" data-collapse="medium" data-w-id="5a3d68ce-093a-68c8-fab8-972baa206dee" role="banner" data-duration="400" x-data="">
-        <div class="nav_container-4">
-          <a href="{{ routes.root_url }}" li-object:href="routes.root_url" class="nav_logo-link w-nav-brand"><img src="{{ 'image-19.webp' | asset_url }}" loading="lazy" alt="" class="image"></a>
-          <nav role="navigation" id="w-node-_5a3d68ce-093a-68c8-fab8-972baa206df2-aa206ded" class="nav_menu-5 is-page-height-tablet w-nav-menu">
-            <div class="navbar-outbound-link-wrapper">
-              <a href="{{ section.settings.url_link_inbound }}" class="navbar-text"> {{ section.settings.text_inbound_text }} </a>
-            </div>
-            <div>
-              <div data-delay="200" data-hover="true" class="nav_menu-dropdown w-dropdown">
-                <div class="nav_dropdown-toggle-4 w-dropdown-toggle">
-                  <div class="dropdown-icon-4 w-embed"><svg width=" 100%" height=" 100%" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M2.55806 6.29544C2.46043 6.19781 2.46043 6.03952 2.55806 5.94189L3.44195 5.058C3.53958 4.96037 3.69787 4.96037 3.7955 5.058L8.00001 9.26251L12.2045 5.058C12.3021 4.96037 12.4604 4.96037 12.5581 5.058L13.4419 5.94189C13.5396 6.03952 13.5396 6.19781 13.4419 6.29544L8.17678 11.5606C8.07915 11.6582 7.92086 11.6582 7.82323 11.5606L2.55806 6.29544Z" fill="currentColor"></path>
-                    </svg></div>
-                  <div li-object:href="link.url" class="navbar-text" href="{{ link.url }}">
-                    <div>
-                      <div class="navbar-text">
+<style>
+  .nav_menu.5.is-page-height-tablet {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    background-color: #fcfcfc;
+  }
+  @media screen and (max-width: 479px) {
+    .nav_menu.5.is-page-height-tablet {
+      padding-right: 0%;
+      padding-left: 0%;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .nav_menu.5.is-page-height-tablet {
+      padding-bottom: 6rem;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .nav_menu.5.is-page-height-tablet {
+      position: absolute;
+      overflow: auto;
+      width: 100%;
+      max-height: 90vh;
+      padding-right: 5%;
+      padding-bottom: 3.9rem;
+      border-bottom-color: #eee;
+      background-color: #fcfcfc;
+      transition-property: height;
+      transition-duration: 500ms;
+      transition-timing-function: ease;
+    }
+  }
+  .text-size-tiny.2.text-color-grey.text-style-link {
+    cursor: pointer;
+  }
+  .nav_menu-dropdown {
+    display: flex;
+    height: 5rem;
+    align-items: stretch;
+  }
+  @media screen and (max-width: 991px) {
+    .nav_menu-dropdown {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      align-items: flex-start;
+      font-size: 1.125rem;
+      font-weight: 700;
+    }
+  }
+  .nav_dropdown-toggle 4 {
+    display: flex;
+    padding-top: 0.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    align-items: center;
+  }
+  @media screen and (max-width: 479px) {
+    .nav_dropdown-toggle 4 {
+      padding-right: 1.2rem;
+      padding-left: 1.2rem;
+      border-top-style: solid;
+      border-top-width: 1px;
+      border-top-color: #eee;
+      font-size: 1.3rem;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .nav_dropdown-toggle 4 {
+      display: flex;
+      width: 100%;
+      margin-right: 0px;
+      margin-left: 0px;
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+      padding-left: 0rem;
+      align-items: center;
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 0%;
+      font-size: 1.5rem;
+    }
+  }
+  .navbar-dropdown-link-wrapper {
+    display: flex;
+    max-height: 15rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    grid-column-gap: 1.25rem;
+    grid-row-gap: 1.25rem;
+  }
+  .mini-cart_line-item_item 3 {
+    display: flex;
+    margin-bottom: 0rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #eee;
+  }
+  .mini-cart_line-item_list {
+    display: flex;
+    padding-left: 0rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
+  }
+  .uui-navbar02_dropdown-content-right {
+    position: relative;
+    max-width: 22rem;
+    padding-top: 1.25rem;
+    padding-right: 1.25rem;
+    padding-bottom: 1.25rem;
+    padding-left: 1.25rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content auto;
+  }
+  @media screen and (max-width: 479px) {
+    .uui-navbar02_dropdown-content-right {
+      max-width: none;
+      padding-right: 0.75rem;
+      padding-left: 0.75rem;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .uui-navbar02_dropdown-content-right {
+      max-width: 50rem;
+      margin-bottom: 1rem;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .uui-navbar02_dropdown-content-right {
+      padding-top: 2rem;
+      padding-right: 1rem;
+      padding-bottom: 2rem;
+      padding-left: 1rem;
+    }
+  }
+  .nav_shop-quantity 2 {
+    position: absolute;
+    left: auto;
+    top: auto;
+    right: 0%;
+    bottom: 0%;
+    display: flex;
+    width: 1rem;
+    height: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    background-color: #110d1a;
+    color: white;
+    font-size: 0.7rem;
+  }
+  .nav_component 2 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding-right: 5%;
+    padding-left: 5%;
+    align-items: center;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: hsla(0, 0.00%, 19.61%, 0.10);
+    background-color: #fcfcfc;
+  }
+  @media screen and (max-width: 479px) {
+    .nav_component 2 {
+      min-height: 4.7rem;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .nav_component 2 {
+      height: auto;
+      min-height: 5.3rem;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .nav_component 2 {
+      min-height: 5rem;
+    }
+  }
+  .navbar-outbound-link-wrapper {
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+  }
+  @media screen and (max-width: 991px) {
+    .navbar-outbound-link-wrapper {
+      display: flex;
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+      padding-left: 0rem;
+    }
+  }
+  @media screen and (max-width: 479px) {
+    .navbar-outbound-link-wrapper {
+      padding-left: 1.2rem;
+    }
+  }
+  .navbar-dropdown-header {
+    font-family: Poppins;
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+  @media screen and (max-width: 991px) {
+    .navbar-dropdown-header {
+      font-size: 1rem;
+    }
+  }
+  @media screen and (max-width: 479px) {
+    .navbar-dropdown-header {
+      font-size: 0.9rem;
+    }
+  }
+  .dropdown-icon 4 {
+    position: absolute;
+    left: auto;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    display: flex;
+    width: 1rem;
+    height: 1rem;
+    margin-top: auto;
+    margin-right: 1rem;
+    margin-bottom: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #28272c;
+  }
+  @media screen and (max-width: 479px) {
+    .dropdown-icon 4 {
+      right: 1rem;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .dropdown-icon 4 {
+      left: auto;
+      top: auto;
+      right: 0%;
+      bottom: auto;
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-top: 0rem;
+      margin-right: 0px;
+      margin-bottom: 0rem;
+    }
+  }
+  .nav_dropdown-list 2 {
+    background-color: white;
+  }
+  @media screen and (max-width: 991px) {
+    .nav_dropdown-list 2 {
+      position: static;
+      overflow: hidden;
+    }
+  }
+  .nav_dropdown-list 2.main_open {
+    position: fixed;
+    left: 0%;
+    top: 5rem;
+    right: 0%;
+    bottom: auto;
+    display: flex;
+    overflow: auto;
+    max-height: 80vh;
+    flex-wrap: wrap;
+    align-content: stretch;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    border-top-style: none;
+    border-top-width: 1px;
+    border-top-color: #eee;
+    border-right-style: none;
+    border-right-width: 1px;
+    border-right-color: #eee;
+    border-bottom-style: none;
+    border-bottom-width: 1px;
+    border-bottom-color: #eee;
+    border-left-style: none;
+    border-left-width: 1px;
+    border-left-color: #eee;
+    background-color: transparent;
+  }
+  .nav_dropdown-list 2.medium_open {
+    position: relative;
+    top: 0rem;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+  }
+  .nav_dropdown-close-button {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    background-color: hsla(0, 0.00%, 0.00%, 0.00);
+  }
+  .mini-cart_footer-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .mini-cart_line-item_product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
+  }
+  .mini-cart_component 3 {
+    display: flex;
+    width: 28rem;
+    height: 100svh;
+    max-height: 100vh;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: #fcfcfc;
+  }
+  @media screen and (max-width: 479px) {
+    .mini-cart_component 3 {
+      width: 100%;
+    }
+  }
+  .uui-navbar02_dropdown-content {
+    display: flex;
+    width: 100%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0rem;
+    border-bottom-left-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+    background-color: #fcfcfc;
+  }
+  @media screen and (max-width: 991px) {
+    .uui-navbar02_dropdown-content {
+      flex-direction: column;
+    }
+  }
+  .text-size-regular {
+    font-size: 1rem;
+  }
+  .nav_shop-icon {
+    position: relative;
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .mini-cart_footer-message-item 2 {
+    display: flex;
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    background-color: #f8e4e4;
+  }
+  .nav_menu 5 {
+    position: static;
+    display: flex;
+    align-items: center;
+  }
+  @media screen and (max-width: 991px) {
+    .nav_menu 5 {
+      position: absolute;
+      overflow: auto;
+      padding-top: 1rem;
+      padding-right: 5%;
+      padding-bottom: 2rem;
+      padding-left: 5%;
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+      border-bottom-color: black;
+      background-color: transparent;
+      background-clip: border-box;
+    }
+  }
+  .padding-global {
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+  @media screen and (max-width: 767px) {
+    .padding-global {
+      padding-right: 1.25rem;
+      padding-left: 1.25rem;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .padding-global {
+      padding-right: 2.5rem;
+      padding-left: 2.5rem;
+    }
+  }
+  @media screen and (max-width: 479px) {
+    .padding-global {
+      padding-right: 1rem;
+      padding-left: 1rem;
+    }
+  }
+  .mini-cart_full {
+    display: flex;
+    max-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+  }
+  @media screen and (max-width: 991px) {
+    .mini-cart_full {
+      background-color: #fcfcfc;
+    }
+  }
+  .spacer-small {
+    width: 100%;
+    padding-top: 1.5rem;
+  }
+  .navbar-text {
+    font-family: Poppins;
+    color: #28272c;
+    font-weight: 500;
+  }
+  @media screen and (max-width: 991px) {
+    .navbar-text {
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+      font-size: 1rem;
+      text-align: left;
+    }
+  }
+  .section_navbar-2 {
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+  }
+  .nav_dropdown-close-icon {
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+  }
+  .nav_container 4 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-between;
+    align-items: center;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: auto;
+  }
+  @media screen and (max-width: 991px) {
+    .nav_container 4 {
+      grid-column-gap: 0rem;
+      grid-template-columns: 1fr min-content min-content;
+    }
+  }
+  .mini-cart_line-item_quantity-adjust {
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    border-top-style: none;
+    border-top-width: 1px;
+    border-top-color: black;
+    border-right-style: none;
+    border-right-width: 1px;
+    border-right-color: black;
+    border-bottom-style: none;
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+    border-left-style: none;
+    border-left-width: 1px;
+    border-left-color: black;
+    text-align: center;
+  }
+  .mini-cart_footer-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .nav_mini-cart-holder {
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    z-index: 10000;
+    width: 100vw;
+    justify-content: flex-start;
+    background-color: hsla(0, 0.00%, 0.00%, 0.40);
+  }
+  .nav_mini-cart-holder.main_open {
+    display: flex;
+  }
+  .mini-cart_header 2 {
+    display: flex;
+    padding-top: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #eee;
+  }
+  .mini-cart_line-item_img 3 {
+    width: 5rem;
+    height: 5rem;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #ccc;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: #ccc;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #ccc;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: #ccc;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    background-color: #eee;
+    object-fit: contain;
+  }
+  .icon-embed-xsmall {
+    display: flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mini-cart_footer 2 {
+    display: flex;
+    margin-top: auto;
+    padding-top: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    flex-direction: column;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+  }
+  .text-size-tiny 2 {
+    font-size: 0.75rem;
+    letter-spacing: -0.12px;
+  }
+  .mini-cart_line-item_price {
+    display: flex;
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
+  }
+  .button {
+    padding-top: 0.75rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: black;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: black;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+    background-color: #28272c;
+    font-family: Poppins;
+    color: #fcfcfc;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+  }
+  @media screen and (max-width: 991px) {
+    .button {
+      padding-top: 0.5rem;
+      padding-right: 1rem;
+      padding-bottom: 0.5rem;
+      padding-left: 1rem;
+      font-size: 0.9rem;
+    }
+  }
+  .nav_shop-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (max-width: 991px) {
+    .nav_shop-icons {
+      position: relative;
+      margin-left: auto;
+      padding-right: 1rem;
+    }
+  }
+  @media screen and (max-width: 479px) {
+    .nav_shop-icons {
+      padding-right: 1rem;
+    }
+  }
+  .mini-cart_line-item_quantity 2 {
+    display: flex;
+    justify-content: space-between;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: black;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: black;
+  }
+  .nav_menu-button {
+    padding-top: 0rem;
+    padding-right: 0rem;
+    padding-bottom: 0rem;
+    padding-left: 0rem;
+  }
+  .nav_menu-button.medium_open {
+    background-color: transparent;
+  }
+  .navbar-dropdown-link {
+    font-family: Poppins;
+    font-weight: 500;
+  }
+  @media screen and (max-width: 991px) {
+    .navbar-dropdown-link {
+      font-size: 0.9rem;
+    }
+  }
+  .nav_mini-cart-close {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+  }
+  @media screen and (max-width: 479px) {
+    .nav_mini-cart-close {
+      display: none;
+    }
+  }
+  .text-size-small 2 {
+    font-size: 0.875rem;
+  }
+  .heading-style-h3 7 {
+    font-size: 1.75rem;
+    line-height: 1.3;
+    font-weight: 600;
+    letter-spacing: -0.56px;
+  }
+  @media screen and (max-width: 479px) {
+    .heading-style-h3 7 {
+      font-size: 1.4rem;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .heading-style-h3 7 {
+      font-size: 1.5rem;
+    }
+  }
+  .mini-cart_line-item {
+    overflow: scroll;
+    max-height: 80vh;
+    padding-top: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+  }
+  .uui-navbar02_dropdown-content-left {
+    display: grid;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 0rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 0px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  @media screen and (max-width: 991px) {
+    .uui-navbar02_dropdown-content-left {
+      padding-right: 0rem;
+      padding-left: 0rem;
+      grid-row-gap: 2rem;
+      grid-template-columns: 1fr;
+    }
+  }
+  @media screen and (max-width: 479px) {
+    .uui-navbar02_dropdown-content-left {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      grid-template-columns: 1fr;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .uui-navbar02_dropdown-content-left {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      flex-direction: column;
+      grid-auto-columns: 1fr;
+      grid-row-gap: 1.5rem;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+  }
+  .Image {
+    height: 4rem;
+  }
+  .mini-cart_empty-content {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+  }
+  .nav_dropdown {
+    display: block;
+  }
+</style>
+  <div class="nav_component 2" data-collapse="medium" data-duration="400" data-animation="default" fs-scrolldisable-element="smart-nav" x-data="">
+    <div class="nav_container 4">
+      <a class="nav_logo-link" href="{{ routes.root_url }}" li-object:href="routes.root_url">
+        <img class="Image" alt="inherit" src="https://cdn.prod.website-files.com/684d919ee99d2a34dff38ca2/684d93226326c95b90a4f743_image%2019.png" loading="lazy">
+      </a>
+      <nav class="nav_menu 5 is-page-height-tablet" role="navigation">
+        <div class="navbar-outbound-link-wrapper">
+          <a class="navbar-text" href="{{ section.settings.url_link_inbound }}"> {{ section.settings.text_inbound_text }} </a>
+        </div>
+        <div>
+          <div class="nav_menu-dropdown" data-delay="200" data-hover="true">
+            <div class="nav_dropdown-toggle 4">
+              <div class="dropdown-icon 4">
+                <svg width=" 100%" height=" 100%" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M2.55806 6.29544C2.46043 6.19781 2.46043 6.03952 2.55806 5.94189L3.44195 5.058C3.53958 4.96037 3.69787 4.96037 3.7955 5.058L8.00001 9.26251L12.2045 5.058C12.3021 4.96037 12.4604 4.96037 12.5581 5.058L13.4419 5.94189C13.5396 6.03952 13.5396 6.19781 13.4419 6.29544L8.17678 11.5606C8.07915 11.6582 7.92086 11.6582 7.82323 11.5606L2.55806 6.29544Z" fill="currentColor"></path>
+</svg>
+              </div>
+              <div class="navbar-text" li-object:href="link.url" href="{{ link.url }}">
+                <div>
+                  <div class="navbar-text">
 {{ section.settings.text_text_automarke }}
 </div>
-                    </div>
-                  </div>
                 </div>
-                <nav class="nav_dropdown-list-2 w-dropdown-list">
-                  <div class="padding-global max-width-full">
-                    <div class="uui-navbar02_dropdown-content">
-                      <div class="uui-navbar02_dropdown-content-left">
-                        <div class="navbar-dropdown-content-wrapper">
-                          <div class="navbar-dropdown-header">
+              </div>
+            </div>
+            <nav class="nav_dropdown-list 2">
+              <div class="padding-global max-width-full">
+                <div class="uui-navbar02_dropdown-content">
+                  <div class="uui-navbar02_dropdown-content-left">
+                    <div class="navbar-dropdown-content-wrapper">
+                      <div class="navbar-dropdown-header">
 {{ section.settings.text_heading_right_marke }}
 </div>
-                          <div class="spacer-small"></div>
-                          <div class="navbar-dropdown-link-wrapper">
-                            {% for block in section.blocks %}
+                      <div class="spacer-small">
+                      </div>
+                      <div class="navbar-dropdown-link-wrapper">
+                        {% for block in section.blocks %}
     {% if block.type == "automarke" %}
                     <div li-block="Automarke">
                                     
-                              
-                                    <a href="{{ block.settings.url_category_marke_1 }}" class="navbar-dropdown-link"> {{ block.settings.text_category_marke_1 }} </a>
+                          
+                                    <a class="navbar-dropdown-link" href="{{ block.settings.url_category_marke_1 }}"> {{ block.settings.text_category_marke_1 }} </a>
                                     
-                            
+                        
                             </div>
             {% endif %}
 {% endfor %}
-                          </div>
-                        </div>
                       </div>
-                      <div class="uui-navbar02_dropdown-content-right">{% if section.settings.image_cta_image_marke %}
-{{ section.settings.image_cta_image_marke | image_url: width: 1000 | image_tag: loading: 'lazy', li-settings:url: 'Link', class: 'navbar-dropdown-image', href: '{{ section.settings.url_link }}' }}
-{% else %}
-<img src="{{ 'Group-264.png' | asset_url }}" loading="lazy" alt="" class="navbar-dropdown-image" href="{{ section.settings.url_link }}">
-{% endif %}</div>
                     </div>
                   </div>
-                </nav>
-              </div>
-            </div>
-            <div class="navbar-outbound-link-wrapper">
-              <a href="{{ section.settings.url_link }}" class="navbar-text"> {{ section.settings.text_outbound_link }} </a>
-            </div>
-            <div class="navbar-outbound-link-wrapper">
-              <a href="{{ section.settings.url_link_galerie }}" class="navbar-text"> {{ section.settings.text_outbound_link_galerie }} </a>
-            </div>
-          </nav>
-          <div class="nav_shop-icons">
-            {% if shop.customer_accounts_optional %}    <div li-if="shop.customer_accounts_optional" class="nav_account">
-    
-              <a href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}" class="nav_shop-icon w-inline-block">
-                <div class="icon-embed-xsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 24 24" fill="none" preserveaspectratio="xMidYMid meet" aria-hidden="true" role="img">
-                    <mask id="mask0_2941_121306" style="mask-type:alpha" maskunits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                      <rect width="24" height="24" fill="#D9D9D9"></rect>
-                    </mask>
-                    <g mask="url(#mask0_2941_121306)">
-                      <path d="M12 12C10.9 12 9.95833 11.6083 9.175 10.825C8.39167 10.0417 8 9.1 8 8C8 6.9 8.39167 5.95833 9.175 5.175C9.95833 4.39167 10.9 4 12 4C13.1 4 14.0417 4.39167 14.825 5.175C15.6083 5.95833 16 6.9 16 8C16 9.1 15.6083 10.0417 14.825 10.825C14.0417 11.6083 13.1 12 12 12ZM4 20V17.2C4 16.6333 4.14583 16.1125 4.4375 15.6375C4.72917 15.1625 5.11667 14.8 5.6 14.55C6.63333 14.0333 7.68333 13.6458 8.75 13.3875C9.81667 13.1292 10.9 13 12 13C13.1 13 14.1833 13.1292 15.25 13.3875C16.3167 13.6458 17.3667 14.0333 18.4 14.55C18.8833 14.8 19.2708 15.1625 19.5625 15.6375C19.8542 16.1125 20 16.6333 20 17.2V20H4ZM6 18H18V17.2C18 17.0167 17.9542 16.85 17.8625 16.7C17.7708 16.55 17.65 16.4333 17.5 16.35C16.6 15.9 15.6917 15.5625 14.775 15.3375C13.8583 15.1125 12.9333 15 12 15C11.0667 15 10.1417 15.1125 9.225 15.3375C8.30833 15.5625 7.4 15.9 6.5 16.35C6.35 16.4333 6.22917 16.55 6.1375 16.7C6.04583 16.85 6 17.0167 6 17.2V18ZM12 10C12.55 10 13.0208 9.80417 13.4125 9.4125C13.8042 9.02083 14 8.55 14 8C14 7.45 13.8042 6.97917 13.4125 6.5875C13.0208 6.19583 12.55 6 12 6C11.45 6 10.9792 6.19583 10.5875 6.5875C10.1958 6.97917 10 7.45 10 8C10 8.55 10.1958 9.02083 10.5875 9.4125C10.9792 9.80417 11.45 10 12 10Z" fill="currentColor"></path>
-                    </g>
-                  </svg></div>
-              </a>
+                  <div class="uui-navbar02_dropdown-content-right">
+                    <div href="{{ section.settings.url_cta_image_link }}"> <div href="{{ section.settings.url_cta_image_link }}"> {% if section.settings.image_cta_image_marke %} {{ section.settings.image_cta_image_marke | image_url: width: 1000 | image_tag: class: 'navbar-dropdown-image', alt: 'inherit', loading: 'lazy' }} {% else %} <img class="navbar-dropdown-image" alt="inherit" src="https://cdn.prod.website-files.com/684d919ee99d2a34dff38ca2/68925767287e4bd5ad9bca39_Group%20264.png" loading="lazy"> {% endif %} </div> </div>
+                  </div>
                 </div>
-{% endif %}
-            {% render 'mini_cart' %}
-          </div>
-          <div class="nav_menu-button w-nav-button">
-            <div data-w-id="5a3d68ce-093a-68c8-fab8-972baa206e5c" data-is-ix2-target="1" class="nav-lottie" data-animation-type="lottie" data-src="{{ 'lottieflow-menu-nav-06-000000-easey.json' | asset_url }}" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="0" data-duration="2.36"></div>
+              </div>
+            </nav>
           </div>
         </div>
-      </div> {% schema %} {
+        <div class="navbar-outbound-link-wrapper">
+          <a class="navbar-text" href="{{ section.settings.url_link }}"> {{ section.settings.text_outbound_link }} </a>
+        </div>
+        <div class="navbar-outbound-link-wrapper">
+          <a class="navbar-text" href="{{ section.settings.url_link_galerie }}"> {{ section.settings.text_outbound_link_galerie }} </a>
+        </div>
+      </nav>
+      <div class="nav_shop-icons">
+        {% if shop.customer_accounts_optional %}    <div class="nav_account" li-if="shop.customer_accounts_optional">
+    
+          <a class="nav_shop-icon" href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}">
+            <div class="icon-embed-xsmall">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 24 24" fill="none" preserveaspectratio="xMidYMid meet" aria-hidden="true" role="img">
+<mask id="mask0_2941_121306" style="mask-type:alpha" maskunits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+<rect width="24" height="24" fill="#D9D9D9"></rect>
+</mask>
+<g mask="url(#mask0_2941_121306)">
+<path d="M12 12C10.9 12 9.95833 11.6083 9.175 10.825C8.39167 10.0417 8 9.1 8 8C8 6.9 8.39167 5.95833 9.175 5.175C9.95833 4.39167 10.9 4 12 4C13.1 4 14.0417 4.39167 14.825 5.175C15.6083 5.95833 16 6.9 16 8C16 9.1 15.6083 10.0417 14.825 10.825C14.0417 11.6083 13.1 12 12 12ZM4 20V17.2C4 16.6333 4.14583 16.1125 4.4375 15.6375C4.72917 15.1625 5.11667 14.8 5.6 14.55C6.63333 14.0333 7.68333 13.6458 8.75 13.3875C9.81667 13.1292 10.9 13 12 13C13.1 13 14.1833 13.1292 15.25 13.3875C16.3167 13.6458 17.3667 14.0333 18.4 14.55C18.8833 14.8 19.2708 15.1625 19.5625 15.6375C19.8542 16.1125 20 16.6333 20 17.2V20H4ZM6 18H18V17.2C18 17.0167 17.9542 16.85 17.8625 16.7C17.7708 16.55 17.65 16.4333 17.5 16.35C16.6 15.9 15.6917 15.5625 14.775 15.3375C13.8583 15.1125 12.9333 15 12 15C11.0667 15 10.1417 15.1125 9.225 15.3375C8.30833 15.5625 7.4 15.9 6.5 16.35C6.35 16.4333 6.22917 16.55 6.1375 16.7C6.04583 16.85 6 17.0167 6 17.2V18ZM12 10C12.55 10 13.0208 9.80417 13.4125 9.4125C13.8042 9.02083 14 8.55 14 8C14 7.45 13.8042 6.97917 13.4125 6.5875C13.0208 6.19583 12.55 6 12 6C11.45 6 10.9792 6.19583 10.5875 6.5875C10.1958 6.97917 10 7.45 10 8C10 8.55 10.1958 9.02083 10.5875 9.4125C10.9792 9.80417 11.45 10 12 10Z" fill="currentColor"></path>
+</g>
+</svg>
+            </div>
+          </a>
+            </div>
+{% endif %}
+        {% render 'mini_cart' %}
+      </div>
+      <div class="nav_menu-button">
+        <div class="nav-lottie">
+        </div>
+      </div>
+    </div>
+  </div> {% schema %} {
     "tag": "div",
     "name": "header",
     "class": "section_navbar-2",
@@ -91,42 +901,47 @@
             "type": "automarke",
             "settings": [
                 {
-                    "id": "url_category_marke_1",
-                    "type": "url",
-                    "label": "Category Marke 1"
-                },
-                {
                     "id": "text_category_marke_1",
                     "type": "text",
                     "label": "Category Marke 1",
-                    "default": "Audi"
+                    "default": "\n                              Audi\n                          "
+                },
+                {
+                    "id": "url_category_marke_1",
+                    "type": "url",
+                    "label": "Category Marke 1"
                 }
             ]
         }
     ],
     "settings": [
         {
+            "id": "text_inbound_text",
+            "type": "text",
+            "label": "Inbound Text",
+            "default": "\n              Soundupgrades\n          "
+        },
+        {
             "id": "url_link_inbound",
             "type": "url",
             "label": "Link Inbound"
         },
         {
-            "id": "text_inbound_text",
-            "type": "text",
-            "label": "Inbound Text",
-            "default": "Soundupgrades"
-        },
-        {
             "id": "text_text_automarke",
             "type": "text",
             "label": "Text Automarke",
-            "default": "Automarke"
+            "default": "\n                      Automarke\n                  "
         },
         {
             "id": "text_heading_right_marke",
             "type": "text",
             "label": "Heading Right Marke",
-            "default": "Alle Automarken"
+            "default": "\n                          Alle Automarken\n                      "
+        },
+        {
+            "id": "url_cta_image_link",
+            "type": "url",
+            "label": "CTA-Image-Link"
         },
         {
             "id": "image_cta_image_marke",
@@ -134,26 +949,26 @@
             "label": "CTA Image Marke"
         },
         {
+            "id": "text_outbound_link",
+            "type": "text",
+            "label": "Outbound Link",
+            "default": "\n              Soundupgrade Bayern\n          "
+        },
+        {
             "id": "url_link",
             "type": "url",
             "label": "Link"
         },
         {
-            "id": "text_outbound_link",
+            "id": "text_outbound_link_galerie",
             "type": "text",
-            "label": "Outbound Link",
-            "default": "Soundupgrade Bayern"
+            "label": "Outbound Link Galerie",
+            "default": "\n              Einbaugalerie\n          "
         },
         {
             "id": "url_link_galerie",
             "type": "url",
             "label": "Link Galerie"
-        },
-        {
-            "id": "text_outbound_link_galerie",
-            "type": "text",
-            "label": "Outbound Link Galerie",
-            "default": "Einbaugalerie"
         }
     ],
     "presets": [
