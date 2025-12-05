@@ -12,34 +12,72 @@
     "sections": {
       "header": {
         "type": "header",
-        "blocks": {
-          "bestseller_item_PBGTXe": {
-            "type": "bestseller-item",
-            "name": "Bestseller Item",
-            "settings": {
-              "url_product_link": "",
-              "text_product_name": "Helix Next V Two"
-            },
-            "blocks": {}
-          },
-          "outbound_link_d9C4hN": {
-            "type": "outbound-link",
-            "name": "Outbound Link",
-            "settings": {
-              "url_link": "",
-              "text_outbound_link": "Text Link"
-            },
-            "blocks": {}
-          }
-        },
-        "block_order": [
-          "bestseller_item_PBGTXe",
-          "outbound_link_d9C4hN"
-        ],
         "settings": {
-          "text_text": "Link",
-          "text_heading_left": "Unsere Bestseller",
-          "text_heading_right": "Alle Hersteller"
+          "url_link_inbound": "",
+          "text_inbound_text": "Soundupgrade",
+          "text_text_automarke": "Automarke",
+          "text_heading_left_marke": "Unsere Bestseller",
+          "url_product_link_marke_1": "",
+          "text_product_name_marke_1": "Helix Next V Two",
+          "url_product_link_marke_2": "",
+          "text_product_name_marke_2": "Helix Next V Two",
+          "url_product_link_marke_3": "",
+          "text_product_name_marke_3": "Helix Next V Two",
+          "text_heading_right_marke": "Alle Automarken",
+          "url_category_marke_1": "",
+          "text_category_marke_1": "Audi",
+          "url_category_marke_2": "",
+          "text_category_marke_2": "BMW",
+          "url_category_marke_3": "",
+          "text_category_marke_3": "Mercedes",
+          "url_category_marke_4": "",
+          "text_category_marke_4": "VW",
+          "url_category_marke_5": "",
+          "text_category_marke_5": "Fiat",
+          "url_category_marke_6": "",
+          "text_category_marke_6": "Ineos",
+          "text_text_hersteller": "Hersteller",
+          "text_heading_left_hersteller": "Unsere Bestseller",
+          "url_product_link_hersteller_1": "",
+          "text_product_name_hersteller_1": "Helix Next V Two",
+          "url_product_link_hersteller_2": "",
+          "text_product_name_hersteller_2": "Helix Next V Two",
+          "url_product_link_hersteller_3": "",
+          "text_product_name_hersteller_3": "Helix Next V Two",
+          "text_heading_right_hersteller": "Alle Hersteller",
+          "url_category_hersteller_1": "",
+          "text_category_hersteller_1": "Helix",
+          "url_category_hersteller_2": "",
+          "text_category_hersteller_2": "Steg",
+          "url_category_hersteller_3": "",
+          "text_category_hersteller_3": "Match",
+          "url_category_hersteller_4": "",
+          "text_category_hersteller_4": "Eton",
+          "url_category_hersteller_5": "",
+          "text_category_hersteller_5": "Fortissimo",
+          "url_category_hersteller_6": "",
+          "text_category_hersteller_6": "Zenec",
+          "url_category_hersteller_7": "",
+          "text_category_hersteller_7": "Soundupgrade Bayern",
+          "text_produkt": "Produkt",
+          "text_heading_left_produkt": "Unsere Bestseller",
+          "url_product_link_produkt_1": "",
+          "text_product_name_produkt_1": "Helix Next V Two",
+          "url_product_link_produkt_2": "",
+          "text_product_name_produkt_2": "Helix Next V Two",
+          "url_product_link_produkt_3": "",
+          "text_product_name_produkt_3": "Helix Next V Two",
+          "text_heading_right_produkt": "Alle Produkte",
+          "url_category_produkt_1": "",
+          "text_category_produkt_1": "Lautsprecher",
+          "url_category_produkt_2": "",
+          "text_category_produkt_2": "Subwoofer",
+          "url_category_produkt_3": "",
+          "text_category_produkt_3": "Verstärker",
+          "url_category_produkt_4": "",
+          "text_category_produkt_4": "Radios",
+          "url_link": "",
+          "text_outbound_link": "Soundupgrade Bayern"
         }
       },
       "footer": {
