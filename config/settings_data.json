@@ -12,6 +12,18 @@
     "sections": {
       "header": {
         "type": "header",
+        "blocks": {
+          "automarke_ENtidc": {
+            "type": "automarke",
+            "settings": {
+              "text_category_marke_1": "BMW",
+              "url_category_marke_1": "shopify://products/bmw"
+            }
+          }
+        },
+        "block_order": [
+          "automarke_ENtidc"
+        ],
         "settings": {
           "text_inbound_text": "Soundupgrades",
           "url_link_inbound": "",
