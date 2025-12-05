@@ -2577,8 +2577,8 @@ figcaption {
 }
 
 .product-header_radio-list {
-  grid-column-gap: .5rem;
-  grid-row-gap: .5rem;
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 1.5rem;
   flex-wrap: wrap;
   display: flex;
 }
@@ -7738,6 +7738,113 @@ figcaption {
   font-weight: 700;
 }
 
+.button-12 {
+  color: #fff;
+  text-align: center;
+  letter-spacing: -.15px;
+  background-color: #146ef5;
+  border-radius: .5rem;
+  padding: 1rem 1.75rem;
+  font-size: .9375rem;
+  font-weight: 600;
+  line-height: 1;
+  transition-property: background-color;
+  transition-duration: .2s;
+  transition-timing-function: ease;
+  box-shadow: 0 4px 9.8px #146ef526;
+}
+
+.button-12.is-secondary {
+  color: #000;
+  background-color: #0000;
+  border: 1px solid #0000001a;
+  font-weight: 600;
+  transition: border-color .2s;
+}
+
+.button-12.is-secondary:hover {
+  border-color: #00000080;
+}
+
+.product-header_radio-style-2 {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: .5rem;
+}
+
+.product-header_form-block-8 {
+  margin-bottom: 0;
+}
+
+.padding-global-11 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.hide-9 {
+  display: none;
+}
+
+.product-header_gallery-image-8 {
+  object-fit: contain;
+  object-position: 50% 50%;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: .5rem;
+  width: 100%;
+  height: 30rem;
+  padding: 1rem;
+}
+
+.text-color-green-7 {
+  color: #0000;
+}
+
+.product-header_layout-8 {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  align-items: start;
+  display: grid;
+}
+
+.product-header_radio-list-2 {
+  grid-column-gap: .5rem;
+  grid-row-gap: .5rem;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.product_thumbnail-image-4 {
+  cursor: pointer;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: .5rem;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  display: flex;
+}
+
+.product-header_radio-wrapper-2 {
+  border: 1px solid #aaa;
+  border-radius: .5rem;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 0;
+  padding: .4rem .7rem;
+  display: flex;
+}
+
+.heading-style-h3-15 {
+  letter-spacing: -.56px;
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
 @media screen and (max-width: 991px) {
   .padding-medium {
     padding: 1.5rem;
@@ -9415,6 +9522,24 @@ figcaption {
     grid-auto-flow: row;
     min-height: auto;
   }
+
+  .button-12.is-secondary.max-width-full, .button-12.max-width-full {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .padding-global-11 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .product-header_layout-8 {
+    grid-column-gap: 5rem;
+    grid-row-gap: 2.5rem;
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    min-height: auto;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -10435,6 +10560,20 @@ figcaption {
   .heading-style-h3-14 {
     font-size: 1.5rem;
   }
+
+  .padding-global-11 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .product-header_layout-8 {
+    grid-column-gap: 5rem;
+    grid-row-gap: 2rem;
+  }
+
+  .heading-style-h3-15 {
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -11402,6 +11541,27 @@ figcaption {
   .heading-style-h3-14 {
     font-size: 1.4rem;
   }
+
+  .button-12 {
+    width: 100%;
+  }
+
+  .padding-global-11 {
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+  }
+
+  .product-header_gallery-image-8 {
+    height: 22rem;
+  }
+
+  .product-header_layout-8 {
+    grid-template-columns: 1fr;
+  }
+
+  .heading-style-h3-15 {
+    font-size: 1.4rem;
+  }
 }
 
 #w-node-efdfe76d-e495-5632-4546-bb1b588eec17-dff38ce7 {
@@ -11724,8 +11884,17 @@ figcaption {
   align-self: center;
 }
 
+#w-node-_5c8d6aab-6f30-0782-810c-3460c3c5b4f4-f5cdc285 {
+  align-self: start;
+}
+
+#w-node-_5c8d6aab-6f30-0782-810c-3460c3c5b505-f5cdc285 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+  align-self: center;
+}
+
 @media screen and (max-width: 991px) {
-  #w-node-_5a3d68ce-093a-68c8-fab8-972baa206dff-aa206ded, #w-node-_9ad985d5-1961-7536-cfee-c0d6977a8de0-aa206ded, #w-node-_69c63c94-740b-d16f-60e0-f631706a4937-aa206ded, #w-node-e70215e6-46ed-17af-2aa7-195241f33b0b-dff38d3c {
+  #w-node-e70215e6-46ed-17af-2aa7-195241f33b0b-dff38d3c {
     order: 9999;
   }
 }

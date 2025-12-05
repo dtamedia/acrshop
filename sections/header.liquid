@@ -23,201 +23,30 @@
                   <div class="padding-global max-width-full">
                     <div class="uui-navbar02_dropdown-content">
                       <div class="uui-navbar02_dropdown-content-left">
-                        <div id="w-node-_5a3d68ce-093a-68c8-fab8-972baa206dff-aa206ded" class="navbar-dropdown-content-wrapper is-left">
-                          <div class="navbar-dropdown-header">
-{{ section.settings.text_heading_left_marke }}
-</div>
-                          <div class="spacer-small"></div>
-                          <div class="navbar-dropdown-bestseller-wrapper">
-                            <div>
-                              <a href="{{ section.settings.url_product_link_marke_1 }}" class="navbar-dropdown-bestseller-item w-inline-block"> {% if section.settings.image_product_image_marke_1 %} {{ section.settings.image_product_image_marke_1 | image_url: width: 1000 | image_tag: loading: 'lazy', width: 'Auto', class: 'bestseller-image' }} {% else %} <img src="{{ 'image-58.png' | asset_url }}" loading="lazy" width="Auto" alt="" class="bestseller-image"> {% endif %} <div class="navbar-dropdown-link is-bestseller">{{ section.settings.text_product_name_marke_1 }}</div> </a>
-                            </div>
-                            <div class="line"></div>
-                            <div>
-                              <a href="{{ section.settings.url_product_link_marke_2 }}" class="navbar-dropdown-bestseller-item w-inline-block"> {% if section.settings.image_product_image_marke_2 %} {{ section.settings.image_product_image_marke_2 | image_url: width: 1000 | image_tag: loading: 'lazy', width: 'Auto', class: 'bestseller-image' }} {% else %} <img src="{{ 'image-58-2.png' | asset_url }}" loading="lazy" width="Auto" alt="" class="bestseller-image"> {% endif %} <div class="navbar-dropdown-link is-bestseller">{{ section.settings.text_product_name_marke_2 }}</div> </a>
-                            </div>
-                            <div class="line"></div>
-                            <div>
-                              <a href="{{ section.settings.url_product_link_marke_3 }}" class="navbar-dropdown-bestseller-item w-inline-block"> {% if section.settings.image_product_image_marke_3 %} {{ section.settings.image_product_image_marke_3 | image_url: width: 1000 | image_tag: loading: 'lazy', width: 'Auto', class: 'bestseller-image' }} {% else %} <img src="{{ 'image-58-1.png' | asset_url }}" loading="lazy" width="Auto" alt="" class="bestseller-image"> {% endif %} <div class="navbar-dropdown-link is-bestseller">{{ section.settings.text_product_name_marke_3 }}</div> </a>
-                            </div>
-                          </div>
-                        </div>
                         <div class="navbar-dropdown-content-wrapper">
                           <div class="navbar-dropdown-header">
 {{ section.settings.text_heading_right_marke }}
 </div>
                           <div class="spacer-small"></div>
                           <div class="navbar-dropdown-link-wrapper">
-                            <div>
-                              <a href="{{ section.settings.url_category_marke_1 }}" class="navbar-dropdown-link"> {{ section.settings.text_category_marke_1 }} </a>
+                            {% for block in section.blocks %}
+    {% if block.type == "automarke" %}
+                    <div li-block="Automarke">
+                                    
+                              
+                                    <a href="{{ block.settings.url_category_marke_1 }}" class="navbar-dropdown-link"> {{ block.settings.text_category_marke_1 }} </a>
+                                    
+                            
                             </div>
-                            <div>
-                              <a href="{{ section.settings.url_category_marke_2 }}" class="navbar-dropdown-link"> {{ section.settings.text_category_marke_2 }} </a>
-                            </div>
-                            <div>
-                              <a href="{{ section.settings.url_category_marke_3 }}" class="navbar-dropdown-link"> {{ section.settings.text_category_marke_3 }} </a>
-                            </div>
-                            <div>
-                              <a href="{{ section.settings.url_category_marke_4 }}" class="navbar-dropdown-link"> {{ section.settings.text_category_marke_4 }} </a>
-                            </div>
-                            <div>
-                              <a href="{{ section.settings.url_category_marke_5 }}" class="navbar-dropdown-link"> {{ section.settings.text_category_marke_5 }} </a>
-                            </div>
-                            <div>
-                              <a href="{{ section.settings.url_category_marke_6 }}" class="navbar-dropdown-link"> {{ section.settings.text_category_marke_6 }} </a>
-                            </div>
+            {% endif %}
+{% endfor %}
                           </div>
                         </div>
                       </div>
                       <div class="uui-navbar02_dropdown-content-right">{% if section.settings.image_cta_image_marke %}
-{{ section.settings.image_cta_image_marke | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'navbar-dropdown-image' }}
+{{ section.settings.image_cta_image_marke | image_url: width: 1000 | image_tag: loading: 'lazy', li-settings:url: 'Link', class: 'navbar-dropdown-image', href: '{{ section.settings.url_link }}' }}
 {% else %}
-<img src="{{ 'Group-264.png' | asset_url }}" loading="lazy" alt="" class="navbar-dropdown-image">
-{% endif %}</div>
-                    </div>
-                  </div>
-                </nav>
-              </div>
-            </div>
-            <div>
-              <div data-delay="200" data-hover="true" class="nav_menu-dropdown w-dropdown">
-                <div class="nav_dropdown-toggle-4 w-dropdown-toggle">
-                  <div class="dropdown-icon-4 w-embed"><svg width=" 100%" height=" 100%" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M2.55806 6.29544C2.46043 6.19781 2.46043 6.03952 2.55806 5.94189L3.44195 5.058C3.53958 4.96037 3.69787 4.96037 3.7955 5.058L8.00001 9.26251L12.2045 5.058C12.3021 4.96037 12.4604 4.96037 12.5581 5.058L13.4419 5.94189C13.5396 6.03952 13.5396 6.19781 13.4419 6.29544L8.17678 11.5606C8.07915 11.6582 7.92086 11.6582 7.82323 11.5606L2.55806 6.29544Z" fill="currentColor"></path>
-                    </svg></div>
-                  <div li-object:href="link.url" class="navbar-text" href="{{ link.url }}">
-                    <div>
-                      <div class="navbar-text">
-{{ section.settings.text_text_hersteller }}
-</div>
-                    </div>
-                  </div>
-                </div>
-                <nav class="nav_dropdown-list-2 w-dropdown-list">
-                  <div class="padding-global max-width-full">
-                    <div class="uui-navbar02_dropdown-content">
-                      <div class="uui-navbar02_dropdown-content-left">
-                        <div id="w-node-_9ad985d5-1961-7536-cfee-c0d6977a8de0-aa206ded" class="navbar-dropdown-content-wrapper is-left">
-                          <div class="navbar-dropdown-header">
-{{ section.settings.text_heading_left_hersteller }}
-</div>
-                          <div class="spacer-small"></div>
-                          <div class="navbar-dropdown-bestseller-wrapper">
-                            <div>
-                              <a href="{{ section.settings.url_product_link_hersteller_1 }}" class="navbar-dropdown-bestseller-item w-inline-block"> {% if section.settings.image_product_image_hersteller_1 %} {{ section.settings.image_product_image_hersteller_1 | image_url: width: 1000 | image_tag: loading: 'lazy', width: 'Auto', class: 'bestseller-image' }} {% else %} <img src="{{ 'image-58.png' | asset_url }}" loading="lazy" width="Auto" alt="" class="bestseller-image"> {% endif %} <div class="navbar-dropdown-link is-bestseller">{{ section.settings.text_product_name_hersteller_1 }}</div> </a>
-                            </div>
-                            <div class="line"></div>
-                            <div>
-                              <a href="{{ section.settings.url_product_link_hersteller_2 }}" class="navbar-dropdown-bestseller-item w-inline-block"> {% if section.settings.image_product_image_hersteller_2 %} {{ section.settings.image_product_image_hersteller_2 | image_url: width: 1000 | image_tag: loading: 'lazy', width: 'Auto', class: 'bestseller-image' }} {% else %} <img src="{{ 'image-58-2.png' | asset_url }}" loading="lazy" width="Auto" alt="" class="bestseller-image"> {% endif %} <div class="navbar-dropdown-link is-bestseller">{{ section.settings.text_product_name_hersteller_2 }}</div> </a>
-                            </div>
-                            <div class="line"></div>
-                            <div>
-                              <a href="{{ section.settings.url_product_link_hersteller_3 }}" class="navbar-dropdown-bestseller-item w-inline-block"> {% if section.settings.image_product_image_hersteller_3 %} {{ section.settings.image_product_image_hersteller_3 | image_url: width: 1000 | image_tag: loading: 'lazy', width: 'Auto', class: 'bestseller-image' }} {% else %} <img src="{{ 'image-58-1.png' | asset_url }}" loading="lazy" width="Auto" alt="" class="bestseller-image"> {% endif %} <div class="navbar-dropdown-link is-bestseller">{{ section.settings.text_product_name_hersteller_3 }}</div> </a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="navbar-dropdown-content-wrapper">
-                          <div class="navbar-dropdown-header">
-{{ section.settings.text_heading_right_hersteller }}
-</div>
-                          <div class="spacer-small"></div>
-                          <div class="navbar-dropdown-link-wrapper">
-                            <div>
-                              <a href="{{ section.settings.url_category_hersteller_1 }}" class="navbar-dropdown-link"> {{ section.settings.text_category_hersteller_1 }} </a>
-                            </div>
-                            <div>
-                              <a href="{{ section.settings.url_category_hersteller_2 }}" class="navbar-dropdown-link"> {{ section.settings.text_category_hersteller_2 }} </a>
-                            </div>
-                            <div>
-                              <a href="{{ section.settings.url_category_hersteller_3 }}" class="navbar-dropdown-link"> {{ section.settings.text_category_hersteller_3 }} </a>
-                            </div>
-                            <div>
-                              <a href="{{ section.settings.url_category_hersteller_4 }}" class="navbar-dropdown-link"> {{ section.settings.text_category_hersteller_4 }} </a>
-                            </div>
-                            <div>
-                              <a href="{{ section.settings.url_category_hersteller_5 }}" class="navbar-dropdown-link"> {{ section.settings.text_category_hersteller_5 }} </a>
-                            </div>
-                            <div>
-                              <a href="{{ section.settings.url_category_hersteller_6 }}" class="navbar-dropdown-link"> {{ section.settings.text_category_hersteller_6 }} </a>
-                            </div>
-                            <div>
-                              <a href="{{ section.settings.url_category_hersteller_7 }}" class="navbar-dropdown-link"> {{ section.settings.text_category_hersteller_7 }} </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="uui-navbar02_dropdown-content-right">{% if section.settings.image_cta_image_hersteller %}
-{{ section.settings.image_cta_image_hersteller | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'navbar-dropdown-image' }}
-{% else %}
-<img src="{{ 'Group-264.png' | asset_url }}" loading="lazy" alt="" class="navbar-dropdown-image">
-{% endif %}</div>
-                    </div>
-                  </div>
-                </nav>
-              </div>
-            </div>
-            <div>
-              <div data-delay="200" data-hover="true" class="nav_menu-dropdown w-dropdown">
-                <div class="nav_dropdown-toggle-4 w-dropdown-toggle">
-                  <div class="dropdown-icon-4 w-embed"><svg width=" 100%" height=" 100%" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M2.55806 6.29544C2.46043 6.19781 2.46043 6.03952 2.55806 5.94189L3.44195 5.058C3.53958 4.96037 3.69787 4.96037 3.7955 5.058L8.00001 9.26251L12.2045 5.058C12.3021 4.96037 12.4604 4.96037 12.5581 5.058L13.4419 5.94189C13.5396 6.03952 13.5396 6.19781 13.4419 6.29544L8.17678 11.5606C8.07915 11.6582 7.92086 11.6582 7.82323 11.5606L2.55806 6.29544Z" fill="currentColor"></path>
-                    </svg></div>
-                  <div li-object:href="link.url" class="navbar-text" href="{{ link.url }}">
-                    <div>
-                      <div class="navbar-text">
-{{ section.settings.text_produkt }}
-</div>
-                    </div>
-                  </div>
-                </div>
-                <nav class="nav_dropdown-list-2 w-dropdown-list">
-                  <div class="padding-global max-width-full">
-                    <div class="uui-navbar02_dropdown-content">
-                      <div class="uui-navbar02_dropdown-content-left">
-                        <div id="w-node-_69c63c94-740b-d16f-60e0-f631706a4937-aa206ded" class="navbar-dropdown-content-wrapper is-left">
-                          <div class="navbar-dropdown-header">
-{{ section.settings.text_heading_left_produkt }}
-</div>
-                          <div class="spacer-small"></div>
-                          <div class="navbar-dropdown-bestseller-wrapper">
-                            <div>
-                              <a href="{{ section.settings.url_product_link_produkt_1 }}" class="navbar-dropdown-bestseller-item w-inline-block"> {% if section.settings.image_product_image_produkt_1 %} {{ section.settings.image_product_image_produkt_1 | image_url: width: 1000 | image_tag: loading: 'lazy', width: 'Auto', class: 'bestseller-image' }} {% else %} <img src="{{ 'image-58.png' | asset_url }}" loading="lazy" width="Auto" alt="" class="bestseller-image"> {% endif %} <div class="navbar-dropdown-link is-bestseller">{{ section.settings.text_product_name_produkt_1 }}</div> </a>
-                            </div>
-                            <div class="line"></div>
-                            <div>
-                              <a href="{{ section.settings.url_product_link_produkt_2 }}" class="navbar-dropdown-bestseller-item w-inline-block"> {% if section.settings.image_product_image_produkt_2 %} {{ section.settings.image_product_image_produkt_2 | image_url: width: 1000 | image_tag: loading: 'lazy', width: 'Auto', class: 'bestseller-image' }} {% else %} <img src="{{ 'image-58-2.png' | asset_url }}" loading="lazy" width="Auto" alt="" class="bestseller-image"> {% endif %} <div class="navbar-dropdown-link is-bestseller">{{ section.settings.text_product_name_produkt_2 }}</div> </a>
-                            </div>
-                            <div class="line"></div>
-                            <div>
-                              <a href="{{ section.settings.url_product_link_produkt_3 }}" class="navbar-dropdown-bestseller-item w-inline-block"> {% if section.settings.image_product_image_produkt_3 %} {{ section.settings.image_product_image_produkt_3 | image_url: width: 1000 | image_tag: loading: 'lazy', width: 'Auto', class: 'bestseller-image' }} {% else %} <img src="{{ 'image-58-1.png' | asset_url }}" loading="lazy" width="Auto" alt="" class="bestseller-image"> {% endif %} <div class="navbar-dropdown-link is-bestseller">{{ section.settings.text_product_name_produkt_3 }}</div> </a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="navbar-dropdown-content-wrapper">
-                          <div class="navbar-dropdown-header">
-{{ section.settings.text_heading_right_produkt }}
-</div>
-                          <div class="spacer-small"></div>
-                          <div class="navbar-dropdown-link-wrapper">
-                            <div>
-                              <a href="{{ section.settings.url_category_produkt_1 }}" class="navbar-dropdown-link"> {{ section.settings.text_category_produkt_1 }} </a>
-                            </div>
-                            <div>
-                              <a href="{{ section.settings.url_category_produkt_2 }}" class="navbar-dropdown-link"> {{ section.settings.text_category_produkt_2 }} </a>
-                            </div>
-                            <div>
-                              <a href="{{ section.settings.url_category_produkt_3 }}" class="navbar-dropdown-link"> {{ section.settings.text_category_produkt_3 }} </a>
-                            </div>
-                            <div>
-                              <a href="{{ section.settings.url_category_produkt_4 }}" class="navbar-dropdown-link"> {{ section.settings.text_category_produkt_4 }} </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="uui-navbar02_dropdown-content-right">{% if section.settings.image_cta_image_produkt %}
-{{ section.settings.image_cta_image_produkt | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'navbar-dropdown-image' }}
-{% else %}
-<img src="{{ 'Group-264.png' | asset_url }}" loading="lazy" alt="" class="navbar-dropdown-image">
+<img src="{{ 'Group-264.png' | asset_url }}" loading="lazy" alt="" class="navbar-dropdown-image" href="{{ section.settings.url_link }}">
 {% endif %}</div>
                     </div>
                   </div>
@@ -226,6 +55,9 @@
             </div>
             <div class="navbar-outbound-link-wrapper">
               <a href="{{ section.settings.url_link }}" class="navbar-text"> {{ section.settings.text_outbound_link }} </a>
+            </div>
+            <div class="navbar-outbound-link-wrapper">
+              <a href="{{ section.settings.url_link_galerie }}" class="navbar-text"> {{ section.settings.text_outbound_link_galerie }} </a>
             </div>
           </nav>
           <div class="nav_shop-icons">
@@ -253,6 +85,25 @@
     "tag": "div",
     "name": "header",
     "class": "section_navbar-2",
+    "blocks": [
+        {
+            "name": "Automarke",
+            "type": "automarke",
+            "settings": [
+                {
+                    "id": "url_category_marke_1",
+                    "type": "url",
+                    "label": "Category Marke 1"
+                },
+                {
+                    "id": "text_category_marke_1",
+                    "type": "text",
+                    "label": "Category Marke 1",
+                    "default": "Audi"
+                }
+            ]
+        }
+    ],
     "settings": [
         {
             "id": "url_link_inbound",
@@ -272,398 +123,15 @@
             "default": "Automarke"
         },
         {
-            "id": "text_heading_left_marke",
-            "type": "text",
-            "label": "Heading Left Marke",
-            "default": "Unsere Bestseller"
-        },
-        {
-            "id": "url_product_link_marke_1",
-            "type": "url",
-            "label": "Product Link Marke 1"
-        },
-        {
-            "id": "image_product_image_marke_1",
-            "type": "image_picker",
-            "label": "Product Image Marke 1"
-        },
-        {
-            "id": "text_product_name_marke_1",
-            "type": "text",
-            "label": "Product Name Marke 1",
-            "default": "Helix Next V Two"
-        },
-        {
-            "id": "url_product_link_marke_2",
-            "type": "url",
-            "label": "Product Link Marke 2"
-        },
-        {
-            "id": "image_product_image_marke_2",
-            "type": "image_picker",
-            "label": "Product Image Marke 2"
-        },
-        {
-            "id": "text_product_name_marke_2",
-            "type": "text",
-            "label": "Product Name Marke 2",
-            "default": "Helix Next V Two"
-        },
-        {
-            "id": "url_product_link_marke_3",
-            "type": "url",
-            "label": "Product Link Marke 3"
-        },
-        {
-            "id": "image_product_image_marke_3",
-            "type": "image_picker",
-            "label": "Product Image Marke 3"
-        },
-        {
-            "id": "text_product_name_marke_3",
-            "type": "text",
-            "label": "Product Name Marke 3",
-            "default": "Helix Next V Two"
-        },
-        {
             "id": "text_heading_right_marke",
             "type": "text",
             "label": "Heading Right Marke",
             "default": "Alle Automarken"
         },
         {
-            "id": "url_category_marke_1",
-            "type": "url",
-            "label": "Category Marke 1"
-        },
-        {
-            "id": "text_category_marke_1",
-            "type": "text",
-            "label": "Category Marke 1",
-            "default": "Audi"
-        },
-        {
-            "id": "url_category_marke_2",
-            "type": "url",
-            "label": "Category Marke 2"
-        },
-        {
-            "id": "text_category_marke_2",
-            "type": "text",
-            "label": "Category Marke 2",
-            "default": "BMW"
-        },
-        {
-            "id": "url_category_marke_3",
-            "type": "url",
-            "label": "Category Marke 3"
-        },
-        {
-            "id": "text_category_marke_3",
-            "type": "text",
-            "label": "Category Marke 3",
-            "default": "Mercedes"
-        },
-        {
-            "id": "url_category_marke_4",
-            "type": "url",
-            "label": "Category Marke 4"
-        },
-        {
-            "id": "text_category_marke_4",
-            "type": "text",
-            "label": "Category Marke 4",
-            "default": "VW"
-        },
-        {
-            "id": "url_category_marke_5",
-            "type": "url",
-            "label": "Category Marke 5"
-        },
-        {
-            "id": "text_category_marke_5",
-            "type": "text",
-            "label": "Category Marke 5",
-            "default": "Fiat"
-        },
-        {
-            "id": "url_category_marke_6",
-            "type": "url",
-            "label": "Category Marke 6"
-        },
-        {
-            "id": "text_category_marke_6",
-            "type": "text",
-            "label": "Category Marke 6",
-            "default": "Ineos"
-        },
-        {
             "id": "image_cta_image_marke",
             "type": "image_picker",
             "label": "CTA Image Marke"
-        },
-        {
-            "id": "text_text_hersteller",
-            "type": "text",
-            "label": "Text Hersteller",
-            "default": "Hersteller"
-        },
-        {
-            "id": "text_heading_left_hersteller",
-            "type": "text",
-            "label": "Heading Left Hersteller",
-            "default": "Unsere Bestseller"
-        },
-        {
-            "id": "url_product_link_hersteller_1",
-            "type": "url",
-            "label": "Product Link Hersteller 1"
-        },
-        {
-            "id": "image_product_image_hersteller_1",
-            "type": "image_picker",
-            "label": "Product Image Hersteller 1"
-        },
-        {
-            "id": "text_product_name_hersteller_1",
-            "type": "text",
-            "label": "Product Name Hersteller 1",
-            "default": "Helix Next V Two"
-        },
-        {
-            "id": "url_product_link_hersteller_2",
-            "type": "url",
-            "label": "Product Link Hersteller 2"
-        },
-        {
-            "id": "image_product_image_hersteller_2",
-            "type": "image_picker",
-            "label": "Product Image Hersteller 2"
-        },
-        {
-            "id": "text_product_name_hersteller_2",
-            "type": "text",
-            "label": "Product Name Hersteller 2",
-            "default": "Helix Next V Two"
-        },
-        {
-            "id": "url_product_link_hersteller_3",
-            "type": "url",
-            "label": "Product Link Hersteller 3"
-        },
-        {
-            "id": "image_product_image_hersteller_3",
-            "type": "image_picker",
-            "label": "Product Image Hersteller 3"
-        },
-        {
-            "id": "text_product_name_hersteller_3",
-            "type": "text",
-            "label": "Product Name Hersteller 3",
-            "default": "Helix Next V Two"
-        },
-        {
-            "id": "text_heading_right_hersteller",
-            "type": "text",
-            "label": "Heading Right Hersteller",
-            "default": "Alle Hersteller"
-        },
-        {
-            "id": "url_category_hersteller_1",
-            "type": "url",
-            "label": "Category Hersteller 1"
-        },
-        {
-            "id": "text_category_hersteller_1",
-            "type": "text",
-            "label": "Category Hersteller 1",
-            "default": "Helix"
-        },
-        {
-            "id": "url_category_hersteller_2",
-            "type": "url",
-            "label": "Category Hersteller 2"
-        },
-        {
-            "id": "text_category_hersteller_2",
-            "type": "text",
-            "label": "Category Hersteller 2",
-            "default": "Steg"
-        },
-        {
-            "id": "url_category_hersteller_3",
-            "type": "url",
-            "label": "Category Hersteller 3"
-        },
-        {
-            "id": "text_category_hersteller_3",
-            "type": "text",
-            "label": "Category Hersteller 3",
-            "default": "Match"
-        },
-        {
-            "id": "url_category_hersteller_4",
-            "type": "url",
-            "label": "Category Hersteller 4"
-        },
-        {
-            "id": "text_category_hersteller_4",
-            "type": "text",
-            "label": "Category Hersteller 4",
-            "default": "Eton"
-        },
-        {
-            "id": "url_category_hersteller_5",
-            "type": "url",
-            "label": "Category Hersteller 5"
-        },
-        {
-            "id": "text_category_hersteller_5",
-            "type": "text",
-            "label": "Category Hersteller 5",
-            "default": "Fortissimo"
-        },
-        {
-            "id": "url_category_hersteller_6",
-            "type": "url",
-            "label": "Category Hersteller 6"
-        },
-        {
-            "id": "text_category_hersteller_6",
-            "type": "text",
-            "label": "Category Hersteller 6",
-            "default": "Zenec"
-        },
-        {
-            "id": "url_category_hersteller_7",
-            "type": "url",
-            "label": "Category Hersteller 7"
-        },
-        {
-            "id": "text_category_hersteller_7",
-            "type": "text",
-            "label": "Category Hersteller 7",
-            "default": "Soundupgrade Bayern"
-        },
-        {
-            "id": "image_cta_image_hersteller",
-            "type": "image_picker",
-            "label": "CTA Image Hersteller"
-        },
-        {
-            "id": "text_produkt",
-            "type": "text",
-            "label": "Produkt",
-            "default": "Produkt"
-        },
-        {
-            "id": "text_heading_left_produkt",
-            "type": "text",
-            "label": "Heading Left Produkt",
-            "default": "Unsere Bestseller"
-        },
-        {
-            "id": "url_product_link_produkt_1",
-            "type": "url",
-            "label": "Product Link Produkt 1"
-        },
-        {
-            "id": "image_product_image_produkt_1",
-            "type": "image_picker",
-            "label": "Product Image Produkt 1"
-        },
-        {
-            "id": "text_product_name_produkt_1",
-            "type": "text",
-            "label": "Product Name Produkt 1",
-            "default": "Helix Next V Two"
-        },
-        {
-            "id": "url_product_link_produkt_2",
-            "type": "url",
-            "label": "Product Link Produkt 2"
-        },
-        {
-            "id": "image_product_image_produkt_2",
-            "type": "image_picker",
-            "label": "Product Image Produkt 2"
-        },
-        {
-            "id": "text_product_name_produkt_2",
-            "type": "text",
-            "label": "Product Name Produkt 2",
-            "default": "Helix Next V Two"
-        },
-        {
-            "id": "url_product_link_produkt_3",
-            "type": "url",
-            "label": "Product Link Produkt 3"
-        },
-        {
-            "id": "image_product_image_produkt_3",
-            "type": "image_picker",
-            "label": "Product Image Produkt 3"
-        },
-        {
-            "id": "text_product_name_produkt_3",
-            "type": "text",
-            "label": "Product Name Produkt 3",
-            "default": "Helix Next V Two"
-        },
-        {
-            "id": "text_heading_right_produkt",
-            "type": "text",
-            "label": "Heading Right Produkt",
-            "default": "Alle Produkte"
-        },
-        {
-            "id": "url_category_produkt_1",
-            "type": "url",
-            "label": "Category Produkt 1"
-        },
-        {
-            "id": "text_category_produkt_1",
-            "type": "text",
-            "label": "Category Produkt 1",
-            "default": "Lautsprecher"
-        },
-        {
-            "id": "url_category_produkt_2",
-            "type": "url",
-            "label": "Category Produkt 2"
-        },
-        {
-            "id": "text_category_produkt_2",
-            "type": "text",
-            "label": "Category Produkt 2",
-            "default": "Subwoofer"
-        },
-        {
-            "id": "url_category_produkt_3",
-            "type": "url",
-            "label": "Category Produkt 3"
-        },
-        {
-            "id": "text_category_produkt_3",
-            "type": "text",
-            "label": "Category Produkt 3",
-            "default": "Verst\u00e4rker"
-        },
-        {
-            "id": "url_category_produkt_4",
-            "type": "url",
-            "label": "Category Produkt 4"
-        },
-        {
-            "id": "text_category_produkt_4",
-            "type": "text",
-            "label": "Category Produkt 4",
-            "default": "Radios"
-        },
-        {
-            "id": "image_cta_image_produkt",
-            "type": "image_picker",
-            "label": "CTA Image Produkt"
         },
         {
             "id": "url_link",
@@ -675,13 +143,28 @@
             "type": "text",
             "label": "Outbound Link",
             "default": "Soundupgrade Bayern"
+        },
+        {
+            "id": "url_link_galerie",
+            "type": "url",
+            "label": "Link Galerie"
+        },
+        {
+            "id": "text_outbound_link_galerie",
+            "type": "text",
+            "label": "Outbound Link Galerie",
+            "default": "Einbaugalerie"
         }
     ],
     "presets": [
         {
             "name": "header",
             "category": "Liquify",
-            "blocks": []
+            "blocks": [
+                {
+                    "type": "automarke"
+                }
+            ]
         }
     ]
 } {% endschema %}
