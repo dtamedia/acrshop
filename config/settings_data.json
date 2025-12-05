@@ -13,6 +13,13 @@
       "header": {
         "type": "header",
         "blocks": {
+          "automarke_dLe6yt": {
+            "type": "automarke",
+            "settings": {
+              "text_category_marke_1": "Audi",
+              "url_category_marke_1": ""
+            }
+          },
           "automarke_ENtidc": {
             "type": "automarke",
             "settings": {
@@ -22,11 +29,12 @@
           }
         },
         "block_order": [
+          "automarke_dLe6yt",
           "automarke_ENtidc"
         ],
         "settings": {
           "text_inbound_text": "Soundupgrades",
-          "url_link_inbound": "",
+          "url_link_inbound": "shopify://collections/soundupgrades",
           "text_text_automarke": "Automarke",
           "text_heading_right_marke": "Alle Automarken",
           "url_cta_image_link": "",
