@@ -16,99 +16,99 @@
           "automarke_xgDAWd": {
             "type": "automarke",
             "settings": {
-              "url_link": "",
+              "url_link": "shopify://products/audi",
               "text_name": "Audi"
             }
           },
           "automarke_ttFMnU": {
             "type": "automarke",
             "settings": {
-              "url_link": "",
-              "text_name": "Audi"
+              "url_link": "shopify://products/bmw",
+              "text_name": "BMW"
             }
           },
           "automarke_pDkBQm": {
             "type": "automarke",
             "settings": {
-              "url_link": "",
-              "text_name": "Audi"
+              "url_link": "shopify://products/camper",
+              "text_name": "Camper"
             }
           },
           "automarke_pktdGC": {
             "type": "automarke",
             "settings": {
-              "url_link": "",
-              "text_name": "Audi"
+              "url_link": "shopify://products/cupra",
+              "text_name": "Cupra"
             }
           },
           "automarke_7VrfgU": {
             "type": "automarke",
             "settings": {
-              "url_link": "",
-              "text_name": "Audi"
+              "url_link": "shopify://products/fiat",
+              "text_name": "Fiat"
             }
           },
           "automarke_zQPraK": {
             "type": "automarke",
             "settings": {
-              "url_link": "",
-              "text_name": "Audi"
+              "url_link": "shopify://products/grenadier",
+              "text_name": "Grenadier"
             }
           },
           "automarke_zdALVA": {
             "type": "automarke",
             "settings": {
-              "url_link": "",
-              "text_name": "Audi"
+              "url_link": "shopify://products/mercedes-benz",
+              "text_name": "Mercedes Benz"
             }
           },
           "automarke_bXqbcg": {
             "type": "automarke",
             "settings": {
-              "url_link": "",
-              "text_name": "Audi"
+              "url_link": "shopify://products/porsche",
+              "text_name": "Porsche"
             }
           },
           "automarke_ENtidc": {
             "type": "automarke",
             "settings": {
-              "url_link": "shopify://products/audi",
-              "text_name": "Audi"
+              "url_link": "shopify://products/seat",
+              "text_name": "Seat"
             }
           },
           "automarke_dLe6yt": {
             "type": "automarke",
             "settings": {
-              "url_link": "shopify://products/bmw",
-              "text_name": "BMW"
+              "url_link": "shopify://products/skoda",
+              "text_name": "Skoda"
             }
           },
           "automarke_dwm6CM": {
             "type": "automarke",
             "settings": {
-              "url_link": "",
-              "text_name": "Audi"
+              "url_link": "shopify://products/sprinter",
+              "text_name": "Sprinter"
             }
           },
           "automarke_xFxnzD": {
             "type": "automarke",
             "settings": {
-              "url_link": "",
-              "text_name": "Audi"
+              "url_link": "shopify://products/tesla",
+              "text_name": "Tesla"
             }
           },
           "automarke_zcXC9y": {
             "type": "automarke",
             "settings": {
-              "url_link": "",
-              "text_name": "Audi"
+              "url_link": "shopify://products/volkswagen",
+              "text_name": "Volkswagen"
             }
           },
           "automarke_Rz3A6j": {
             "type": "automarke",
             "settings": {
-              "url_link": "",
-              "text_name": "Audi"
+              "url_link": "shopify://products/vw-bulli",
+              "text_name": "VW Bulli"
             }
           }
         },
