@@ -445,8 +445,9 @@ html:not(.wf-design-mode) [data-slider="slide"].active .slide__caption{ transiti
               </div>
             </div>
           </div>
+          <div class="spacer-large"></div>
           <div class="button-align-center">
-            <a href="{{ section.settings.url_button_1_link }}" class="button-5 is-primary w-button"> {{ section.settings.text_button_1 }} </a>
+            <a href="{{ section.settings.url_button_link }}" data-w-id="f6eb645a-7570-fc88-a33b-07ffb61ad913" class="arrow-button-secondary w-inline-block w-clearfix"> <div class="scroll-arrow-txt">{{ section.settings.text_button_text }}</div><img alt="" src="{{ 'arrow-right-top.svg' | asset_url }}" class="scroll-arrow-img"> </a>
           </div>
         </div>
         <div class="spacer-huge"></div> {% schema %} {
@@ -533,15 +534,15 @@ html:not(.wf-design-mode) [data-slider="slide"].active .slide__caption{ transiti
             "default": "Porsche Cayman Premium"
         },
         {
-            "id": "url_button_1_link",
+            "id": "url_button_link",
             "type": "url",
-            "label": "Button 1 Link"
+            "label": "Button Link"
         },
         {
-            "id": "text_button_1",
+            "id": "text_button_text",
             "type": "text",
-            "label": "Button 1",
-            "default": "Button Text"
+            "label": "Button Text",
+            "default": "Zur Einbaugalerie"
         }
     ],
     "presets": [
