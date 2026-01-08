@@ -44,14 +44,14 @@
           "automarke_dLe6yt": {
             "type": "automarke",
             "settings": {
-              "url_link": "",
-              "text_name": "Audi"
+              "url_link": "shopify://products/bmw",
+              "text_name": "BMW"
             }
           },
           "automarke_ENtidc": {
             "type": "automarke",
             "settings": {
-              "url_link": "",
+              "url_link": "shopify://products/audi",
               "text_name": "Audi"
             }
           }
