@@ -9,35 +9,148 @@
  */
 {
   "sections": {
-    "collection_hero": {
-      "type": "collection_hero",
-      "settings": {}
-    },
-    "collection_products": {
-      "type": "collection_products",
-      "settings": {
-        "text_heading_2": "Heading",
-        "text_copy_text": "This is some text inside of a div block."
-      }
-    },
     "hero_collection_YrkADh": {
       "type": "hero_collection",
       "name": "Hero-Collection",
       "settings": {
         "text_sound_upgrade": "Sound Upgrade",
-        "text_h1": "Individuelle Komponenten",
-        "url_button_1_link": "",
-        "text_button_1": "Button Text",
-        "url_button_2_link": "",
-        "text_button_2": "Button Text"
+        "text_h1": "Für dein Auto",
+        "url_button_1_link": "https://shop.soundupgrade-bayern.de/",
+        "text_button_1": "Zur Startseite",
+        "url_button_2_link": "https://soundupgrade-bayern.de/referenzen/",
+        "text_button_2": "Einbaugalerie"
+      }
+    },
+    "collection_display_XcQjqg": {
+      "type": "collection_display",
+      "blocks": {
+        "soundupgrade_item_Y9nUNr": {
+          "type": "soundupgrade-item",
+          "settings": {
+            "url_link": "",
+            "image_feature_image": "shopify://shop_images/audi.webp",
+            "text_marke": "Audi"
+          }
+        },
+        "soundupgrade_item_VFV8Pe": {
+          "type": "soundupgrade-item",
+          "settings": {
+            "url_link": "",
+            "text_marke": "Auto Marke"
+          }
+        },
+        "soundupgrade_item_bYA9Cp": {
+          "type": "soundupgrade-item",
+          "settings": {
+            "url_link": "",
+            "text_marke": "Auto Marke"
+          }
+        },
+        "soundupgrade_item_pN8Lqt": {
+          "type": "soundupgrade-item",
+          "settings": {
+            "url_link": "",
+            "text_marke": "Auto Marke"
+          }
+        },
+        "soundupgrade_item_hY4Rg9": {
+          "type": "soundupgrade-item",
+          "settings": {
+            "url_link": "",
+            "text_marke": "Auto Marke"
+          }
+        },
+        "soundupgrade_item_fEEFhJ": {
+          "type": "soundupgrade-item",
+          "settings": {
+            "url_link": "",
+            "text_marke": "Auto Marke"
+          }
+        },
+        "soundupgrade_item_3kBYqP": {
+          "type": "soundupgrade-item",
+          "settings": {
+            "url_link": "",
+            "text_marke": "Auto Marke"
+          }
+        },
+        "soundupgrade_item_QrYXDd": {
+          "type": "soundupgrade-item",
+          "settings": {
+            "url_link": "",
+            "text_marke": "Auto Marke"
+          }
+        },
+        "soundupgrade_item_wiPcqU": {
+          "type": "soundupgrade-item",
+          "settings": {
+            "url_link": "",
+            "text_marke": "Auto Marke"
+          }
+        },
+        "soundupgrade_item_HYYaFy": {
+          "type": "soundupgrade-item",
+          "settings": {
+            "url_link": "",
+            "text_marke": "Auto Marke"
+          }
+        },
+        "soundupgrade_item_DN97tw": {
+          "type": "soundupgrade-item",
+          "settings": {
+            "url_link": "",
+            "text_marke": "Auto Marke"
+          }
+        },
+        "soundupgrade_item_M3B67J": {
+          "type": "soundupgrade-item",
+          "settings": {
+            "url_link": "",
+            "text_marke": "Auto Marke"
+          }
+        },
+        "soundupgrade_item_BimC3a": {
+          "type": "soundupgrade-item",
+          "settings": {
+            "url_link": "",
+            "text_marke": "Auto Marke"
+          }
+        },
+        "soundupgrade_item_rdfpMa": {
+          "type": "soundupgrade-item",
+          "settings": {
+            "url_link": "",
+            "text_marke": "Auto Marke"
+          }
+        }
+      },
+      "block_order": [
+        "soundupgrade_item_Y9nUNr",
+        "soundupgrade_item_VFV8Pe",
+        "soundupgrade_item_bYA9Cp",
+        "soundupgrade_item_pN8Lqt",
+        "soundupgrade_item_hY4Rg9",
+        "soundupgrade_item_fEEFhJ",
+        "soundupgrade_item_3kBYqP",
+        "soundupgrade_item_QrYXDd",
+        "soundupgrade_item_wiPcqU",
+        "soundupgrade_item_HYYaFy",
+        "soundupgrade_item_DN97tw",
+        "soundupgrade_item_M3B67J",
+        "soundupgrade_item_BimC3a",
+        "soundupgrade_item_rdfpMa"
+      ],
+      "name": "collection-display",
+      "settings": {
+        "text_heading_2": "Alle Soundupgrades",
+        "text_copy_text": "Erlebe Musik im Auto neu – mit einem professionellen Soundupgrade. Unsere fahrzeugspezifischen Systeme liefern deutlich besseren Klang, kräftigeren Bass und mehr Dynamik als serienmäßige Anlagen. Ob für den Alltag, lange Fahrten oder echte Klangliebhaber: Ein Soundupgrade bringt spürbar mehr Hörgenuss – ohne sichtbare Umbauten, perfekt integriert in dein Fahrzeug."
       }
     }
   },
   "layout": "collection",
   "wrapper": "main.main-wrapper",
   "order": [
-    "collection_hero",
-    "collection_products",
-    "hero_collection_YrkADh"
+    "hero_collection_YrkADh",
+    "collection_display_XcQjqg"
   ]
 }
