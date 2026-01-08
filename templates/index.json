@@ -15,6 +15,18 @@
       "settings": {
         "text_heading_2": "Ausgewählte Soundupgrade-Projekte",
         "text_copy_text": "Jedes System ist fahrzeugspezifisch geplant und sauber integriert – hier eine Auswahl unserer Arbeiten.",
+        "image_m5_image": "shopify://shop_images/m5_HE_1.png",
+        "text_m5_text": "BMW M5 High-End",
+        "image_911_image": "shopify://shop_images/911_HE_1.png",
+        "text_911_text": "Porsche 911 High-End",
+        "image_g_klasse_image": "shopify://shop_images/gklasse_individuell_1.png",
+        "text_g_klasse_text": "Mercedes G-Klasse Individual",
+        "image_taycan_image": "shopify://shop_images/taycan_HE_1.png",
+        "text_taycan_text": "Porsche Taycan High-End",
+        "image_m4_image": "shopify://shop_images/m4_HE_1.png",
+        "text_m4_text": "BMW M4 High-End",
+        "image_cayman_image": "shopify://shop_images/caymann_premium_1.png",
+        "text_cayman_text": "Porsche Cayman Premium",
         "url_button_1_link": "https://soundupgrade-bayern.de/referenzen/",
         "text_button_1": "Zur Einbaugalerie"
       }
