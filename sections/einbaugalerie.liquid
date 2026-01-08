@@ -320,7 +320,7 @@ html:not(.wf-design-mode) [data-slider="slide"].active .slide__caption{ transiti
           <div class="text-size-medium-2 is-light">
 {{ section.settings.text_copy_text }}
 </div>
-          <div class="spacer-large"></div>
+          <div class="spacer-large hide-desktop"></div>
           <div class="slider__section">
             <div class="slider__overlay">
               <div class="slider__overlay-inner">
@@ -358,50 +358,86 @@ html:not(.wf-design-mode) [data-slider="slide"].active .slide__caption{ transiti
               <div class="slider__wrap">
                 <div data-slider="list" class="slider__list">
                   <div data-slider="slide" class="slider__slide">
-                    <div class="slider__slide-inner"><img sizes="(max-width: 1200px) 100vw, 1200px" srcset="{{ 'm5-HE-1.webp' | asset_url }} 500w, {{ 'm5-HE-1.webp' | asset_url }} 800w, {{ 'm5-HE-1.webp' | asset_url }} 1080w, {{ 'm5-HE-1.webp' | asset_url }} 1200w" alt="" src="{{ 'm5-HE-1.webp' | asset_url }}" loading="lazy" class="slide__img">
+                    <div class="slider__slide-inner">{% if section.settings.image_m5_image %}
+{{ section.settings.image_m5_image | image_url: width: 1000 | image_tag: class: 'slide__img', sizes: '(max-width: 1200px) 100vw, 1200px', loading: 'lazy' }}
+{% else %}
+<img class="slide__img" src="{{ 'm5-HE-1.webp' | asset_url }}" alt="" sizes="(max-width: 1200px) 100vw, 1200px" loading="lazy" srcset="{{ 'm5-HE-1.webp' | asset_url }} 500w, {{ 'm5-HE-1.webp' | asset_url }} 800w, {{ 'm5-HE-1.webp' | asset_url }} 1080w, {{ 'm5-HE-1.webp' | asset_url }} 1200w">
+{% endif %}
                       <div class="slide__caption">
                         <div class="slide__caption-dot is-he"></div>
-                        <p class="slide__caption-label">BMW M5 High-End</p>
+                        <p class="slide__caption-label">
+{{ section.settings.text_m5_text }}
+</p>
                       </div>
                     </div>
                   </div>
                   <div data-slider="slide" class="slider__slide active">
-                    <div class="slider__slide-inner"><img loading="lazy" src="{{ '911-HE-1.webp' | asset_url }}" alt="" class="slide__img">
+                    <div class="slider__slide-inner">{% if section.settings.image_911_image %}
+{{ section.settings.image_911_image | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'slide__img' }}
+{% else %}
+<img loading="lazy" alt="" src="{{ '911-HE-1.webp' | asset_url }}" class="slide__img">
+{% endif %}
                       <div class="slide__caption">
                         <div class="slide__caption-dot is-he"></div>
-                        <p class="slide__caption-label">Porsche 911 High-End</p>
+                        <p class="slide__caption-label">
+{{ section.settings.text_911_text }}
+</p>
                       </div>
                     </div>
                   </div>
                   <div data-slider="slide" class="slider__slide">
-                    <div class="slider__slide-inner"><img sizes="(max-width: 1200px) 100vw, 1200px" srcset="{{ 'gklasse-individuell-1.webp' | asset_url }} 500w, {{ 'gklasse-individuell-1.webp' | asset_url }} 800w, {{ 'gklasse-individuell-1.webp' | asset_url }} 1080w, {{ 'gklasse-individuell-1.webp' | asset_url }} 1200w" alt="" src="{{ 'gklasse-individuell-1.webp' | asset_url }}" loading="lazy" class="slide__img">
+                    <div class="slider__slide-inner">{% if section.settings.image_g_klasse_image %}
+{{ section.settings.image_g_klasse_image | image_url: width: 1000 | image_tag: class: 'slide__img', sizes: '(max-width: 1200px) 100vw, 1200px', loading: 'lazy' }}
+{% else %}
+<img class="slide__img" src="{{ 'gklasse-individuell-1.webp' | asset_url }}" alt="" sizes="(max-width: 1200px) 100vw, 1200px" loading="lazy" srcset="{{ 'gklasse-individuell-1.webp' | asset_url }} 500w, {{ 'gklasse-individuell-1.webp' | asset_url }} 800w, {{ 'gklasse-individuell-1.webp' | asset_url }} 1080w, {{ 'gklasse-individuell-1.webp' | asset_url }} 1200w">
+{% endif %}
                       <div class="slide__caption">
                         <div class="slide__caption-dot is-individual"></div>
-                        <p class="slide__caption-label">Mercedes G-Klasse Individual</p>
+                        <p class="slide__caption-label">
+{{ section.settings.text_g_klasse_text }}
+</p>
                       </div>
                     </div>
                   </div>
                   <div data-slider="slide" class="slider__slide">
-                    <div class="slider__slide-inner"><img sizes="(max-width: 1200px) 100vw, 1200px" srcset="{{ 'taycan-HE-1.webp' | asset_url }} 500w, {{ 'taycan-HE-1.webp' | asset_url }} 800w, {{ 'taycan-HE-1.webp' | asset_url }} 1080w, {{ 'taycan-HE-1.webp' | asset_url }} 1200w" alt="" src="{{ 'taycan-HE-1.webp' | asset_url }}" loading="lazy" class="slide__img">
+                    <div class="slider__slide-inner">{% if section.settings.image_taycan_image %}
+{{ section.settings.image_taycan_image | image_url: width: 1000 | image_tag: class: 'slide__img', sizes: '(max-width: 1200px) 100vw, 1200px', loading: 'lazy' }}
+{% else %}
+<img class="slide__img" src="{{ 'taycan-HE-1.webp' | asset_url }}" alt="" sizes="(max-width: 1200px) 100vw, 1200px" loading="lazy" srcset="{{ 'taycan-HE-1.webp' | asset_url }} 500w, {{ 'taycan-HE-1.webp' | asset_url }} 800w, {{ 'taycan-HE-1.webp' | asset_url }} 1080w, {{ 'taycan-HE-1.webp' | asset_url }} 1200w">
+{% endif %}
                       <div class="slide__caption">
                         <div class="slide__caption-dot is-he"></div>
-                        <p class="slide__caption-label">Porsche Taycan High-End</p>
+                        <p class="slide__caption-label">
+{{ section.settings.text_taycan_text }}
+</p>
                       </div>
                     </div>
                   </div>
                   <div data-slider="slide" class="slider__slide">
-                    <div class="slider__slide-inner"><img sizes="(max-width: 1200px) 100vw, 1200px" srcset="{{ 'm4-HE-1.webp' | asset_url }} 500w, {{ 'm4-HE-1.webp' | asset_url }} 800w, {{ 'm4-HE-1.webp' | asset_url }} 1080w, {{ 'm4-HE-1.webp' | asset_url }} 1200w" alt="" src="{{ 'm4-HE-1.webp' | asset_url }}" loading="lazy" class="slide__img">
+                    <div class="slider__slide-inner">{% if section.settings.image_m4_image %}
+{{ section.settings.image_m4_image | image_url: width: 1000 | image_tag: class: 'slide__img', sizes: '(max-width: 1200px) 100vw, 1200px', loading: 'lazy' }}
+{% else %}
+<img class="slide__img" src="{{ 'm4-HE-1.webp' | asset_url }}" alt="" sizes="(max-width: 1200px) 100vw, 1200px" loading="lazy" srcset="{{ 'm4-HE-1.webp' | asset_url }} 500w, {{ 'm4-HE-1.webp' | asset_url }} 800w, {{ 'm4-HE-1.webp' | asset_url }} 1080w, {{ 'm4-HE-1.webp' | asset_url }} 1200w">
+{% endif %}
                       <div class="slide__caption">
                         <div class="slide__caption-dot is-he"></div>
-                        <p class="slide__caption-label">BMW M4 High-End</p>
+                        <p class="slide__caption-label">
+{{ section.settings.text_m4_text }}
+</p>
                       </div>
                     </div>
                   </div>
                   <div data-slider="slide" class="slider__slide">
-                    <div class="slider__slide-inner"><img sizes="(max-width: 1200px) 100vw, 1200px" srcset="{{ 'caymann-premium-1.webp' | asset_url }} 500w, {{ 'caymann-premium-1.webp' | asset_url }} 800w, {{ 'caymann-premium-1.webp' | asset_url }} 1080w, {{ 'caymann-premium-1.webp' | asset_url }} 1200w" alt="" src="{{ 'caymann-premium-1.webp' | asset_url }}" loading="lazy" class="slide__img">
+                    <div class="slider__slide-inner">{% if section.settings.image_cayman_image %}
+{{ section.settings.image_cayman_image | image_url: width: 1000 | image_tag: class: 'slide__img', sizes: '(max-width: 1200px) 100vw, 1200px', loading: 'lazy' }}
+{% else %}
+<img class="slide__img" src="{{ 'caymann-premium-1.webp' | asset_url }}" alt="" sizes="(max-width: 1200px) 100vw, 1200px" loading="lazy" srcset="{{ 'caymann-premium-1.webp' | asset_url }} 500w, {{ 'caymann-premium-1.webp' | asset_url }} 800w, {{ 'caymann-premium-1.webp' | asset_url }} 1080w, {{ 'caymann-premium-1.webp' | asset_url }} 1200w">
+{% endif %}
                       <div class="slide__caption">
                         <div class="slide__caption-dot is-premium"></div>
-                        <p class="slide__caption-label">Porsche Cayman Premium</p>
+                        <p class="slide__caption-label">
+{{ section.settings.text_cayman_text }}
+</p>
                       </div>
                     </div>
                   </div>
@@ -429,6 +465,72 @@ html:not(.wf-design-mode) [data-slider="slide"].active .slide__caption{ transiti
             "type": "text",
             "label": "Copy Text",
             "default": "This is some text inside of a div block."
+        },
+        {
+            "id": "image_m5_image",
+            "type": "image_picker",
+            "label": "M5 Image"
+        },
+        {
+            "id": "text_m5_text",
+            "type": "text",
+            "label": "M5 Text",
+            "default": "BMW M5 High-End"
+        },
+        {
+            "id": "image_911_image",
+            "type": "image_picker",
+            "label": "911 Image"
+        },
+        {
+            "id": "text_911_text",
+            "type": "text",
+            "label": "911 Text",
+            "default": "Porsche 911 High-End"
+        },
+        {
+            "id": "image_g_klasse_image",
+            "type": "image_picker",
+            "label": "G-Klasse Image"
+        },
+        {
+            "id": "text_g_klasse_text",
+            "type": "text",
+            "label": "G-Klasse Text",
+            "default": "Mercedes G-Klasse Individual"
+        },
+        {
+            "id": "image_taycan_image",
+            "type": "image_picker",
+            "label": "Taycan Image"
+        },
+        {
+            "id": "text_taycan_text",
+            "type": "text",
+            "label": "Taycan Text",
+            "default": "Porsche Taycan High-End"
+        },
+        {
+            "id": "image_m4_image",
+            "type": "image_picker",
+            "label": "M4 Image"
+        },
+        {
+            "id": "text_m4_text",
+            "type": "text",
+            "label": "M4 Text",
+            "default": "BMW M4 High-End"
+        },
+        {
+            "id": "image_cayman_image",
+            "type": "image_picker",
+            "label": "Cayman Image"
+        },
+        {
+            "id": "text_cayman_text",
+            "type": "text",
+            "label": "Cayman Text",
+            "default": "Porsche Cayman Premium"
         },
         {
             "id": "url_button_1_link",
