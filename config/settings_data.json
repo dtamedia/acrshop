@@ -13,35 +13,42 @@
       "header": {
         "type": "header",
         "blocks": {
+          "automarke_Rz3A6j": {
+            "type": "automarke",
+            "settings": {
+              "url_link": "",
+              "text_name": "Audi"
+            }
+          },
           "automarke_dLe6yt": {
             "type": "automarke",
             "settings": {
-              "text_category_marke_1": "Audi",
-              "url_category_marke_1": ""
+              "url_link": "",
+              "text_name": "Audi"
             }
           },
           "automarke_ENtidc": {
             "type": "automarke",
             "settings": {
-              "text_category_marke_1": "BMW",
-              "url_category_marke_1": "shopify://products/bmw"
+              "url_link": "",
+              "text_name": "Audi"
             }
           }
         },
         "block_order": [
+          "automarke_Rz3A6j",
           "automarke_dLe6yt",
           "automarke_ENtidc"
         ],
         "settings": {
-          "text_inbound_text": "Soundupgrades",
           "url_link_inbound": "shopify://collections/soundupgrades",
+          "text_inbound_text": "Soundupgrades",
           "text_text_automarke": "Automarke",
           "text_heading_right_marke": "Alle Automarken",
-          "url_cta_image_link": "",
+          "url_link": "https://soundupgrade-bayern.de/",
           "text_outbound_link": "Soundupgrade Bayern",
-          "url_link": "",
-          "text_outbound_link_galerie": "Einbaugalerie",
-          "url_link_galerie": ""
+          "url_link_galerie": "https://soundupgrade-bayern.de/referenzen/",
+          "text_outbound_link_galerie": "Einbaugalerie"
         }
       },
       "footer": {
