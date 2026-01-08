@@ -27,7 +27,7 @@
         "soundupgrade_item_Y9nUNr": {
           "type": "soundupgrade-item",
           "settings": {
-            "url_link": "",
+            "url_link": "shopify://products/audi",
             "image_feature_image": "shopify://shop_images/audi.webp",
             "text_marke": "Audi"
           }
@@ -43,85 +43,97 @@
         "soundupgrade_item_bYA9Cp": {
           "type": "soundupgrade-item",
           "settings": {
-            "url_link": "",
-            "text_marke": "Auto Marke"
+            "url_link": "shopify://products/camper",
+            "image_feature_image": "shopify://shop_images/Camper.webp",
+            "text_marke": "Camper"
           }
         },
         "soundupgrade_item_pN8Lqt": {
           "type": "soundupgrade-item",
           "settings": {
-            "url_link": "",
-            "text_marke": "Auto Marke"
+            "url_link": "shopify://products/cupra",
+            "image_feature_image": "shopify://shop_images/cupra.webp",
+            "text_marke": "Cupra"
           }
         },
         "soundupgrade_item_hY4Rg9": {
           "type": "soundupgrade-item",
           "settings": {
-            "url_link": "",
-            "text_marke": "Auto Marke"
+            "url_link": "shopify://products/fiat",
+            "image_feature_image": "shopify://shop_images/fiat.webp",
+            "text_marke": "Fiat"
           }
         },
         "soundupgrade_item_fEEFhJ": {
           "type": "soundupgrade-item",
           "settings": {
-            "url_link": "",
-            "text_marke": "Auto Marke"
+            "url_link": "shopify://products/grenadier",
+            "image_feature_image": "shopify://shop_images/grenadier.webp",
+            "text_marke": "Grenadier"
           }
         },
         "soundupgrade_item_3kBYqP": {
           "type": "soundupgrade-item",
           "settings": {
-            "url_link": "",
-            "text_marke": "Auto Marke"
+            "url_link": "shopify://products/mercedes-benz",
+            "image_feature_image": "shopify://shop_images/Mercedes.webp",
+            "text_marke": "Mercedes Benz"
           }
         },
         "soundupgrade_item_QrYXDd": {
           "type": "soundupgrade-item",
           "settings": {
-            "url_link": "",
-            "text_marke": "Auto Marke"
+            "url_link": "shopify://products/porsche",
+            "image_feature_image": "shopify://shop_images/porsche.webp",
+            "text_marke": "Porsche"
           }
         },
         "soundupgrade_item_wiPcqU": {
           "type": "soundupgrade-item",
           "settings": {
-            "url_link": "",
-            "text_marke": "Auto Marke"
+            "url_link": "shopify://products/seat",
+            "image_feature_image": "shopify://shop_images/seat.webp",
+            "text_marke": "Seat"
           }
         },
         "soundupgrade_item_HYYaFy": {
           "type": "soundupgrade-item",
           "settings": {
-            "url_link": "",
-            "text_marke": "Auto Marke"
+            "url_link": "shopify://products/skoda",
+            "image_feature_image": "shopify://shop_images/skoda.webp",
+            "text_marke": "Skoda"
           }
         },
         "soundupgrade_item_DN97tw": {
           "type": "soundupgrade-item",
           "settings": {
-            "url_link": "",
-            "text_marke": "Auto Marke"
+            "url_link": "shopify://products/sprinter",
+            "image_feature_image": "shopify://shop_images/sprinter.webp",
+            "text_marke": "Sprinter"
           }
         },
         "soundupgrade_item_M3B67J": {
           "type": "soundupgrade-item",
           "settings": {
-            "url_link": "",
-            "text_marke": "Auto Marke"
+            "url_link": "shopify://products/tesla",
+            "image_feature_image": "shopify://shop_images/tesla.webp",
+            "text_marke": "Tesla"
           }
         },
         "soundupgrade_item_BimC3a": {
           "type": "soundupgrade-item",
           "settings": {
-            "url_link": "",
-            "text_marke": "Auto Marke"
+            "url_link": "shopify://products/volkswagen",
+            "image_feature_image": "shopify://shop_images/vw.webp",
+            "text_marke": "Volkswagen"
           }
         },
         "soundupgrade_item_rdfpMa": {
           "type": "soundupgrade-item",
           "settings": {
-            "url_link": "",
-            "text_marke": "Auto Marke"
+            "url_link": "shopify://products/vw-bulli",
+            "image_feature_image": "shopify://shop_images/bulli.webp",
+            "text_marke": "VW Bulli"
           }
         }
       },
