@@ -9,6 +9,18 @@
  */
 {
   "sections": {
+    "home_hero_DKRXg6": {
+      "type": "home_hero",
+      "name": "Home Hero",
+      "settings": {
+        "text_h1": "Online Shop",
+        "text_subtext": "Soundupgrade Bayern",
+        "url_button_1_link": "",
+        "text_button_1": "Button Text",
+        "url_button_2_link": "",
+        "text_button_2": "Button Text"
+      }
+    },
     "einbaugalerie_D6P4DM": {
       "type": "einbaugalerie",
       "name": "Einbaugalerie",
@@ -30,64 +42,12 @@
         "url_button_1_link": "https://soundupgrade-bayern.de/referenzen/",
         "text_button_1": "Einbaugalerie"
       }
-    },
-    "liquify_hero": {
-      "type": "liquify_hero",
-      "settings": {}
-    },
-    "hero": {
-      "type": "hero",
-      "settings": {
-        "text_headline": "Short heading here",
-        "richtext_text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>",
-        "url_button_link": "",
-        "text_button_text": "More Information"
-      }
-    },
-    "category": {
-      "type": "category",
-      "settings": {
-        "text_headline": "Short heading here",
-        "url_button_link": "",
-        "text_button_text": "All products",
-        "collection_collection": "",
-        "collection_collection_limit": 6
-      }
-    },
-    "links": {
-      "type": "links",
-      "settings": {
-        "text_headline": "Short heading here"
-      }
-    },
-    "content": {
-      "type": "content",
-      "settings": {
-        "text_headline": "Short heading here",
-        "text_button_text": "All Articles",
-        "url_button_link": "",
-        "url_artikel_1_link": "",
-        "text_artikel_1_titel": "Blog title heading will go here",
-        "text_artikel_1_excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-        "article_artikel_2": "",
-        "url_artikel_2_link": "",
-        "text_artikel_2_titel": "Blog title heading will go here",
-        "text_artikel_2_excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-        "article_artikel_3": "",
-        "url_artikel_3_link": "",
-        "text_artikel_3_titel": "Blog title heading will go here",
-        "text_artikel_3_excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
-      }
     }
   },
   "layout": "theme",
   "wrapper": "main.main-wrapper",
   "order": [
-    "einbaugalerie_D6P4DM",
-    "liquify_hero",
-    "hero",
-    "category",
-    "links",
-    "content"
+    "home_hero_DKRXg6",
+    "einbaugalerie_D6P4DM"
   ]
 }
