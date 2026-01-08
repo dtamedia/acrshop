@@ -6757,7 +6757,7 @@ figcaption {
   grid-row-gap: 0px;
   flex: 1;
   grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-auto-columns: 1fr;
   padding: 2rem 2rem 2rem 0;
   display: grid;
@@ -9271,6 +9271,7 @@ figcaption {
   .uui-navbar02_dropdown-content-right {
     max-width: 50rem;
     margin-bottom: 1rem;
+    display: none;
   }
 
   .uui-navbar02_container {
@@ -10540,6 +10541,7 @@ figcaption {
 
   .uui-navbar02_dropdown-content-right {
     padding: 2rem 1rem;
+    display: none;
   }
 
   .uui-button-link {
@@ -11563,6 +11565,7 @@ figcaption {
     max-width: none;
     padding-left: .75rem;
     padding-right: .75rem;
+    display: none;
   }
 
   .uui-navbar02_component {
@@ -11586,6 +11589,13 @@ figcaption {
 
   .navbar-dropdown-header {
     font-size: .9rem;
+  }
+
+  .navbar-dropdown-link-wrapper {
+    grid-column-gap: .6rem;
+    grid-row-gap: .6rem;
+    flex-flow: column;
+    max-height: none;
   }
 
   .uui-navbar08_dropdown-content {
