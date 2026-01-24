@@ -47,13 +47,13 @@
       "type": "features",
       "name": "Features",
       "settings": {
-        "text_text_label_1": "Kontrollierter Bass",
-        "text_text_content_1": "Kontrollierter Bass.<br><br><span class=\"feature-pills__item-body-span\">Mehr Tiefe und Druck – aber sauber abgestimmt. Der Bass bleibt präzise und dröhnt nicht.</span>",
-        "text_text_label_2": "Sound-Abstimmung",
-        "text_text_label_3": "OEM-nahe Integration",
-        "text_text_label_4": "Verbaute Komponenten",
-        "text_text_label_5": "Ablauf und Einbau",
-        "text_text_label_6": "Zahlungsmöglichkeiten"
+        "text_text_label_1": "Kontrollierter Bass 1",
+        "text_text_content_1": "Kontrollierter Bass.Mehr Tiefe und Druck – aber sauber abgestimmt. Der Bass bleibt präzise und dröhnt nicht. Test",
+        "text_text_label_2": "Sound-Abstimmung 1",
+        "text_text_label_3": "OEM-nahe Integration 1",
+        "text_text_label_4": "Verbaute Komponenten 1",
+        "text_text_label_5": "Ablauf und Einbau 1",
+        "text_text_label_6": "Zahlungsmöglichkeiten 1"
       }
     }
   },
