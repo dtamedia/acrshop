@@ -1,0 +1,111 @@
+<div class="padding-global">
+          <div class="spacer-xxlarge"></div>
+          <div class="counter-item-wrapper">
+            <div class="counter-item">
+              <div class="counter-number-wrapper">
+                <div counter-element="number" duration="3000" class="counter-text">
+{{ section.settings.text_counter_number_left }}
+</div>
+                <div class="spacer-small"></div>
+                <div class="counter-title">
+{{ section.settings.text_counter_text_left }}
+</div>
+              </div>
+              <div class="spacer-medium"></div>
+              <a data-w-id="cac93172-4d52-0fb0-5e1b-fd7336986f65" href="{{ section.settings.url_button_link }}" target="_blank" class="arrow-button pad w-inline-block"> <div class="title-wrapper"> <p class="button-title">{{ section.settings.text_button_text }}</p> <div class="arrow-wrapper"><img alt="" src="{{ 'Arrow_1Arrow.png' | asset_url }}" class="button-arrow"></div> </div> <div class="underline"></div> </a>
+            </div>
+            <div class="counter-item">
+              <div class="counter-number-wrapper">
+                <div class="counter-number-wrapper-inner">
+                  <div counter-element="number" duration="3000" class="counter-text">
+{{ section.settings.text_counter_number_middle }}
+</div>
+                  <div class="counter-text">+</div>
+                </div>
+                <div class="spacer-small"></div>
+                <div class="counter-title">
+{{ section.settings.text_counter_text_middle }}
+</div>
+              </div>
+              <div class="spacer-medium"></div>
+              <a data-w-id="cac93172-4d52-0fb0-5e1b-fd7336986f65" href="{{ section.settings.url_button_link }}" target="_blank" class="arrow-button pad w-inline-block"> <div class="title-wrapper"> <p class="button-title">{{ section.settings.text_button_text }}</p> <div class="arrow-wrapper"><img alt="" src="{{ 'Arrow_1Arrow.png' | asset_url }}" class="button-arrow"></div> </div> <div class="underline"></div> </a>
+            </div>
+            <div class="counter-item">
+              <div class="counter-number-wrapper">
+                <div class="counter-number-wrapper-inner">
+                  <div counter-element="number" duration="3000" class="counter-text">
+{{ section.settings.text_counter_number_right }}
+</div>
+                  <div class="counter-text">+</div>
+                </div>
+                <div class="spacer-small"></div>
+                <div class="counter-title">
+{{ section.settings.text_counter_text_right }}
+</div>
+              </div>
+              <div class="spacer-medium"></div>
+              <a data-w-id="cac93172-4d52-0fb0-5e1b-fd7336986f65" href="{{ section.settings.url_button_link }}" target="_blank" class="arrow-button pad w-inline-block"> <div class="title-wrapper"> <p class="button-title">{{ section.settings.text_button_text }}</p> <div class="arrow-wrapper"><img alt="" src="{{ 'Arrow_1Arrow.png' | asset_url }}" class="button-arrow"></div> </div> <div class="underline"></div> </a>
+            </div>
+          </div>
+          <div class="spacer-xxlarge"></div>
+        </div> {% schema %} {
+    "tag": "section",
+    "name": "Counter",
+    "class": "section_counter",
+    "settings": [
+        {
+            "id": "text_counter_number_left",
+            "type": "text",
+            "label": "Counter Number Left",
+            "default": "14"
+        },
+        {
+            "id": "text_counter_text_left",
+            "type": "text",
+            "label": "Counter Text Left",
+            "default": "Optimierte Soundupgrades"
+        },
+        {
+            "id": "url_button_link",
+            "type": "url",
+            "label": "Button Link"
+        },
+        {
+            "id": "text_button_text",
+            "type": "text",
+            "label": "Button Text",
+            "default": "UNSERE SOUNDUPGRADES"
+        },
+        {
+            "id": "text_counter_number_middle",
+            "type": "text",
+            "label": "Counter Number Middle",
+            "default": "1540"
+        },
+        {
+            "id": "text_counter_text_middle",
+            "type": "text",
+            "label": "Counter Text Middle",
+            "default": "Watt Soundleistung"
+        },
+        {
+            "id": "text_counter_number_right",
+            "type": "text",
+            "label": "Counter Number Right",
+            "default": "200"
+        },
+        {
+            "id": "text_counter_text_right",
+            "type": "text",
+            "label": "Counter Text Right",
+            "default": "Verbaute Soundupgrades"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Counter",
+            "category": "Liquify",
+            "blocks": []
+        }
+    ]
+} {% endschema %}

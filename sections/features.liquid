@@ -409,7 +409,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <div data-feature-pills-cover="" class="feature-pills__visual-cover">{% if section.settings.image_cover_image %}
 {{ section.settings.image_cover_image | image_url: width: 1000 | image_tag: class: 'feature-pills__visual-cover-img', sizes: '(max-width: 1206px) 100vw, 1206px', loading: 'lazy' }}
 {% else %}
-<img class="feature-pills__visual-cover-img" src="{{ 'cover-image.webp' | asset_url }}" alt="" sizes="(max-width: 1206px) 100vw, 1206px" loading="lazy" srcset="{{ 'cover-image.webp' | asset_url }} 500w, {{ 'cover-image.webp' | asset_url }} 800w, {{ 'cover-image.webp' | asset_url }} 1080w, {{ 'cover-image.webp' | asset_url }} 1206w">
+<img class="feature-pills__visual-cover-img" src="{{ 'cover-image.webp' | asset_url }}" alt="" sizes="(max-width: 1206px) 100vw, 1206px" loading="lazy" srcset="{{ 'cover-image-p-500.webp' | asset_url }} 500w, {{ 'cover-image-p-800.webp' | asset_url }} 800w, {{ 'cover-image-p-1080.webp' | asset_url }} 1080w, {{ 'cover-image.webp' | asset_url }} 1206w">
 {% endif %}</div>
             </div>
           </div>
