@@ -21,6 +21,20 @@
         "text_button_2": "Button Text"
       }
     },
+    "counter_nXGrBF": {
+      "type": "counter",
+      "name": "Counter",
+      "settings": {
+        "text_counter_number_left": "14",
+        "text_counter_text_left": "Optimierte Soundupgrades",
+        "url_button_link": "",
+        "text_button_text": "UNSERE SOUNDUPGRADES",
+        "text_counter_number_middle": "1540",
+        "text_counter_text_middle": "Watt Soundleistung",
+        "text_counter_number_right": "200",
+        "text_counter_text_right": "Verbaute Soundupgrades"
+      }
+    },
     "einbaugalerie_D6P4DM": {
       "type": "einbaugalerie",
       "name": "Einbaugalerie",
@@ -61,6 +75,7 @@
   "wrapper": "main.main-wrapper",
   "order": [
     "home_hero_DKRXg6",
+    "counter_nXGrBF",
     "einbaugalerie_D6P4DM",
     "features_MNrx9e"
   ]
