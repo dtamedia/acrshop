@@ -130,12 +130,12 @@
         "text_news_text_bottom": "Unser neues Tesla Soundupgrade hebt die serienmäßige Audiowiedergabe deutlich auf ein neues Level.Abgestimmt auf die speziellen Anforderungen von Tesla-Fahrzeugen bieten wir verschiedene Systemstufen von Advanced über Premium bis High-End – jeweils mit fein abgestimmtem DSP, Plug-&-Play-Integration und kraftvollem, präzisem Sound.",
         "url_button_link_news_bottom": "shopify://products/tesla",
         "text_button_text_news_bottom": "TESLA SOUNDUPGRADE",
+        "video": "https://www.youtube.com/watch?v=5oEzhw11WFg",
         "text_bottom_heading": "Folge uns jetzt auf Social Media",
         "text_bottom_text": "Bleib up to date mit neuen Videos, Projekten und Soundupgrade-Updates.",
         "url_social_link_facebook": "https://www.facebook.com/acrsoundupgrade",
         "url_social_link_instagram": "https://www.instagram.com/acr_soundupgrade_bayern/",
-        "url_social_link_youtube": "https://www.youtube.com/@SoundupgradeBayern/videos",
-        "video": "https://www.youtube.com/watch?v=5oEzhw11WFg"
+        "url_social_link_youtube": "https://www.youtube.com/@SoundupgradeBayern/videos"
       }
     },
     "features_MNrx9e": {
@@ -150,13 +150,6 @@
         "text_text_label_5": "Ablauf und Einbau",
         "text_text_label_6": "Zahlungsmöglichkeiten"
       }
-    },
-    "video_externally_k4RRxY": {
-      "type": "video_externally",
-      "name": "Video (Externally)",
-      "settings": {
-        "video": "https://www.youtube.com/watch?v=5oEzhw11WFg"
-      }
     }
   },
   "layout": "theme",
@@ -168,7 +161,6 @@
     "timeline_6wf3Xz",
     "einbaugalerie_D6P4DM",
     "news_LBGBd8",
-    "features_MNrx9e",
-    "video_externally_k4RRxY"
+    "features_MNrx9e"
   ]
 }
