@@ -158,6 +158,19 @@
         "text_faq_heading_8": "Wann und wie kann ich bezahlen?",
         "text_faq_text_8": "Die Bezahlung erfolgt über den Onlineshop. Es stehen alle gängigen Zahlungsmethoden zur Verfügung, darunter PayPal, Klarna (inklusive Ratenzahlung) sowie Barzahlung bei Abholung im Shop."
       }
+    },
+    "features_XEdr9H": {
+      "type": "features",
+      "name": "Features",
+      "settings": {
+        "text_text_label_1": "Kontrollierter Bass",
+        "text_text_content_1": "Kontrollierter Bass.<br><br><span class=\"feature-pills__item-body-span\">Mehr Tiefe und Druck – aber sauber abgestimmt. Der Bass bleibt präzise und dröhnt nicht.</span>",
+        "text_text_label_2": "Sound-Abstimmung",
+        "text_text_label_3": "OEM-nahe Integration",
+        "text_text_label_4": "Verbaute Komponenten",
+        "text_text_label_5": "Ablauf und Einbau",
+        "text_text_label_6": "Zahlungsmöglichkeiten"
+      }
     }
   },
   "layout": "theme",
@@ -169,6 +182,7 @@
     "timeline_6wf3Xz",
     "einbaugalerie_D6P4DM",
     "news_LBGBd8",
-    "faq_H344bJ"
+    "faq_H344bJ",
+    "features_XEdr9H"
   ]
 }
