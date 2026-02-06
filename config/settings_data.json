@@ -141,32 +141,93 @@
       },
       "footer": {
         "type": "footer",
+        "blocks": {
+          "payment_logo_T6pf8F": {
+            "type": "payment-logo",
+            "settings": {
+              "image_image": "shopify://shop_images/bank-badge.svg"
+            }
+          },
+          "payment_logo_JP6Nzh": {
+            "type": "payment-logo",
+            "settings": {
+              "image_image": "shopify://shop_images/paypal-badge-2.svg"
+            }
+          },
+          "payment_logo_nPxrCk": {
+            "type": "payment-logo",
+            "settings": {
+              "image_image": "shopify://shop_images/klarna-badge.svg"
+            }
+          },
+          "payment_logo_BQbTrG": {
+            "type": "payment-logo",
+            "settings": {
+              "image_image": "shopify://shop_images/apple-pay-badge-1.svg"
+            }
+          },
+          "payment_logo_GDJhYJ": {
+            "type": "payment-logo",
+            "settings": {
+              "image_image": "shopify://shop_images/google-pay-badge-1.svg"
+            }
+          },
+          "payment_logo_9FLQnT": {
+            "type": "payment-logo",
+            "settings": {
+              "image_image": "shopify://shop_images/visa-badge.svg"
+            }
+          },
+          "payment_logo_7wzyyB": {
+            "type": "payment-logo",
+            "settings": {
+              "image_image": "shopify://shop_images/mastercard-badge-1.svg"
+            }
+          },
+          "payment_logo_ccbrHH": {
+            "type": "payment-logo",
+            "settings": {
+              "image_image": "shopify://shop_images/maestro-badge.svg"
+            }
+          }
+        },
+        "block_order": [
+          "payment_logo_T6pf8F",
+          "payment_logo_JP6Nzh",
+          "payment_logo_nPxrCk",
+          "payment_logo_BQbTrG",
+          "payment_logo_GDJhYJ",
+          "payment_logo_9FLQnT",
+          "payment_logo_7wzyyB",
+          "payment_logo_ccbrHH"
+        ],
         "settings": {
+          "image_logo_image": "shopify://shop_images/Logo_white.png",
           "text_acr_text": "ACR Traunstein",
           "text_anfahrt": "Anfahrt: Chiemseestr. 38, 83278 Traunstein",
           "text_telefon": "Tel: +49 (0)861 90991199",
           "text_e_mail": "E-Mail: info@soundupgrade-bayern.de",
           "text_schnellmenu_text": "Schnellmenü",
-          "url_link_start": "",
+          "url_link_start": "https://www.shop.soundupgrade-bayern.de",
           "text_start": "Start",
-          "url_link_soundupgrades": "",
+          "url_link_soundupgrades": "shopify://collections/soundupgrades",
           "text_soundupgrades": "Soundupgrades",
           "url_einzelkomponenten_link": "",
-          "text_einzelkompontenten": "Einzelkomponenten",
-          "url_link_soundupgrade_bayern": "",
+          "text_einzelkompontenten": "",
+          "url_link_soundupgrade_bayern": "https://soundupgrade-bayern.de/",
           "text_soundupgrade_bayern": "Soundupgrade Bayern",
           "text_social_media_heading": "Social Media",
-          "url_link_instagram": "",
-          "url_link_facebook": "",
-          "url_link_youtube": "",
+          "url_link_instagram": "https://www.instagram.com/acr_soundupgrade_bayern/",
+          "url_link_facebook": "https://www.facebook.com/acrsoundupgrade",
+          "url_link_youtube": "https://www.youtube.com/@SoundupgradeBayern",
           "text_bezahlmoglichkeiten_heading": "Bezahlmöglichkeiten",
-          "url_impressum_link": "",
+          "url_impressum_link": "shopify://policies/legal-notice",
           "text_impressum": "Impressum",
-          "url_datenschutz_link": "",
+          "url_datenschutz_link": "shopify://policies/privacy-policy",
           "text_datenschutz": "Datenschutz",
-          "url_agb_link": "",
+          "url_agb_link": "shopify://policies/terms-of-service",
           "text_agb": "ABG",
-          "url_ruckgabe_link": "",
+          "url_ruckgabe_link": "shopify://policies/refund-policy",
           "text_ruckgabe": "Rückgabe"
         }
       }
