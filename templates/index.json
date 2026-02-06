@@ -122,7 +122,6 @@
       "type": "news",
       "name": "news",
       "settings": {
-        "text_heading": "News. Sie dir an, was es Neues gibt.",
         "text_heading_news_top": "Unser neustes YouTube Video",
         "text_news_text_top": "Auf unserem neuen YouTube Kanal Soundupgrade Bayern versorgen wir dich regelmäßig mit den neuesten Updates und du kannst dabei zugucken wie wir unsere Sound Upgrades verbauen. In unserem neuen Video präsentieren wir euch unser Soundupgrade für einen Mini Cooper.Jetzt Abonnieren um nichts mehr zu verpassen. Erwarte regelmäßige Updates zu maßgeschneiderten Soundsystemen und innovativen Soundupgrades.",
         "url_button_link_news_top": "https://www.youtube.com/@SoundupgradeBayern",
@@ -131,7 +130,6 @@
         "text_news_text_bottom": "Unser neues Tesla Soundupgrade hebt die serienmäßige Audiowiedergabe deutlich auf ein neues Level.Abgestimmt auf die speziellen Anforderungen von Tesla-Fahrzeugen bieten wir verschiedene Systemstufen von Advanced über Premium bis High-End – jeweils mit fein abgestimmtem DSP, Plug-&-Play-Integration und kraftvollem, präzisem Sound.",
         "url_button_link_news_bottom": "shopify://products/tesla",
         "text_button_text_news_bottom": "TESLA SOUNDUPGRADE",
-        "video": "https://www.youtube.com/watch?v=5oEzhw11WFg",
         "text_bottom_heading": "Folge uns jetzt auf Social Media",
         "text_bottom_text": "Bleib up to date mit neuen Videos, Projekten und Soundupgrade-Updates.",
         "url_social_link_facebook": "https://www.facebook.com/acrsoundupgrade",
