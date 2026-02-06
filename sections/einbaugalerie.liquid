@@ -313,13 +313,15 @@ html:not(.wf-design-mode) [data-slider="slide"].active .slide__caption{ transiti
         </div>
         <div class="spacer-huge"></div>
         <div class="padding-global is-slider">
-          <h2 class="heading-style-h2-5 is-light">
-{{ section.settings.text_heading_2 }}
+          <div class="einbaugalerie-heading-wrapper">
+            <h2 class="heading-style-h2 is-white">
+{{ section.settings.text_heading }}
 </h2>
-          <div class="spacer-medium"></div>
-          <div class="text-size-medium-2 is-light">
+            <div class="spacer-small"></div>
+            <div class="text-size-medium is-white">
 {{ section.settings.text_copy_text }}
 </div>
+          </div>
           <div class="spacer-large hide-desktop"></div>
           <div class="slider__section">
             <div class="slider__overlay">
@@ -447,7 +449,7 @@ html:not(.wf-design-mode) [data-slider="slide"].active .slide__caption{ transiti
           </div>
           <div class="spacer-large"></div>
           <div class="button-align-center">
-            <a href="{{ section.settings.url_button_sec_link }}" data-w-id="f6eb645a-7570-fc88-a33b-07ffb61ad913" class="arrow-button-secondary w-inline-block w-clearfix"> <div class="scroll-arrow-txt">{{ section.settings.text_button_sec_text }}</div><img alt="" src="{{ 'arrow-right-top.svg' | asset_url }}" class="scroll-arrow-img"> </a>
+            <a href="{{ section.settings.url_button_link_white }}" data-w-id="e9448b88-87b0-2782-56f2-668ba103504f" class="arrow-button-secondary w-inline-block w-clearfix"> <div class="scroll-arrow-txt-2">{{ section.settings.text_button_text_white }}</div><img alt="" src="{{ 'arrow-right-top.svg' | asset_url }}" class="scroll-arrow-img"> </a>
           </div>
         </div>
         <div class="spacer-huge"></div> {% schema %} {
@@ -456,16 +458,16 @@ html:not(.wf-design-mode) [data-slider="slide"].active .slide__caption{ transiti
     "class": "section_einbaugalerie",
     "settings": [
         {
-            "id": "text_heading_2",
+            "id": "text_heading",
             "type": "text",
-            "label": "Heading 2",
-            "default": "Heading"
+            "label": "Heading",
+            "default": "Ausgew\u00e4hlte Soundupgrade-Projekte"
         },
         {
             "id": "text_copy_text",
             "type": "text",
             "label": "Copy Text",
-            "default": "This is some text inside of a div block."
+            "default": "Jedes System ist fahrzeugspezifisch geplant und sauber integriert \u2013 hier eine Auswahl unserer Arbeiten."
         },
         {
             "id": "image_m5_image",
@@ -534,15 +536,15 @@ html:not(.wf-design-mode) [data-slider="slide"].active .slide__caption{ transiti
             "default": "Porsche Cayman Premium"
         },
         {
-            "id": "url_button_sec_link",
+            "id": "url_button_link_white",
             "type": "url",
-            "label": "Button Sec Link"
+            "label": "Button Link White"
         },
         {
-            "id": "text_button_sec_text",
+            "id": "text_button_text_white",
             "type": "text",
-            "label": "Button Sec Text",
-            "default": "Zur Einbaugalerie"
+            "label": "Button Text White",
+            "default": "zur einbaugalerie"
         }
     ],
     "presets": [
