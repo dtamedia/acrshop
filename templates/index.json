@@ -41,6 +41,40 @@
         "text_button_text_right": "ZUR EINBAUGALERIE"
       }
     },
+    "grid_rzE4zU": {
+      "type": "grid",
+      "name": "grid",
+      "settings": {
+        "text_heading": "Warum Seriensoundsysteme oft enttäuschen:",
+        "text_left_text_1": "Klangbild",
+        "text_left_text_2": "Bass",
+        "text_left_text_3": "Abstimmung",
+        "text_left_text_4": "Integration",
+        "text_left_text_5": "Hörerlebnis",
+        "text_middle_heading": "Seriensound",
+        "text_middle_text_1": "flach, wenig Dynamik",
+        "text_middle_text_2": "schwach, undefiniert",
+        "text_middle_text_3": "pauschale Werksabstimmung",
+        "text_middle_text_4": "Serienkomponenten",
+        "text_middle_text_5": "Emotion bleibt aus",
+        "text_right_heading": "Soundupgrade",
+        "text_right_text_1": "ausgewogen, klar",
+        "text_right_text_2": "kontrolliert, präzise",
+        "text_right_text_3": "fahrzeugspezifisch",
+        "text_right_text_4": "OEM nahe Integration",
+        "text_right_text_5": "Spaß bei jeder Fahrt",
+        "url_button_link_sec_dark": "shopify://collections/soundupgrades",
+        "text_button_text_sec_dark": "UNSERE SOUNDUPGRADES",
+        "text_top_heading": "Einbaugalerie",
+        "text_top_text": "Ausgewählte Soundupgrade-Projekte im Detail.",
+        "url_button_link_white": "https://soundupgrade-bayern.de/referenzen/",
+        "text_button_text_white": "zur einbaugalerie",
+        "text_bottom_heading": "Finde dein Soundupgrade!",
+        "text_bottom_text": "Passende Lösungen für viele Hersteller.",
+        "url_button_link_dark": "shopify://collections/soundupgrades",
+        "text_button_text_dark": "Alle Soundupgrades"
+      }
+    },
     "einbaugalerie_D6P4DM": {
       "type": "einbaugalerie",
       "name": "Einbaugalerie",
@@ -74,40 +108,6 @@
         "text_text_label_4": "Verbaute Komponenten",
         "text_text_label_5": "Ablauf und Einbau",
         "text_text_label_6": "Zahlungsmöglichkeiten"
-      }
-    },
-    "grid_rzE4zU": {
-      "type": "grid",
-      "name": "grid",
-      "settings": {
-        "text_heading": "Warum Seriensoundsysteme oft enttäuschen:",
-        "text_left_text_1": "Klangbild",
-        "text_left_text_2": "Bass",
-        "text_left_text_3": "Abstimmung",
-        "text_left_text_4": "Integration",
-        "text_left_text_5": "Hörerlebnis",
-        "text_middle_heading": "Seriensound",
-        "text_middle_text_1": "flach, wenig Dynamik",
-        "text_middle_text_2": "schwach, undefiniert",
-        "text_middle_text_3": "pauschale Werksabstimmung",
-        "text_middle_text_4": "Serienkomponenten",
-        "text_middle_text_5": "Emotion bleibt aus",
-        "text_right_heading": "Soundupgrade",
-        "text_right_text_1": "ausgewogen, klar",
-        "text_right_text_2": "kontrolliert, präzise",
-        "text_right_text_3": "fahrzeugspezifisch",
-        "text_right_text_4": "OEM nahe Integration",
-        "text_right_text_5": "Spaß bei jeder Fahrt",
-        "url_button_link_sec_dark": "",
-        "text_button_text_sec_dark": "UNSERE SOUNDUPGRADES",
-        "text_top_heading": "Einbaugalerie",
-        "text_top_text": "Ausgewählte Soundupgrade-Projekte im Detail.",
-        "url_button_link_white": "",
-        "text_button_text_white": "zur einbaugalerie",
-        "text_bottom_heading": "Finde dein Soundupgrade!",
-        "text_bottom_text": "Passende Lösungen für viele Hersteller.",
-        "url_button_link_dark": "",
-        "text_button_text_dark": "Alle Soundupgrades"
       }
     }
   },
