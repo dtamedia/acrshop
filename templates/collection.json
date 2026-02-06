@@ -158,12 +158,75 @@
         "text_heading_2": "Alle Soundupgrades",
         "text_copy_text": "Erlebe Musik im Auto neu – mit einem professionellen Soundupgrade. Unsere fahrzeugspezifischen Systeme liefern deutlich besseren Klang, kräftigeren Bass und mehr Dynamik als serienmäßige Anlagen. Ob für den Alltag, lange Fahrten oder echte Klangliebhaber: Ein Soundupgrade bringt spürbar mehr Hörgenuss – ohne sichtbare Umbauten, perfekt integriert in dein Fahrzeug."
       }
+    },
+    "timeline_WnNzCi": {
+      "type": "timeline",
+      "name": "timeline",
+      "settings": {
+        "image_image_1": "shopify://shop_images/Bildschirmfoto_2026-01-16_um_23.11.30_2.png",
+        "text_heading_1": "Fahrzeug & Soundupgrade auswählen",
+        "text_text_1": "Wähle auf unserer Homepage dein Fahrzeug aus und verschaffe dir einen Überblick über die passenden Soundupgrades.Je nach Fahrzeug, vorhandener Ausstattung, Budget und Klangwunsch stehen dir verschiedene Upgrade-Optionen zur Verfügung.",
+        "url_button_link_dark": "shopify://collections/soundupgrades",
+        "text_button_text_dark": "Alle Soundupgrades",
+        "image_image_2": "shopify://shop_images/Group_399.png",
+        "text_heading_2": "Soundupgrade bestellen oder Anfrage senden",
+        "text_text_2": "Hast du dich für ein Soundupgrade entschieden, kannst du dieses direkt im Onlineshop kaufen.Die Bezahlung ist flexibel möglich – online (z. B. PayPal) oder vor Ort bei Fahrzeugabgabe. Nach deiner Bestellung melden wir uns per E-Mail bei dir, um gemeinsam einen passenden Termin für den Einbau abzustimmen und alle Details zu klären.",
+        "image_image_3": "shopify://shop_images/Rectangle_239.png",
+        "text_heading_3": "Fahrzeug abgeben und Einbau durchführen lassen",
+        "text_text_3": "Bringe dein Fahrzeug zum vereinbarten Termin zu uns. Unsere Spezialisten übernehmen den kompletten Einbau des Soundupgrades fachgerecht und abgestimmt auf dein Fahrzeug.Der Einbau dauert in der Regel maximal eine Woche – oft ist dein Auto sogar noch am selben Tag fertig.",
+        "image_image_4": "shopify://shop_images/Rectangle_238.png",
+        "text_heading_4": "Sound genießen",
+        "text_text_4": "Steig ein, dreh die Musik auf und erlebe den neuen Klang. Dein Soundsystem ist perfekt auf dein Fahrzeug abgestimmt, für ein deutlich besseres, kraftvolleres und klareres Hörerlebnis bei jeder Fahrt.",
+        "url_button_link_white": "https://soundupgrade-bayern.de/kontakt/",
+        "text_button_text_white": "Kontakt aufnehmen"
+      }
+    },
+    "einbaugalerie_jcXW7p": {
+      "type": "einbaugalerie",
+      "name": "Einbaugalerie",
+      "settings": {
+        "text_heading_2": "Ausgewählte Soundupgrade-Projekte",
+        "text_copy_text": "Jedes System ist fahrzeugspezifisch geplant und sauber integriert – hier eine Auswahl unserer Arbeiten.",
+        "text_m5_text": "BMW M5 High-End",
+        "text_911_text": "Porsche 911 High-End",
+        "text_g_klasse_text": "Mercedes G-Klasse Individual",
+        "text_taycan_text": "Porsche Taycan High-End",
+        "text_m4_text": "BMW M4 High-End",
+        "text_cayman_text": "Porsche Cayman Premium",
+        "url_button_sec_link": "",
+        "text_button_sec_text": "Zur Einbaugalerie"
+      }
+    },
+    "faq_jFDVPG": {
+      "type": "faq",
+      "name": "faq",
+      "settings": {
+        "text_faq_heading_1": "Wie finde ich das passende Soundupgrade für mein Fahrzeug?",
+        "text_faq_text_1": "Über den Onlineshop kannst du dein Fahrzeug auswählen und passende Soundupgrades ansehen. Alternativ kannst du eine unverbindliche Anfrage stellen – wir prüfen dein Fahrzeug, deine Ausstattung und deine Klangwünsche und empfehlen dir ein geeignetes System.",
+        "text_faq_heading_2": "Wie läuft der Einbau ab?",
+        "text_faq_text_2": "Nach Bestellung oder Anfrage stimmen wir gemeinsam einen Termin ab. Der Einbau erfolgt in unserer Werkstatt durch geschulte Techniker. Alle Komponenten werden fahrzeugspezifisch verbaut und anschließend abgestimmt.",
+        "text_faq_heading_3": "Wie lange dauert der Einbau?",
+        "text_faq_text_3": "Der Zeitaufwand hängt vom Fahrzeug und vom gewählten Soundupgrade ab. In vielen Fällen ist der Einbau innerhalb eines Tages abgeschlossen. Bei größeren Systemen kann es etwas länger dauern.",
+        "text_faq_heading_4": "Was kostet ein Soundupgrade und was ist im Preis enthalten?",
+        "text_faq_text_4": "Die Kosten variieren je nach Fahrzeug, Systemstufe und Umfang. Im Preis enthalten sind die Soundkomponenten, der fachgerechte Einbau sowie die klangliche Feinabstimmung des Systems.",
+        "text_faq_heading_5": "Wie läuft die Bestellung im Onlineshop ab?",
+        "text_faq_text_5": "Du wählst ein passendes Soundupgrade aus und schließt die Bestellung online ab. Anschließend melden wir uns bei dir, um den Einbautermin zu vereinbaren und offene Fragen zu klären.",
+        "text_faq_heading_6": "Kann ich auch unverbindlich anfragen?",
+        "text_faq_text_6": "Ja. Über das Anfrageformular kannst du uns dein Fahrzeug und deine Wünsche mitteilen. Du erhältst daraufhin eine individuelle Empfehlung, ohne dass eine Kaufverpflichtung entsteht.",
+        "text_faq_heading_7": "Bleibt alles OEM und funktioniert das Originalradio weiter?",
+        "text_faq_text_7": "Ja. Die Soundupgrades sind so ausgelegt, dass das Originalradio und alle Fahrzeugfunktionen erhalten bleiben. Viele Systeme sind Plug-and-Play oder vollständig rückrüstbar.",
+        "text_faq_heading_8": "Wann und wie kann ich bezahlen?",
+        "text_faq_text_8": "Die Bezahlung erfolgt über den Onlineshop. Es stehen alle gängigen Zahlungsmethoden zur Verfügung, darunter PayPal, Klarna (inklusive Ratenzahlung) sowie Barzahlung bei Abholung im Shop."
+      }
     }
   },
   "layout": "collection",
   "wrapper": "main.main-wrapper",
   "order": [
     "hero_collection_YrkADh",
-    "collection_display_XcQjqg"
+    "collection_display_XcQjqg",
+    "timeline_WnNzCi",
+    "einbaugalerie_jcXW7p",
+    "faq_jFDVPG"
   ]
 }
