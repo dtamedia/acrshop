@@ -33,7 +33,12 @@
             </div>
             <div class="w-layout-cell">
               <div class="grid-content-small is-news">
-                <div class="w-embed-youtubevideo youtube-video-embed" href="{{ section.settings.url_link }}"> </div>
+                <div class="container-large-7">
+                  <div class="video_wrapper" style="aspect-ratio: {{ section.settings.video.aspect_ratio }}">
+                    <div li-object="section.settings.video | external_video_tag" class="video_video">{{ section.settings.video | external_video_tag }}</div>
+                  </div>
+                </div>
+                
               </div>
             </div>
             <div class="w-layout-cell">
@@ -114,9 +119,13 @@
             "default": "Alle Soundupgrades"
         },
         {
-            "id": "url_link",
-            "type": "url",
-            "label": "Link"
+            "type": "video_url",
+            "id": "video",
+            "label": "Video",
+            "accept": [
+                "youtube",
+                "vimeo"
+            ]
         },
         {
             "id": "text_bottom_heading",

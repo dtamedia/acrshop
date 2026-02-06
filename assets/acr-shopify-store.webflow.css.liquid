@@ -87,22 +87,6 @@
   display: flex;
 }
 
-.w-embed-youtubevideo {
-  background-image: url(https://d3e54v103j8qbb.cloudfront.net/static/youtube-placeholder.2b05e7d68d.svg);
-  background-position: 50%;
-  background-size: cover;
-  width: 100%;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  position: relative;
-}
-
-.w-embed-youtubevideo:empty {
-  min-height: 75px;
-  padding-bottom: 56.25%;
-}
-
 .w-form-formradioinput--inputType-custom {
   border: 1px solid #ccc;
   border-radius: 50%;
@@ -8646,7 +8630,7 @@ figcaption {
 
 .marquee-css {
   color: #efeeec;
-  background-color: #28272c;
+  background-color: #28272cbf;
   width: 100%;
   display: flex;
   position: absolute;
@@ -9384,6 +9368,31 @@ figcaption {
 .social-icon {
   color: var(--weiß-dark);
   width: 4rem;
+}
+
+.video_wrapper {
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  aspect-ratio: 16 / 9;
+  pointer-events: auto;
+  border-radius: .9375rem;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.video_video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.hide-10 {
+  display: none;
 }
 
 @media screen and (max-width: 991px) {
