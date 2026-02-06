@@ -19,6 +19,8 @@
         "text_marquee_text_4": "Ratenzahlung mit Klarna/PayPal",
         "text_h1": "Online Shop",
         "text_subtext": "Soundupgrade Bayern",
+        "url_button_red_link": "",
+        "text_button_red_text": "Soundupgrades",
         "url_button_link_sec_white": "https://soundupgrade-bayern.de/",
         "text_button_text_sec_white": "ZURÜCK ZUR INFOSEITE"
       }
@@ -129,7 +131,7 @@
         "text_news_text_bottom": "Unser neues Tesla Soundupgrade hebt die serienmäßige Audiowiedergabe deutlich auf ein neues Level.Abgestimmt auf die speziellen Anforderungen von Tesla-Fahrzeugen bieten wir verschiedene Systemstufen von Advanced über Premium bis High-End – jeweils mit fein abgestimmtem DSP, Plug-&-Play-Integration und kraftvollem, präzisem Sound.",
         "url_button_link_news_bottom": "shopify://products/tesla",
         "text_button_text_news_bottom": "TESLA SOUNDUPGRADE",
-        "url_link": "https://www.youtube.com/watch?v=5oEzhw11WFg",
+        "video": "https://www.youtube.com/watch?v=5oEzhw11WFg",
         "text_bottom_heading": "Folge uns jetzt auf Social Media",
         "text_bottom_text": "Bleib up to date mit neuen Videos, Projekten und Soundupgrade-Updates.",
         "url_social_link_facebook": "https://www.facebook.com/acrsoundupgrade",
