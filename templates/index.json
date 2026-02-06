@@ -82,7 +82,7 @@
         "text_heading": "Ablauf. Der Weg zu Ihrem Soundupgrade.",
         "text_heading_1": "Fahrzeug & Soundupgrade auswählen",
         "text_text_1": "Wähle auf unserer Homepage dein Fahrzeug aus und verschaffe dir einen Überblick über die passenden Soundupgrades.Je nach Fahrzeug, vorhandener Ausstattung, Budget und Klangwunsch stehen dir verschiedene Upgrade-Optionen zur Verfügung.",
-        "url_button_link_dark": "",
+        "url_button_link_dark": "shopify://collections/soundupgrades",
         "text_button_text_dark": "Alle Soundupgrades",
         "text_heading_2": "Soundupgrade bestellen oder Anfrage senden",
         "text_text_2": "Hast du dich für ein Soundupgrade entschieden, kannst du dieses direkt im Onlineshop kaufen.Die Bezahlung ist flexibel möglich – online (z. B. PayPal) oder vor Ort bei Fahrzeugabgabe. Nach deiner Bestellung melden wir uns per E-Mail bei dir, um gemeinsam einen passenden Termin für den Einbau abzustimmen und alle Details zu klären.",
@@ -90,7 +90,7 @@
         "text_text_3": "Bringe dein Fahrzeug zum vereinbarten Termin zu uns. Unsere Spezialisten übernehmen den kompletten Einbau des Soundupgrades fachgerecht und abgestimmt auf dein Fahrzeug.Der Einbau dauert in der Regel maximal eine Woche – oft ist dein Auto sogar noch am selben Tag fertig.",
         "text_heading_4": "Sound genießen",
         "text_text_4": "Steig ein, dreh die Musik auf und erlebe den neuen Klang. Dein Soundsystem ist perfekt auf dein Fahrzeug abgestimmt, für ein deutlich besseres, kraftvolleres und klareres Hörerlebnis bei jeder Fahrt.",
-        "url_button_link_white": "",
+        "url_button_link_white": "https://soundupgrade-bayern.de/kontakt/",
         "text_button_text_white": "Kontakt aufnehmen"
       }
     },
