@@ -151,6 +151,13 @@
         "text_text_label_5": "Ablauf und Einbau",
         "text_text_label_6": "Zahlungsmöglichkeiten"
       }
+    },
+    "video_externally_k4RRxY": {
+      "type": "video_externally",
+      "name": "Video (Externally)",
+      "settings": {
+        "video": "https://www.youtube.com/watch?v=5oEzhw11WFg"
+      }
     }
   },
   "layout": "theme",
@@ -162,6 +169,7 @@
     "timeline_6wf3Xz",
     "einbaugalerie_D6P4DM",
     "news_LBGBd8",
-    "features_MNrx9e"
+    "features_MNrx9e",
+    "video_externally_k4RRxY"
   ]
 }
