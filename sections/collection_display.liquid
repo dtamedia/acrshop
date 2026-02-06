@@ -1,15 +1,15 @@
 <div class="spacer-huge"></div>
         <div class="padding-global">
-          <div class="collection-heading-wrapper">
-            <h2 class="heading-style-h2-5 is-light">
-{{ section.settings.text_heading_2 }}
+          <div class="einbaugalerie-heading-wrapper">
+            <h2 class="heading-style-h2 is-white">
+{{ section.settings.text_heading }}
 </h2>
-            <div class="spacer-medium"></div>
-            <div class="text-size-medium-2 is-light">
+            <div class="spacer-small"></div>
+            <div class="text-size-medium is-white text-align-center">
 {{ section.settings.text_copy_text }}
 </div>
-            <div class="spacer-huge"></div>
           </div>
+          <div class="spacer-medium"></div>
           <div li-content-for-blocks="" class="collections-grid">
 {% for block in section.blocks %}
 {% case block.type %}
@@ -20,7 +20,7 @@
             <div li-block="Soundupgrade Item" class="block-item">
                     
               
-                    <a href="{{ block.settings.url_link }}" class="collections-block-link w-inline-block"> <div class="collections-block">{% if block.settings.image_feature_image %} {{ block.settings.image_feature_image | image_url: width: 1000 | image_tag: class: 'collection-block-image', sizes: '(max-width: 479px) 100vw, 239.953125px', loading: 'lazy' }} {% else %} <img class="collection-block-image" src="{{ 'audi.webp' | asset_url }}" alt="" sizes="(max-width: 479px) 100vw, 239.953125px" loading="lazy" srcset="{{ 'audi-p-500.webp' | asset_url }} 500w, {{ 'audi-p-800.webp' | asset_url }} 800w, {{ 'audi-p-1080.webp' | asset_url }} 1080w, {{ 'audi.webp' | asset_url }} 1456w"> {% endif %} <div class="spacer-small"></div> <div class="heading-style-h2 is-collection">{{ block.settings.text_marke }}</div> <div class="spacer-small"></div> </div> </a>
+                    <a href="{{ block.settings.url_link }}" class="collections-block-link w-inline-block"> <div class="collections-block">{% if block.settings.image_feature_image %} {{ block.settings.image_feature_image | image_url: width: 1000 | image_tag: class: 'collection-block-image', sizes: '(max-width: 1456px) 100vw, 1456px', loading: 'lazy' }} {% else %} <img class="collection-block-image" src="{{ 'audi.webp' | asset_url }}" alt="" sizes="(max-width: 1456px) 100vw, 1456px" loading="lazy" srcset="{{ 'audi-p-500.webp' | asset_url }} 500w, {{ 'audi-p-800.webp' | asset_url }} 800w, {{ 'audi-p-1080.webp' | asset_url }} 1080w, {{ 'audi.webp' | asset_url }} 1456w"> {% endif %} <div class="spacer-small"></div> <div class="heading-style-h2 is-collection">{{ block.settings.text_marke }}</div> <div class="spacer-small"></div> </div> </a>
                     
             
                 </div>
@@ -62,16 +62,16 @@
     ],
     "settings": [
         {
-            "id": "text_heading_2",
+            "id": "text_heading",
             "type": "text",
-            "label": "Heading 2",
-            "default": "Heading"
+            "label": "Heading",
+            "default": "Alle Soundupgrades"
         },
         {
             "id": "text_copy_text",
             "type": "text",
             "label": "Copy Text",
-            "default": "This is some text inside of a div block."
+            "default": "Erlebe Musik im Auto neu \u2013 mit einem professionellen Soundupgrade. Unsere fahrzeugspezifischen Systeme liefern deutlich besseren Klang, kr\u00e4ftigeren Bass und mehr Dynamik als serienm\u00e4\u00dfige Anlagen."
         }
     ],
     "presets": [
