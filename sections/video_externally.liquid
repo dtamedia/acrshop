@@ -1,29 +1,25 @@
 <div class="padding-global-13 padding-section-small">
-          <div class="container-large-7">
-            <div class="video_wrapper" style="aspect-ratio: {{ section.settings.video.aspect_ratio }}">
-              <div li-object="section.settings.video | external_video_tag" class="video_video">{{ section.settings.video | external_video_tag }}</div>
-            </div>
-          </div>
-        </div> {% schema %} {
-    "tag": "section",
-    "name": "Video (Externally)",
-    "class": "section_video",
-    "settings": [
-        {
-            "type": "video_url",
-            "id": "video",
-            "label": "Video",
-            "accept": [
-                "youtube",
-                "vimeo"
-            ]
-        }
-    ],
-    "presets": [
-        {
-            "name": "Video (Externally)",
-            "category": "Liquify",
-            "blocks": []
-        }
-    ]
-} {% endschema %}
+  <div class="container-large-7">
+    {% if section.settings.video %}
+      <div class="video_wrapper" style="aspect-ratio: 16 / 9;">
+        {% if section.settings.video.type == 'youtube' %}
+          <iframe
+            src="https://www.youtube.com/embed/{{ section.settings.video.id }}?rel=0&modestbranding=1&playsinline=1"
+            title="Video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        {% elsif section.settings.video.type == 'vimeo' %}
+          <iframe
+            src="https://player.vimeo.com/video/{{ section.settings.video.id }}?title=0&byline=0&portrait=0"
+            title="Video"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+</div>
