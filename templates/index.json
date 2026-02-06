@@ -13,12 +13,14 @@
       "type": "home_hero",
       "name": "Home Hero",
       "settings": {
+        "text_marquee_text_1": "Jetzt auch Barzahlung bei Abholung",
+        "text_marquee_text_2": "Ratenzahlung mit Klarna/PayPal",
+        "text_marquee_text_3": "Jetzt auch Barzahlung bei Abholung",
+        "text_marquee_text_4": "Ratenzahlung mit Klarna/PayPal",
         "text_h1": "Online Shop",
         "text_subtext": "Soundupgrade Bayern",
-        "url_button_1_link": "",
-        "text_button_1": "Button Text",
-        "url_button_2_link": "",
-        "text_button_2": "Button Text"
+        "url_button_link_sec_white": "https://soundupgrade-bayern.de/",
+        "text_button_text_sec_white": "ZURÜCK ZUR INFOSEITE"
       }
     },
     "counter_nXGrBF": {
@@ -27,12 +29,16 @@
       "settings": {
         "text_counter_number_left": "14",
         "text_counter_text_left": "Optimierte Soundupgrades",
-        "url_button_link": "",
-        "text_button_text": "UNSERE SOUNDUPGRADES",
+        "url_button_link_left": "shopify://collections/soundupgrades",
+        "text_button_text_left": "UNSERE SOUNDUPGRADES",
         "text_counter_number_middle": "1540",
         "text_counter_text_middle": "Watt Soundleistung",
+        "url_button_link_middle": "https://www.youtube.com/@SoundupgradeBayern",
+        "text_button_text_middle": "UNSER YOUTUBE KANAL",
         "text_counter_number_right": "200",
-        "text_counter_text_right": "Verbaute Soundupgrades"
+        "text_counter_text_right": "Verbaute Soundupgrades",
+        "url_button_link_right": "https://soundupgrade-bayern.de/referenzen/",
+        "text_button_text_right": "ZUR EINBAUGALERIE"
       }
     },
     "einbaugalerie_D6P4DM": {
@@ -69,6 +75,40 @@
         "text_text_label_5": "Ablauf und Einbau",
         "text_text_label_6": "Zahlungsmöglichkeiten"
       }
+    },
+    "grid_rzE4zU": {
+      "type": "grid",
+      "name": "grid",
+      "settings": {
+        "text_heading": "Warum Seriensoundsysteme oft enttäuschen:",
+        "text_left_text_1": "Klangbild",
+        "text_left_text_2": "Bass",
+        "text_left_text_3": "Abstimmung",
+        "text_left_text_4": "Integration",
+        "text_left_text_5": "Hörerlebnis",
+        "text_middle_heading": "Seriensound",
+        "text_middle_text_1": "flach, wenig Dynamik",
+        "text_middle_text_2": "schwach, undefiniert",
+        "text_middle_text_3": "pauschale Werksabstimmung",
+        "text_middle_text_4": "Serienkomponenten",
+        "text_middle_text_5": "Emotion bleibt aus",
+        "text_right_heading": "Soundupgrade",
+        "text_right_text_1": "ausgewogen, klar",
+        "text_right_text_2": "kontrolliert, präzise",
+        "text_right_text_3": "fahrzeugspezifisch",
+        "text_right_text_4": "OEM nahe Integration",
+        "text_right_text_5": "Spaß bei jeder Fahrt",
+        "url_button_link_sec_dark": "",
+        "text_button_text_sec_dark": "UNSERE SOUNDUPGRADES",
+        "text_top_heading": "Einbaugalerie",
+        "text_top_text": "Ausgewählte Soundupgrade-Projekte im Detail.",
+        "url_button_link_white": "",
+        "text_button_text_white": "zur einbaugalerie",
+        "text_bottom_heading": "Finde dein Soundupgrade!",
+        "text_bottom_text": "Passende Lösungen für viele Hersteller.",
+        "url_button_link_dark": "",
+        "text_button_text_dark": "Alle Soundupgrades"
+      }
     }
   },
   "layout": "theme",
@@ -76,6 +116,7 @@
   "order": [
     "home_hero_DKRXg6",
     "counter_nXGrBF",
+    "grid_rzE4zU",
     "einbaugalerie_D6P4DM",
     "features_MNrx9e"
   ]
