@@ -15,9 +15,9 @@
       "settings": {
         "text_sound_upgrade": "Sound Upgrade",
         "text_h1": "Für dein Auto",
-        "url_button_red_link": "",
+        "url_button_red_link": "https://www.shop.soundupgrade-bayern.de",
         "text_button_red_text": "Zur Startseite",
-        "url_button_link_sec_white": "",
+        "url_button_link_sec_white": "https://soundupgrade-bayern.de/referenzen/",
         "text_button_text_sec_white": "ZUR EINBAUGALERIE"
       }
     },
