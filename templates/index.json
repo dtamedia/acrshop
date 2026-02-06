@@ -137,19 +137,6 @@
         "url_social_link_youtube": "https://www.youtube.com/@SoundupgradeBayern/videos"
       }
     },
-    "features_MNrx9e": {
-      "type": "features",
-      "name": "Features",
-      "settings": {
-        "text_text_label_1": "Kontrollierter Bass",
-        "text_text_content_1": "Kontrollierter Bass.<br><br><span class=\"feature-pills__item-body-span\">Mehr Tiefe und Druck – aber sauber abgestimmt. Der Bass bleibt präzise und dröhnt nicht.</span>",
-        "text_text_label_2": "Sound-Abstimmung",
-        "text_text_label_3": "OEM-nahe Integration",
-        "text_text_label_4": "Verbaute Komponenten",
-        "text_text_label_5": "Ablauf und Einbau",
-        "text_text_label_6": "Zahlungsmöglichkeiten"
-      }
-    },
     "faq_H344bJ": {
       "type": "faq",
       "name": "faq",
@@ -182,7 +169,6 @@
     "timeline_6wf3Xz",
     "einbaugalerie_D6P4DM",
     "news_LBGBd8",
-    "features_MNrx9e",
     "faq_H344bJ"
   ]
 }
