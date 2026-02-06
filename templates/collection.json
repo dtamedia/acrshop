@@ -15,10 +15,10 @@
       "settings": {
         "text_sound_upgrade": "Sound Upgrade",
         "text_h1": "Für dein Auto",
-        "url_button_1_link": "https://shop.soundupgrade-bayern.de/",
-        "text_button_1": "Zur Startseite",
-        "url_button_2_link": "https://soundupgrade-bayern.de/referenzen/",
-        "text_button_2": "Einbaugalerie"
+        "url_button_red_link": "",
+        "text_button_red_text": "Zur Startseite",
+        "url_button_link_sec_white": "",
+        "text_button_text_sec_white": "ZUR EINBAUGALERIE"
       }
     },
     "collection_display_XcQjqg": {
@@ -155,7 +155,7 @@
       ],
       "name": "collection-display",
       "settings": {
-        "text_heading_2": "Alle Soundupgrades",
+        "text_heading": "Alle Soundupgrades",
         "text_copy_text": "Erlebe Musik im Auto neu – mit einem professionellen Soundupgrade. Unsere fahrzeugspezifischen Systeme liefern deutlich besseren Klang, kräftigeren Bass und mehr Dynamik als serienmäßige Anlagen. Ob für den Alltag, lange Fahrten oder echte Klangliebhaber: Ein Soundupgrade bringt spürbar mehr Hörgenuss – ohne sichtbare Umbauten, perfekt integriert in dein Fahrzeug."
       }
     },
@@ -185,7 +185,7 @@
       "type": "einbaugalerie",
       "name": "Einbaugalerie",
       "settings": {
-        "text_heading_2": "Ausgewählte Soundupgrade-Projekte",
+        "text_heading": "Ausgewählte Soundupgrade-Projekte",
         "text_copy_text": "Jedes System ist fahrzeugspezifisch geplant und sauber integriert – hier eine Auswahl unserer Arbeiten.",
         "text_m5_text": "BMW M5 High-End",
         "text_911_text": "Porsche 911 High-End",
@@ -193,8 +193,8 @@
         "text_taycan_text": "Porsche Taycan High-End",
         "text_m4_text": "BMW M4 High-End",
         "text_cayman_text": "Porsche Cayman Premium",
-        "url_button_sec_link": "",
-        "text_button_sec_text": "Zur Einbaugalerie"
+        "url_button_link_white": "",
+        "text_button_text_white": "zur einbaugalerie"
       }
     },
     "faq_jFDVPG": {
