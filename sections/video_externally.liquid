@@ -1,0 +1,29 @@
+<div class="padding-global-13 padding-section-small">
+          <div class="container-large-7">
+            <div class="video_wrapper" style="aspect-ratio: {{ section.settings.video.aspect_ratio }}">
+              <div li-object="section.settings.video | external_video_tag" class="video_video">{{ section.settings.video | external_video_tag }}</div>
+            </div>
+          </div>
+        </div> {% schema %} {
+    "tag": "section",
+    "name": "Video (Externally)",
+    "class": "section_video",
+    "settings": [
+        {
+            "type": "video_url",
+            "id": "video",
+            "label": "Video",
+            "accept": [
+                "youtube",
+                "vimeo"
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Video (Externally)",
+            "category": "Liquify",
+            "blocks": []
+        }
+    ]
+} {% endschema %}
