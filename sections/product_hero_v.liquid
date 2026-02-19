@@ -29,6 +29,7 @@
   }); 
 </script>
         </div>
+        {% assign variant = product.selected_or_first_available_variant %}
         <div class="padding-global">
           <div class="product-header_component">
             <script src="{{ 'li_custom.js' | asset_url }}" type="text/javascript"></script>
@@ -44,33 +45,25 @@
                       </svg></a>
                   </div>
                   <div class="swiper is-product-thumbnail is-vertical">
-                    <div class="swiper-wrapper is-product-thumbnail is-vertical">
-                      <div class="w-embed">{% assign v = product.selected_or_first_available_variant %}
-                        {% for image in product.images %}
-                        {% if image.variant_ids == blank or image.variant_ids contains v.id %}
-                        <div class="swiper-slide">
-                          <img class="product_thumbnail-image 4" src="{{ image | image_url: width: 240 }}" alt="{{ image.alt | escape }}" loading="lazy">
-                        </div>
-                        {% endif %}
-                        {% endfor %}
-                      </div>
-                    </div>
+                    <div li-for:inside="media in variant.metafields.custom.images.value" class="swiper-wrapper is-product-thumbnail is-vertical">
+        {% for media in variant.metafields.custom.images.value %}                            
+                      
+                            <div class="swiper-slide is-product-thumbnail"><img li-object:src="media | image_url: width: 800" li-object:alt="media.alt | default: product.title" alt="{{ media.alt | default: product.title }}" src="{{ media | image_url: width: 800 }}" loading="lazy" class="product_thumbnail-image-4"></div>
+                            
+                    
+                    {% endfor %}    </div>
                   </div>
                 </div>
                 <div class="swiper is-product-gallery">
-                  <div id="my-gallery" class="swiper-wrapper is-product-gallery">
-                    <div class="w-embed">{% assign v = product.selected_or_first_available_variant %}
-                      {% for image in product.images %}
-                      {% if image.variant_ids == blank or image.variant_ids contains v.id %}
-                      <div class="swiper-slide">
-                        <div class="product-header_gallery-lightbox">
-                          <img class="product-header_gallery-image 11" src="{{ image | image_url: width: 1600 }}" alt="{{ image.alt | escape }}" loading="lazy">
-                        </div>
-                      </div>
-                      {% endif %}
-                      {% endfor %}
+                  <div id="my-gallery" li-for:inside="media in variant.metafields.custom.images.value" class="swiper-wrapper is-product-gallery">
+        {% for media in variant.metafields.custom.images.value %}                            
+                    
+                            <div class="swiper-slide is-product-gallery">
+                      <div class="product-header_gallery-lightbox"><img li-object:src="media | image_url: width: 800" loading="lazy" alt="" src="{{ media | image_url: width: 800 }}" class="product-header_gallery-image-11"></div>
                     </div>
-                  </div>
+                            
+                  
+                    {% endfor %}    </div>
                 </div>
                 <div class="swiper-slide is-product-thumbnail is-active hide"></div>
               </div>
