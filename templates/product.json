@@ -98,20 +98,12 @@
         "url_social_link_instagram": "",
         "url_social_link_youtube": ""
       }
-    },
-    "r_product_hero_8qU9WR": {
-      "type": "r_product_hero",
-      "name": "R-Product-Hero",
-      "settings": {
-        "text_headline": "Description"
-      }
     }
   },
   "layout": "product",
   "wrapper": "main.main-wrapper",
   "order": [
     "product_header_VK84gr",
-    "r_product_hero_8qU9WR",
     "features_r4Edkw",
     "timeline_ecFN4T",
     "einbaugalerie_PfNxLK",
