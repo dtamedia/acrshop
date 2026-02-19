@@ -9,9 +9,9 @@
  */
 {
   "sections": {
-    "product_header_VK84gr": {
-      "type": "product_header",
-      "name": "product-header",
+    "product_hero_v_YzCDm4": {
+      "type": "product_hero_v",
+      "name": "Product-Hero (V)",
       "settings": {
         "text_cta_text": "Jetzt bestellen oder unverbindlich anfragen!",
         "url_kompatibilitatsliste": "",
@@ -103,7 +103,7 @@
   "layout": "product",
   "wrapper": "main.main-wrapper",
   "order": [
-    "product_header_VK84gr",
+    "product_hero_v_YzCDm4",
     "features_r4Edkw",
     "timeline_ecFN4T",
     "einbaugalerie_PfNxLK",
