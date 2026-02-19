@@ -3,145 +3,116 @@
   This section displays a product hero with custom.images metafield for variants.
 {% endcomment %}
 
-<section li-section="custom-product-hero" class="section_product-header custom-hero">
-  <div li-tag="assign variant = product.selected_or_first_available_variant" class="hide"></div>
-  <div class="padding-global">
-    <div class="product-header_component custom-hero-inner">
-      <!-- Linksseitig: Bilder -->
-      <div class="custom-hero-gallery" id="custom-hero-gallery-{{ section.id }}">
-        
-        <!-- Thumbnails -->
-        <div class="custom-gallery-thumbs" id="gallery-thumbs-{{ section.id }}">
-          <!-- Werden per JS gefüllt -->
-        </div>
-        
-        <!-- Hauptbild -->
-        <div class="custom-gallery-main" id="gallery-main-{{ section.id }}">
-          <button class="gallery-nav prev" id="gallery-prev-{{ section.id }}">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
-          </button>
-          <img id="gallery-main-img-{{ section.id }}" src="{{ product.featured_image | image_url: width: 800 }}" alt="{{ product.title }}">
-          <button class="gallery-nav next" id="gallery-next-{{ section.id }}">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
-          </button>
-        </div>
-
+<section class="custom-hero">
+  <div class="custom-hero-inner">
+    <!-- Linksseitig: Bilder -->
+    <div class="custom-hero-gallery" id="custom-hero-gallery-{{ section.id }}">
+      
+      <!-- Thumbnails -->
+      <div class="custom-gallery-thumbs" id="gallery-thumbs-{{ section.id }}">
+        <!-- Werden per JS gefüllt -->
+      </div>
+      
+      <!-- Hauptbild -->
+      <div class="custom-gallery-main">
+        <button class="gallery-nav prev" id="gallery-prev-{{ section.id }}">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <img id="gallery-main-img-{{ section.id }}" src="{{ product.featured_image | image_url: width: 800 }}" alt="{{ product.title }}">
+        <button class="gallery-nav next" id="gallery-next-{{ section.id }}">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
       </div>
 
-      <!-- Rechtsseitig: Produkt-Infos -->
-      <div class="product-header_product-details-9 custom-hero-details">
-        
-        <!-- Social Proof (übernommen aus Webflow) -->
-        <div class="social-proof-item">
-          <div class="social-proof-image-container">
-            <img class="social-proof-image" src="{{ 'm4-HE-1.webp' | asset_url }}" alt="" sizes="(max-width: 1200px) 100vw, 1200px" li-settings:image="Social Proof Image 1" loading="lazy">
-            <img class="social-proof-image overlapp" src="{{ 'gklasse-individuell.webp' | asset_url }}" alt="" sizes="(max-width: 1200px) 100vw, 1200px" li-settings:image="Social Proof Image 2" loading="lazy">
-            <img class="social-proof-image overlapp" src="{{ 'gklasse-individuell.webp' | asset_url }}" alt="" sizes="(max-width: 1200px) 100vw, 1200px" li-settings:image="Social Proof Image 3" loading="lazy">
-          </div>
-          <div class="social-proof-text"><span class="social-proof-text-span">200+ Fahrer </span>haben bereits ihr <span class="social-proof-text-span">Soundupgrade</span> bei uns gemacht.</div>
+    </div>
+
+    <!-- Rechtsseitig: Produkt-Infos -->
+    <div class="custom-hero-details">
+      <!-- Trust Badge -->
+      <div class="trust-badge">
+        <div class="trust-avatars">
+          <!-- Platzhalter für Avatar-Bilder -->
+          <img src="https://ui-avatars.com/api/?name=1&background=random&rounded=true" alt="User">
+          <img src="https://ui-avatars.com/api/?name=2&background=random&rounded=true" alt="User">
+          <img src="https://ui-avatars.com/api/?name=3&background=random&rounded=true" alt="User">
         </div>
+        <span class="trust-text"><strong>200+ Fahrer</strong> haben bereits ihr <strong>Soundupgrade</strong> bei uns gemacht.</span>
+      </div>
 
-        <div class="spacer-medium"></div>
+      <p class="product-category">Soundupgrade</p>
+      <h1 class="product-title">{{ product.title | default: "BMW" }}</h1>
+      <p class="product-price" id="price-{{ section.id }}">{{ product.price | money }}</p>
+      <p class="product-tax">inkl. MwSt.</p>
 
-        <h2 li-settings:text="Category Heading" class="product-h2">Soundupgrade</h2>
-        <div class="spacer-small"></div>
-        <h1 li-object:text="product.title" class="product-h1">{{ product.title }}</h1>
-        <div class="spacer-large"></div>
+      <a href="#contact" class="product-contact-link">Jetzt bestellen oder unverbindlich anfragen!</a>
 
-        <div class="product-header_price-wrapper-7">
-          <div li-js-price="price" id="price-{{ section.id }}" class="product-price-text">{{ product.price | money }}</div>
-        </div>
+      <div class="product-description">
+        {{ product.description | default: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris." }}
+      </div>
+      
+      <p class="product-compat">Klicke <a href="#compat">hier</a> um zu sehen, welche Fahrzeuge kompatibel sind.</p>
+
+      <!-- Varianten Auswahl Formular -->
+      {% form 'product', product, id: 'product-form-hero' %}
+        <input type="hidden" name="id" id="variant-id-{{ section.id }}" value="{{ product.selected_or_first_available_variant.id }}">
         
-        <div class="spacer-xxsmall"></div>
-        <div li-settings:text="Tax Text" class="text-size-small-2">inkl. MwSt.</div>
-        <div class="spacer-medium"></div>
-
-        <div li-settings:text="CTA Text" class="product-cta-text">Jetzt bestellen oder unverbindlich anfragen!</div>
-        <div class="spacer-small"></div>
-        
-        <div li-object="product.description" class="product-description">
-          {{ product.description }}
-        </div>
-        
-        <div class="spacer-small"></div>
-        <div class="product-description">Klicke <a href="#" li-settings:url="Kompatibilitätsliste" class="product-description-link">hier</a> um zu sehen, welche Fahrzeuge kompatibel sind.</div>
-        <div class="spacer-medium"></div>
-
-        <!-- Varianten Auswahl Formular -->
-        <div class="product-header_form-block-11 w-form">
-          <form method="post" action="/cart/add" li-form:product="" name="wf-form-Add-To-Cart" data-name="Add To Cart" li-form="product" id="wf-form-Add-To-Cart-{{ section.id }}" class="product-header_default-state" li-element="add-to-cart-form">
-            <input type="hidden" name="id" id="variant-id-{{ section.id }}" value="{{ product.selected_or_first_available_variant.id }}" li-element="product-variant-id">
-            
-            <div li-if="product.has_only_default_variant != true" class="product-header_option-list">
-              {% for option in product.options_with_values %}
-                <div class="product-header_option-2">
-                  <div class="product-variant-type">{{ option.name }}</div>
-                  <div class="spacer-small"></div>
-                  <div class="product-header_radio-list-3">
-                    {% for value in option.values %}
-                      <label class="product-header_radio-9 w-radio">
-                        <input type="radio" 
-                               name="options[{{ option.name | escape }}]" 
-                               value="{{ value | escape }}" 
-                               {% if option.selected_value == value %}checked{% endif %}
-                               class="custom-variant-radio"
-                               data-position="{{ option.position }}"
-                               style="display:none;">
-                        <span class="text-size-regular text-weight-semibold w-form-label option-value-pill {% if option.selected_value == value %}is-active{% endif %}" data-radio-pill>{{ value }}</span>
-                      </label>
-                    {% endfor %}
-                  </div>
-                </div>
-              {% endfor %}
-            </div>
-
-            <div class="product-header_add-to-cart-wrapper custom-actions">
-              <div class="product-header_buy-wrappper-3">
-                <button type="submit" li-element="add-to-cart" class="primary-btn gradient w-button" style="border:none; cursor:pointer;" aria-haspopup="dialog" li-action="open-mini-cart"> <!-- Added action to trigger mini-cart -->
-                  <div li-settings:text="Button Red Text" class="primary-btn-txt">IN DEN WARENKORB</div>
-                </button>
-                
-                <a li-settings:url="Button Link Sec Dark" href="/pages/contact" class="arrow-button pad w-inline-block">
-                  <div class="title-wrapper">
-                    <p li-settings:text="Button Text Sec Dark" class="button-title is-dark">UNVERBINDLICH ANFRAGEN</p>
-                    <div class="arrow-wrapper is-dark"><img alt="" src="{{ 'Arrow_1Arrow.png' | asset_url }}" class="button-arrow"></div>
-                  </div>
-                  <div class="underline is-dark"></div>
-                </a>
+        <div class="product-options">
+          {% for option in product.options_with_values %}
+            <div class="product-option-group">
+              <label class="option-label">{{ option.name }}</label>
+              <div class="option-values">
+                {% for value in option.values %}
+                  <label class="option-value-pill">
+                    <input type="radio" 
+                           name="options[{{ option.name | escape }}]" 
+                           value="{{ value | escape }}" 
+                           {% if option.selected_value == value %}checked{% endif %}
+                           class="custom-variant-radio"
+                           data-position="{{ option.position }}">
+                    <span>{{ value }}</span>
+                  </label>
+                {% endfor %}
               </div>
             </div>
-          </form>
+          {% endfor %}
         </div>
 
-        <div class="spacer-medium"></div>
-        <div class="product-payment-info" li-settings:text="Payment Info Text">Jetzt auch <a href="#cash">Barzahlung bei Abholung</a>.</div>
-        <div class="spacer-medium"></div>
-
-        <!-- Accordions (Editable via CMS/Settings) -->
-        <div class="product-accordions">
-          <details class="custom-accordion" open>
-            <summary><span li-settings:text="Accordion 1 Title">Paketinhalt</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary>
-            <div class="accordion-content" li-settings:text="Accordion 1 Content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </div>
-          </details>
-          
-          <details class="custom-accordion">
-            <summary><span li-settings:text="Accordion 2 Title">Einbau & Ablauf</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary>
-            <div class="accordion-content" li-settings:text="Accordion 2 Content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Details zum Einbau hier.
-            </div>
-          </details>
-          
-          <details class="custom-accordion">
-            <summary><span li-settings:text="Accordion 3 Title">Zahlungsoptionen</span> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary>
-            <div class="accordion-content" li-settings:text="Accordion 3 Content">
-              Informationen zu Zahlungsoptionen. Barzahlung bei Abholung möglich.
-            </div>
-          </details>
+        <div class="product-actions">
+          <button type="submit" name="add" class="btn-add-to-cart">
+            IN DEN WARENKORB
+          </button>
+          <a href="/pages/contact" class="btn-inquire">
+            UNVERBINDLICH ANFRAGEN <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
         </div>
+      {% endform %}
 
+      <p class="product-payment-info">Jetzt auch <a href="#cash">Barzahlung bei Abholung</a>.</p>
+
+      <!-- Accordions -->
+      <div class="product-accordions">
+        <details class="custom-accordion" open>
+          <summary>Paketinhalt <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary>
+          <div class="accordion-content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </div>
+        </details>
+        
+        <details class="custom-accordion">
+          <summary>Einbau & Ablauf <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary>
+          <div class="accordion-content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Details zum Einbau hier.
+          </div>
+        </details>
+        
+        <details class="custom-accordion">
+          <summary>Zahlungsoptionen <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary>
+          <div class="accordion-content">
+            Informationen zu Zahlungsoptionen. Barzahlung bei Abholung möglich.
+          </div>
+        </details>
       </div>
+
     </div>
   </div>
 </section>
@@ -181,7 +152,23 @@
 </script>
 
 <style>
-/* Custom Section Additions built perfectly onto Webflow Classes */
+/* CSS Variablen & Grundstile */
+:root {
+  --color-dark: #111111;
+  --color-green: #2B8C5A;
+  --color-red: #A6192E;
+  --color-gray-bg: #F4F4F5;
+  --color-border: #E5E7EB;
+  --color-text-mut: #555555;
+}
+
+.custom-hero {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--color-dark);
+  padding: 40px 20px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
 .custom-hero-inner {
   display: flex;
   flex-direction: column;
@@ -190,7 +177,6 @@
 @media (min-width: 992px) {
   .custom-hero-inner {
     flex-direction: row;
-    align-items: stretch;
   }
 }
 
@@ -199,8 +185,7 @@
   flex: 1;
   display: flex;
   gap: 16px;
-  min-height: 500px;
-  height: 100%;
+  height: 600px; 
 }
 .custom-gallery-thumbs {
   width: 90px;
@@ -216,13 +201,13 @@
   aspect-ratio: 1;
   object-fit: cover;
   border-radius: 8px;
-  background: var(--color-gray-bg, #F4F4F5);
+  background: var(--color-gray-bg);
   cursor: pointer;
   border: 2px solid transparent;
   transition: border-color 0.2s;
 }
 .custom-gallery-thumbs img.active {
-  border-color: #111;
+  border-color: var(--color-dark);
 }
 
 .custom-gallery-main {
@@ -234,13 +219,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* Resize wrapper tightly to image by default, using layout mechanics */
-  aspect-ratio: 4 / 3;
 }
 .custom-gallery-main img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* ensures image fits within */
+  object-fit: contain; 
 }
 .gallery-nav {
   position: absolute;
@@ -258,37 +241,172 @@
 .gallery-nav.prev { left: 10px; }
 .gallery-nav.next { right: 10px; }
 
-/* Custom Overrides for forms */
-.option-value-pill {
+/* Details (Right) */
+.custom-hero-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.trust-badge {
+  display: inline-flex;
+  align-items: center;
+  background: var(--color-gray-bg);
+  padding: 6px 16px 6px 6px;
+  border-radius: 50px;
+  font-size: 13px;
+  margin-bottom: 24px;
+}
+.trust-avatars {
+  display: flex;
+}
+.trust-avatars img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid var(--color-gray-bg);
+  margin-left: -8px;
+}
+.trust-avatars img:first-child { margin-left: 0; z-index: 3; }
+.trust-avatars img:nth-child(2) { z-index: 2; position: relative; }
+.trust-avatars img:nth-child(3) { z-index: 1; position: relative; }
+.trust-text { margin-left: 12px; color: var(--color-text-mut); }
+.trust-text strong { color: var(--color-dark); font-weight: 600; }
+
+.product-category {
+  font-size: 20px;
+  margin: 0 0 4px 0;
+  font-weight: 400;
+}
+.product-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+.product-price {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+}
+.product-tax {
+  font-size: 13px;
+  color: var(--color-text-mut);
+  margin: 4px 0 24px 0;
+}
+
+.product-contact-link {
+  color: var(--color-green);
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.product-description {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-text-mut);
+  margin-bottom: 20px;
+}
+
+.product-compat {
+  font-size: 14px;
+  color: var(--color-dark);
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+.product-compat a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* Varianten Options */
+.product-options {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 32px;
+  width: 100%;
+}
+.product-option-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.option-label {
+  font-weight: 700;
+  font-size: 16px;
+}
+.option-values {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.custom-variant-radio {
+  display: none;
+}
+.option-value-pill span {
   display: inline-block;
   padding: 10px 20px;
-  background: #F4F4F5;
+  background: var(--color-gray-bg);
   border-radius: 8px;
   font-size: 14px;
+  font-weight: 500;
   cursor: pointer;
   transition: all 0.2s;
   border: 1px solid transparent;
-  margin-bottom: 0;
 }
-.option-value-pill.is-active,
 .custom-variant-radio:checked + span {
   background: white;
-  border-color: #111;
+  border-color: var(--color-dark);
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
-.product-header_radio-9 {
-  margin-bottom: 0;
-  padding-left: 0;
+.option-value-pill:hover span {
+  background: #E5E7EB;
 }
 
-.custom-actions {
-  margin-top: 1rem;
+/* Actions */
+.product-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 24px;
+  width: 100%;
+}
+.btn-add-to-cart {
+  background: var(--color-red);
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 9999px; /* Pill shape */
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-add-to-cart:hover {
+  background: #8A1526;
+}
+.btn-inquire {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-dark);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-dark);
+  padding-bottom: 2px;
 }
 
 .product-payment-info {
   font-size: 13px;
-  color: #111;
-  font-weight: 500;
+  color: var(--color-dark);
+  margin-bottom: 32px;
 }
 .product-payment-info a {
   color: inherit;
@@ -303,7 +421,7 @@
   width: 100%;
 }
 .custom-accordion {
-  background: #F4F4F5;
+  background: var(--color-gray-bg);
   border-radius: 12px;
   overflow: hidden;
 }
@@ -332,7 +450,7 @@
 .accordion-content {
   padding: 0 20px 20px 20px;
   font-size: 14px;
-  color: #555;
+  color: var(--color-text-mut);
   line-height: 1.5;
 }
 </style>
@@ -389,15 +507,13 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   if (prevBtn) {
-    prevBtn.addEventListener('click', (e) => {
-      e.preventDefault();
+    prevBtn.addEventListener('click', () => {
       setMainImage(currentImageIndex > 0 ? currentImageIndex - 1 : currentImages.length - 1);
     });
   }
   
   if (nextBtn) {
-    nextBtn.addEventListener('click', (e) => {
-      e.preventDefault();
+    nextBtn.addEventListener('click', () => {
       setMainImage(currentImageIndex < currentImages.length - 1 ? currentImageIndex + 1 : 0);
     });
   }
@@ -416,18 +532,7 @@ document.addEventListener('DOMContentLoaded', () => {
     return opts;
   }
 
-  function handleVariantChange(e) {
-    // Update visual pills
-    const groupName = e.target.name;
-    document.querySelectorAll(`input[name="${groupName}"]`).forEach(input => {
-      const span = input.nextElementSibling;
-      if (input.checked) {
-        span.classList.add('is-active');
-      } else {
-        span.classList.remove('is-active');
-      }
-    });
-
+  function handleVariantChange() {
     const selectedOptions = getSelectedOptions();
     
     // Find matching variant
@@ -451,9 +556,6 @@ document.addEventListener('DOMContentLoaded', () => {
         url.searchParams.set('variant', matchedVariant.id);
         window.history.replaceState({}, '', url);
       }
-
-      // Also dispatch a custom event for Liquiflow or other scripts
-      document.dispatchEvent(new CustomEvent('variant:changed', { detail: { variant: matchedVariant }}));
     }
   }
 
@@ -468,140 +570,13 @@ document.addEventListener('DOMContentLoaded', () => {
   } else if (variants.length > 0) {
     updateGallery(variants[0].images);
   }
-
-  // Intercept the form submit to manually open the mini-cart instead of redirecting
-  const form = document.getElementById(`wf-form-Add-To-Cart-${sectionId}`);
-  if(form) {
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      const formData = new FormData(form);
-      
-      fetch(window.Shopify.routes.root + 'cart/add.js', {
-        method: 'POST',
-        body: formData
-      })
-      .then(response => {
-        return response.json();
-      })
-      .then(data => {
-        // Trigger Liquiflow/Alpine mini cart open event
-        // Liquiflow normally handles the li-element="add-to-cart", so we trigger a generic click logic
-        // or let Alpine know via Custom Event
-        document.dispatchEvent(new CustomEvent('added-to-cart'));
-        
-        // Find the toggle and click it if available
-        const miniCartToggle = document.querySelector('[li-element="mini-cart-toggle"]');
-        if (miniCartToggle) {
-          miniCartToggle.click();
-        }
-      })
-      .catch((error) => {
-        console.error('Error:', error);
-      });
-    });
-  }
 });
 </script>
 
 {% schema %}
 {
   "name": "Custom Product Hero",
-  "settings": [
-    {
-      "type": "image_picker",
-      "id": "Social_Proof_Image_1",
-      "label": "Social Proof Image 1"
-    },
-    {
-      "type": "image_picker",
-      "id": "Social_Proof_Image_2",
-      "label": "Social Proof Image 2"
-    },
-    {
-      "type": "image_picker",
-      "id": "Social_Proof_Image_3",
-      "label": "Social Proof Image 3"
-    },
-    {
-      "type": "text",
-      "id": "Category_Heading",
-      "label": "Category Heading",
-      "default": "Soundupgrade"
-    },
-    {
-      "type": "text",
-      "id": "Tax_Text",
-      "label": "Tax Text",
-      "default": "inkl. MwSt."
-    },
-    {
-      "type": "text",
-      "id": "CTA_Text",
-      "label": "CTA Text",
-      "default": "Jetzt bestellen oder unverbindlich anfragen!"
-    },
-    {
-      "type": "url",
-      "id": "Kompatibilitatsliste",
-      "label": "Kompatibilitätsliste"
-    },
-    {
-      "type": "text",
-      "id": "Button_Red_Text",
-      "label": "Button Red Text",
-      "default": "IN DEN WARENKORB"
-    },
-    {
-      "type": "url",
-      "id": "Button_Link_Sec_Dark",
-      "label": "Button Link Sec Dark (Anfragen)"
-    },
-    {
-      "type": "text",
-      "id": "Button_Text_Sec_Dark",
-      "label": "Button Text Sec Dark",
-      "default": "UNVERBINDLICH ANFRAGEN"
-    },
-    {
-      "type": "text",
-      "id": "Payment_Info_Text",
-      "label": "Payment Info Text",
-      "default": "Jetzt auch Barzahlung bei Abholung."
-    },
-    {
-      "type": "text",
-      "id": "Accordion_1_Title",
-      "label": "Accordion 1 Title",
-      "default": "Paketinhalt"
-    },
-    {
-      "type": "textarea",
-      "id": "Accordion_1_Content",
-      "label": "Accordion 1 Content"
-    },
-    {
-      "type": "text",
-      "id": "Accordion_2_Title",
-      "label": "Accordion 2 Title",
-      "default": "Einbau & Ablauf"
-    },
-    {
-      "type": "textarea",
-      "id": "Accordion_2_Content",
-      "label": "Accordion 2 Content"
-    },
-    {
-      "type": "text",
-      "id": "Accordion_3_Title",
-      "label": "Accordion 3 Title",
-      "default": "Zahlungsoptionen"
-    },
-    {
-      "type": "textarea",
-      "id": "Accordion_3_Content",
-      "label": "Accordion 3 Content"
-    }
-  ],
+  "settings": [],
   "presets": [
     {
       "name": "Custom Product Hero"
