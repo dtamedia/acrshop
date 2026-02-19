@@ -13,10 +13,7 @@
       "type": "r_product_hero",
       "name": "R-Product-Hero",
       "settings": {
-        "text_social_proof_text": "Davie und 1500+ andere lieben unsere Produkte und haben bereits mehrfach bei uns bestellt.",
-        "text_social_proof_text_name": "David",
-        "text_social_proof_text_number": "1500+",
-        "text_pretitel": "Soundupgrade"
+        "text_headline": "Description"
       }
     },
     "vergleichstabelle_6U6Nqm": {
@@ -53,11 +50,8 @@
       "type": "produktinfo",
       "name": "Produktinfo",
       "settings": {
-        "image_produktfoto_advanced": "shopify://shop_images/Group_249.png",
         "text_soundupgrade_level_1": "Advanced",
-        "image_produktfoto_premium": "shopify://shop_images/Group_263.png",
         "text_soundupgrade_level_2": "Premium",
-        "image_produktfoto_high_end": "shopify://shop_images/Group_264.png",
         "text_soundupgrade_level_3": "High-End"
       }
     },
@@ -82,11 +76,25 @@
       "settings": {
         "text_headline": "Description"
       }
+    },
+    "product_hero_FJNXXy": {
+      "type": "product_hero",
+      "name": "product-header",
+      "settings": {
+        "text_cta_text": "Jetzt bestellen oder unverbindlich anfragen!",
+        "url_kompatibilitatsliste": "",
+        "url_button_red_link": "",
+        "text_button_red_text": "Soundupgrades",
+        "url_button_link_sec_dark": "",
+        "text_button_text_sec_dark": "UNVERBINDLICH ANFRAGEN",
+        "text_headline": "Description"
+      }
     }
   },
   "layout": "product",
   "wrapper": "main.main-wrapper",
   "order": [
+    "product_hero_FJNXXy",
     "r_product_hero_tTHiTe",
     "vergleichstabelle_6U6Nqm",
     "produktinfo_bzrbtD",
