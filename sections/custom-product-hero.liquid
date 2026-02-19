@@ -1,0 +1,586 @@
+{% comment %}
+  custom-product-hero.liquid
+  This section displays a product hero with custom.images metafield for variants.
+{% endcomment %}
+
+<section class="custom-hero">
+  <div class="custom-hero-inner">
+    <!-- Linksseitig: Bilder -->
+    <div class="custom-hero-gallery" id="custom-hero-gallery-{{ section.id }}">
+      
+      <!-- Thumbnails -->
+      <div class="custom-gallery-thumbs" id="gallery-thumbs-{{ section.id }}">
+        <!-- Werden per JS gefüllt -->
+      </div>
+      
+      <!-- Hauptbild -->
+      <div class="custom-gallery-main">
+        <button class="gallery-nav prev" id="gallery-prev-{{ section.id }}">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <img id="gallery-main-img-{{ section.id }}" src="{{ product.featured_image | image_url: width: 800 }}" alt="{{ product.title }}">
+        <button class="gallery-nav next" id="gallery-next-{{ section.id }}">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Rechtsseitig: Produkt-Infos -->
+    <div class="custom-hero-details">
+      <!-- Trust Badge -->
+      <div class="trust-badge">
+        <div class="trust-avatars">
+          <!-- Platzhalter für Avatar-Bilder -->
+          <img src="https://ui-avatars.com/api/?name=1&background=random&rounded=true" alt="User">
+          <img src="https://ui-avatars.com/api/?name=2&background=random&rounded=true" alt="User">
+          <img src="https://ui-avatars.com/api/?name=3&background=random&rounded=true" alt="User">
+        </div>
+        <span class="trust-text"><strong>200+ Fahrer</strong> haben bereits ihr <strong>Soundupgrade</strong> bei uns gemacht.</span>
+      </div>
+
+      <p class="product-category">Soundupgrade</p>
+      <h1 class="product-title">{{ product.title | default: "BMW" }}</h1>
+      <p class="product-price" id="price-{{ section.id }}">{{ product.price | money }}</p>
+      <p class="product-tax">inkl. MwSt.</p>
+
+      <a href="#contact" class="product-contact-link">Jetzt bestellen oder unverbindlich anfragen!</a>
+
+      <div class="product-description">
+        {{ product.description | default: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris." }}
+      </div>
+      
+      <p class="product-compat">Klicke <a href="#compat">hier</a> um zu sehen, welche Fahrzeuge kompatibel sind.</p>
+
+      <!-- Varianten Auswahl Formular -->
+      {% form 'product', product, id: 'product-form-hero' %}
+        <input type="hidden" name="id" id="variant-id-{{ section.id }}" value="{{ product.selected_or_first_available_variant.id }}">
+        
+        <div class="product-options">
+          {% for option in product.options_with_values %}
+            <div class="product-option-group">
+              <label class="option-label">{{ option.name }}</label>
+              <div class="option-values">
+                {% for value in option.values %}
+                  <label class="option-value-pill">
+                    <input type="radio" 
+                           name="options[{{ option.name | escape }}]" 
+                           value="{{ value | escape }}" 
+                           {% if option.selected_value == value %}checked{% endif %}
+                           class="custom-variant-radio"
+                           data-position="{{ option.position }}">
+                    <span>{{ value }}</span>
+                  </label>
+                {% endfor %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+
+        <div class="product-actions">
+          <button type="submit" name="add" class="btn-add-to-cart">
+            IN DEN WARENKORB
+          </button>
+          <a href="/pages/contact" class="btn-inquire">
+            UNVERBINDLICH ANFRAGEN <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      {% endform %}
+
+      <p class="product-payment-info">Jetzt auch <a href="#cash">Barzahlung bei Abholung</a>.</p>
+
+      <!-- Accordions -->
+      <div class="product-accordions">
+        <details class="custom-accordion" open>
+          <summary>Paketinhalt <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary>
+          <div class="accordion-content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </div>
+        </details>
+        
+        <details class="custom-accordion">
+          <summary>Einbau & Ablauf <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary>
+          <div class="accordion-content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Details zum Einbau hier.
+          </div>
+        </details>
+        
+        <details class="custom-accordion">
+          <summary>Zahlungsoptionen <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary>
+          <div class="accordion-content">
+            Informationen zu Zahlungsoptionen. Barzahlung bei Abholung möglich.
+          </div>
+        </details>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- JSON Daten für JS Logik -->
+<script type="application/json" id="variants-json-{{ section.id }}">
+[
+  {% for variant in product.variants %}
+    {
+      "id": {{ variant.id | json }},
+      "title": {{ variant.title | json }},
+      "options": [
+        {{ variant.option1 | json }},
+        {{ variant.option2 | json }},
+        {{ variant.option3 | json }}
+      ],
+      "price": {{ variant.price | money | json }},
+      "images": [
+        {% assign image_list = variant.metafields.custom.images.value %}
+        {% if image_list %}
+          {% for img in image_list %}
+            {{ img | image_url: width: 1000 | json }}{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        {% else %}
+          {% if variant.image %}
+            {{ variant.image | image_url: width: 1000 | json }}
+          {% else %}
+            {% for image in product.images %}
+              {{ image | image_url: width: 1000 | json }}{% unless forloop.last %},{% endunless %}
+            {% endfor %}
+          {% endif %}
+        {% endif %}
+      ]
+    }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
+</script>
+
+<style>
+/* CSS Variablen & Grundstile */
+:root {
+  --color-dark: #111111;
+  --color-green: #2B8C5A;
+  --color-red: #A6192E;
+  --color-gray-bg: #F4F4F5;
+  --color-border: #E5E7EB;
+  --color-text-mut: #555555;
+}
+
+.custom-hero {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--color-dark);
+  padding: 40px 20px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.custom-hero-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+@media (min-width: 992px) {
+  .custom-hero-inner {
+    flex-direction: row;
+  }
+}
+
+/* Gallery (Left) */
+.custom-hero-gallery {
+  flex: 1;
+  display: flex;
+  gap: 16px;
+  height: 600px; 
+}
+.custom-gallery-thumbs {
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+.custom-gallery-thumbs::-webkit-scrollbar { display: none; }
+.custom-gallery-thumbs img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 8px;
+  background: var(--color-gray-bg);
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.2s;
+}
+.custom-gallery-thumbs img.active {
+  border-color: var(--color-dark);
+}
+
+.custom-gallery-main {
+  flex: 1;
+  position: relative;
+  background: #020617; /* Dark background per Design */
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.custom-gallery-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+}
+.gallery-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  color: rgba(255,255,255,0.7);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 10;
+  transition: color 0.2s;
+}
+.gallery-nav:hover { color: #fff; }
+.gallery-nav.prev { left: 10px; }
+.gallery-nav.next { right: 10px; }
+
+/* Details (Right) */
+.custom-hero-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.trust-badge {
+  display: inline-flex;
+  align-items: center;
+  background: var(--color-gray-bg);
+  padding: 6px 16px 6px 6px;
+  border-radius: 50px;
+  font-size: 13px;
+  margin-bottom: 24px;
+}
+.trust-avatars {
+  display: flex;
+}
+.trust-avatars img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid var(--color-gray-bg);
+  margin-left: -8px;
+}
+.trust-avatars img:first-child { margin-left: 0; z-index: 3; }
+.trust-avatars img:nth-child(2) { z-index: 2; position: relative; }
+.trust-avatars img:nth-child(3) { z-index: 1; position: relative; }
+.trust-text { margin-left: 12px; color: var(--color-text-mut); }
+.trust-text strong { color: var(--color-dark); font-weight: 600; }
+
+.product-category {
+  font-size: 20px;
+  margin: 0 0 4px 0;
+  font-weight: 400;
+}
+.product-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+.product-price {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+}
+.product-tax {
+  font-size: 13px;
+  color: var(--color-text-mut);
+  margin: 4px 0 24px 0;
+}
+
+.product-contact-link {
+  color: var(--color-green);
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.product-description {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-text-mut);
+  margin-bottom: 20px;
+}
+
+.product-compat {
+  font-size: 14px;
+  color: var(--color-dark);
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+.product-compat a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* Varianten Options */
+.product-options {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 32px;
+  width: 100%;
+}
+.product-option-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.option-label {
+  font-weight: 700;
+  font-size: 16px;
+}
+.option-values {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.custom-variant-radio {
+  display: none;
+}
+.option-value-pill span {
+  display: inline-block;
+  padding: 10px 20px;
+  background: var(--color-gray-bg);
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 1px solid transparent;
+}
+.custom-variant-radio:checked + span {
+  background: white;
+  border-color: var(--color-dark);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.option-value-pill:hover span {
+  background: #E5E7EB;
+}
+
+/* Actions */
+.product-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 24px;
+  width: 100%;
+}
+.btn-add-to-cart {
+  background: var(--color-red);
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 9999px; /* Pill shape */
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-add-to-cart:hover {
+  background: #8A1526;
+}
+.btn-inquire {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-dark);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-dark);
+  padding-bottom: 2px;
+}
+
+.product-payment-info {
+  font-size: 13px;
+  color: var(--color-dark);
+  margin-bottom: 32px;
+}
+.product-payment-info a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* Accordions */
+.product-accordions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+.custom-accordion {
+  background: var(--color-gray-bg);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.custom-accordion summary {
+  padding: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.custom-accordion summary::-webkit-details-marker { display: none; }
+.custom-accordion[open] summary svg {
+  transform: rotate(180deg);
+}
+.custom-accordion summary svg {
+  transition: transform 0.2s;
+  background: white;
+  border-radius: 50%;
+  padding: 4px;
+  width: 24px;
+  height: 24px;
+}
+.accordion-content {
+  padding: 0 20px 20px 20px;
+  font-size: 14px;
+  color: var(--color-text-mut);
+  line-height: 1.5;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const sectionId = '{{ section.id }}';
+  const jsonEl = document.getElementById(`variants-json-${sectionId}`);
+  if (!jsonEl) return;
+  
+  const variants = JSON.parse(jsonEl.textContent);
+  const radios = document.querySelectorAll('.custom-variant-radio');
+  const variantIdInput = document.getElementById(`variant-id-${sectionId}`);
+  const priceDisplay = document.getElementById(`price-${sectionId}`);
+  const thumbsContainer = document.getElementById(`gallery-thumbs-${sectionId}`);
+  const mainImg = document.getElementById(`gallery-main-img-${sectionId}`);
+  const prevBtn = document.getElementById(`gallery-prev-${sectionId}`);
+  const nextBtn = document.getElementById(`gallery-next-${sectionId}`);
+  
+  let currentImages = [];
+  let currentImageIndex = 0;
+
+  function updateGallery(images) {
+    if(!images || images.length === 0) return;
+    currentImages = images;
+    currentImageIndex = 0;
+    
+    // Render thumbs
+    thumbsContainer.innerHTML = '';
+    images.forEach((src, idx) => {
+      const img = document.createElement('img');
+      img.src = src;
+      if (idx === 0) img.classList.add('active');
+      img.addEventListener('click', () => {
+        setMainImage(idx);
+      });
+      thumbsContainer.appendChild(img);
+    });
+    
+    setMainImage(0);
+  }
+  
+  function setMainImage(index) {
+    if(index < 0 || index >= currentImages.length) return;
+    currentImageIndex = index;
+    mainImg.src = currentImages[index];
+    
+    // Update active thumb
+    const thumbs = thumbsContainer.querySelectorAll('img');
+    thumbs.forEach((th, idx) => {
+      if(idx === index) th.classList.add('active');
+      else th.classList.remove('active');
+    });
+  }
+
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      setMainImage(currentImageIndex > 0 ? currentImageIndex - 1 : currentImages.length - 1);
+    });
+  }
+  
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      setMainImage(currentImageIndex < currentImages.length - 1 ? currentImageIndex + 1 : 0);
+    });
+  }
+
+  function getSelectedOptions() {
+    const opts = [];
+    const positions = [1, 2, 3];
+    positions.forEach(pos => {
+      const checked = document.querySelector(`.custom-variant-radio[data-position="${pos}"]:checked`);
+      if (checked) {
+        opts[pos - 1] = checked.value;
+      } else {
+        opts[pos - 1] = null;
+      }
+    });
+    return opts;
+  }
+
+  function handleVariantChange() {
+    const selectedOptions = getSelectedOptions();
+    
+    // Find matching variant
+    const matchedVariant = variants.find(v => {
+      return v.options[0] === selectedOptions[0] &&
+             v.options[1] === selectedOptions[1] &&
+             v.options[2] === selectedOptions[2];
+    });
+
+    if (matchedVariant) {
+      variantIdInput.value = matchedVariant.id;
+      priceDisplay.innerHTML = matchedVariant.price;
+      
+      if(matchedVariant.images && matchedVariant.images.length > 0) {
+        updateGallery(matchedVariant.images);
+      }
+      
+      // Update URL Parameter
+      if (window.history.replaceState) {
+        const url = new URL(window.location);
+        url.searchParams.set('variant', matchedVariant.id);
+        window.history.replaceState({}, '', url);
+      }
+    }
+  }
+
+  radios.forEach(radio => {
+    radio.addEventListener('change', handleVariantChange);
+  });
+  
+  // Initialize gallery
+  const initialVariant = variants.find(v => v.id == variantIdInput.value);
+  if (initialVariant && initialVariant.images && initialVariant.images.length > 0) {
+    updateGallery(initialVariant.images);
+  } else if (variants.length > 0) {
+    updateGallery(variants[0].images);
+  }
+});
+</script>
+
+{% schema %}
+{
+  "name": "Custom Product Hero",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Custom Product Hero"
+    }
+  ]
+}
+{% endschema %}
