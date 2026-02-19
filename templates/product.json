@@ -98,6 +98,11 @@
         "url_social_link_instagram": "",
         "url_social_link_youtube": ""
       }
+    },
+    "custom_product_hero_mAg6xz": {
+      "type": "custom-product-hero",
+      "name": "Custom Product Hero",
+      "settings": {}
     }
   },
   "layout": "product",
@@ -107,6 +112,7 @@
     "features_r4Edkw",
     "timeline_ecFN4T",
     "einbaugalerie_PfNxLK",
-    "news_7cGmJa"
+    "news_7cGmJa",
+    "custom_product_hero_mAg6xz"
   ]
 }
