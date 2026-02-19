@@ -1,0 +1,210 @@
+<div class="spacer-xxlarge"></div>
+        <div li-render-custom-reinit="true" li-render-custom="wrapper" class="padding-global">
+          <div class="product-header_component">
+            <script src="{{ 'li_custom.js' | asset_url }}" type="text/javascript"></script>
+<div li-element="product-liquid-container" class="w-layout-grid product-header_layout" x-data="handleVariant({{ product | json | escape }}, {{ product.options_by_name | json | escape }}, {{ product.selected_or_first_available_variant | json | escape }})">
+              <div id="w-node-b9fd1c25-bb21-3407-da36-323f77e3e591-dff38d5b" class="swiper-container is-product-gallery">
+                <div class="product-header_slider-wrapper">
+                  <div class="swiper_button-wrapper is-product-slider pointer-events-off">
+                    <a aria-label="Previous Slide" href="#" class="swiper_button-4 swiper-prev pointer-events-on w-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 24 24" fill="none" class="swiper_button-icon is-top">
+                        <path d="M5 9L12 16L19 9" stroke="currentColor" stroke-miterlimit="10"></path>
+                      </svg></a>
+                    <a aria-label="Next Slide" href="#" class="swiper_button-4 swiper-next pointer-events-on w-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 24 24" fill="none" class="swiper_button-icon">
+                        <path d="M5 9L12 16L19 9" stroke="currentColor" stroke-miterlimit="10"></path>
+                      </svg></a>
+                  </div>
+                  <div class="swiper is-product-thumbnail">
+                    <div class="swiper-wrapper is-product-thumbnail">
+                      {% for image in product.images %}    <div li-for="image in product.images" class="swiper-slide is-product-thumbnail">
+                                    <img li-object:src="image.src | product_img_url: 'master'" li-object:alt="image.alt" alt="{{ image.alt }}" src="{{ image.src | product_img_url: 'master' }}" loading="lazy" class="product_thumbnail-image-4">
+                        </div>
+{% endfor %}
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper is-product-gallery">
+                  <div id="my-gallery" class="swiper-wrapper is-product-gallery">
+                    {% for image in product.images %}    <div li-for="image in product.images" class="swiper-slide is-product-gallery">
+                                    
+                      
+                            <div class="product-header_gallery-lightbox"><img li-object:src="image.src | product_img_url: 'master'" li-object:alt="image.alt" alt="{{ image.alt }}" src="{{ image.src | product_img_url: 'master' }}" loading="lazy" class="product-header_gallery-image-9"></div>
+                            
+                    
+                        </div>
+{% endfor %}
+                  </div>
+                </div>
+                <div class="swiper-slide is-product-thumbnail is-active hide"></div>
+              </div>
+              <div id="w-node-b9fd1c25-bb21-3407-da36-323f77e3e5a2-dff38d5b" class="product-header_product-details-9">
+                <div class="social-proof-item">
+                  <div class="social-proof-image-container">{% if section.settings.image_social_proof_image_1 %}
+{{ section.settings.image_social_proof_image_1 | image_url: width: 1000 | image_tag: class: 'social-proof-image', sizes: '(max-width: 1200px) 100vw, 1200px', loading: 'lazy' }}
+{% else %}
+<img class="social-proof-image" src="{{ 'm4-HE-1.webp' | asset_url }}" alt="" sizes="(max-width: 1200px) 100vw, 1200px" loading="lazy" srcset="{{ 'm4-HE-1-p-500.webp' | asset_url }} 500w, {{ 'm4-HE-1-p-800.webp' | asset_url }} 800w, {{ 'm4-HE-1-p-1080.webp' | asset_url }} 1080w, {{ 'm4-HE-1.webp' | asset_url }} 1200w">
+{% endif %}{% if section.settings.image_social_proof_image_2 %}
+{{ section.settings.image_social_proof_image_2 | image_url: width: 1000 | image_tag: class: 'social-proof-image overlapp', sizes: '(max-width: 1200px) 100vw, 1200px', loading: 'lazy' }}
+{% else %}
+<img class="social-proof-image overlapp" src="{{ 'gklasse-individuell.webp' | asset_url }}" alt="" sizes="(max-width: 1200px) 100vw, 1200px" loading="lazy" srcset="{{ 'gklasse-individuell-p-500.webp' | asset_url }} 500w, {{ 'gklasse-individuell-p-800.webp' | asset_url }} 800w, {{ 'gklasse-individuell-p-1080.webp' | asset_url }} 1080w, {{ 'gklasse-individuell.webp' | asset_url }} 1200w">
+{% endif %}{% if section.settings.image_social_proof_image_3 %}
+{{ section.settings.image_social_proof_image_3 | image_url: width: 1000 | image_tag: class: 'social-proof-image overlapp', sizes: '(max-width: 1200px) 100vw, 1200px', loading: 'lazy' }}
+{% else %}
+<img class="social-proof-image overlapp" src="{{ 'gklasse-individuell.webp' | asset_url }}" alt="" sizes="(max-width: 1200px) 100vw, 1200px" loading="lazy" srcset="{{ 'gklasse-individuell-p-500.webp' | asset_url }} 500w, {{ 'gklasse-individuell-p-800.webp' | asset_url }} 800w, {{ 'gklasse-individuell-p-1080.webp' | asset_url }} 1080w, {{ 'gklasse-individuell.webp' | asset_url }} 1200w">
+{% endif %}</div>
+                  <div class="social-proof-text"><span class="social-proof-text-span">200+ Fahrer </span>haben bereits ihr <span class="social-proof-text-span">Soundupgrade</span> bei uns gemacht.</div>
+                </div>
+                <div class="spacer-medium"></div>
+                <h2 class="product-h2">Heading</h2>
+                <div class="spacer-small"></div>
+                <h1 li-object:text="product.title" class="product-h1">
+{{ product.title }}
+</h1>
+                <div class="spacer-large"></div>
+                <div class="product-header_price-wrapper-7">
+                  <div li-object="product.price | money" class="product-price-text">{{ product.price | money }}</div>
+                  <div class="product-header_tag-list">
+                    {% if product.selected_or_first_available_variant.available != true %}    <div li-if="product.selected_or_first_available_variant.available != true" class="product-item_tag-4">
+    Nicht auf Lager    </div>
+{% endif %}
+                  </div>
+                </div>
+                <div class="spacer-xxsmall"></div>
+                <div class="text-size-small-2">inkl. MwSt</div>
+                <div class="spacer-medium"></div>
+                <div class="product-cta-text">
+{{ section.settings.text_cta_text }}
+</div>
+                <div class="spacer-small"></div>
+                <div li-object="product.description" class="product-description">{{ product.description }}</div>
+                <div class="spacer-small"></div>
+                <div li-object="product.description" class="product-description">{{ product.description }}</div>
+                <div class="spacer-medium"></div>
+                <div class="product-header_form-block-9 w-form">
+                  {% form 'product', product, class: 'product-header_default-state' %}
+{% if product.has_only_default_variant != true %}    <div li-if="product.has_only_default_variant != true" class="product-header_option-list">
+    
+                      <div li-for:inside="option in product.options_with_values" class="product-header_option-2">
+        {% for option in product.options_with_values %}                            
+                        
+                            <div li-object="option.name | escape" class="product-variant-type">{{ option.name | escape }}</div>
+                            
+                        
+                            <div class="spacer-small"></div>
+                            
+                        
+                            <div class="product-header_radio-list-3">{% for value in option.values %}    <label li-for="value in option.values" class="product-header_radio-8 w-radio">
+                                    
+                            
+                            <div class="w-form-formradioinput w-form-formradioinput--inputType-custom product-header_radio-button-4 w-radio-input"></div>
+                            <input li-render-custom-trigger="input" name="{{ option.name }}" data-name="Radio" type="radio" id="radio" li-render-custom-value="{{ product.url }}?section_id={{ section.id }}&variant={{ value.variant.id }}" style="opacity:0;position:absolute;z-index:-1" value="Radio" {% if value.selected %}checked{% endif %}>
+                            <span li-object="value" class="text-size-regular text-weight-semibold w-form-label" for="radio" style="{% unless value.available %} text-decoration: line-through {% endunless %}">{{ value }}</span>
+                            
+                          
+                        </label>
+{% endfor %}</div>
+                            
+                      
+                    {% endfor %}    </div>
+                        </div>
+{% endif %}<input type="hidden" name="selling_plan" value="{{ selling_plan.id }}">
+                    <div class="product-header_add-to-cart-wrapper">
+                      {% if product.selected_or_first_available_variant.available == true %}    <div li-if="product.selected_or_first_available_variant.available == true" class="product-header_buy-wrappper-3">
+    
+                        <div li-element="add-to-cart" class="button-wrap" @click="addToCart($event, true)" :disabled="!addToCartButton">
+                          <a href="{{ section.settings.url_button_red_link }}" class="primary-btn gradient w-inline-block"> <div id="w-node-e1e94f15-4066-5df8-4a72-35a18cc3a397-dff38d5b" class="primary-btn-txt">{{ section.settings.text_button_red_text }}</div> <div id="w-node-e1e94f15-4066-5df8-4a72-35a18cc3a399-dff38d5b" class="button-hover-outline left"> <div class="solid-button-outline-2 light"></div> </div> <div id="w-node-e1e94f15-4066-5df8-4a72-35a18cc3a39b-dff38d5b" class="button-hover-outline right"> <div class="solid-button-outline-2 right light"></div> </div> <div id="w-node-e1e94f15-4066-5df8-4a72-35a18cc3a39d-dff38d5b" class="button-hover-outline middle"> <div class="solid-button-outline-2 middle light"></div> </div> </a>
+                        </div>
+                        <a data-w-id="cac93172-4d52-0fb0-5e1b-fd7336986f65" href="{{ section.settings.url_button_link_sec_dark }}" target="_blank" class="arrow-button pad w-inline-block"> <div class="title-wrapper"> <p class="button-title is-dark">{{ section.settings.text_button_text_sec_dark }}</p> <div class="arrow-wrapper is-dark"><img alt="" src="{{ 'Arrow_1Arrow.png' | asset_url }}" class="button-arrow"></div> </div> <div class="underline is-dark"></div> </a>
+                          </div>
+{% endif %}
+                      {% if product.selected_or_first_available_variant.available == false %}    <div li-if="product.selected_or_first_available_variant.available == false" class="product-header_out-of-stock">
+    
+                        <a href="#" class="button-14 is-secondary max-width-full pointer-events-off w-button">Nicht auf Lager</a>
+                          </div>
+{% endif %}
+                    </div>
+                  {% endform %}
+                  <div class="hide-13 w-form-done">
+                    <div>Thank you! Your submission has been received!</div>
+                  </div>
+                  <div class="hide-13 w-form-fail">
+                    <div>Oops! Something went wrong while submitting the form.</div>
+                  </div>
+                </div>
+                <div class="product-header_description">
+                  <h2 class="heading-style-h3-18">
+{{ section.settings.text_headline }}
+</h2>
+                  <div li-object="product.description" class="text-rich-text max-width-large w-richtext">{{ product.description }}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="spacer-xxlarge"></div> {% schema %} {
+    "tag": "section",
+    "name": "product-header",
+    "class": "section_product-header",
+    "settings": [
+        {
+            "id": "image_social_proof_image_1",
+            "type": "image_picker",
+            "label": "Social Proof Image 1"
+        },
+        {
+            "id": "image_social_proof_image_2",
+            "type": "image_picker",
+            "label": "Social Proof Image 2"
+        },
+        {
+            "id": "image_social_proof_image_3",
+            "type": "image_picker",
+            "label": "Social Proof Image 3"
+        },
+        {
+            "id": "text_cta_text",
+            "type": "text",
+            "label": "CTA Text",
+            "default": "Jetzt bestellen oder unverbindlich anfragen!"
+        },
+        {
+            "id": "url_kompatibilitatsliste",
+            "type": "url",
+            "label": "Kompatibilit\u00e4tsliste"
+        },
+        {
+            "id": "url_button_red_link",
+            "type": "url",
+            "label": "Button Red Link"
+        },
+        {
+            "id": "text_button_red_text",
+            "type": "text",
+            "label": "Button Red Text",
+            "default": "Soundupgrades"
+        },
+        {
+            "id": "url_button_link_sec_dark",
+            "type": "url",
+            "label": "Button Link Sec Dark"
+        },
+        {
+            "id": "text_button_text_sec_dark",
+            "type": "text",
+            "label": "Button Text Sec Dark",
+            "default": "UNVERBINDLICH ANFRAGEN"
+        },
+        {
+            "id": "text_headline",
+            "type": "text",
+            "label": "Headline",
+            "default": "Description"
+        }
+    ],
+    "presets": [
+        {
+            "name": "product-header",
+            "category": "Liquify",
+            "blocks": []
+        }
+    ]
+} {% endschema %}
