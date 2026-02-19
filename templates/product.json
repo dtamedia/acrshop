@@ -91,11 +91,19 @@
         "text_news_text_bottom": "Unser neues Tesla Soundupgrade hebt die serienmäßige Audiowiedergabe deutlich auf ein neues Level.Abgestimmt auf die speziellen Anforderungen von Tesla-Fahrzeugen bieten wir verschiedene Systemstufen von Advanced über Premium bis High-End – jeweils mit fein abgestimmtem DSP, Plug-&amp;-Play-Integration und kraftvollem, präzisem Sound.",
         "url_button_link_news_bottom": "",
         "text_button_text_news_bottom": "Alle Soundupgrades",
+        "video": "",
         "text_bottom_heading": "Folge uns jetzt auf Social Media",
         "text_bottom_text": "Bleib up to date mit neuen Videos, Projekten und Soundupgrade-Updates.",
         "url_social_link_facebook": "",
         "url_social_link_instagram": "",
         "url_social_link_youtube": ""
+      }
+    },
+    "r_product_hero_8qU9WR": {
+      "type": "r_product_hero",
+      "name": "R-Product-Hero",
+      "settings": {
+        "text_headline": "Description"
       }
     }
   },
@@ -103,6 +111,7 @@
   "wrapper": "main.main-wrapper",
   "order": [
     "product_header_VK84gr",
+    "r_product_hero_8qU9WR",
     "features_r4Edkw",
     "timeline_ecFN4T",
     "einbaugalerie_PfNxLK",
