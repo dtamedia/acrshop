@@ -21,11 +21,91 @@
         "text_button_text_sec_dark": "UNVERBINDLICH ANFRAGEN",
         "text_headline": "Description"
       }
+    },
+    "features_r4Edkw": {
+      "type": "features",
+      "name": "Features",
+      "settings": {
+        "text_heading_1_closed": "Kontrollierter Bass",
+        "text_heading_1_opened": "Kontrollierter Bass.",
+        "text_content_1": "Mehr Tiefe und Druck – aber sauber abgestimmt. Der Bass bleibt präzise und dröhnt nicht.",
+        "text_heading_2_closed": "Sound Abstimmung",
+        "text_heading_2_opened": "Sound Abstimmung.",
+        "text_content_3": "Jedes Fahrzeug klingt anders. Deshalb wird das System passend zur Akustik und deinen Hörgewohnheiten abgestimmt.",
+        "text_heading_3_closed": "OEM-nahe Integration",
+        "text_heading_3_opened": "OEM-nahe Integration.",
+        "text_heading_4_closed": "Verbaute Komponenten",
+        "text_heading_4_opened": "Verbaute Komponenten.",
+        "text_content_4": "Je nach Fahrzeugmodell fällt die Zusammenstellung unterschiedlich aus – deshalb steht vorher nicht immer exakt fest, was verbaut wird. Am Ende ist das System jedoch perfekt auf dein Auto abgestimmt.",
+        "text_heading_5_closed": "Ablauf und Einbau",
+        "text_heading_5_opened": "Ablauf und Einbau.",
+        "text_content_5": "Du bestellst im Shop oder fragst unverbindlich an. Danach vereinbaren wir den Termin und übernehmen Einbau sowie Abstimmung.",
+        "text_heading_6_closed": "Zahlungsmöglichkeiten",
+        "text_heading_6_opened": "Zahlungsmöglichkeiten.",
+        "text_content_6": "Du kannst online im Shop bezahlen oder vor Ort bei Abholung. So bleibt die Bezahlung flexibel und unkompliziert."
+      }
+    },
+    "timeline_ecFN4T": {
+      "type": "timeline",
+      "name": "timeline",
+      "settings": {
+        "text_heading_1": "Fahrzeug & Soundupgrade auswählen",
+        "text_text_1": "Wähle auf unserer Homepage dein Fahrzeug aus und verschaffe dir einen Überblick über die passenden Soundupgrades.Je nach Fahrzeug, vorhandener Ausstattung, Budget und Klangwunsch stehen dir verschiedene Upgrade-Optionen zur Verfügung.",
+        "url_button_link_dark": "",
+        "text_button_text_dark": "Alle Soundupgrades",
+        "text_heading_2": "Soundupgrade bestellen oder Anfrage senden",
+        "text_text_2": "Hast du dich für ein Soundupgrade entschieden, kannst du dieses direkt im Onlineshop kaufen.Die Bezahlung ist flexibel möglich – online (z. B. PayPal) oder vor Ort bei Fahrzeugabgabe. Nach deiner Bestellung melden wir uns per E-Mail bei dir, um gemeinsam einen passenden Termin für den Einbau abzustimmen und alle Details zu klären.",
+        "text_heading_3": "Fahrzeug abgeben und Einbau durchführen lassen",
+        "text_text_3": "Bringe dein Fahrzeug zum vereinbarten Termin zu uns. Unsere Spezialisten übernehmen den kompletten Einbau des Soundupgrades fachgerecht und abgestimmt auf dein Fahrzeug.Der Einbau dauert in der Regel maximal eine Woche – oft ist dein Auto sogar noch am selben Tag fertig.",
+        "text_heading_4": "Sound genießen",
+        "text_text_4": "Steig ein, dreh die Musik auf und erlebe den neuen Klang. Dein Soundsystem ist perfekt auf dein Fahrzeug abgestimmt, für ein deutlich besseres, kraftvolleres und klareres Hörerlebnis bei jeder Fahrt.",
+        "url_button_link_white": "",
+        "text_button_text_white": "Kontakt aufnehmen"
+      }
+    },
+    "einbaugalerie_PfNxLK": {
+      "type": "einbaugalerie",
+      "name": "Einbaugalerie",
+      "settings": {
+        "text_heading": "Ausgewählte Soundupgrade-Projekte",
+        "text_copy_text": "Jedes System ist fahrzeugspezifisch geplant und sauber integriert – hier eine Auswahl unserer Arbeiten.",
+        "text_m5_text": "BMW M5 High-End",
+        "text_911_text": "Porsche 911 High-End",
+        "text_g_klasse_text": "Mercedes G-Klasse Individual",
+        "text_taycan_text": "Porsche Taycan High-End",
+        "text_m4_text": "BMW M4 High-End",
+        "text_cayman_text": "Porsche Cayman Premium",
+        "url_button_link_white": "",
+        "text_button_text_white": "zur einbaugalerie"
+      }
+    },
+    "news_7cGmJa": {
+      "type": "news",
+      "name": "news",
+      "settings": {
+        "text_heading_news_top": "Unser neustes YouTube Video",
+        "text_news_text_top": "Auf unserem neuen YouTube Kanal Soundupgrade Bayern versorgen wir dich regelmäßig mit den neuesten Updates und du kannst dabei zugucken wie wir unsere Sound Upgrades verbauen. In unserem neuen Video präsentieren wir euch unser Soundupgrade für einen Mini Cooper.<br>Jetzt Abonnieren um nichts mehr zu verpassen. Erwarte regelmäßige Updates zu maßgeschneiderten Soundsystemen und innovativen Soundupgrades.",
+        "url_button_link_news_top": "",
+        "text_button_text_news_top": "Alle Soundupgrades",
+        "text_heading_news_bottom": "Jetzt Neu! Tesla Soundupgrade",
+        "text_news_text_bottom": "Unser neues Tesla Soundupgrade hebt die serienmäßige Audiowiedergabe deutlich auf ein neues Level.Abgestimmt auf die speziellen Anforderungen von Tesla-Fahrzeugen bieten wir verschiedene Systemstufen von Advanced über Premium bis High-End – jeweils mit fein abgestimmtem DSP, Plug-&amp;-Play-Integration und kraftvollem, präzisem Sound.",
+        "url_button_link_news_bottom": "",
+        "text_button_text_news_bottom": "Alle Soundupgrades",
+        "text_bottom_heading": "Folge uns jetzt auf Social Media",
+        "text_bottom_text": "Bleib up to date mit neuen Videos, Projekten und Soundupgrade-Updates.",
+        "url_social_link_facebook": "",
+        "url_social_link_instagram": "",
+        "url_social_link_youtube": ""
+      }
     }
   },
   "layout": "product",
   "wrapper": "main.main-wrapper",
   "order": [
-    "product_header_VK84gr"
+    "product_header_VK84gr",
+    "features_r4Edkw",
+    "timeline_ecFN4T",
+    "einbaugalerie_PfNxLK",
+    "news_7cGmJa"
   ]
 }
