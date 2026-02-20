@@ -13,13 +13,19 @@
       "type": "product_hero_v",
       "name": "Product-Hero (V)",
       "settings": {
+        "text_heading_text": "Soundupgrade",
         "text_cta_text": "Jetzt bestellen oder unverbindlich anfragen!",
         "url_kompatibilitatsliste": "",
         "url_button_red_link": "",
-        "text_button_red_text": "Soundupgrades",
+        "text_button_red_text": "In den Warenkorb",
         "url_button_link_sec_dark": "",
         "text_button_text_sec_dark": "UNVERBINDLICH ANFRAGEN",
-        "text_headline": "Description"
+        "text_accordion_1": "Wie finde ich das passende Soundupgrade für mein Fahrzeug?",
+        "text_accordion_text_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "text_accordion_2": "Choose to close the siblings: true/false",
+        "text_accordion_text_2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "text_accordion_3": "Choose to close the siblings: true/false",
+        "text_accordion_text_3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
       }
     },
     "features_r4Edkw": {
