@@ -9,6 +9,19 @@
  */
 {
   "sections": {
+    "product_header_YnEG78": {
+      "type": "product_header",
+      "name": "product-header",
+      "settings": {
+        "text_cta_text": "Jetzt bestellen oder unverbindlich anfragen!",
+        "url_kompatibilitatsliste": "",
+        "url_button_red_link": "",
+        "text_button_red_text": "Soundupgrades",
+        "url_button_link_sec_dark": "",
+        "text_button_text_sec_dark": "UNVERBINDLICH ANFRAGEN",
+        "text_headline": "Description"
+      }
+    },
     "product_hero_v_YzCDm4": {
       "type": "product_hero_v",
       "name": "Product-Hero (V)",
@@ -104,16 +117,10 @@
       "name": "Custom Product Hero",
       "settings": {}
     },
-    "product_header_YnEG78": {
-      "type": "product_header",
-      "name": "product-header",
+    "sri_product_header_tzLf39": {
+      "type": "sri_product_header",
+      "name": "SRI Product Header",
       "settings": {
-        "text_cta_text": "Jetzt bestellen oder unverbindlich anfragen!",
-        "url_kompatibilitatsliste": "",
-        "url_button_red_link": "",
-        "text_button_red_text": "Soundupgrades",
-        "url_button_link_sec_dark": "",
-        "text_button_text_sec_dark": "UNVERBINDLICH ANFRAGEN",
         "text_headline": "Description"
       }
     }
@@ -122,6 +129,7 @@
   "wrapper": "main.main-wrapper",
   "order": [
     "product_header_YnEG78",
+    "sri_product_header_tzLf39",
     "product_hero_v_YzCDm4",
     "features_r4Edkw",
     "timeline_ecFN4T",
