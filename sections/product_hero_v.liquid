@@ -1,311 +1,230 @@
-{%- comment -%}
-  Product Hero (Liquify + SR API)
-  - Variant images from variant.metafields.custom.images (list of files)
-  - Fallback to product.images
-  - Variant change triggers SR re-render so Liquid updates gallery + price
-{%- endcomment -%}
-
-{% assign variant = product.selected_or_first_available_variant %}
-{% assign variant_media = variant.metafields.custom.images.value %}
-
 <div class="hide-15 w-embed w-script">
-  <script>
-    $(".swiper-container").each(function () {
-      const thumbsSwiper = new Swiper($(this).find(".swiper.is-product-thumbnail")[0], {
-        slidesPerView: "auto",
-        rewind: false,
-        loopedSlides: 8,
-        slideToClickedSlide: true,
-        spaceBetween: "4%",
-        direction: "vertical"
-      });
-
-      const swiper = new Swiper($(this).find(".swiper.is-product-gallery")[0], {
-        mousewheel: { forceToAxis: true },
-        thumbs: { swiper: thumbsSwiper, slideThumbActiveClass: "is-active" },
-        keyboard: { enabled: true, onlyInViewport: true },
-        navigation: {
-          nextEl: $(this).find(".swiper-next")[0],
-          prevEl: $(this).find(".swiper-prev")[0],
-        }
-      });
+          <script>
+  $(".swiper-container").each(function (index) {
+    const thumbsSwiper = new Swiper($(this).find(".swiper.is-product-thumbnail")[0], {
+      slidesPerView: "auto",
+      rewind: false,
+      loopedSlides: 8,
+      slideToClickedSlide: true,
+      spaceBetween: "4%",
+      direction: "vertical"
     });
-  </script>
+    const swiper = new Swiper($(this).find(".swiper.is-product-gallery")[0], {
+      mousewheel: {
+        forceToAxis: true
+      },
+      thumbs: {
+        swiper: thumbsSwiper,
+        slideThumbActiveClass: "is-active",
+      },
+      keyboard: {
+        enabled: true,
+        onlyInViewport: true
+      },
+      navigation: {
+        nextEl: $(this).find(".swiper-next")[0],
+        prevEl: $(this).find(".swiper-prev")[0],
+      }
+    });
+  }); 
+</script>
+        </div>
+        {% assign variant = product.selected_or_first_available_variant %}
+        <div class="padding-global">
+          <div class="product-header_component">
+            <script src="{{ 'li_custom.js' | asset_url }}" type="text/javascript"></script>
+<div li-element="product-variant-container" class="w-layout-grid product-header_layout" x-data="handleVariant({{ product | json | escape }}, {{ product.options_by_name | json | escape }}, {{ product.selected_or_first_available_variant | json | escape }})" x-init="$nextTick(() => { activateVariants() })" @setbundleitem.window="updateBundleItem($event.detail.product, $event.detail.quantity)">
+              <div id="w-node-eaccb818-f761-5613-8bb3-160cd4ca092a-dff38d5b" class="swiper-container is-product-gallery is-vertical">
+                <div class="product-header_slider-wrapper is-vertical">
+                  <div class="swiper_button-wrapper is-product-slider pointer-events-off is-vertical">
+                    <a aria-label="Previous Slide" href="#" class="swiper_button-4 swiper-prev pointer-events-on w-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 24 24" fill="none" class="swiper_button-icon is-top">
+                        <path d="M5 9L12 16L19 9" stroke="currentColor" stroke-miterlimit="10"></path>
+                      </svg></a>
+                    <a aria-label="Next Slide" href="#" class="swiper_button-4 swiper-next pointer-events-on w-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 24 24" fill="none" class="swiper_button-icon">
+                        <path d="M5 9L12 16L19 9" stroke="currentColor" stroke-miterlimit="10"></path>
+                      </svg></a>
+                  </div>
+                  <div class="swiper is-product-thumbnail is-vertical">
+                    <div li-for:inside="media in variant.metafields.custom.images.value" class="swiper-wrapper is-product-thumbnail is-vertical">
+        {% for media in variant.metafields.custom.images.value %}                            
+                      
+                            <div class="swiper-slide is-product-thumbnail"><img li-object:src="media | image_url: width: 800" li-object:alt="media.alt | default: product.title" alt="{{ media.alt | default: product.title }}" src="{{ media | image_url: width: 800 }}" loading="lazy" class="product_thumbnail-image-4"></div>
+                            
+                    
+                    {% endfor %}    </div>
+                  </div>
+                </div>
+                <div class="swiper is-product-gallery">
+                  <div id="my-gallery" li-for:inside="media in variant.metafields.custom.images.value" class="swiper-wrapper is-product-gallery">
+        {% for media in variant.metafields.custom.images.value %}                            
+                    
+                            <div class="swiper-slide is-product-gallery">
+                      <div class="product-header_gallery-lightbox"><img li-object:src="media | image_url: width: 800" loading="lazy" alt="" src="{{ media | image_url: width: 800 }}" class="product-header_gallery-image-11"></div>
+                    </div>
+                            
+                  
+                    {% endfor %}    </div>
+                </div>
+                <div class="swiper-slide is-product-thumbnail is-active hide"></div>
+              </div>
+              <div id="w-node-eaccb818-f761-5613-8bb3-160cd4ca093b-dff38d5b" class="product-header_product-details-9">
+                <div class="social-proof-item">
+                  <div class="social-proof-image-container">{% if section.settings.image_social_proof_image_1 %}
+{{ section.settings.image_social_proof_image_1 | image_url: width: 1000 | image_tag: class: 'social-proof-image', sizes: '(max-width: 1200px) 100vw, 1200px', loading: 'lazy' }}
+{% else %}
+<img class="social-proof-image" src="{{ 'm4-HE-1.webp' | asset_url }}" alt="" sizes="(max-width: 1200px) 100vw, 1200px" loading="lazy" srcset="{{ 'm4-HE-1-p-500.webp' | asset_url }} 500w, {{ 'm4-HE-1-p-800.webp' | asset_url }} 800w, {{ 'm4-HE-1-p-1080.webp' | asset_url }} 1080w, {{ 'm4-HE-1.webp' | asset_url }} 1200w">
+{% endif %}{% if section.settings.image_social_proof_image_2 %}
+{{ section.settings.image_social_proof_image_2 | image_url: width: 1000 | image_tag: class: 'social-proof-image overlapp', sizes: '(max-width: 1200px) 100vw, 1200px', loading: 'lazy' }}
+{% else %}
+<img class="social-proof-image overlapp" src="{{ 'gklasse-individuell.webp' | asset_url }}" alt="" sizes="(max-width: 1200px) 100vw, 1200px" loading="lazy" srcset="{{ 'gklasse-individuell-p-500.webp' | asset_url }} 500w, {{ 'gklasse-individuell-p-800.webp' | asset_url }} 800w, {{ 'gklasse-individuell-p-1080.webp' | asset_url }} 1080w, {{ 'gklasse-individuell.webp' | asset_url }} 1200w">
+{% endif %}{% if section.settings.image_social_proof_image_3 %}
+{{ section.settings.image_social_proof_image_3 | image_url: width: 1000 | image_tag: class: 'social-proof-image overlapp', sizes: '(max-width: 1200px) 100vw, 1200px', loading: 'lazy' }}
+{% else %}
+<img class="social-proof-image overlapp" src="{{ 'gklasse-individuell.webp' | asset_url }}" alt="" sizes="(max-width: 1200px) 100vw, 1200px" loading="lazy" srcset="{{ 'gklasse-individuell-p-500.webp' | asset_url }} 500w, {{ 'gklasse-individuell-p-800.webp' | asset_url }} 800w, {{ 'gklasse-individuell-p-1080.webp' | asset_url }} 1080w, {{ 'gklasse-individuell.webp' | asset_url }} 1200w">
+{% endif %}</div>
+                  <div class="social-proof-text"><span class="social-proof-text-span">200+ Fahrer </span>haben bereits ihr <span class="social-proof-text-span">Soundupgrade</span> bei uns gemacht.</div>
+                </div>
+                <div class="spacer-medium"></div>
+                <h2 class="product-h2">Heading</h2>
+                <div class="spacer-small"></div>
+                <h1 li-object:text="product.title" class="product-h1">
+{{ product.title }}
+</h1>
+                <div class="spacer-large"></div>
+                <div class="product-cta-text">
+{{ section.settings.text_cta_text }}
 </div>
-
-{%- comment -%}
-  IMPORTANT: This wrapper enables SR API re-render on variant change
-{%- endcomment -%}
-<div class="padding-global" li-render-custom="wrapper" li-render-custom-reinit="true">
-  <div class="product-header_component">
-    <script src="{{ 'li_custom.js' | asset_url }}" type="text/javascript"></script>
-
-    <div
-      li-element="product-variant-container"
-      class="w-layout-grid product-header_layout"
-      x-data="handleVariant({{ product | json | escape }}, {{ product.options_by_name | json | escape }}, {{ product.selected_or_first_available_variant | json | escape }})"
-      x-init="$nextTick(() => { activateVariants && activateVariants() })"
-    >
-      {%- comment -%} LEFT: GALLERY {%- endcomment -%}
-      <div id="w-node-eaccb818-f761-5613-8bb3-160cd4ca092a-dff38d5b" class="swiper-container is-product-gallery is-vertical">
-        <div class="product-header_slider-wrapper is-vertical">
-          <div class="swiper_button-wrapper is-product-slider pointer-events-off is-vertical">
-            <a aria-label="Previous Slide" href="#" class="swiper_button-4 swiper-prev pointer-events-on w-inline-block">
-              <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 24 24" fill="none" class="swiper_button-icon is-top">
-                <path d="M5 9L12 16L19 9" stroke="currentColor" stroke-miterlimit="10"></path>
-              </svg>
-            </a>
-            <a aria-label="Next Slide" href="#" class="swiper_button-4 swiper-next pointer-events-on w-inline-block">
-              <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 24 24" fill="none" class="swiper_button-icon">
-                <path d="M5 9L12 16L19 9" stroke="currentColor" stroke-miterlimit="10"></path>
-              </svg>
-            </a>
-          </div>
-
-          {%- comment -%} THUMBNAILS {%- endcomment -%}
-          <div class="swiper is-product-thumbnail is-vertical">
-            <div
-              class="swiper-wrapper is-product-thumbnail is-vertical"
-              role="list"
-              li-for:inside="media in variant.metafields.custom.images.value"
-            >
-              {% if variant_media != blank %}
-                {% for media in variant_media %}
-                  <div class="swiper-slide is-product-thumbnail" role="listitem">
-                    <img
-                      class="product_thumbnail-image-4"
-                      loading="lazy"
-                      alt="{{ media.alt | default: product.title }}"
-                      src="{{ media | image_url: width: 300 }}"
-                      li-object:src="media | image_url: width: 300"
-                      li-object:alt="media.alt | default: product.title"
-                    >
+                <div class="spacer-small"></div>
+                <div li-object="product.description" class="product-description">{{ product.description }}</div>
+                <div class="spacer-small"></div>
+                <div class="product-description">Klicke <a href="{{ section.settings.url_kompatibilitatsliste }}" class="product-description-link"> hier </a> um zu sehen, welche Fahrzeuge kompatibel sind.</div>
+                <div class="spacer-medium"></div>
+                <div class="product-header_price-wrapper-7">
+                  <div li-js-price="price" class="product-price-text" x-text="LiquifyHelper.moneyFormat(price, true, '{{ shop.money_with_currency_format }}')">$55</div>
+                  <div class="product-header_tag-list">
+                    <template x-if="selected_or_first_available_variant.available != true">
+            <div li-js-if="selected_or_first_available_variant.available != true" class="product-item_tag-4">
+        Nicht auf Lager        </div>
+    </template>
                   </div>
-                {% endfor %}
-              {% else %}
-                {% for image in product.images %}
-                  <div class="swiper-slide is-product-thumbnail" role="listitem">
-                    <img
-                      class="product_thumbnail-image-4"
-                      loading="lazy"
-                      alt="{{ image.alt | default: product.title }}"
-                      src="{{ image | image_url: width: 300 }}"
-                    >
+                </div>
+                <div class="spacer-xxsmall"></div>
+                <div class="text-size-small-2">inkl. MwSt</div>
+                <div class="product-header_form-block-11 w-form">
+                  {% form 'product', product, class: 'product-header_default-state' %}
+{% if product.has_only_default_variant != true %}    <div li-if="product.has_only_default_variant != true" class="product-header_option-list">
+    
+                      <template x-for="(option, optionKey) in product.options" :key="optionKey">
+    <div li-element="product-options-loop" class="product-header_option-2" data-ProductVariantsLoop="true">
+                        <div li-element="product-options-name" class="product-variant-type" x-text="option">Variant</div>
+                        <div class="spacer-small"></div>
+                        <div class="product-header_radio-list-3"><template x-for="(variantName, variantKey) in options_by_name[option].option.values" :key="variantName">
+    <label li-element="product-option-loop" class="product-header_radio-9 w-radio">
+                            <div class="w-form-formradioinput w-form-formradioinput--inputType-custom product-header_radio-button-4 w-radio-input"></div><input type="radio" li-element="product-option-input" style="opacity:0;position:absolute;z-index:-1" x-on:click="setVariant" :name="option" :data-name="option" :value="variantName" :id="variantName.toString().normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim().replace(/\s+/g, '-').replace(/[^\w-]+/g, '').replace(/--+/g, '-')" :checked="selected_or_first_available_variant?.options.includes(variantName)" data-selectorType="radio" :class="firstOptionHasAvailableChildren[variantName] ? '' : 'data-disabled'"><span li-element="product-option-name" class="text-size-regular text-weight-semibold w-form-label" for="radio" x-text="variantName" :for="variantName">XS</span>
+                          </label></template></div>
+                      </div></template>
+                        </div>
+{% endif %}
+                    <div class="product-header_add-to-cart-wrapper">
+                      <template x-if="selected_or_first_available_variant.available">
+            <div li-js-if="selected_or_first_available_variant.available" class="product-header_buy-wrappper-3">
+        
+                        <div li-element="add-to-cart" class="button-wrap" @click="addToCart($event, true)" :disabled="!addToCartButton">
+                          <a href="{{ section.settings.url_button_red_link }}" class="primary-btn gradient w-inline-block"> <div id="w-node-_1a252d9f-a08c-eeed-01fa-e195659873f4-dff38d5b" class="primary-btn-txt">{{ section.settings.text_button_red_text }}</div> <div id="w-node-_1a252d9f-a08c-eeed-01fa-e195659873f6-dff38d5b" class="button-hover-outline left"> <div class="solid-button-outline-2 light"></div> </div> <div id="w-node-_1a252d9f-a08c-eeed-01fa-e195659873f8-dff38d5b" class="button-hover-outline right"> <div class="solid-button-outline-2 right light"></div> </div> <div id="w-node-_1a252d9f-a08c-eeed-01fa-e195659873fa-dff38d5b" class="button-hover-outline middle"> <div class="solid-button-outline-2 middle light"></div> </div> </a>
+                        </div>
+                        <a data-w-id="cac93172-4d52-0fb0-5e1b-fd7336986f65" href="{{ section.settings.url_button_link_sec_dark }}" target="_blank" class="arrow-button pad w-inline-block"> <div class="title-wrapper"> <p class="button-title is-dark">{{ section.settings.text_button_text_sec_dark }}</p> <div class="arrow-wrapper is-dark"><img alt="" src="{{ 'Arrow_1Arrow.png' | asset_url }}" class="button-arrow"></div> </div> <div class="underline is-dark"></div> </a>
+                              </div>
+    </template>
+                      <template x-if="!selected_or_first_available_variant.available">
+            <div li-js-if="!selected_or_first_available_variant.available" class="product-header_out-of-stock">
+        
+                        <a href="#" class="button-16 is-secondary max-width-full pointer-events-off w-button">Not in Stock</a>
+                              </div>
+    </template>
+                    </div>
+                  {% endform %}
+                  <div class="hide-15 w-form-done">
+                    <div>Thank you! Your submission has been received!</div>
                   </div>
-                {% endfor %}
-              {% endif %}
+                  <div class="hide-15 w-form-fail">
+                    <div>Oops! Something went wrong while submitting the form.</div>
+                  </div>
+                </div>
+                <div class="product-header_description">
+                  <h2 class="heading-style-h3-20">
+{{ section.settings.text_headline }}
+</h2>
+                  <div li-object="product.description" class="text-rich-text max-width-large w-richtext">{{ product.description }}</div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-
-        {%- comment -%} MAIN GALLERY {%- endcomment -%}
-        <div class="swiper is-product-gallery">
-          <div
-            id="my-gallery"
-            class="swiper-wrapper is-product-gallery"
-            role="list"
-            li-for:inside="media in variant.metafields.custom.images.value"
-          >
-            {% if variant_media != blank %}
-              {% for media in variant_media %}
-                <div class="swiper-slide is-product-gallery" role="listitem">
-                  <div class="product-header_gallery-lightbox">
-                    <img
-                      class="product-header_gallery-image-11"
-                      loading="lazy"
-                      alt="{{ media.alt | default: product.title }}"
-                      src="{{ media | image_url: width: 1400 }}"
-                      li-object:src="media | image_url: width: 1400"
-                      li-object:alt="media.alt | default: product.title"
-                    >
-                  </div>
-                </div>
-              {% endfor %}
-            {% else %}
-              {% for image in product.images %}
-                <div class="swiper-slide is-product-gallery" role="listitem">
-                  <div class="product-header_gallery-lightbox">
-                    <img
-                      class="product-header_gallery-image-11"
-                      loading="lazy"
-                      alt="{{ image.alt | default: product.title }}"
-                      src="{{ image | image_url: width: 1400 }}"
-                    >
-                  </div>
-                </div>
-              {% endfor %}
-            {% endif %}
-          </div>
-        </div>
-
-        <div class="swiper-slide is-product-thumbnail is-active hide"></div>
-      </div>
-
-      {%- comment -%} RIGHT: PRODUCT DETAILS {%- endcomment -%}
-      <div id="w-node-eaccb818-f761-5613-8bb3-160cd4ca093b-dff38d5b" class="product-header_product-details-9">
-        <div class="social-proof-item">
-          <div class="social-proof-image-container">
-            {% if section.settings.image_social_proof_image_1 %}
-              {{ section.settings.image_social_proof_image_1 | image_url: width: 1000 | image_tag: class: 'social-proof-image', loading: 'lazy' }}
-            {% endif %}
-            {% if section.settings.image_social_proof_image_2 %}
-              {{ section.settings.image_social_proof_image_2 | image_url: width: 1000 | image_tag: class: 'social-proof-image overlapp', loading: 'lazy' }}
-            {% endif %}
-            {% if section.settings.image_social_proof_image_3 %}
-              {{ section.settings.image_social_proof_image_3 | image_url: width: 1000 | image_tag: class: 'social-proof-image overlapp', loading: 'lazy' }}
-            {% endif %}
-          </div>
-          <div class="social-proof-text">
-            <span class="social-proof-text-span">200+ Fahrer </span>haben bereits ihr
-            <span class="social-proof-text-span">Soundupgrade</span> bei uns gemacht.
-          </div>
-        </div>
-
-        <div class="spacer-medium"></div>
-        <h2 class="product-h2">Heading</h2>
-        <div class="spacer-small"></div>
-
-        <h1 li-object:text="product.title" class="product-h1">{{ product.title }}</h1>
-
-        <div class="spacer-large"></div>
-
-        <div class="product-cta-text">{{ section.settings.text_cta_text }}</div>
-
-        <div class="spacer-small"></div>
-        <div li-object="product.description" class="product-description">{{ product.description }}</div>
-
-        <div class="spacer-small"></div>
-        <div class="product-description">
-          Klicke <a href="{{ section.settings.url_kompatibilitatsliste }}" class="product-description-link">hier</a>
-          um zu sehen, welche Fahrzeuge kompatibel sind.
-        </div>
-
-        <div class="spacer-medium"></div>
-
-        {%- comment -%} PRICE (updates via Alpine data) {%- endcomment -%}
-        <div class="product-header_price-wrapper-7">
-          <div
-            li-js-price="price"
-            class="product-price-text"
-            x-text="LiquifyHelper.moneyFormat(price, true, '{{ shop.money_with_currency_format }}')"
-          ></div>
-
-          <div class="product-header_tag-list">
-            <template x-if="selected_or_first_available_variant.available != true">
-              <div li-js-if="selected_or_first_available_variant.available != true" class="product-item_tag-4">
-                Nicht auf Lager
-              </div>
-            </template>
-          </div>
-        </div>
-
-        <div class="spacer-xxsmall"></div>
-        <div class="text-size-small-2">inkl. MwSt</div>
-
-        <div class="product-header_form-block-11 w-form">
-          {% form 'product', product, class: 'product-header_default-state' %}
-
-            {% if product.has_only_default_variant != true %}
-              <div li-if="product.has_only_default_variant != true" class="product-header_option-list">
-
-                {% for option in product.options_with_values %}
-                  <div class="product-header_option-2">
-                    <div class="product-variant-type">{{ option.name }}</div>
-                    <div class="spacer-small"></div>
-
-                    <div class="product-header_radio-list-3">
-                      {% for value in option.values %}
-                        <label class="product-header_radio-9 w-radio">
-
-                          {%- comment -%}
-                            INPUT is invisible but clickable over label area.
-                            SR API re-renders this section with ?variant={{ value.variant.id }}
-                          {%- endcomment -%}
-                          <input
-                            type="radio"
-                            class="product-header_radio-button-4"
-                            name="{{ option.name }}"
-                            value="{{ value }}"
-                            {% if value.selected %}checked{% endif %}
-                            li-render-custom-value="{{ product.url }}?section_id={{ section.id }}&variant={{ value.variant.id }}"
-                            li-render-custom-trigger="input"
-                          >
-
-                          <span class="text-size-regular text-weight-semibold w-form-label">
-                            {{ value }}
-                          </span>
-
-                        </label>
-                      {% endfor %}
-                    </div>
-                  </div>
-                {% endfor %}
-
-              </div>
-            {% endif %}
-
-            <div class="product-header_add-to-cart-wrapper">
-              <template x-if="selected_or_first_available_variant.available">
-                <div li-js-if="selected_or_first_available_variant.available" class="product-header_buy-wrappper-3">
-                  <div li-element="add-to-cart" class="button-wrap" @click="addToCart($event, true)" :disabled="!addToCartButton">
-                    <a href="{{ section.settings.url_button_red_link }}" class="primary-btn gradient w-inline-block">
-                      <div class="primary-btn-txt">{{ section.settings.text_button_red_text }}</div>
-                    </a>
-                  </div>
-
-                  <a href="{{ section.settings.url_button_link_sec_dark }}" target="_blank" class="arrow-button pad w-inline-block">
-                    <div class="title-wrapper">
-                      <p class="button-title is-dark">{{ section.settings.text_button_text_sec_dark }}</p>
-                      <div class="arrow-wrapper is-dark">
-                        <img alt="" src="{{ 'Arrow_1Arrow.png' | asset_url }}" class="button-arrow">
-                      </div>
-                    </div>
-                    <div class="underline is-dark"></div>
-                  </a>
-                </div>
-              </template>
-
-              <template x-if="!selected_or_first_available_variant.available">
-                <div li-js-if="!selected_or_first_available_variant.available" class="product-header_out-of-stock">
-                  <a href="#" class="button-16 is-secondary max-width-full pointer-events-off w-button">Nicht auf Lager</a>
-                </div>
-              </template>
-            </div>
-
-          {% endform %}
-
-          <div class="hide-15 w-form-done"><div>Thank you! Your submission has been received!</div></div>
-          <div class="hide-15 w-form-fail"><div>Oops! Something went wrong while submitting the form.</div></div>
-        </div>
-
-        <div class="product-header_description">
-          <h2 class="heading-style-h3-20">{{ section.settings.text_headline }}</h2>
-          <div li-object="product.description" class="text-rich-text max-width-large w-richtext">{{ product.description }}</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{% schema %}
-{
-  "tag": "section",
-  "name": "Product-Hero (V)",
-  "class": "section_product-header",
-  "settings": [
-    { "id": "image_social_proof_image_1", "type": "image_picker", "label": "Social Proof Image 1" },
-    { "id": "image_social_proof_image_2", "type": "image_picker", "label": "Social Proof Image 2" },
-    { "id": "image_social_proof_image_3", "type": "image_picker", "label": "Social Proof Image 3" },
-    { "id": "text_cta_text", "type": "text", "label": "CTA Text", "default": "Jetzt bestellen oder unverbindlich anfragen!" },
-    { "id": "url_kompatibilitatsliste", "type": "url", "label": "Kompatibilitätsliste" },
-    { "id": "url_button_red_link", "type": "url", "label": "Button Red Link" },
-    { "id": "text_button_red_text", "type": "text", "label": "Button Red Text", "default": "Soundupgrades" },
-    { "id": "url_button_link_sec_dark", "type": "url", "label": "Button Link Sec Dark" },
-    { "id": "text_button_text_sec_dark", "type": "text", "label": "Button Text Sec Dark", "default": "UNVERBINDLICH ANFRAGEN" },
-    { "id": "text_headline", "type": "text", "label": "Headline", "default": "Description" }
-  ],
-  "presets": [
-    { "name": "Product-Hero (V)", "category": "Liquify" }
-  ]
-}
-{% endschema %}
+          <div class="container-large-7"></div>
+        </div> {% schema %} {
+    "tag": "section",
+    "name": "Product-Hero (V)",
+    "class": "section_product-header",
+    "settings": [
+        {
+            "id": "image_social_proof_image_1",
+            "type": "image_picker",
+            "label": "Social Proof Image 1"
+        },
+        {
+            "id": "image_social_proof_image_2",
+            "type": "image_picker",
+            "label": "Social Proof Image 2"
+        },
+        {
+            "id": "image_social_proof_image_3",
+            "type": "image_picker",
+            "label": "Social Proof Image 3"
+        },
+        {
+            "id": "text_cta_text",
+            "type": "text",
+            "label": "CTA Text",
+            "default": "Jetzt bestellen oder unverbindlich anfragen!"
+        },
+        {
+            "id": "url_kompatibilitatsliste",
+            "type": "url",
+            "label": "Kompatibilit\u00e4tsliste"
+        },
+        {
+            "id": "url_button_red_link",
+            "type": "url",
+            "label": "Button Red Link"
+        },
+        {
+            "id": "text_button_red_text",
+            "type": "text",
+            "label": "Button Red Text",
+            "default": "Soundupgrades"
+        },
+        {
+            "id": "url_button_link_sec_dark",
+            "type": "url",
+            "label": "Button Link Sec Dark"
+        },
+        {
+            "id": "text_button_text_sec_dark",
+            "type": "text",
+            "label": "Button Text Sec Dark",
+            "default": "UNVERBINDLICH ANFRAGEN"
+        },
+        {
+            "id": "text_headline",
+            "type": "text",
+            "label": "Headline",
+            "default": "Description"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Product-Hero (V)",
+            "category": "Liquify",
+            "blocks": []
+        }
+    ]
+} {% endschema %}

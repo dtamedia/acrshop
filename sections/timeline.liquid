@@ -23,9 +23,9 @@
                   <div class="timeline10_item">
                     <div class="timeline-content-wrapper">
                       <div class="timeline-image-wrapper">{% if section.settings.image_image_1 %}
-{{ section.settings.image_image_1 | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'timeline-image' }}
+{{ section.settings.image_image_1 | image_url: width: 1000 | image_tag: class: 'timeline-image', sizes: '100vw', loading: 'lazy' }}
 {% else %}
-<img src="{{ 'Bildschirmfoto-2026-01-16-um-23.11.30-2.png' | asset_url }}" loading="lazy" alt="" class="timeline-image">
+<img class="timeline-image" src="{{ 'Bildschirmfoto-2026-01-16-um-23.11.30-2.png' | asset_url }}" alt="" sizes="100vw" loading="lazy" srcset="{{ 'Bildschirmfoto-2026-01-16-um-23.11.30-2-p-500.png' | asset_url }} 500w, {{ 'Bildschirmfoto-2026-01-16-um-23.11.30-2.png' | asset_url }} 760w">
 {% endif %}</div>
                       <div class="timline-text-wrapper">
                         <h3 class="heading-style-h3 text-align-left">
@@ -60,9 +60,9 @@
                   <div class="timeline10_item">
                     <div class="timeline-content-wrapper">
                       <div class="timeline-image-wrapper">{% if section.settings.image_image_2 %}
-{{ section.settings.image_image_2 | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'timeline-image is-shadow' }}
+{{ section.settings.image_image_2 | image_url: width: 1000 | image_tag: class: 'timeline-image is-shadow', sizes: '100vw', loading: 'lazy' }}
 {% else %}
-<img src="{{ 'Group-399.png' | asset_url }}" loading="lazy" alt="" class="timeline-image is-shadow">
+<img class="timeline-image is-shadow" src="{{ 'Group-399.png' | asset_url }}" alt="" sizes="100vw" loading="lazy" srcset="{{ '7ec743373923bae9384fd5770ef239f2_Group-399-p-500.png' | asset_url }} 500w, {{ 'Group-399.png' | asset_url }} 760w">
 {% endif %}</div>
                       <div class="timline-text-wrapper">
                         <h3 class="heading-style-h3 text-align-left">
@@ -80,9 +80,9 @@
                   <div class="timeline10_item">
                     <div class="timeline-content-wrapper">
                       <div class="timeline-image-wrapper">{% if section.settings.image_image_3 %}
-{{ section.settings.image_image_3 | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'timeline-image' }}
+{{ section.settings.image_image_3 | image_url: width: 1000 | image_tag: class: 'timeline-image', sizes: '100vw', loading: 'lazy' }}
 {% else %}
-<img src="{{ 'Rectangle-239.png' | asset_url }}" loading="lazy" alt="" class="timeline-image">
+<img class="timeline-image" src="{{ 'Rectangle-239.png' | asset_url }}" alt="" sizes="100vw" loading="lazy" srcset="{{ 'Rectangle-239-p-500.png' | asset_url }} 500w, {{ 'Rectangle-239.png' | asset_url }} 760w">
 {% endif %}</div>
                       <div class="timline-text-wrapper">
                         <h3 class="heading-style-h3 text-align-left">
@@ -116,9 +116,9 @@
                   <div class="timeline10_item is-dark">
                     <div class="timeline-content-wrapper">
                       <div class="timeline-image-wrapper">{% if section.settings.image_image_4 %}
-{{ section.settings.image_image_4 | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'timeline-image' }}
+{{ section.settings.image_image_4 | image_url: width: 1000 | image_tag: class: 'timeline-image', sizes: '100vw', loading: 'lazy' }}
 {% else %}
-<img src="{{ 'Rectangle-238.png' | asset_url }}" loading="lazy" alt="" class="timeline-image">
+<img class="timeline-image" src="{{ 'Rectangle-238.png' | asset_url }}" alt="" sizes="100vw" loading="lazy" srcset="{{ 'Rectangle-238-p-500.png' | asset_url }} 500w, {{ 'Rectangle-238.png' | asset_url }} 760w">
 {% endif %}</div>
                       <div class="timline-text-wrapper">
                         <h3 class="heading-style-h3 text-align-left is-light">
