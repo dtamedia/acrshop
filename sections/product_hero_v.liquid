@@ -28,6 +28,23 @@
     });
   }); 
 </script>
+          <style>
+/* Focus-State: kein Glow, dezenter Border */
+.w-form-formradioinput--inputType-custom.w--redirected-focus {
+  box-shadow: none !important;
+  outline: none !important;
+  border: 1px solid #999;
+  border-radius: 0.5rem;
+}
+/* Checked-State: gleicher Look, kein Webflow-Ged&ouml;ns */
+.w-form-formradioinput--inputType-custom.w--redirected-checked {
+  box-shadow: none !important;
+  outline: none !important;
+  border: 1px solid #999;
+  border-radius: 0.5rem;
+  background-color: transparent;
+}
+</style>
         </div>
         <div class="padding-global">
           <div class="product-header_component">
@@ -69,22 +86,24 @@
               <div id="w-node-eaccb818-f761-5613-8bb3-160cd4ca093b-dff38d5b" class="product-header_product-details-9">
                 <div class="social-proof-item">
                   <div class="social-proof-image-container">{% if section.settings.image_social_proof_image_1 %}
-{{ section.settings.image_social_proof_image_1 | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'social-proof-image' }}
+{{ section.settings.image_social_proof_image_1 | image_url: width: 1000 | image_tag: class: 'social-proof-image', sizes: '(max-width: 1200px) 100vw, 1200px', loading: 'lazy' }}
 {% else %}
-<img src="{{ 'm4-HE-1.webp' | asset_url }}" loading="lazy" alt="" class="social-proof-image">
+<img class="social-proof-image" src="{{ 'm4-HE-1.webp' | asset_url }}" alt="" sizes="(max-width: 1200px) 100vw, 1200px" loading="lazy" srcset="{{ 'm4-HE-1-p-500.webp' | asset_url }} 500w, {{ 'm4-HE-1-p-800.webp' | asset_url }} 800w, {{ 'm4-HE-1-p-1080.webp' | asset_url }} 1080w, {{ 'm4-HE-1.webp' | asset_url }} 1200w">
 {% endif %}{% if section.settings.image_social_proof_image_2 %}
-{{ section.settings.image_social_proof_image_2 | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'social-proof-image overlapp' }}
+{{ section.settings.image_social_proof_image_2 | image_url: width: 1000 | image_tag: class: 'social-proof-image overlapp', sizes: '(max-width: 1200px) 100vw, 1200px', loading: 'lazy' }}
 {% else %}
-<img src="{{ 'gklasse-individuell.webp' | asset_url }}" loading="lazy" alt="" class="social-proof-image overlapp">
+<img class="social-proof-image overlapp" src="{{ 'gklasse-individuell.webp' | asset_url }}" alt="" sizes="(max-width: 1200px) 100vw, 1200px" loading="lazy" srcset="{{ 'gklasse-individuell-p-500.webp' | asset_url }} 500w, {{ 'gklasse-individuell-p-800.webp' | asset_url }} 800w, {{ 'gklasse-individuell-p-1080.webp' | asset_url }} 1080w, {{ 'gklasse-individuell.webp' | asset_url }} 1200w">
 {% endif %}{% if section.settings.image_social_proof_image_3 %}
-{{ section.settings.image_social_proof_image_3 | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'social-proof-image overlapp' }}
+{{ section.settings.image_social_proof_image_3 | image_url: width: 1000 | image_tag: class: 'social-proof-image overlapp', sizes: '(max-width: 1200px) 100vw, 1200px', loading: 'lazy' }}
 {% else %}
-<img src="{{ 'gklasse-individuell.webp' | asset_url }}" loading="lazy" alt="" class="social-proof-image overlapp">
+<img class="social-proof-image overlapp" src="{{ 'gklasse-individuell.webp' | asset_url }}" alt="" sizes="(max-width: 1200px) 100vw, 1200px" loading="lazy" srcset="{{ 'gklasse-individuell-p-500.webp' | asset_url }} 500w, {{ 'gklasse-individuell-p-800.webp' | asset_url }} 800w, {{ 'gklasse-individuell-p-1080.webp' | asset_url }} 1080w, {{ 'gklasse-individuell.webp' | asset_url }} 1200w">
 {% endif %}</div>
                   <div class="social-proof-text"><span class="social-proof-text-span">200+ Fahrer </span>haben bereits ihr <span class="social-proof-text-span">Soundupgrade</span> bei uns gemacht.</div>
                 </div>
                 <div class="spacer-medium"></div>
-                <h2 class="product-h2">Heading</h2>
+                <h2 class="product-h2">
+{{ section.settings.text_heading_text }}
+</h2>
                 <div class="spacer-small"></div>
                 <h1 li-object:text="product.title" class="product-h1">
 {{ product.title }}
@@ -109,6 +128,7 @@
                 </div>
                 <div class="spacer-xxsmall"></div>
                 <div class="text-size-small-2">inkl. MwSt</div>
+                <div class="spacer-medium"></div>
                 <div class="product-header_form-block-11 w-form">
                   {% form 'product', product, class: 'product-header_default-state' %}
 {% if product.has_only_default_variant != true %}    <div li-if="product.has_only_default_variant != true" class="product-header_option-list">
@@ -137,7 +157,7 @@
                       <template x-if="!selected_or_first_available_variant.available">
             <div li-js-if="!selected_or_first_available_variant.available" class="product-header_out-of-stock">
         
-                        <a href="#" class="button-16 is-secondary max-width-full pointer-events-off w-button">Not in Stock</a>
+                        <a href="#" class="button-16 is-secondary max-width-full pointer-events-off w-button">Nicht auf Lager</a>
                               </div>
     </template>
                     </div>
@@ -149,16 +169,116 @@
                     <div>Oops! Something went wrong while submitting the form.</div>
                   </div>
                 </div>
-                <div class="product-header_description">
-                  <h2 class="heading-style-h3-20">
-{{ section.settings.text_headline }}
-</h2>
-                  <div li-object="product.description" class="text-rich-text max-width-large w-richtext">{{ product.description }}</div>
+                <div class="spacer-large"></div>
+                <div class="code-embed w-embed w-script">
+                  <script>
+function initAccordionCSS() {
+  document.querySelectorAll('[data-accordion-css-init]').forEach((accordion) => {
+    const closeSiblings = accordion.getAttribute('data-accordion-close-siblings') === 'true';
+    accordion.addEventListener('click', (event) => {
+      const toggle = event.target.closest('[data-accordion-toggle]');
+      if (!toggle) return; // Exit if the clicked element is not a toggle
+      const singleAccordion = toggle.closest('[data-accordion-status]');
+      if (!singleAccordion) return; // Exit if no accordion container is found
+      const isActive = singleAccordion.getAttribute('data-accordion-status') === 'active';
+      singleAccordion.setAttribute('data-accordion-status', isActive ? 'not-active' : 'active');
+      // When [data-accordion-close-siblings="true"]
+      if (closeSiblings && !isActive) {
+        accordion.querySelectorAll('[data-accordion-status="active"]').forEach((sibling) => {
+          if (sibling !== singleAccordion) sibling.setAttribute('data-accordion-status', 'not-active');
+        });
+      }
+    });
+  });
+}
+// Initialize Accordion CSS
+document.addEventListener('DOMContentLoaded', () => {
+  initAccordionCSS();
+});
+</script>
+                  <style>
+/* Animate Accordion Bottom Grid */
+.accordion-css__item-bottom {
+  transition: grid-template-rows 0.6s cubic-bezier(0.625, 0.05, 0, 1);
+}
+[data-accordion-status="active"] .accordion-css__item-bottom {
+  grid-template-rows: 1fr;
+}
+/* Animate Icon */
+.accordion-css__item-icon {
+  transition: transform 0.6s cubic-bezier(0.625, 0.05, 0, 1);
+}
+[data-accordion-status="active"] .accordion-css__item-icon {
+  transform: rotate(0.001deg);
+}
+</style>
+                </div>
+                <div class="accordion-wrapper">
+                  <div data-accordion-close-siblings="true" data-accordion-css-init="" class="accordion-css">
+                    <ul class="accordion-css__list">
+                      <li data-accordion-status="not-active" class="accordion-css__item is-product">
+                        <div data-hover="" data-accordion-toggle="" class="accordion-css__item-top">
+                          <h3 class="accordion-css__item-h3">
+{{ section.settings.text_accordion_1 }}
+</h3>
+                          <div class="accordion-css__item-icon is-product"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 36 36" fill="none" class="accordion-css__item-icon-svg">
+                              <path d="M28.5 22.5L18 12L7.5 22.5" stroke="currentColor" stroke-width="3" stroke-miterlimit="10"></path>
+                            </svg></div>
+                        </div>
+                        <div class="accordion-css__item-bottom">
+                          <div class="accordion-css__item-bottom-wrap">
+                            <div class="accordion-css__item-bottom-content">
+                              <p class="accordion-css__item-p">
+{{ section.settings.text_accordion_text_1 }}
+</p>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li data-accordion-status="not-active" class="accordion-css__item is-product">
+                        <div data-hover="" data-accordion-toggle="" class="accordion-css__item-top">
+                          <h3 class="accordion-css__item-h3">
+{{ section.settings.text_accordion_2 }}
+</h3>
+                          <div class="accordion-css__item-icon is-product"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 36 36" fill="none" class="accordion-css__item-icon-svg">
+                              <path d="M28.5 22.5L18 12L7.5 22.5" stroke="currentColor" stroke-width="3" stroke-miterlimit="10"></path>
+                            </svg></div>
+                        </div>
+                        <div class="accordion-css__item-bottom">
+                          <div class="accordion-css__item-bottom-wrap">
+                            <div class="accordion-css__item-bottom-content">
+                              <p class="accordion-css__item-p">
+{{ section.settings.text_accordion_text_2 }}
+</p>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li data-accordion-status="not-active" class="accordion-css__item is-product">
+                        <div data-hover="" data-accordion-toggle="" class="accordion-css__item-top">
+                          <h3 class="accordion-css__item-h3">
+{{ section.settings.text_accordion_3 }}
+</h3>
+                          <div class="accordion-css__item-icon is-product"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 36 36" fill="none" class="accordion-css__item-icon-svg">
+                              <path d="M28.5 22.5L18 12L7.5 22.5" stroke="currentColor" stroke-width="3" stroke-miterlimit="10"></path>
+                            </svg></div>
+                        </div>
+                        <div class="accordion-css__item-bottom">
+                          <div class="accordion-css__item-bottom-wrap">
+                            <div class="accordion-css__item-bottom-content">
+                              <p class="accordion-css__item-p">
+{{ section.settings.text_accordion_text_3 }}
+</p>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="container-large-7"></div>
         </div> {% schema %} {
     "tag": "section",
     "name": "Product-Hero (V)",
@@ -178,6 +298,12 @@
             "id": "image_social_proof_image_3",
             "type": "image_picker",
             "label": "Social Proof Image 3"
+        },
+        {
+            "id": "text_heading_text",
+            "type": "text",
+            "label": "Heading Text",
+            "default": "Heading"
         },
         {
             "id": "text_cta_text",
@@ -213,10 +339,40 @@
             "default": "UNVERBINDLICH ANFRAGEN"
         },
         {
-            "id": "text_headline",
+            "id": "text_accordion_1",
             "type": "text",
-            "label": "Headline",
-            "default": "Description"
+            "label": "Accordion 1",
+            "default": "Wie finde ich das passende Soundupgrade f\u00fcr mein Fahrzeug?"
+        },
+        {
+            "id": "text_accordion_text_1",
+            "type": "text",
+            "label": "Accordion Text 1",
+            "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        },
+        {
+            "id": "text_accordion_2",
+            "type": "text",
+            "label": "Accordion 2",
+            "default": "Choose to close the siblings: true\/false"
+        },
+        {
+            "id": "text_accordion_text_2",
+            "type": "text",
+            "label": "Accordion Text 2",
+            "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        },
+        {
+            "id": "text_accordion_3",
+            "type": "text",
+            "label": "Accordion 3",
+            "default": "Choose to close the siblings: true\/false"
+        },
+        {
+            "id": "text_accordion_text_3",
+            "type": "text",
+            "label": "Accordion Text 3",
+            "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
         }
     ],
     "presets": [
