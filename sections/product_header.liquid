@@ -39,17 +39,17 @@
               <div id="w-node-b9fd1c25-bb21-3407-da36-323f77e3e5a2-dff38d5b" class="product-header_product-details-9">
                 <div class="social-proof-item">
                   <div class="social-proof-image-container">{% if section.settings.image_social_proof_image_1 %}
-{{ section.settings.image_social_proof_image_1 | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'social-proof-image' }}
+{{ section.settings.image_social_proof_image_1 | image_url: width: 1000 | image_tag: class: 'social-proof-image', sizes: '(max-width: 1200px) 100vw, 1200px', loading: 'lazy' }}
 {% else %}
-<img src="{{ 'm4-HE-1.webp' | asset_url }}" loading="lazy" alt="" class="social-proof-image">
+<img class="social-proof-image" src="{{ 'm4-HE-1.webp' | asset_url }}" alt="" sizes="(max-width: 1200px) 100vw, 1200px" loading="lazy" srcset="{{ 'm4-HE-1-p-500.webp' | asset_url }} 500w, {{ 'm4-HE-1-p-800.webp' | asset_url }} 800w, {{ 'm4-HE-1-p-1080.webp' | asset_url }} 1080w, {{ 'm4-HE-1.webp' | asset_url }} 1200w">
 {% endif %}{% if section.settings.image_social_proof_image_2 %}
-{{ section.settings.image_social_proof_image_2 | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'social-proof-image overlapp' }}
+{{ section.settings.image_social_proof_image_2 | image_url: width: 1000 | image_tag: class: 'social-proof-image overlapp', sizes: '(max-width: 1200px) 100vw, 1200px', loading: 'lazy' }}
 {% else %}
-<img src="{{ 'gklasse-individuell.webp' | asset_url }}" loading="lazy" alt="" class="social-proof-image overlapp">
+<img class="social-proof-image overlapp" src="{{ 'gklasse-individuell.webp' | asset_url }}" alt="" sizes="(max-width: 1200px) 100vw, 1200px" loading="lazy" srcset="{{ 'gklasse-individuell-p-500.webp' | asset_url }} 500w, {{ 'gklasse-individuell-p-800.webp' | asset_url }} 800w, {{ 'gklasse-individuell-p-1080.webp' | asset_url }} 1080w, {{ 'gklasse-individuell.webp' | asset_url }} 1200w">
 {% endif %}{% if section.settings.image_social_proof_image_3 %}
-{{ section.settings.image_social_proof_image_3 | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'social-proof-image overlapp' }}
+{{ section.settings.image_social_proof_image_3 | image_url: width: 1000 | image_tag: class: 'social-proof-image overlapp', sizes: '(max-width: 1200px) 100vw, 1200px', loading: 'lazy' }}
 {% else %}
-<img src="{{ 'gklasse-individuell.webp' | asset_url }}" loading="lazy" alt="" class="social-proof-image overlapp">
+<img class="social-proof-image overlapp" src="{{ 'gklasse-individuell.webp' | asset_url }}" alt="" sizes="(max-width: 1200px) 100vw, 1200px" loading="lazy" srcset="{{ 'gklasse-individuell-p-500.webp' | asset_url }} 500w, {{ 'gklasse-individuell-p-800.webp' | asset_url }} 800w, {{ 'gklasse-individuell-p-1080.webp' | asset_url }} 1080w, {{ 'gklasse-individuell.webp' | asset_url }} 1200w">
 {% endif %}</div>
                   <div class="social-proof-text"><span class="social-proof-text-span">200+ Fahrer </span>haben bereits ihr <span class="social-proof-text-span">Soundupgrade</span> bei uns gemacht.</div>
                 </div>
@@ -130,12 +130,6 @@
                     <div>Oops! Something went wrong while submitting the form.</div>
                   </div>
                 </div>
-                <div class="product-header_description">
-                  <h2 class="heading-style-h3-18">
-{{ section.settings.text_headline }}
-</h2>
-                  <div li-object="product.description" class="text-rich-text max-width-large w-richtext">{{ product.description }}</div>
-                </div>
               </div>
             </div>
           </div>
@@ -192,12 +186,6 @@
             "type": "text",
             "label": "Button Text Sec Dark",
             "default": "UNVERBINDLICH ANFRAGEN"
-        },
-        {
-            "id": "text_headline",
-            "type": "text",
-            "label": "Headline",
-            "default": "Description"
         }
     ],
     "presets": [
