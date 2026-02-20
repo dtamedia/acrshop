@@ -29,7 +29,6 @@
   }); 
 </script>
         </div>
-        {% assign variant = product.selected_or_first_available_variant %}
         <div class="padding-global">
           <div class="product-header_component">
             <script src="{{ 'li_custom.js' | asset_url }}" type="text/javascript"></script>
@@ -45,42 +44,42 @@
                       </svg></a>
                   </div>
                   <div class="swiper is-product-thumbnail is-vertical">
-                    <div li-for:inside="media in variant.metafields.custom.images.value" class="swiper-wrapper is-product-thumbnail is-vertical">
-        {% for media in variant.metafields.custom.images.value %}                            
-                      
-                            <div class="swiper-slide is-product-thumbnail"><img li-object:src="media | image_url: width: 800" li-object:alt="media.alt | default: product.title" alt="{{ media.alt | default: product.title }}" src="{{ media | image_url: width: 800 }}" loading="lazy" class="product_thumbnail-image-4"></div>
-                            
-                    
-                    {% endfor %}    </div>
+                    <div class="swiper-wrapper is-product-thumbnail is-vertical">
+                      {% for image in product.images %}    <div li-for="image in product.images" class="swiper-slide is-product-thumbnail">
+                                    <img alt="{{ image.alt }}" src="{{ image.src | product_img_url: 'master' }}" li-object:src="image.src | product_img_url: 'master'" li-object:alt="image.alt" loading="lazy" class="product_thumbnail-image-8">
+                        </div>
+{% endfor %}
+                    </div>
                   </div>
                 </div>
                 <div class="swiper is-product-gallery">
-                  <div id="my-gallery" li-for:inside="media in variant.metafields.custom.images.value" class="swiper-wrapper is-product-gallery">
-        {% for media in variant.metafields.custom.images.value %}                            
-                    
-                            <div class="swiper-slide is-product-gallery">
-                      <div class="product-header_gallery-lightbox"><img li-object:src="media | image_url: width: 800" loading="lazy" alt="" src="{{ media | image_url: width: 800 }}" class="product-header_gallery-image-11"></div>
-                    </div>
+                  <div id="my-gallery" class="swiper-wrapper is-product-gallery">
+                    {% for image in product.images %}    <div li-for="image in product.images" class="swiper-slide is-product-gallery">
+                                    
+                      
+                            <div class="product-header_gallery-lightbox"><img alt="{{ image.alt }}" src="{{ image.src | product_img_url: 'master' }}" li-object:src="image.src | product_img_url: 'master'" li-object:alt="image.alt" loading="lazy" class="product-header_gallery-image-13"></div>
                             
-                  
-                    {% endfor %}    </div>
+                    
+                        </div>
+{% endfor %}
+                  </div>
                 </div>
                 <div class="swiper-slide is-product-thumbnail is-active hide"></div>
               </div>
               <div id="w-node-eaccb818-f761-5613-8bb3-160cd4ca093b-dff38d5b" class="product-header_product-details-9">
                 <div class="social-proof-item">
                   <div class="social-proof-image-container">{% if section.settings.image_social_proof_image_1 %}
-{{ section.settings.image_social_proof_image_1 | image_url: width: 1000 | image_tag: class: 'social-proof-image', sizes: '(max-width: 1200px) 100vw, 1200px', loading: 'lazy' }}
+{{ section.settings.image_social_proof_image_1 | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'social-proof-image' }}
 {% else %}
-<img class="social-proof-image" src="{{ 'm4-HE-1.webp' | asset_url }}" alt="" sizes="(max-width: 1200px) 100vw, 1200px" loading="lazy" srcset="{{ 'm4-HE-1-p-500.webp' | asset_url }} 500w, {{ 'm4-HE-1-p-800.webp' | asset_url }} 800w, {{ 'm4-HE-1-p-1080.webp' | asset_url }} 1080w, {{ 'm4-HE-1.webp' | asset_url }} 1200w">
+<img src="{{ 'm4-HE-1.webp' | asset_url }}" loading="lazy" alt="" class="social-proof-image">
 {% endif %}{% if section.settings.image_social_proof_image_2 %}
-{{ section.settings.image_social_proof_image_2 | image_url: width: 1000 | image_tag: class: 'social-proof-image overlapp', sizes: '(max-width: 1200px) 100vw, 1200px', loading: 'lazy' }}
+{{ section.settings.image_social_proof_image_2 | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'social-proof-image overlapp' }}
 {% else %}
-<img class="social-proof-image overlapp" src="{{ 'gklasse-individuell.webp' | asset_url }}" alt="" sizes="(max-width: 1200px) 100vw, 1200px" loading="lazy" srcset="{{ 'gklasse-individuell-p-500.webp' | asset_url }} 500w, {{ 'gklasse-individuell-p-800.webp' | asset_url }} 800w, {{ 'gklasse-individuell-p-1080.webp' | asset_url }} 1080w, {{ 'gklasse-individuell.webp' | asset_url }} 1200w">
+<img src="{{ 'gklasse-individuell.webp' | asset_url }}" loading="lazy" alt="" class="social-proof-image overlapp">
 {% endif %}{% if section.settings.image_social_proof_image_3 %}
-{{ section.settings.image_social_proof_image_3 | image_url: width: 1000 | image_tag: class: 'social-proof-image overlapp', sizes: '(max-width: 1200px) 100vw, 1200px', loading: 'lazy' }}
+{{ section.settings.image_social_proof_image_3 | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'social-proof-image overlapp' }}
 {% else %}
-<img class="social-proof-image overlapp" src="{{ 'gklasse-individuell.webp' | asset_url }}" alt="" sizes="(max-width: 1200px) 100vw, 1200px" loading="lazy" srcset="{{ 'gklasse-individuell-p-500.webp' | asset_url }} 500w, {{ 'gklasse-individuell-p-800.webp' | asset_url }} 800w, {{ 'gklasse-individuell-p-1080.webp' | asset_url }} 1080w, {{ 'gklasse-individuell.webp' | asset_url }} 1200w">
+<img src="{{ 'gklasse-individuell.webp' | asset_url }}" loading="lazy" alt="" class="social-proof-image overlapp">
 {% endif %}</div>
                   <div class="social-proof-text"><span class="social-proof-text-span">200+ Fahrer </span>haben bereits ihr <span class="social-proof-text-span">Soundupgrade</span> bei uns gemacht.</div>
                 </div>
