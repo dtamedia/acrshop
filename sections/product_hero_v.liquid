@@ -1,4 +1,5 @@
-<div class="hide-15 w-embed w-script">
+<div class="padding-large"></div>
+        <div class="hide-15 w-embed w-script">
           <script>
   $(".swiper-container").each(function (index) {
     const thumbsSwiper = new Swiper($(this).find(".swiper.is-product-thumbnail")[0], {
@@ -86,17 +87,17 @@
               <div id="w-node-eaccb818-f761-5613-8bb3-160cd4ca093b-dff38d5b" class="product-header_product-details-9">
                 <div class="social-proof-item">
                   <div class="social-proof-image-container">{% if section.settings.image_social_proof_image_1 %}
-{{ section.settings.image_social_proof_image_1 | image_url: width: 1000 | image_tag: class: 'social-proof-image', sizes: '(max-width: 1200px) 100vw, 1200px', loading: 'lazy' }}
+{{ section.settings.image_social_proof_image_1 | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'social-proof-image' }}
 {% else %}
-<img class="social-proof-image" src="{{ 'm4-HE-1.webp' | asset_url }}" alt="" sizes="(max-width: 1200px) 100vw, 1200px" loading="lazy" srcset="{{ 'm4-HE-1-p-500.webp' | asset_url }} 500w, {{ 'm4-HE-1-p-800.webp' | asset_url }} 800w, {{ 'm4-HE-1-p-1080.webp' | asset_url }} 1080w, {{ 'm4-HE-1.webp' | asset_url }} 1200w">
+<img src="{{ 'm4-HE-1.webp' | asset_url }}" loading="lazy" alt="" class="social-proof-image">
 {% endif %}{% if section.settings.image_social_proof_image_2 %}
-{{ section.settings.image_social_proof_image_2 | image_url: width: 1000 | image_tag: class: 'social-proof-image overlapp', sizes: '(max-width: 1200px) 100vw, 1200px', loading: 'lazy' }}
+{{ section.settings.image_social_proof_image_2 | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'social-proof-image overlapp' }}
 {% else %}
-<img class="social-proof-image overlapp" src="{{ 'gklasse-individuell.webp' | asset_url }}" alt="" sizes="(max-width: 1200px) 100vw, 1200px" loading="lazy" srcset="{{ 'gklasse-individuell-p-500.webp' | asset_url }} 500w, {{ 'gklasse-individuell-p-800.webp' | asset_url }} 800w, {{ 'gklasse-individuell-p-1080.webp' | asset_url }} 1080w, {{ 'gklasse-individuell.webp' | asset_url }} 1200w">
+<img src="{{ 'gklasse-individuell.webp' | asset_url }}" loading="lazy" alt="" class="social-proof-image overlapp">
 {% endif %}{% if section.settings.image_social_proof_image_3 %}
-{{ section.settings.image_social_proof_image_3 | image_url: width: 1000 | image_tag: class: 'social-proof-image overlapp', sizes: '(max-width: 1200px) 100vw, 1200px', loading: 'lazy' }}
+{{ section.settings.image_social_proof_image_3 | image_url: width: 1000 | image_tag: loading: 'lazy', class: 'social-proof-image overlapp' }}
 {% else %}
-<img class="social-proof-image overlapp" src="{{ 'gklasse-individuell.webp' | asset_url }}" alt="" sizes="(max-width: 1200px) 100vw, 1200px" loading="lazy" srcset="{{ 'gklasse-individuell-p-500.webp' | asset_url }} 500w, {{ 'gklasse-individuell-p-800.webp' | asset_url }} 800w, {{ 'gklasse-individuell-p-1080.webp' | asset_url }} 1080w, {{ 'gklasse-individuell.webp' | asset_url }} 1200w">
+<img src="{{ 'gklasse-individuell.webp' | asset_url }}" loading="lazy" alt="" class="social-proof-image overlapp">
 {% endif %}</div>
                   <div class="social-proof-text"><span class="social-proof-text-span">200+ Fahrer </span>haben bereits ihr <span class="social-proof-text-span">Soundupgrade</span> bei uns gemacht.</div>
                 </div>
@@ -395,7 +396,8 @@ document.addEventListener('DOMContentLoaded', () => {
               </div>
             </div>
           </div>
-        </div> {% schema %} {
+        </div>
+        <div class="padding-large"></div> {% schema %} {
     "tag": "section",
     "name": "Product-Hero (V)",
     "class": "section_product-header",
