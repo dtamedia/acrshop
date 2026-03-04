@@ -11,6 +11,9 @@
   "sections": {
     "product_hero_v_YzCDm4": {
       "type": "product_hero_v",
+      "custom_css": [
+        ".product-header_gallery-image-13 {background-color: transparent !important; border: none !important;}"
+      ],
       "name": "Product-Hero (V)",
       "settings": {
         "text_heading_text": "Soundupgrade",
